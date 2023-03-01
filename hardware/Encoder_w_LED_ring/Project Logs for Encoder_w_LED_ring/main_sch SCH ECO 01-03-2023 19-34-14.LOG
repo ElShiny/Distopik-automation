@@ -1,0 +1,9 @@
+Remove Pin=U1-12 From Net=S\S\
+Remove Pin=U1-13 From Net=MOSI_T88
+Remove Pin=U1-14 From Net=MISO_T88
+Remove Pin=U1-15 From Net=SCK
+Remove Pin=U1-23 From Net=SDA
+Remove Pin=U1-24 From Net=SCL
+Remove Pin=U1-25 From Net=R\E\S\E\T\
+Change Component Footprint: Designator=P1 Old Footprint=1.27mm SMD conn New Footprint=HDR2X5
+Change Component Footprint: Designator=P2 Old Footprint=1.27mm SMD conn New Footprint=HDR2X5

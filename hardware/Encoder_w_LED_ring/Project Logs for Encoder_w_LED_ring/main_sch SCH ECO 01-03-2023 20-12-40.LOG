@@ -1,0 +1,2 @@
+Change Pin Designator/Name:  Old Designator=U1-11 Old Name=PB1 (OC1A/PCINT1) New Designator =PC3 (ADC3/PCINT11) New Name=22
+Change Pin Designator/Name:  Old Designator=U1-22 Old Name=PC3 (ADC3/PCINT11) New Designator =PB1 (OC1A/PCINT1) New Name=11

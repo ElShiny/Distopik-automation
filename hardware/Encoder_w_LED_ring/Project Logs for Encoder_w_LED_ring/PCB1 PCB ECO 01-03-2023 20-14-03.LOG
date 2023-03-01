@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=SDB Pin=U1-11
+Added Pin To Net: NetName=SDB Pin=U1-22
+Added Room: Name=main_sch
+Added Room: Name=U_ACE
+Added Room: Name=U_led_ring
