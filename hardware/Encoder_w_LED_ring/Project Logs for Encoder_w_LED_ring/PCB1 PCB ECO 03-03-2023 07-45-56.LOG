@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=Q1 Old Footprint=E3 New Footprint=SOT95P230X110-3L
+Added Room: Name=main_sch
+Added Room: Name=U_ACE
+Added Room: Name=U_led_ring
