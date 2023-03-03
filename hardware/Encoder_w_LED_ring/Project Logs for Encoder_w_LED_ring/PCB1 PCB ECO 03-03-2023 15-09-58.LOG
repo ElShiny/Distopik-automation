@@ -1,0 +1,6 @@
+Change Component Footprint: Designator=C1 Old Footprint=C1608_0603I_L New Footprint=R1005_0402i_L
+Change Component Footprint: Designator=C3 Old Footprint=C1608_0603I_L New Footprint=R1005_0402i_L
+Change Component Footprint: Designator=C4 Old Footprint=C1608_0603I_L New Footprint=R1005_0402i_L
+Added Room: Name=main_sch
+Added Room: Name=U_ACE
+Added Room: Name=U_led_ring

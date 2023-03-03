@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=SDB Pin=IS1-29
+Removed Pin From Net: NetName=+3.3V Pin=R30-1
+Removed Pin From Net: NetName=SDB Pin=R30-2
+Added Component: Designator=C6(R1005_0402i_L)
+Added Component: Designator=C7(C1608_0603I_L)
+Added Pin To Net: NetName=GND Pin=C6-2
+Added Pin To Net: NetName=+5 Pin=C7-1
+Added Pin To Net: NetName=GND Pin=C7-2
+Added Pin To Net: NetName=GND Pin=R30-2
+Added Pin To Net: NetName=NetC6_1 Pin=C6-1
+Added Pin To Net: NetName=NetC6_1 Pin=IS1-29
+Added Pin To Net: NetName=NetC6_1 Pin=R30-1
+Added Net: Name=NetC6_1
+Added Member To Class: ClassName=main_sch Member=Component C6 100n
+Added Member To Class: ClassName=U_led_ring Member=Component C7 1u

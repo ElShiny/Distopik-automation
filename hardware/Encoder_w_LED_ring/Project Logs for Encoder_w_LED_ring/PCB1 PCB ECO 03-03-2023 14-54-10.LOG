@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=GND Pin=LD1-1
+Removed Pin From Net: NetName=+3.3V Pin=LD1-2
+Removed Pin From Net: NetName=+3.3V Pin=LD1-4
+Change Component Footprint: Designator=LD1 Old Footprint=SOT230P700X180-4L New Footprint=TSOP95P280X110-6L
+Change Component Comment : Designator=C2 Old Comment=10u New Comment=1u
+Change Component Comment : Designator=LD1 Old Comment=LD1117S33CTR New Comment=NCP115 3.3V
+Added Pin To Net: NetName=+5 Pin=LD1-1
+Added Pin To Net: NetName=GND Pin=LD1-2
+Added Pin To Net: NetName=+3.3V Pin=LD1-5
+Added Room: Name=main_sch
+Added Room: Name=U_ACE
+Added Room: Name=U_led_ring

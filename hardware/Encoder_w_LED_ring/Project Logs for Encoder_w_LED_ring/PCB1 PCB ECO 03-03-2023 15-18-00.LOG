@@ -1,0 +1,4 @@
+Added Component: Designator=C5(R1005_0402i_L)
+Added Pin To Net: NetName=+3.3V Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Member To Class: ClassName=main_sch Member=Component C5 100n
