@@ -1,0 +1,88 @@
+Change Component Designator: OldDesignator=IS1 NewDesignator=IS?
+Change Component Designator: OldDesignator=LED1 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED2 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED3 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED4 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED5 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED6 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED7 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED8 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED9 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED10 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED11 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED12 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED13 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED14 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED15 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED16 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED17 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED18 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED19 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED20 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED21 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED22 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED23 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED24 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED25 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED26 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED27 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED28 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED29 NewDesignator=LED?
+Change Component Designator: OldDesignator=LED30 NewDesignator=LED?
+Change Component Designator: OldDesignator=R2 NewDesignator=R?
+Change Component Designator: OldDesignator=R3 NewDesignator=R?
+Change Component Designator: OldDesignator=R4 NewDesignator=R?
+Change Component Designator: OldDesignator=R5 NewDesignator=R?
+Change Component Designator: OldDesignator=R6 NewDesignator=R?
+Change Component Designator: OldDesignator=R7 NewDesignator=R?
+Change Component Designator: OldDesignator=R8 NewDesignator=R?
+Change Component Designator: OldDesignator=R9 NewDesignator=R?
+Change Component Designator: OldDesignator=R10 NewDesignator=R?
+Change Component Designator: OldDesignator=R11 NewDesignator=R?
+Change Component Designator: OldDesignator=R12 NewDesignator=R?
+Change Component Designator: OldDesignator=R13 NewDesignator=R?
+Change Component Designator: OldDesignator=R14 NewDesignator=R?
+Change Component Designator: OldDesignator=R15 NewDesignator=R?
+Change Component Designator: OldDesignator=R16 NewDesignator=R?
+Added Pin To Net: NetName=+5 Pin=U1-3
+Added Pin To Net: NetName=+5 Pin=U1-16
+Change Net Name : Old Net Name=NetIS1_1 New Net Name=NetIS?_1
+Change Net Name : Old Net Name=NetIS1_2 New Net Name=NetIS?_2
+Change Net Name : Old Net Name=NetIS1_3 New Net Name=NetIS?_3
+Change Net Name : Old Net Name=NetIS1_4 New Net Name=NetIS?_4
+Change Net Name : Old Net Name=NetIS1_5 New Net Name=NetIS?_5
+Change Net Name : Old Net Name=NetIS1_6 New Net Name=NetIS?_6
+Change Net Name : Old Net Name=NetIS1_7 New Net Name=NetIS?_7
+Change Net Name : Old Net Name=NetIS1_8 New Net Name=NetIS?_8
+Change Net Name : Old Net Name=NetIS1_10 New Net Name=NetIS?_10
+Change Net Name : Old Net Name=NetIS1_11 New Net Name=NetIS?_11
+Change Net Name : Old Net Name=NetIS1_12 New Net Name=NetIS?_12
+Change Net Name : Old Net Name=NetIS1_13 New Net Name=NetIS?_13
+Change Net Name : Old Net Name=NetIS1_17 New Net Name=NetIS?_17
+Change Net Name : Old Net Name=NetIS1_18 New Net Name=NetIS?_18
+Change Net Name : Old Net Name=NetIS1_19 New Net Name=NetIS?_19
+Change Net Name : Old Net Name=NetIS1_20 New Net Name=NetIS?_20
+Change Net Name : Old Net Name=NetIS1_21 New Net Name=NetIS?_21
+Change Net Name : Old Net Name=NetIS1_22 New Net Name=NetIS?_22
+Change Net Name : Old Net Name=NetIS1_25 New Net Name=NetIS?_25
+Change Net Name : Old Net Name=NetIS1_30 New Net Name=NetIS?_30
+Change Net Name : Old Net Name=NetIS1_31 New Net Name=NetIS?_31
+Change Net Name : Old Net Name=NetIS1_32 New Net Name=NetIS?_32
+Change Net Name : Old Net Name=NetLED1_2 New Net Name=NetLED?_2
+Change Net Name : Old Net Name=NetLED1_4 New Net Name=NetLED?_4
+Change Net Name : Old Net Name=NetLED1_6 New Net Name=NetLED?_6
+Change Net Name : Old Net Name=NetLED7_2 New Net Name=NetLED?_2
+Change Net Name : Old Net Name=NetLED7_4 New Net Name=NetLED?_4
+Change Net Name : Old Net Name=NetLED7_6 New Net Name=NetLED?_6
+Change Net Name : Old Net Name=NetLED13_2 New Net Name=NetLED?_2
+Change Net Name : Old Net Name=NetLED13_4 New Net Name=NetLED?_4
+Change Net Name : Old Net Name=NetLED13_6 New Net Name=NetLED?_6
+Change Net Name : Old Net Name=NetLED19_2 New Net Name=NetLED?_2
+Change Net Name : Old Net Name=NetLED19_4 New Net Name=NetLED?_4
+Change Net Name : Old Net Name=NetLED19_6 New Net Name=NetLED?_6
+Change Net Name : Old Net Name=NetLED25_2 New Net Name=NetLED?_2
+Change Net Name : Old Net Name=NetLED25_4 New Net Name=NetLED?_4
+Change Net Name : Old Net Name=NetLED25_6 New Net Name=NetLED?_6
+Added Room: Name=main_sch
+Added Room: Name=U_ACE
+Added Room: Name=U_led_ring

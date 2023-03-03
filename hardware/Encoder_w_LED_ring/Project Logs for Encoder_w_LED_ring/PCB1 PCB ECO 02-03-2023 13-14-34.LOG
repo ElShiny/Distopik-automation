@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=D3 Pin=U1-1
+Removed Pin From Net: NetName=EN Pin=U1-10
+Added Pin To Net: NetName=EN Pin=U1-1
+Added Pin To Net: NetName=D3 Pin=U1-10
+Added Room: Name=main_sch
+Added Room: Name=U_ACE
+Added Room: Name=U_led_ring

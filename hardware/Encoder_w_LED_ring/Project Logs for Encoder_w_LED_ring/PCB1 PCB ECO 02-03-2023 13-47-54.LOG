@@ -1,0 +1,129 @@
+Change Component Designator: OldDesignator=IS? NewDesignator=IS1
+Change Component Designator: OldDesignator=LED? NewDesignator=LED1
+Change Component Designator: OldDesignator=LED? NewDesignator=LED2
+Change Component Designator: OldDesignator=LED? NewDesignator=LED3
+Change Component Designator: OldDesignator=LED? NewDesignator=LED4
+Change Component Designator: OldDesignator=LED? NewDesignator=LED5
+Change Component Designator: OldDesignator=LED? NewDesignator=LED6
+Change Component Designator: OldDesignator=LED? NewDesignator=LED7
+Change Component Designator: OldDesignator=LED? NewDesignator=LED8
+Change Component Designator: OldDesignator=LED? NewDesignator=LED9
+Change Component Designator: OldDesignator=LED? NewDesignator=LED10
+Change Component Designator: OldDesignator=LED? NewDesignator=LED11
+Change Component Designator: OldDesignator=LED? NewDesignator=LED12
+Change Component Designator: OldDesignator=LED? NewDesignator=LED13
+Change Component Designator: OldDesignator=LED? NewDesignator=LED14
+Change Component Designator: OldDesignator=LED? NewDesignator=LED15
+Change Component Designator: OldDesignator=LED? NewDesignator=LED16
+Change Component Designator: OldDesignator=LED? NewDesignator=LED17
+Change Component Designator: OldDesignator=LED? NewDesignator=LED18
+Change Component Designator: OldDesignator=LED? NewDesignator=LED19
+Change Component Designator: OldDesignator=LED? NewDesignator=LED20
+Change Component Designator: OldDesignator=LED? NewDesignator=LED21
+Change Component Designator: OldDesignator=LED? NewDesignator=LED22
+Change Component Designator: OldDesignator=LED? NewDesignator=LED23
+Change Component Designator: OldDesignator=LED? NewDesignator=LED24
+Change Component Designator: OldDesignator=LED? NewDesignator=LED25
+Change Component Designator: OldDesignator=LED? NewDesignator=LED26
+Change Component Designator: OldDesignator=LED? NewDesignator=LED27
+Change Component Designator: OldDesignator=LED? NewDesignator=LED28
+Change Component Designator: OldDesignator=LED? NewDesignator=LED29
+Change Component Designator: OldDesignator=LED? NewDesignator=LED30
+Change Component Designator: OldDesignator=R? NewDesignator=R2
+Change Component Designator: OldDesignator=R? NewDesignator=R3
+Change Component Designator: OldDesignator=R? NewDesignator=R4
+Change Component Designator: OldDesignator=R? NewDesignator=R5
+Change Component Designator: OldDesignator=R? NewDesignator=R6
+Change Component Designator: OldDesignator=R? NewDesignator=R7
+Change Component Designator: OldDesignator=R? NewDesignator=R8
+Change Component Designator: OldDesignator=R? NewDesignator=R9
+Change Component Designator: OldDesignator=R? NewDesignator=R10
+Change Component Designator: OldDesignator=R? NewDesignator=R11
+Change Component Designator: OldDesignator=R? NewDesignator=R12
+Change Component Designator: OldDesignator=R? NewDesignator=R13
+Change Component Designator: OldDesignator=R? NewDesignator=R14
+Change Component Designator: OldDesignator=R? NewDesignator=R15
+Change Component Designator: OldDesignator=R? NewDesignator=R16
+Change Net Name : Old Net Name=NetIS?_1 New Net Name=NetIS1_1
+Change Net Name : Old Net Name=NetIS?_2 New Net Name=NetIS1_2
+Change Net Name : Old Net Name=NetIS?_3 New Net Name=NetIS1_3
+Change Net Name : Old Net Name=NetIS?_4 New Net Name=NetIS1_4
+Change Net Name : Old Net Name=NetIS?_5 New Net Name=NetIS1_5
+Change Net Name : Old Net Name=NetIS?_6 New Net Name=NetIS1_6
+Change Net Name : Old Net Name=NetIS?_7 New Net Name=NetIS1_7
+Change Net Name : Old Net Name=NetIS?_8 New Net Name=NetIS1_8
+Change Net Name : Old Net Name=NetIS?_10 New Net Name=NetIS1_10
+Change Net Name : Old Net Name=NetIS?_11 New Net Name=NetIS1_11
+Change Net Name : Old Net Name=NetIS?_12 New Net Name=NetIS1_12
+Change Net Name : Old Net Name=NetIS?_13 New Net Name=NetIS1_13
+Change Net Name : Old Net Name=NetIS?_17 New Net Name=NetIS1_17
+Change Net Name : Old Net Name=NetIS?_18 New Net Name=NetIS1_18
+Change Net Name : Old Net Name=NetIS?_19 New Net Name=NetIS1_19
+Change Net Name : Old Net Name=NetIS?_20 New Net Name=NetIS1_20
+Change Net Name : Old Net Name=NetIS?_21 New Net Name=NetIS1_21
+Change Net Name : Old Net Name=NetIS?_22 New Net Name=NetIS1_22
+Change Net Name : Old Net Name=NetIS?_25 New Net Name=NetIS1_25
+Change Net Name : Old Net Name=NetIS?_30 New Net Name=NetIS1_30
+Change Net Name : Old Net Name=NetIS?_31 New Net Name=NetIS1_31
+Change Net Name : Old Net Name=NetIS?_32 New Net Name=NetIS1_32
+Change Net Name : Old Net Name=NetLED?_2 New Net Name=NetLED1_2
+Change Net Name : Old Net Name=NetLED?_2 New Net Name=NetLED2_2
+Change Net Name : Old Net Name=NetLED?_2 New Net Name=NetLED3_2
+Change Net Name : Old Net Name=NetLED?_2 New Net Name=NetLED4_2
+Change Net Name : Old Net Name=NetLED?_2 New Net Name=NetLED5_2
+Change Net Name : Old Net Name=NetLED?_4 New Net Name=NetLED1_4
+Change Net Name : Old Net Name=NetLED?_4 New Net Name=NetLED2_4
+Change Net Name : Old Net Name=NetLED?_4 New Net Name=NetLED3_4
+Change Net Name : Old Net Name=NetLED?_4 New Net Name=NetLED4_4
+Change Net Name : Old Net Name=NetLED?_4 New Net Name=NetLED5_4
+Change Net Name : Old Net Name=NetLED?_6 New Net Name=NetLED1_6
+Change Net Name : Old Net Name=NetLED?_6 New Net Name=NetLED2_6
+Change Net Name : Old Net Name=NetLED?_6 New Net Name=NetLED3_6
+Change Net Name : Old Net Name=NetLED?_6 New Net Name=NetLED4_6
+Change Net Name : Old Net Name=NetLED?_6 New Net Name=NetLED5_6
+Added Member To Class: ClassName=U_led_ring Member=Component LED1 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED2 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED3 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED4 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED5 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED7 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED8 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED9 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED10 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED11 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED12 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED13 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED14 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED15 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED16 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED17 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED18 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED19 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED20 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED21 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED22 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED23 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED24 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED25 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED26 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED27 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED28 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED29 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component LED30 SMB-LED
+Added Member To Class: ClassName=U_led_ring Member=Component R2 R
+Added Member To Class: ClassName=U_led_ring Member=Component R3 R
+Added Member To Class: ClassName=U_led_ring Member=Component R4 R
+Added Member To Class: ClassName=U_led_ring Member=Component R5 R
+Added Member To Class: ClassName=U_led_ring Member=Component R7 R
+Added Member To Class: ClassName=U_led_ring Member=Component R8 R
+Added Member To Class: ClassName=U_led_ring Member=Component R9 R
+Added Member To Class: ClassName=U_led_ring Member=Component R10 R
+Added Member To Class: ClassName=U_led_ring Member=Component R11 R
+Added Member To Class: ClassName=U_led_ring Member=Component R12 R
+Added Member To Class: ClassName=U_led_ring Member=Component R13 R
+Added Member To Class: ClassName=U_led_ring Member=Component R14 R
+Added Member To Class: ClassName=U_led_ring Member=Component R15 R
+Added Member To Class: ClassName=U_led_ring Member=Component R16 R
+Added Room: Name=main_sch
+Added Room: Name=U_ACE
+Added Room: Name=U_led_ring

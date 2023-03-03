@@ -1,0 +1,3 @@
+Added Pin To Net: NetName=GND Pin=IS1-33
+Added Member To Class: ClassName=U_led_ring Member=Component R11 R
+Added Member To Class: ClassName=U_led_ring Member=Component R16 R

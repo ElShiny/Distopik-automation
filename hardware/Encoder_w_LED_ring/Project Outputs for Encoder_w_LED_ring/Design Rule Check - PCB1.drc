@@ -1,255 +1,241 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Matej\Desktop\Distopik-automation\hardware\Encoder_w_LED_ring\PCB1.PcbDoc
-Date     : 01/03/2023
-Time     : 19:59:09
+Date     : 02/03/2023
+Time     : 22:01:56
 
 Processing Rule : Clearance Constraint (Gap=0.102mm) (All),(All)
-Rule Violations :0
+   Violation between Clearance Constraint: (0.098mm < 0.102mm) Between Pad U1-18(80.618mm,102.782mm) on Top Layer And Track (78.533mm,103.274mm)(80.75mm,103.274mm) on Top Layer 
+   Violation between Clearance Constraint: (0.098mm < 0.102mm) Between Pad U1-21(79.664mm,101.827mm) on Top Layer And Track (77.654mm,102.319mm)(79.796mm,102.319mm) on Top Layer 
+Rule Violations :2
 
 Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
 Rule Violations :0
 
 Processing Rule : Un-Routed Net Constraint ( (All) )
-   Violation between Un-Routed Net Constraint: Net NetACE1_1 Between Pad R22-2(74.197mm,76.204mm) on Top Layer And Pad ACE1-1(90.17mm,104.775mm) on Multi-Layer 
-   Violation between Un-Routed Net Constraint: Net NetACE1_10 Between Pad ACE1-10(64.77mm,104.775mm) on Multi-Layer And Pad R21-2(70.186mm,76.204mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetACE1_2 Between Pad ACE1-2(90.17mm,102.235mm) on Multi-Layer And Pad R23-2(116.09mm,81.015mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net S1 Between Pad Q1-2(86.199mm,71.313mm) on Top Layer And Pad ACE1-3(90.17mm,99.695mm) on Multi-Layer 
-   Violation between Un-Routed Net Constraint: Net NetACE1_4 Between Pad ACE1-4(90.17mm,97.155mm) on Multi-Layer And Pad R24-2(120.101mm,81.015mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetACE1_5 Between Pad ACE1-5(90.17mm,94.615mm) on Multi-Layer And Pad R25-2(124.112mm,81.015mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetACE1_6 Between Pad ACE1-6(64.77mm,94.615mm) on Multi-Layer And Pad R18-2(96.034mm,81.015mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetACE1_7 Between Pad ACE1-7(64.77mm,97.155mm) on Multi-Layer And Pad R19-2(100.045mm,81.015mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetACE1_9 Between Pad ACE1-9(64.77mm,102.235mm) on Multi-Layer And Pad R20-2(66.175mm,76.204mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_1 Between Pad R11-1(104.187mm,76.204mm) on Top Layer And Pad IS1-1(104.632mm,111.702mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_10 Between Pad R7-1(100.175mm,76.204mm) on Top Layer And Pad IS1-10(105.557mm,108.377mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_11 Between Pad R2-1(92.153mm,76.204mm) on Top Layer And Pad IS1-11(105.957mm,108.377mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_12 Between Pad R3-1(96.164mm,76.204mm) on Top Layer And Pad IS1-12(106.357mm,108.377mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_13 Between Pad R4-1(76.108mm,76.204mm) on Top Layer And Pad IS1-13(106.757mm,108.377mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED18-3(108.103mm,52.416mm) on Bottom Layer And Pad IS1-17(108.482mm,108.902mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED5-1(82.812mm,51.87mm) on Bottom Layer And Pad IS1-18(108.482mm,109.302mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED4-1(99.352mm,51.87mm) on Bottom Layer And Pad IS1-19(108.482mm,109.702mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_2 Between Pad IS1-2(104.632mm,111.302mm) on Top Layer And Pad R12-1(108.198mm,76.204mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad IS1-20(108.482mm,110.102mm) on Top Layer And Pad LED21-5(112.147mm,52.633mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED2-1(92.736mm,51.87mm) on Bottom Layer And Pad IS1-21(108.482mm,110.502mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED25-1(103.732mm,52.036mm) on Bottom Layer And Pad IS1-22(108.482mm,110.902mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net +5 Between Pad R17-2(92.023mm,81.015mm) on Top Layer And Pad IS1-23(108.482mm,111.302mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad IS1-28(106.757mm,112.227mm) on Top Layer And Pad IS1-24(108.482mm,111.702mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_25 Between Pad R1-1(88.142mm,76.204mm) on Top Layer And Pad IS1-25(107.957mm,112.227mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad IS1-9(105.157mm,108.377mm) on Top Layer And Pad IS1-28(106.757mm,112.227mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_3 Between Pad IS1-3(104.632mm,110.902mm) on Top Layer And Pad R13-1(112.209mm,76.204mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_30 Between Pad R14-1(101.956mm,81.015mm) on Top Layer And Pad IS1-30(105.957mm,112.227mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_31 Between Pad IS1-31(105.557mm,112.227mm) on Top Layer And Pad R15-1(105.967mm,81.015mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_32 Between Pad IS1-32(105.157mm,112.227mm) on Top Layer And Pad R16-1(109.979mm,81.015mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_4 Between Pad IS1-4(104.632mm,110.502mm) on Top Layer And Pad R8-1(120.231mm,76.204mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_5 Between Pad IS1-5(104.632mm,110.102mm) on Top Layer And Pad R9-1(116.22mm,76.204mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_6 Between Pad IS1-6(104.632mm,109.702mm) on Top Layer And Pad R10-1(124.243mm,76.204mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_7 Between Pad R5-1(80.119mm,76.204mm) on Top Layer And Pad IS1-7(104.632mm,109.302mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_8 Between Pad R6-1(84.131mm,76.204mm) on Top Layer And Pad IS1-8(104.632mm,108.902mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad P2-9(87.376mm,102.362mm) on Top Layer And Pad IS1-9(105.157mm,108.377mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net MISO_T88 Between Pad J1-1(55.88mm,80.899mm) on Top Layer And Pad P2-4(83.566mm,98.552mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net MISO Between Pad J1-2(54.864mm,80.899mm) on Top Layer And Pad P1-2(71.501mm,103.378mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED10-3(71.009mm,46.998mm) on Bottom Layer And Pad LED10-1(71.909mm,46.998mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED10-1(71.909mm,46.998mm) on Bottom Layer And Pad LED22-5(84.32mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED7_2 Between Pad LED10-2(71.909mm,49.698mm) on Bottom Layer And Pad LED11-2(72.888mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED10-5(70.109mm,46.998mm) on Bottom Layer And Pad LED10-3(71.009mm,46.998mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED7_4 Between Pad LED10-4(71.009mm,49.698mm) on Bottom Layer And Pad LED11-4(71.988mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED16-1(67.098mm,46.976mm) on Bottom Layer And Pad LED10-5(70.109mm,46.998mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED7_6 Between Pad LED10-6(70.109mm,49.698mm) on Bottom Layer And Pad LED11-6(71.088mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED1-3(95.144mm,51.87mm) on Bottom Layer And Pad LED1-1(96.044mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED1-1(96.044mm,51.87mm) on Bottom Layer And Pad LED25-5(101.932mm,52.036mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED11-3(71.988mm,51.87mm) on Bottom Layer And Pad LED11-1(72.888mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED11-1(72.888mm,51.87mm) on Bottom Layer And Pad LED5-5(81.012mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED7_2 Between Pad LED12-2(69.58mm,54.57mm) on Bottom Layer And Pad LED11-2(72.888mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED7_2 Between Pad LED11-2(72.888mm,54.57mm) on Bottom Layer And Pad R5-2(82.219mm,76.204mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED11-5(71.088mm,51.87mm) on Bottom Layer And Pad LED11-3(71.988mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED7_4 Between Pad LED12-4(68.68mm,54.57mm) on Bottom Layer And Pad LED11-4(71.988mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED7_4 Between Pad LED11-4(71.988mm,54.57mm) on Bottom Layer And Pad R6-2(86.231mm,76.204mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED29-1(62.287mm,46.998mm) on Bottom Layer And Pad LED11-5(71.088mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED7_6 Between Pad LED12-6(67.78mm,54.57mm) on Bottom Layer And Pad LED11-6(71.088mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED7_6 Between Pad LED11-6(71.088mm,54.57mm) on Bottom Layer And Pad R7-2(102.275mm,76.204mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED1_2 Between Pad LED2-2(92.736mm,54.57mm) on Bottom Layer And Pad LED1-2(96.044mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED1_2 Between Pad LED1-2(96.044mm,54.57mm) on Bottom Layer And Pad LED4-2(99.352mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED12-3(68.68mm,51.87mm) on Bottom Layer And Pad LED12-1(69.58mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED12-1(69.58mm,51.87mm) on Bottom Layer And Pad LED18-5(107.203mm,52.416mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED7_2 Between Pad LED7-2(66.272mm,54.57mm) on Bottom Layer And Pad LED12-2(69.58mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED12-5(67.78mm,51.87mm) on Bottom Layer And Pad LED12-3(68.68mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED7_4 Between Pad LED7-4(65.372mm,54.57mm) on Bottom Layer And Pad LED12-4(68.68mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED6-1(62.964mm,51.87mm) on Bottom Layer And Pad LED12-5(67.78mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED7_6 Between Pad LED7-6(64.472mm,54.57mm) on Bottom Layer And Pad LED12-6(67.78mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED1-5(94.244mm,51.87mm) on Bottom Layer And Pad LED1-3(95.144mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED13-3(78.604mm,51.87mm) on Bottom Layer And Pad LED13-1(79.504mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED13-1(79.504mm,51.87mm) on Bottom Layer And Pad LED1-5(94.244mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED13_2 Between Pad LED14-2(76.196mm,54.57mm) on Bottom Layer And Pad LED13-2(79.504mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED13_2 Between Pad LED13-2(79.504mm,54.57mm) on Bottom Layer And Pad LED17-2(81.531mm,49.698mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED13_2 Between Pad LED13-2(79.504mm,54.57mm) on Bottom Layer And Pad LED18-2(109.003mm,55.116mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED13-5(77.704mm,51.87mm) on Bottom Layer And Pad LED13-3(78.604mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED13_4 Between Pad LED14-4(75.296mm,54.57mm) on Bottom Layer And Pad LED13-4(78.604mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED13_4 Between Pad LED13-4(78.604mm,54.57mm) on Bottom Layer And Pad LED17-4(80.631mm,49.698mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED13_4 Between Pad LED13-4(78.604mm,54.57mm) on Bottom Layer And Pad LED18-4(108.103mm,55.116mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED19-1(76.72mm,46.998mm) on Bottom Layer And Pad LED13-5(77.704mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED7-1(66.272mm,51.87mm) on Bottom Layer And Pad LED13-5(77.704mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED13_6 Between Pad LED14-6(74.396mm,54.57mm) on Bottom Layer And Pad LED13-6(77.704mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED13_6 Between Pad LED13-6(77.704mm,54.57mm) on Bottom Layer And Pad LED17-6(79.731mm,49.698mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED13_6 Between Pad LED13-6(77.704mm,54.57mm) on Bottom Layer And Pad LED18-6(107.203mm,55.116mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED1_4 Between Pad LED2-4(91.836mm,54.57mm) on Bottom Layer And Pad LED1-4(95.144mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED1_4 Between Pad LED1-4(95.144mm,54.57mm) on Bottom Layer And Pad LED4-4(98.452mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED14-3(75.296mm,51.87mm) on Bottom Layer And Pad LED14-1(76.196mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED14-1(76.196mm,51.87mm) on Bottom Layer And Pad LED2-5(90.936mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED13_2 Between Pad LED16-2(67.098mm,49.676mm) on Bottom Layer And Pad LED14-2(76.196mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED14-5(74.396mm,51.87mm) on Bottom Layer And Pad LED14-3(75.296mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED13_4 Between Pad LED16-4(66.198mm,49.676mm) on Bottom Layer And Pad LED14-4(75.296mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED26-1(58.488mm,51.743mm) on Bottom Layer And Pad LED14-5(74.396mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED13_6 Between Pad LED16-6(65.298mm,49.676mm) on Bottom Layer And Pad LED14-6(74.396mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED15-3(37.585mm,51.465mm) on Bottom Layer And Pad LED15-1(38.485mm,51.465mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED15-1(38.485mm,51.465mm) on Bottom Layer And Pad LED9-5(41.242mm,46.998mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED13_2 Between Pad LED15-2(38.485mm,54.165mm) on Bottom Layer And Pad LED16-2(67.098mm,49.676mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED15-5(36.685mm,51.465mm) on Bottom Layer And Pad LED15-3(37.585mm,51.465mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED13_4 Between Pad LED15-4(37.585mm,54.165mm) on Bottom Layer And Pad LED16-4(66.198mm,49.676mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED13_6 Between Pad LED15-6(36.685mm,54.165mm) on Bottom Layer And Pad LED16-6(65.298mm,49.676mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED1_6 Between Pad LED2-6(90.936mm,54.57mm) on Bottom Layer And Pad LED1-6(94.244mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED1_6 Between Pad LED1-6(94.244mm,54.57mm) on Bottom Layer And Pad LED4-6(97.552mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED16-3(66.198mm,46.976mm) on Bottom Layer And Pad LED16-1(67.098mm,46.976mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED16-5(65.298mm,46.976mm) on Bottom Layer And Pad LED16-3(66.198mm,46.976mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED28-1(47.853mm,46.998mm) on Bottom Layer And Pad LED16-5(65.298mm,46.976mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED17-3(80.631mm,46.998mm) on Bottom Layer And Pad LED17-1(81.531mm,46.998mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED17-5(79.731mm,46.998mm) on Bottom Layer And Pad LED17-3(80.631mm,46.998mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED17-3(80.631mm,46.998mm) on Bottom Layer And Pad LED5-5(81.012mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED18-3(108.103mm,52.416mm) on Bottom Layer And Pad LED18-1(109.003mm,52.416mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED13_2 Between Pad LED18-2(109.003mm,55.116mm) on Bottom Layer And Pad R8-2(122.331mm,76.204mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED18-5(107.203mm,52.416mm) on Bottom Layer And Pad LED18-3(108.103mm,52.416mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED13_4 Between Pad LED18-4(108.103mm,55.116mm) on Bottom Layer And Pad R9-2(118.32mm,76.204mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED13_6 Between Pad LED18-6(107.203mm,55.116mm) on Bottom Layer And Pad R10-2(126.343mm,76.204mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED19-3(75.82mm,46.998mm) on Bottom Layer And Pad LED19-1(76.72mm,46.998mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED19_2 Between Pad LED20-2(52.664mm,49.698mm) on Bottom Layer And Pad LED19-2(76.72mm,49.698mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED19_2 Between Pad LED19-2(76.72mm,49.698mm) on Bottom Layer And Pad LED22-2(86.12mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED19-5(74.92mm,46.998mm) on Bottom Layer And Pad LED19-3(75.82mm,46.998mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED19_4 Between Pad LED20-4(51.764mm,49.698mm) on Bottom Layer And Pad LED19-4(75.82mm,49.698mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED19_4 Between Pad LED19-4(75.82mm,49.698mm) on Bottom Layer And Pad LED22-4(85.22mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED19_6 Between Pad LED20-6(50.864mm,49.698mm) on Bottom Layer And Pad LED19-6(74.92mm,49.698mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED19_6 Between Pad LED19-6(74.92mm,49.698mm) on Bottom Layer And Pad LED22-6(84.32mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED20-3(51.764mm,46.998mm) on Bottom Layer And Pad LED20-1(52.664mm,46.998mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED20-1(52.664mm,46.998mm) on Bottom Layer And Pad LED26-5(56.688mm,51.743mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED19_2 Between Pad LED20-2(52.664mm,49.698mm) on Bottom Layer And Pad LED23-2(53.605mm,54.329mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED20-5(50.864mm,46.998mm) on Bottom Layer And Pad LED20-3(51.764mm,46.998mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED19_4 Between Pad LED20-4(51.764mm,49.698mm) on Bottom Layer And Pad LED23-4(52.705mm,54.329mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED8-1(38.231mm,46.998mm) on Bottom Layer And Pad LED20-5(50.864mm,46.998mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED19_6 Between Pad LED20-6(50.864mm,49.698mm) on Bottom Layer And Pad LED23-6(51.805mm,54.329mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED2-3(91.836mm,51.87mm) on Bottom Layer And Pad LED2-1(92.736mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED21-3(113.047mm,52.633mm) on Bottom Layer And Pad LED21-1(113.947mm,52.633mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED19_2 Between Pad LED22-2(86.12mm,54.57mm) on Bottom Layer And Pad LED21-2(113.947mm,55.333mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED19_2 Between Pad R11-2(106.287mm,76.204mm) on Top Layer And Pad LED21-2(113.947mm,55.333mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED21-5(112.147mm,52.633mm) on Bottom Layer And Pad LED21-3(113.047mm,52.633mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED19_4 Between Pad LED22-4(85.22mm,54.57mm) on Bottom Layer And Pad LED21-4(113.047mm,55.333mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED19_4 Between Pad R12-2(110.298mm,76.204mm) on Top Layer And Pad LED21-4(113.047mm,55.333mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED3-1(89.428mm,51.87mm) on Bottom Layer And Pad LED21-5(112.147mm,52.633mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED19_6 Between Pad LED22-6(84.32mm,54.57mm) on Bottom Layer And Pad LED21-6(112.147mm,55.333mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED19_6 Between Pad LED21-6(112.147mm,55.333mm) on Bottom Layer And Pad R13-2(114.309mm,76.204mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED1_2 Between Pad LED3-2(89.428mm,54.57mm) on Bottom Layer And Pad LED2-2(92.736mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED1_2 Between Pad LED2-2(92.736mm,54.57mm) on Bottom Layer And Pad R2-2(94.253mm,76.204mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED22-3(85.22mm,51.87mm) on Bottom Layer And Pad LED22-1(86.12mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED22-1(86.12mm,51.87mm) on Bottom Layer And Pad LED4-5(97.552mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED22-5(84.32mm,51.87mm) on Bottom Layer And Pad LED22-3(85.22mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED2-5(90.936mm,51.87mm) on Bottom Layer And Pad LED2-3(91.836mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED23-3(52.705mm,51.629mm) on Bottom Layer And Pad LED23-1(53.605mm,51.629mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED23-1(53.605mm,51.629mm) on Bottom Layer And Pad LED29-5(60.487mm,46.998mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED19_2 Between Pad LED24-2(43.546mm,54.191mm) on Bottom Layer And Pad LED23-2(53.605mm,54.329mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED23-5(51.805mm,51.629mm) on Bottom Layer And Pad LED23-3(52.705mm,51.629mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED19_4 Between Pad LED24-4(42.646mm,54.191mm) on Bottom Layer And Pad LED23-4(52.705mm,54.329mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED19_6 Between Pad LED24-6(41.746mm,54.191mm) on Bottom Layer And Pad LED23-6(51.805mm,54.329mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED1_4 Between Pad LED3-4(88.528mm,54.57mm) on Bottom Layer And Pad LED2-4(91.836mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED24-3(42.646mm,51.491mm) on Bottom Layer And Pad LED24-1(43.546mm,51.491mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED24-1(43.546mm,51.491mm) on Bottom Layer And Pad LED30-5(55.675mm,46.998mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED24-5(41.746mm,51.491mm) on Bottom Layer And Pad LED24-3(42.646mm,51.491mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED25-3(102.832mm,52.036mm) on Bottom Layer And Pad LED25-1(103.732mm,52.036mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED25_2 Between Pad LED29-2(62.287mm,49.698mm) on Bottom Layer And Pad LED25-2(103.732mm,54.736mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED25_2 Between Pad LED25-2(103.732mm,54.736mm) on Bottom Layer And Pad R14-2(104.056mm,81.015mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED25-5(101.932mm,52.036mm) on Bottom Layer And Pad LED25-3(102.832mm,52.036mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED25_4 Between Pad LED26-4(57.588mm,54.443mm) on Bottom Layer And Pad LED25-4(102.832mm,54.736mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED25_4 Between Pad LED25-4(102.832mm,54.736mm) on Bottom Layer And Pad R15-2(108.067mm,81.015mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED25_6 Between Pad LED26-6(56.688mm,54.443mm) on Bottom Layer And Pad LED25-6(101.932mm,54.736mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED25_6 Between Pad LED25-6(101.932mm,54.736mm) on Bottom Layer And Pad R16-2(112.079mm,81.015mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED1_6 Between Pad LED3-6(87.628mm,54.57mm) on Bottom Layer And Pad LED2-6(90.936mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED26-3(57.588mm,51.743mm) on Bottom Layer And Pad LED26-1(58.488mm,51.743mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED25_2 Between Pad LED30-2(57.475mm,49.698mm) on Bottom Layer And Pad LED26-2(58.488mm,54.443mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED26-5(56.688mm,51.743mm) on Bottom Layer And Pad LED26-3(57.588mm,51.743mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED25_4 Between Pad LED30-4(56.575mm,49.698mm) on Bottom Layer And Pad LED26-4(57.588mm,54.443mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED25_6 Between Pad LED30-6(55.675mm,49.698mm) on Bottom Layer And Pad LED26-6(56.688mm,54.443mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED27-3(47.841mm,51.55mm) on Bottom Layer And Pad LED27-1(48.741mm,51.55mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED27-1(48.741mm,51.55mm) on Bottom Layer And Pad LED3-5(87.628mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED25_2 Between Pad LED28-2(47.853mm,49.698mm) on Bottom Layer And Pad LED27-2(48.741mm,54.25mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED27-5(46.941mm,51.55mm) on Bottom Layer And Pad LED27-3(47.841mm,51.55mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED25_4 Between Pad LED28-4(46.953mm,49.698mm) on Bottom Layer And Pad LED27-4(47.841mm,54.25mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED9-1(43.042mm,46.998mm) on Bottom Layer And Pad LED27-5(46.941mm,51.55mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED25_6 Between Pad LED28-6(46.053mm,49.698mm) on Bottom Layer And Pad LED27-6(46.941mm,54.25mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED28-3(46.953mm,46.998mm) on Bottom Layer And Pad LED28-1(47.853mm,46.998mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED25_2 Between Pad LED28-2(47.853mm,49.698mm) on Bottom Layer And Pad LED30-2(57.475mm,49.698mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED28-5(46.053mm,46.998mm) on Bottom Layer And Pad LED28-3(46.953mm,46.998mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED25_4 Between Pad LED28-4(46.953mm,49.698mm) on Bottom Layer And Pad LED30-4(56.575mm,49.698mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED25_6 Between Pad LED28-6(46.053mm,49.698mm) on Bottom Layer And Pad LED30-6(55.675mm,49.698mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED29-3(61.387mm,46.998mm) on Bottom Layer And Pad LED29-1(62.287mm,46.998mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED25_2 Between Pad LED30-2(57.475mm,49.698mm) on Bottom Layer And Pad LED29-2(62.287mm,49.698mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED29-5(60.487mm,46.998mm) on Bottom Layer And Pad LED29-3(61.387mm,46.998mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED25_4 Between Pad LED30-4(56.575mm,49.698mm) on Bottom Layer And Pad LED29-4(61.387mm,49.698mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED25_6 Between Pad LED30-6(55.675mm,49.698mm) on Bottom Layer And Pad LED29-6(60.487mm,49.698mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED30-3(56.575mm,46.998mm) on Bottom Layer And Pad LED30-1(57.475mm,46.998mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED30-1(57.475mm,46.998mm) on Bottom Layer And Pad LED6-5(61.164mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED30-5(55.675mm,46.998mm) on Bottom Layer And Pad LED30-3(56.575mm,46.998mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED3-3(88.528mm,51.87mm) on Bottom Layer And Pad LED3-1(89.428mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED1_2 Between Pad LED5-2(82.812mm,54.57mm) on Bottom Layer And Pad LED3-2(89.428mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED3-5(87.628mm,51.87mm) on Bottom Layer And Pad LED3-3(88.528mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED1_4 Between Pad LED5-4(81.912mm,54.57mm) on Bottom Layer And Pad LED3-4(88.528mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED1_6 Between Pad LED5-6(81.012mm,54.57mm) on Bottom Layer And Pad LED3-6(87.628mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED4-3(98.452mm,51.87mm) on Bottom Layer And Pad LED4-1(99.352mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED4-5(97.552mm,51.87mm) on Bottom Layer And Pad LED4-3(98.452mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED1_4 Between Pad R3-2(98.264mm,76.204mm) on Top Layer And Pad LED4-4(98.452mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED5-3(81.912mm,51.87mm) on Bottom Layer And Pad LED5-1(82.812mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED1_2 Between Pad LED6-2(62.964mm,54.57mm) on Bottom Layer And Pad LED5-2(82.812mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED5-5(81.012mm,51.87mm) on Bottom Layer And Pad LED5-3(81.912mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED1_4 Between Pad LED6-4(62.064mm,54.57mm) on Bottom Layer And Pad LED5-4(81.912mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED1_6 Between Pad LED6-6(61.164mm,54.57mm) on Bottom Layer And Pad LED5-6(81.012mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED1_6 Between Pad R4-2(78.208mm,76.204mm) on Top Layer And Pad LED5-6(81.012mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED6-3(62.064mm,51.87mm) on Bottom Layer And Pad LED6-1(62.964mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED6-5(61.164mm,51.87mm) on Bottom Layer And Pad LED6-3(62.064mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED7-3(65.372mm,51.87mm) on Bottom Layer And Pad LED7-1(66.272mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED7_2 Between Pad LED9-2(43.042mm,49.698mm) on Bottom Layer And Pad LED7-2(66.272mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED7-5(64.472mm,51.87mm) on Bottom Layer And Pad LED7-3(65.372mm,51.87mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED7_4 Between Pad LED9-4(42.142mm,49.698mm) on Bottom Layer And Pad LED7-4(65.372mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED7_6 Between Pad LED9-6(41.242mm,49.698mm) on Bottom Layer And Pad LED7-6(64.472mm,54.57mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED8-3(37.331mm,46.998mm) on Bottom Layer And Pad LED8-1(38.231mm,46.998mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED7_2 Between Pad LED8-2(38.231mm,49.698mm) on Bottom Layer And Pad LED9-2(43.042mm,49.698mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED8-5(36.431mm,46.998mm) on Bottom Layer And Pad LED8-3(37.331mm,46.998mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED7_4 Between Pad LED8-4(37.331mm,49.698mm) on Bottom Layer And Pad LED9-4(42.142mm,49.698mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetLED7_6 Between Pad LED8-6(36.431mm,49.698mm) on Bottom Layer And Pad LED9-6(41.242mm,49.698mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED9-3(42.142mm,46.998mm) on Bottom Layer And Pad LED9-1(43.042mm,46.998mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED9-5(41.242mm,46.998mm) on Bottom Layer And Pad LED9-3(42.142mm,46.998mm) on Bottom Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad P1-3(67.691mm,102.108mm) on Top Layer And Pad P1-1(67.691mm,103.378mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net R\E\S\E\T\ Between Pad P1-10(71.501mm,98.298mm) on Top Layer And Pad P2-10(83.566mm,102.362mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net MISO Between Pad P1-2(71.501mm,103.378mm) on Top Layer And Pad P2-2(83.566mm,97.282mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad P1-5(67.691mm,100.838mm) on Top Layer And Pad P1-3(67.691mm,102.108mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad P1-3(67.691mm,102.108mm) on Top Layer And Pad U1-4(76.207mm,102.108mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad P1-7(67.691mm,99.568mm) on Top Layer And Pad P1-5(67.691mm,100.838mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net SCK Between Pad P1-6(71.501mm,100.838mm) on Top Layer And Pad P2-6(83.566mm,99.822mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad P1-9(67.691mm,98.298mm) on Top Layer And Pad P1-7(67.691mm,99.568mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net S\S\ Between Pad P1-8(71.501mm,99.568mm) on Top Layer And Pad P2-8(83.566mm,101.092mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad P1-9(67.691mm,98.298mm) on Top Layer And Pad R21-1(68.086mm,76.204mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad P2-3(87.376mm,98.552mm) on Top Layer And Pad P2-1(87.376mm,97.282mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad P2-3(87.376mm,98.552mm) on Top Layer And Pad P2-5(87.376mm,99.822mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad P2-5(87.376mm,99.822mm) on Top Layer And Pad P2-7(87.376mm,101.092mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad P2-7(87.376mm,101.092mm) on Top Layer And Pad P2-9(87.376mm,102.362mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad U1-18(80.257mm,102.108mm) on Top Layer And Pad P2-9(87.376mm,102.362mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetQ1_1 Between Pad Q1-1(86.199mm,73.213mm) on Top Layer And Pad R17-1(89.923mm,81.015mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net +5 Between Pad Q1-3(88.299mm,72.263mm) on Top Layer And Pad R17-2(92.023mm,81.015mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad R1-2(90.242mm,76.204mm) on Top Layer And Pad R18-1(93.934mm,81.015mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad R22-1(72.097mm,76.204mm) on Top Layer And Pad R1-2(90.242mm,76.204mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad R18-1(93.934mm,81.015mm) on Top Layer And Pad R19-1(97.945mm,81.015mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad R19-1(97.945mm,81.015mm) on Top Layer And Pad R23-1(113.99mm,81.015mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad R20-1(64.075mm,76.204mm) on Top Layer And Pad R21-1(68.086mm,76.204mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad R21-1(68.086mm,76.204mm) on Top Layer And Pad R22-1(72.097mm,76.204mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad R23-1(113.99mm,81.015mm) on Top Layer And Pad R24-1(118.001mm,81.015mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad R24-1(118.001mm,81.015mm) on Top Layer And Pad R25-1(122.012mm,81.015mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net NetTP1_1 Between Pad U1-5(76.207mm,101.658mm) on Top Layer And Pad TP1-1(90.551mm,72.898mm) on Top Layer [Unplated] 
-   Violation between Un-Routed Net Constraint: Net GND Between Via (78.832mm,101.508mm) from Top Layer to Bottom Layer And Pad U1-18(80.257mm,102.108mm) on Top Layer 
-   Violation between Un-Routed Net Constraint: Net GND Between Pad U1-4(76.207mm,102.108mm) on Top Layer And Via (77.632mm,102.708mm) from Top Layer to Bottom Layer 
-Rule Violations :239
+   Violation between Un-Routed Net Constraint: Net D0 Between Pad ACE1-1(69.35mm,96.27mm) on Multi-Layer And Pad R22-2(71.75mm,96.39mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net D1 Between Pad ACE1-2(69.35mm,98.81mm) on Multi-Layer And Pad R23-2(71.875mm,99.365mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net S1 Between Pad ACE1-3(69.35mm,101.35mm) on Multi-Layer And Pad Q1-2(71.9mm,53.8mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_1 Between Pad R4-1(79.35mm,89.715mm) on Top Layer And Pad IS1-1(80.65mm,91.175mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED27-5(65.52mm,87.791mm) on Bottom Layer And Pad IS1-17(83.45mm,95.025mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad IS1-17(83.45mm,95.025mm) on Top Layer And Pad LED28-5(89.777mm,81.451mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad IS1-17(83.45mm,95.025mm) on Top Layer And Pad LED29-5(103.412mm,102.746mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad IS1-17(83.45mm,95.025mm) on Top Layer And Pad LED30-1(86.275mm,122.283mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED22-5(63.056mm,91.504mm) on Bottom Layer And Pad IS1-18(83.05mm,95.025mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad IS1-18(83.05mm,95.025mm) on Top Layer And Pad LED23-5(85.5mm,80.292mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad IS1-18(83.05mm,95.025mm) on Top Layer And Pad LED24-5(102.849mm,95.989mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED17-3(61.716mm,94.833mm) on Bottom Layer And Pad IS1-19(82.65mm,95.025mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad IS1-19(82.65mm,95.025mm) on Top Layer And Pad LED18-1(82.95mm,80mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad IS1-19(82.65mm,95.025mm) on Top Layer And Pad LED19-1(102.012mm,93.914mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_2 Between Pad R13-1(80.125mm,89.715mm) on Top Layer And Pad IS1-2(81.05mm,91.175mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED12-1(60.876mm,98.289mm) on Bottom Layer And Pad IS1-20(82.25mm,95.025mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED13-1(78.475mm,80.267mm) on Bottom Layer And Pad IS1-20(82.25mm,95.025mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad IS1-20(82.25mm,95.025mm) on Top Layer And Pad LED14-1(100.044mm,90.154mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED7-1(60.713mm,102.646mm) on Bottom Layer And Pad IS1-21(81.85mm,95.025mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED8-1(74.148mm,81.501mm) on Bottom Layer And Pad IS1-21(81.85mm,95.025mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad IS1-21(81.85mm,95.025mm) on Top Layer And Pad LED9-1(97.755mm,86.891mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED1-1(81.15mm,122.7mm) on Bottom Layer And Pad IS1-22(81.45mm,95.025mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED3-1(70.185mm,83.579mm) on Bottom Layer And Pad IS1-22(81.45mm,95.025mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net +5 Between Pad R17-2(77.125mm,56.44mm) on Top Layer And Pad IS1-23(81.05mm,95.025mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net +5 Between Pad IS1-23(81.05mm,95.025mm) on Top Layer And Pad U1-3(83.164mm,99.6mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad R1-2(80mm,96.965mm) on Top Layer And Pad IS1-24(80.65mm,95.025mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Track (79.044mm,93.291mm)(80.117mm,93.291mm) on Top Layer And Pad IS1-24(80.65mm,95.025mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_25 Between Pad R1-1(80mm,96.085mm) on Top Layer And Pad IS1-25(80.125mm,94.5mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_3 Between Pad R5-1(80.9mm,89.715mm) on Top Layer And Pad IS1-3(81.45mm,91.175mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_4 Between Pad R6-1(81.675mm,89.715mm) on Top Layer And Pad IS1-4(81.85mm,91.175mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_5 Between Pad IS1-5(82.25mm,91.175mm) on Top Layer And Pad R14-1(82.45mm,89.715mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_6 Between Pad IS1-6(82.65mm,91.175mm) on Top Layer And Pad R7-1(83.225mm,89.715mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_7 Between Pad IS1-7(83.05mm,91.175mm) on Top Layer And Pad R8-1(84mm,89.715mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_8 Between Pad IS1-8(83.45mm,91.175mm) on Top Layer And Pad R15-1(84.775mm,89.715mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED10-1(100.544mm,112.204mm) on Bottom Layer And Pad LED10-3(100.994mm,111.425mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED6-5(78.475mm,122.408mm) on Bottom Layer And Pad LED10-1(100.544mm,112.204mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED5_2 Between Pad LED15-2(96.07mm,113.691mm) on Bottom Layer And Pad LED10-2(98.206mm,110.854mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED5_2 Between Pad LED10-2(98.206mm,110.854mm) on Bottom Layer And Pad LED5-2(99.663mm,107.639mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED10-3(100.994mm,111.425mm) on Bottom Layer And Pad LED10-5(101.444mm,110.646mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED5_4 Between Pad LED15-4(96.672mm,113.022mm) on Bottom Layer And Pad LED10-4(98.656mm,110.075mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED5_4 Between Pad LED10-4(98.656mm,110.075mm) on Bottom Layer And Pad LED5-4(99.941mm,106.783mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED9-1(97.755mm,86.891mm) on Bottom Layer And Pad LED10-5(101.444mm,110.646mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED5_6 Between Pad LED15-6(97.274mm,112.353mm) on Bottom Layer And Pad LED10-6(99.106mm,109.296mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED5_6 Between Pad LED10-6(99.106mm,109.296mm) on Bottom Layer And Pad LED5-6(100.219mm,105.927mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED1-1(81.15mm,122.7mm) on Bottom Layer And Pad LED1-3(82.05mm,122.7mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED11-1(72.529mm,120.467mm) on Bottom Layer And Pad LED11-3(73.351mm,120.833mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED1_2 Between Pad LED16-2(70.34mm,115.879mm) on Bottom Layer And Pad LED11-2(73.627mm,118.001mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED1_2 Between Pad LED11-2(73.627mm,118.001mm) on Bottom Layer And Pad LED6-2(77.275mm,119.392mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED11-3(73.351mm,120.833mm) on Bottom Layer And Pad LED11-5(74.173mm,121.199mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED1_4 Between Pad LED16-4(71.069mm,116.408mm) on Bottom Layer And Pad LED11-4(74.449mm,118.367mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED1_4 Between Pad LED11-4(74.449mm,118.367mm) on Bottom Layer And Pad LED6-4(78.156mm,119.58mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED11-5(74.173mm,121.199mm) on Bottom Layer And Pad LED15-1(98.076mm,115.497mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED1_6 Between Pad LED16-6(71.797mm,116.937mm) on Bottom Layer And Pad LED11-6(75.271mm,118.733mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED1_6 Between Pad LED11-6(75.271mm,118.733mm) on Bottom Layer And Pad LED6-6(79.036mm,119.767mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED1_6 Between Pad LED11-6(75.271mm,118.733mm) on Bottom Layer And Pad R2-2(77.66mm,92.35mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED1_2 Between Pad LED6-2(77.275mm,119.392mm) on Bottom Layer And Pad LED1-2(81.15mm,120mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED12-3(60.782mm,99.184mm) on Bottom Layer And Pad LED12-1(60.876mm,98.289mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED2_2 Between Pad LED12-2(63.562mm,98.571mm) on Bottom Layer And Pad LED17-2(64.562mm,94.811mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED2_2 Between Pad LED7-2(63.399mm,102.364mm) on Bottom Layer And Pad LED12-2(63.562mm,98.571mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED12-5(60.688mm,100.079mm) on Bottom Layer And Pad LED12-3(60.782mm,99.184mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED2_4 Between Pad LED12-4(63.468mm,99.466mm) on Bottom Layer And Pad LED17-4(64.284mm,95.667mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED2_4 Between Pad LED12-4(63.468mm,99.466mm) on Bottom Layer And Pad LED7-4(63.493mm,103.259mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED2_6 Between Pad LED12-6(63.374mm,100.361mm) on Bottom Layer And Pad LED17-6(64.006mm,96.523mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED2_6 Between Pad LED12-6(63.374mm,100.361mm) on Bottom Layer And Pad LED7-6(63.587mm,104.154mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED1-3(82.05mm,122.7mm) on Bottom Layer And Pad LED1-5(82.95mm,122.7mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED13-3(77.594mm,80.454mm) on Bottom Layer And Pad LED13-1(78.475mm,80.267mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED13-5(76.714mm,80.642mm) on Bottom Layer And Pad LED13-3(77.594mm,80.454mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED3_6 Between Pad LED13-6(77.275mm,83.283mm) on Bottom Layer And Pad LED18-6(81.15mm,82.7mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED1_4 Between Pad LED6-4(78.156mm,119.58mm) on Bottom Layer And Pad LED1-4(82.05mm,120mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED14-3(99.594mm,89.375mm) on Bottom Layer And Pad LED14-1(100.044mm,90.154mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED15-5(99.28mm,114.159mm) on Bottom Layer And Pad LED14-1(100.044mm,90.154mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED4_2 Between Pad LED14-2(97.706mm,91.504mm) on Bottom Layer And Pad LED19-2(99.444mm,94.748mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED4_2 Between Pad LED9-2(95.749mm,88.697mm) on Bottom Layer And Pad LED14-2(97.706mm,91.504mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED4_2 Between Pad R9-2(86.315mm,91.25mm) on Top Layer And Pad LED14-2(97.706mm,91.504mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED14-5(99.144mm,88.596mm) on Bottom Layer And Pad LED14-3(99.594mm,89.375mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED4_4 Between Pad LED14-4(97.256mm,90.725mm) on Bottom Layer And Pad LED19-4(99.166mm,93.892mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED4_4 Between Pad LED9-4(95.147mm,88.028mm) on Bottom Layer And Pad LED14-4(97.256mm,90.725mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED4_6 Between Pad LED14-6(96.806mm,89.946mm) on Bottom Layer And Pad LED19-6(98.888mm,93.036mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED4_6 Between Pad LED9-6(94.545mm,87.359mm) on Bottom Layer And Pad LED14-6(96.806mm,89.946mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED15-1(98.076mm,115.497mm) on Bottom Layer And Pad LED15-3(98.678mm,114.828mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED5_2 Between Pad LED20-2(93.353mm,116.162mm) on Bottom Layer And Pad LED15-2(96.07mm,113.691mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_20 Between Pad LED15-3(98.678mm,114.828mm) on Bottom Layer And Pad LED15-5(99.28mm,114.159mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED5_4 Between Pad LED20-4(94.081mm,115.633mm) on Bottom Layer And Pad LED15-4(96.672mm,113.022mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED5_6 Between Pad LED20-6(94.81mm,115.104mm) on Bottom Layer And Pad LED15-6(97.274mm,112.353mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED1_6 Between Pad LED6-6(79.036mm,119.767mm) on Bottom Layer And Pad LED1-6(82.95mm,120mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED16-1(68.753mm,118.063mm) on Bottom Layer And Pad LED16-3(69.481mm,118.592mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED1_2 Between Pad LED21-2(67.576mm,113.128mm) on Bottom Layer And Pad LED16-2(70.34mm,115.879mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED16-3(69.481mm,118.592mm) on Bottom Layer And Pad LED16-5(70.21mm,119.121mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED1_4 Between Pad LED21-4(68.178mm,113.797mm) on Bottom Layer And Pad LED16-4(71.069mm,116.408mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED16-5(70.21mm,119.121mm) on Bottom Layer And Pad LED20-1(94.94mm,118.346mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED1_6 Between Pad LED21-6(68.78mm,114.466mm) on Bottom Layer And Pad LED16-6(71.797mm,116.937mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED17-3(61.716mm,94.833mm) on Bottom Layer And Pad LED17-1(61.994mm,93.977mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED2_2 Between Pad LED17-2(64.562mm,94.811mm) on Bottom Layer And Pad LED22-2(66.294mm,91.296mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED17-5(61.438mm,95.689mm) on Bottom Layer And Pad LED17-3(61.716mm,94.833mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED2_4 Between Pad LED17-4(64.284mm,95.667mm) on Bottom Layer And Pad LED22-4(65.844mm,92.075mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED2_6 Between Pad LED17-6(64.006mm,96.523mm) on Bottom Layer And Pad LED22-6(65.394mm,92.854mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED18-3(82.05mm,80mm) on Bottom Layer And Pad LED18-1(82.95mm,80mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED3_2 Between Pad LED18-2(82.95mm,82.7mm) on Bottom Layer And Pad LED23-2(86.7mm,83.308mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED3_2 Between Pad LED18-2(82.95mm,82.7mm) on Bottom Layer And Pad R7-2(83.225mm,88.835mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED3_2 Between Track (78.71mm,83.239mm)(78.721mm,83.223mm) on Bottom Layer And Pad LED18-2(82.95mm,82.7mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED18-5(81.15mm,80mm) on Bottom Layer And Pad LED18-3(82.05mm,80mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED3_4 Between Pad LED18-4(82.05mm,82.7mm) on Bottom Layer And Pad LED23-4(85.819mm,83.12mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED3_4 Between Pad LED18-4(82.05mm,82.7mm) on Bottom Layer And Pad R14-2(82.45mm,88.835mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED3_6 Between Pad LED18-6(81.15mm,82.7mm) on Bottom Layer And Pad LED23-6(84.939mm,82.933mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED3_6 Between Pad LED18-6(81.15mm,82.7mm) on Bottom Layer And Pad R6-2(81.675mm,88.835mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED19-3(101.734mm,93.058mm) on Bottom Layer And Pad LED19-1(102.012mm,93.914mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED20-5(96.397mm,117.288mm) on Bottom Layer And Pad LED19-1(102.012mm,93.914mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED4_2 Between Pad LED19-2(99.444mm,94.748mm) on Bottom Layer And Pad LED24-2(100.351mm,98.061mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED19-5(101.456mm,92.202mm) on Bottom Layer And Pad LED19-3(101.734mm,93.058mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED4_4 Between Pad LED19-4(99.166mm,93.892mm) on Bottom Layer And Pad LED24-4(100.257mm,97.166mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED4_6 Between Pad LED19-6(98.888mm,93.036mm) on Bottom Layer And Pad LED24-6(100.163mm,96.271mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED20-1(94.94mm,118.346mm) on Bottom Layer And Pad LED20-3(95.669mm,117.817mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED5_2 Between Pad LED25-2(89.954mm,118.258mm) on Bottom Layer And Pad LED20-2(93.353mm,116.162mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_19 Between Pad LED20-3(95.669mm,117.817mm) on Bottom Layer And Pad LED20-5(96.397mm,117.288mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED5_4 Between Pad LED25-4(90.776mm,117.892mm) on Bottom Layer And Pad LED20-4(94.081mm,115.633mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED5_6 Between Pad LED25-6(91.598mm,117.526mm) on Bottom Layer And Pad LED20-6(94.81mm,115.104mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED2-1(61.438mm,107.061mm) on Bottom Layer And Pad LED2-3(61.716mm,107.917mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED2-1(61.438mm,107.061mm) on Bottom Layer And Pad LED3-5(68.728mm,84.637mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED21-1(65.57mm,114.934mm) on Bottom Layer And Pad LED21-3(66.172mm,115.603mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED22-5(63.056mm,91.504mm) on Bottom Layer And Pad LED21-1(65.57mm,114.934mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED1_2 Between Pad LED26-2(65.419mm,109.871mm) on Bottom Layer And Pad LED21-2(67.576mm,113.128mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED21-3(66.172mm,115.603mm) on Bottom Layer And Pad LED21-5(66.774mm,116.272mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED1_4 Between Pad LED26-4(65.869mm,110.65mm) on Bottom Layer And Pad LED21-4(68.178mm,113.797mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED21-5(66.774mm,116.272mm) on Bottom Layer And Pad LED25-1(91.052mm,120.724mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED1_6 Between Pad LED26-6(66.319mm,111.429mm) on Bottom Layer And Pad LED21-6(68.78mm,114.466mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED2_2 Between Pad LED7-2(63.399mm,102.364mm) on Bottom Layer And Pad LED2-2(64.006mm,106.227mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED22-3(63.506mm,90.725mm) on Bottom Layer And Pad LED22-1(63.956mm,89.946mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED2_2 Between Pad LED22-2(66.294mm,91.296mm) on Bottom Layer And Pad LED27-2(68.73mm,88.259mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED22-5(63.056mm,91.504mm) on Bottom Layer And Pad LED22-3(63.506mm,90.725mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED2_4 Between Pad LED22-4(65.844mm,92.075mm) on Bottom Layer And Pad LED27-4(68.128mm,88.928mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED2_6 Between Pad LED22-6(65.394mm,92.854mm) on Bottom Layer And Pad LED27-6(67.526mm,89.597mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED2-3(61.716mm,107.917mm) on Bottom Layer And Pad LED2-5(61.994mm,108.773mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED23-3(86.381mm,80.48mm) on Bottom Layer And Pad LED23-1(87.261mm,80.667mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED3_2 Between Pad LED23-2(86.7mm,83.308mm) on Bottom Layer And Pad LED28-2(90.323mm,84.649mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED23-5(85.5mm,80.292mm) on Bottom Layer And Pad LED23-3(86.381mm,80.48mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED3_4 Between Pad LED23-4(85.819mm,83.12mm) on Bottom Layer And Pad LED28-4(89.501mm,84.283mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED3_6 Between Pad LED23-6(84.939mm,82.933mm) on Bottom Layer And Pad LED28-6(88.679mm,83.917mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED2_4 Between Pad LED7-4(63.493mm,103.259mm) on Bottom Layer And Pad LED2-4(64.284mm,107.083mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED24-3(102.943mm,96.884mm) on Bottom Layer And Pad LED24-1(103.037mm,97.779mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED4_2 Between Pad LED24-2(100.351mm,98.061mm) on Bottom Layer And Pad LED29-2(100.538mm,104.254mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED24-5(102.849mm,95.989mm) on Bottom Layer And Pad LED24-3(102.943mm,96.884mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED4_4 Between Pad LED24-4(100.257mm,97.166mm) on Bottom Layer And Pad LED29-4(100.632mm,103.359mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED4_6 Between Pad LED24-6(100.163mm,96.271mm) on Bottom Layer And Pad LED29-6(100.726mm,102.464mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED25-1(91.052mm,120.724mm) on Bottom Layer And Pad LED25-3(91.874mm,120.358mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED5_2 Between Pad LED30-2(85.714mm,119.642mm) on Bottom Layer And Pad LED25-2(89.954mm,118.258mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_18 Between Pad LED25-3(91.874mm,120.358mm) on Bottom Layer And Pad LED25-5(92.696mm,119.992mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED5_4 Between Pad LED30-4(86.594mm,119.455mm) on Bottom Layer And Pad LED25-4(90.776mm,117.892mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED5_6 Between Pad LED30-6(87.475mm,119.267mm) on Bottom Layer And Pad LED25-6(91.598mm,117.526mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED2_6 Between Pad LED7-6(63.587mm,104.154mm) on Bottom Layer And Pad LED2-6(64.562mm,107.939mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED26-1(63.081mm,111.221mm) on Bottom Layer And Pad LED26-3(63.531mm,112mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED26-1(63.081mm,111.221mm) on Bottom Layer And Pad LED27-5(65.52mm,87.791mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED26-3(63.531mm,112mm) on Bottom Layer And Pad LED26-5(63.981mm,112.779mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED27-3(66.122mm,87.122mm) on Bottom Layer And Pad LED27-1(66.724mm,86.453mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED2_2 Between Pad LED27-2(68.73mm,88.259mm) on Bottom Layer And Pad R5-2(80.9mm,88.835mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED27-5(65.52mm,87.791mm) on Bottom Layer And Pad LED27-3(66.122mm,87.122mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED2_4 Between Pad LED27-4(68.128mm,88.928mm) on Bottom Layer And Pad R13-2(80.125mm,88.835mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED2_6 Between Pad LED27-6(67.526mm,89.597mm) on Bottom Layer And Pad R4-2(79.35mm,88.835mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED28-3(90.599mm,81.817mm) on Bottom Layer And Pad LED28-1(91.421mm,82.183mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED28-5(89.777mm,81.451mm) on Bottom Layer And Pad LED28-3(90.599mm,81.817mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED29-1(103.224mm,104.536mm) on Bottom Layer And Pad LED29-3(103.318mm,103.641mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED29-3(103.318mm,103.641mm) on Bottom Layer And Pad LED29-5(103.412mm,102.746mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED30-1(86.275mm,122.283mm) on Bottom Layer And Pad LED30-3(87.156mm,122.096mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED5_2 Between Pad LED30-2(85.714mm,119.642mm) on Bottom Layer And Pad R11-2(86.315mm,93.55mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_17 Between Pad LED30-3(87.156mm,122.096mm) on Bottom Layer And Pad LED30-5(88.036mm,121.908mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED5_4 Between Pad R16-2(86.315mm,92.775mm) on Top Layer And Pad LED30-4(86.594mm,119.455mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED3-3(69.456mm,84.108mm) on Bottom Layer And Pad LED3-1(70.185mm,83.579mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED3-1(70.185mm,83.579mm) on Bottom Layer And Pad LED4-5(93.29mm,83.079mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED3-5(68.728mm,84.637mm) on Bottom Layer And Pad LED3-3(69.456mm,84.108mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED4-3(94.019mm,83.608mm) on Bottom Layer And Pad LED4-1(94.747mm,84.137mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED4-1(94.747mm,84.137mm) on Bottom Layer And Pad LED5-5(102.787mm,106.761mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED4_2 Between Pad LED4-2(93.16mm,86.321mm) on Bottom Layer And Pad LED9-2(95.749mm,88.697mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED4-5(93.29mm,83.079mm) on Bottom Layer And Pad LED4-3(94.019mm,83.608mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED4_4 Between Pad LED4-4(92.431mm,85.792mm) on Bottom Layer And Pad LED9-4(95.147mm,88.028mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED4_4 Between Pad R15-2(84.775mm,88.835mm) on Top Layer And Pad LED4-4(92.431mm,85.792mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED4_6 Between Pad LED4-6(91.703mm,85.263mm) on Bottom Layer And Pad LED9-6(94.545mm,87.359mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED4_6 Between Pad R8-2(84mm,88.835mm) on Top Layer And Pad LED4-6(91.703mm,85.263mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED5-1(102.231mm,108.473mm) on Bottom Layer And Pad LED5-3(102.509mm,107.617mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_22 Between Pad LED5-3(102.509mm,107.617mm) on Bottom Layer And Pad LED5-5(102.787mm,106.761mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED5_6 Between Pad R10-2(86.315mm,92.025mm) on Top Layer And Pad LED5-6(100.219mm,105.927mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED6-1(76.714mm,122.033mm) on Bottom Layer And Pad LED6-3(77.594mm,122.22mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED1_2 Between Pad LED6-2(77.275mm,119.392mm) on Bottom Layer And Pad R3-2(77.66mm,90.8mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED6-3(77.594mm,122.22mm) on Bottom Layer And Pad LED6-5(78.475mm,122.408mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetLED1_4 Between Pad R12-2(77.66mm,91.575mm) on Top Layer And Pad LED6-4(78.156mm,119.58mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED7-1(60.713mm,102.646mm) on Bottom Layer And Pad LED7-3(60.807mm,103.541mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED7-3(60.807mm,103.541mm) on Bottom Layer And Pad LED7-5(60.901mm,104.436mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED8-3(73.326mm,81.867mm) on Bottom Layer And Pad LED8-1(74.148mm,81.501mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED8-5(72.504mm,82.233mm) on Bottom Layer And Pad LED8-3(73.326mm,81.867mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED9-3(97.153mm,86.222mm) on Bottom Layer And Pad LED9-1(97.755mm,86.891mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net NetIS1_21 Between Pad LED9-5(96.551mm,85.553mm) on Bottom Layer And Pad LED9-3(97.153mm,86.222mm) on Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad P1-3(87.745mm,109.23mm) on Top Layer And Pad P1-1(87.745mm,110.5mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad P1-11(87.745mm,104.15mm) on Top Layer And Pad P1-9(87.745mm,105.42mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad P1-11(87.745mm,104.15mm) on Top Layer And Pad R20-1(88.525mm,100.135mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad P1-5(87.745mm,107.96mm) on Top Layer And Pad P1-3(87.745mm,109.23mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad P1-7(87.745mm,106.69mm) on Top Layer And Pad P1-5(87.745mm,107.96mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net SCK Between Track (77.881mm,107.416mm)(81.565mm,103.732mm) on Top Layer And Pad P1-6(91.555mm,107.96mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad P1-9(87.745mm,105.42mm) on Top Layer And Pad P1-7(87.745mm,106.69mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad P2-11(72.52mm,103.875mm) on Top Layer And Pad R24-1(73.525mm,100.21mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Track (72.517mm,105.156mm)(72.517mm,105.156mm) on Top Layer And Pad P2-11(72.52mm,103.875mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net EN Between Pad Q1-1(71.9mm,55.7mm) on Top Layer And Pad R17-1(77.125mm,55.56mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net +5 Between Pad Q1-3(74mm,54.75mm) on Top Layer And Pad R17-2(77.125mm,56.44mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad R1-2(80mm,96.965mm) on Top Layer And Via (82.05mm,100.501mm) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net EN Between Pad R17-1(77.125mm,55.56mm) on Top Layer And Pad U1-1(82.527mm,98.964mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad R21-1(90.175mm,100.135mm) on Top Layer And Pad R18-1(91.05mm,100.135mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net D4 Between Via (85.852mm,103.378mm) from Top Layer to Bottom Layer And Pad R18-2(91.05mm,101.015mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad R20-1(88.525mm,100.135mm) on Top Layer And Pad R19-1(89.275mm,100.135mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad R19-1(89.275mm,100.135mm) on Top Layer And Pad R21-1(90.175mm,100.135mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net D5 Between Via (86.233mm,102.87mm) from Top Layer to Bottom Layer And Pad R19-2(89.275mm,101.015mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Track (82.042mm,101.346mm)(83.474mm,99.914mm) on Top Layer And Pad R20-1(88.525mm,100.135mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net D6 Between Via (86.614mm,102.362mm) from Top Layer to Bottom Layer And Pad R20-2(88.525mm,101.015mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net D7 Between Via (86.995mm,101.854mm) from Top Layer to Bottom Layer And Pad R21-2(90.175mm,101.015mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad R22-1(71.75mm,95.51mm) on Top Layer And Pad R23-1(71.875mm,98.485mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad R23-1(71.875mm,98.485mm) on Top Layer And Pad R24-1(73.525mm,100.21mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad R24-1(73.525mm,100.21mm) on Top Layer And Pad R25-1(74.925mm,99.885mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net D2 Between Pad R24-2(73.525mm,101.09mm) on Top Layer And Via (78.09mm,102.796mm) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Pad R25-1(74.925mm,99.885mm) on Top Layer And Via (81.201mm,101.35mm) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net D3 Between Pad R25-2(74.925mm,100.765mm) on Top Layer And Via (78.526mm,103.266mm) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net +5 Between Pad U1-16(81.255mm,103.418mm) on Top Layer And Pad U1-3(83.164mm,99.6mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net R\E\S\E\T\ Between Via (77.978mm,105.156mm) from Top Layer to Bottom Layer And Pad U1-25(80.618mm,99.918mm) on Top Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (74.041mm,105.156mm) from Top Layer to Bottom Layer And Via (74.041mm,106.426mm) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (74.041mm,106.426mm) from Top Layer to Bottom Layer And Via (74.041mm,107.696mm) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (74.041mm,107.696mm) from Top Layer to Bottom Layer And Via (74.041mm,108.966mm) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (74.041mm,108.966mm) from Top Layer to Bottom Layer And Via (74.041mm,110.236mm) from Top Layer to Bottom Layer 
+   Violation between Un-Routed Net Constraint: Net GND Between Via (78.486mm,93.849mm) from Top Layer to Bottom Layer And Via (84.582mm,90.678mm) from Top Layer to Bottom Layer 
+Rule Violations :223
 
 Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
 Rule Violations :0
@@ -276,81 +262,238 @@ Processing Rule : Minimum Solder Mask Sliver (Gap=0mm) (All),(All)
 Rule Violations :0
 
 Processing Rule : Silk To Solder Mask (Clearance=0.102mm) (IsPad),(All)
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED11-1(72.888mm,51.87mm) on Bottom Layer And Text "LED10" (76.708mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED11-3(71.988mm,51.87mm) on Bottom Layer And Text "LED10" (76.708mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED11-3(71.988mm,51.87mm) on Bottom Layer And Text "LED16" (71.907mm,51.232mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED11-5(71.088mm,51.87mm) on Bottom Layer And Text "LED10" (76.708mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED11-5(71.088mm,51.87mm) on Bottom Layer And Text "LED16" (71.907mm,51.232mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED12-1(69.58mm,51.87mm) on Bottom Layer And Text "LED10" (76.708mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED12-1(69.58mm,51.87mm) on Bottom Layer And Text "LED16" (71.907mm,51.232mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED12-3(68.68mm,51.87mm) on Bottom Layer And Text "LED16" (71.907mm,51.232mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED12-5(67.78mm,51.87mm) on Bottom Layer And Text "LED16" (71.907mm,51.232mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.068mm < 0.102mm) Between Pad LED12-5(67.78mm,51.87mm) on Bottom Layer And Text "LED29" (67.335mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.068mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED13-1(79.504mm,51.87mm) on Bottom Layer And Text "LED17" (86.335mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED13-1(79.504mm,51.87mm) on Bottom Layer And Text "LED19" (81.509mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED13-3(78.604mm,51.87mm) on Bottom Layer And Text "LED19" (81.509mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED13-5(77.704mm,51.87mm) on Bottom Layer And Text "LED19" (81.509mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED14-1(76.196mm,51.87mm) on Bottom Layer And Text "LED10" (76.708mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED14-1(76.196mm,51.87mm) on Bottom Layer And Text "LED19" (81.509mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED14-3(75.296mm,51.87mm) on Bottom Layer And Text "LED10" (76.708mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED14-3(75.296mm,51.87mm) on Bottom Layer And Text "LED19" (81.509mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED14-5(74.396mm,51.87mm) on Bottom Layer And Text "LED10" (76.708mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED14-5(74.396mm,51.87mm) on Bottom Layer And Text "LED19" (81.509mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED15-1(38.485mm,51.465mm) on Bottom Layer And Text "LED8" (41.758mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED15-3(37.585mm,51.465mm) on Bottom Layer And Text "LED8" (41.758mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED15-5(36.685mm,51.465mm) on Bottom Layer And Text "LED8" (41.758mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED22-1(86.12mm,51.87mm) on Bottom Layer And Text "LED17" (86.335mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED22-3(85.22mm,51.87mm) on Bottom Layer And Text "LED17" (86.335mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED22-5(84.32mm,51.87mm) on Bottom Layer And Text "LED17" (86.335mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED23-1(53.605mm,51.629mm) on Bottom Layer And Text "LED20" (57.709mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED23-3(52.705mm,51.629mm) on Bottom Layer And Text "LED20" (57.709mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED23-3(52.705mm,51.629mm) on Bottom Layer And Text "LED28" (52.908mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED23-5(51.805mm,51.629mm) on Bottom Layer And Text "LED20" (57.709mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED23-5(51.805mm,51.629mm) on Bottom Layer And Text "LED28" (52.908mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED24-1(43.546mm,51.491mm) on Bottom Layer And Text "LED9" (46.584mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED24-3(42.646mm,51.491mm) on Bottom Layer And Text "LED9" (46.584mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED24-5(41.746mm,51.491mm) on Bottom Layer And Text "LED8" (41.758mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED24-5(41.746mm,51.491mm) on Bottom Layer And Text "LED9" (46.584mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED26-1(58.488mm,51.743mm) on Bottom Layer And Text "LED30" (62.535mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED26-3(57.588mm,51.743mm) on Bottom Layer And Text "LED20" (57.709mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED26-3(57.588mm,51.743mm) on Bottom Layer And Text "LED30" (62.535mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED26-5(56.688mm,51.743mm) on Bottom Layer And Text "LED20" (57.709mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED26-5(56.688mm,51.743mm) on Bottom Layer And Text "LED30" (62.535mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED27-1(48.741mm,51.55mm) on Bottom Layer And Text "LED28" (52.908mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED27-3(47.841mm,51.55mm) on Bottom Layer And Text "LED28" (52.908mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED27-5(46.941mm,51.55mm) on Bottom Layer And Text "LED28" (52.908mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED27-5(46.941mm,51.55mm) on Bottom Layer And Text "LED9" (46.584mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED5-1(82.812mm,51.87mm) on Bottom Layer And Text "LED17" (86.335mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED5-3(81.912mm,51.87mm) on Bottom Layer And Text "LED17" (86.335mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.027mm < 0.102mm) Between Pad LED5-3(81.912mm,51.87mm) on Bottom Layer And Text "LED19" (81.509mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.027mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED5-5(81.012mm,51.87mm) on Bottom Layer And Text "LED17" (86.335mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED5-5(81.012mm,51.87mm) on Bottom Layer And Text "LED19" (81.509mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED6-1(62.964mm,51.87mm) on Bottom Layer And Text "LED29" (67.335mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (0.053mm < 0.102mm) Between Pad LED6-1(62.964mm,51.87mm) on Bottom Layer And Text "LED30" (62.535mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.053mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED6-3(62.064mm,51.87mm) on Bottom Layer And Text "LED29" (67.335mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED6-3(62.064mm,51.87mm) on Bottom Layer And Text "LED30" (62.535mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED6-5(61.164mm,51.87mm) on Bottom Layer And Text "LED29" (67.335mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED6-5(61.164mm,51.87mm) on Bottom Layer And Text "LED30" (62.535mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED7-1(66.272mm,51.87mm) on Bottom Layer And Text "LED16" (71.907mm,51.232mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED7-1(66.272mm,51.87mm) on Bottom Layer And Text "LED29" (67.335mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED7-3(65.372mm,51.87mm) on Bottom Layer And Text "LED16" (71.907mm,51.232mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED7-3(65.372mm,51.87mm) on Bottom Layer And Text "LED29" (67.335mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED7-5(64.472mm,51.87mm) on Bottom Layer And Text "LED29" (67.335mm,51.257mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R1-1(88.142mm,76.204mm) on Top Layer And Text "Q1" (85.966mm,75.044mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R1-2(90.242mm,76.204mm) on Top Layer And Text "TP1" (89.802mm,74.536mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R2-1(92.153mm,76.204mm) on Top Layer And Text "TP1" (89.802mm,74.536mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R6-2(86.231mm,76.204mm) on Top Layer And Text "Q1" (85.966mm,75.044mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
-Rule Violations :64
+   Violation between Silk To Solder Mask Clearance Constraint: (0.065mm < 0.102mm) Between Arc (80mm,90.25mm) on Top Overlay And Pad R13-1(80.125mm,89.715mm) on Top Layer [Top Overlay] to [Top Solder] clearance [0.065mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad ACE1-(74.43mm,112.78mm) on Multi-Layer And Text "P2" (71.504mm,111.444mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.055mm < 0.102mm) Between Pad ACE1-(89.67mm,112.78mm) on Multi-Layer And Text "P1" (86.729mm,111.719mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.055mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.048mm < 0.102mm) Between Pad ACE1-(89.67mm,89.92mm) on Multi-Layer And Text "LED4" (95.333mm,88.002mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.048mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.021mm < 0.102mm) Between Pad ACE1-10(94.75mm,96.27mm) on Multi-Layer And Text "LED19" (102.634mm,96.218mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.021mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.098mm < 0.102mm) Between Pad ACE1-3(69.35mm,101.35mm) on Multi-Layer And Text "LED2" (68.608mm,102.536mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.098mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad ACE1-4(69.35mm,103.89mm) on Multi-Layer And Text "LED2" (68.608mm,102.536mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad ACE1-5(69.35mm,106.43mm) on Multi-Layer And Text "LED2" (68.608mm,102.536mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad ACE1-7(94.75mm,103.89mm) on Multi-Layer And Text "R18" (90.91mm,102.163mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad ACE1-8(94.75mm,101.35mm) on Multi-Layer And Text "R18" (90.91mm,102.163mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-1(80.65mm,91.175mm) on Top Layer And Text "R13" (79.973mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-1(80.65mm,91.175mm) on Top Layer And Text "R4" (79.198mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-1(80.65mm,91.175mm) on Top Layer And Text "R5" (80.748mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-10(83.975mm,92.1mm) on Top Layer And Text "R13" (79.973mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-10(83.975mm,92.1mm) on Top Layer And Text "R14" (82.298mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-10(83.975mm,92.1mm) on Top Layer And Text "R6" (81.523mm,90.867mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-10(83.975mm,92.1mm) on Top Layer And Text "R7" (83.073mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-10(83.975mm,92.1mm) on Top Layer And Text "R8" (83.856mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-11(83.975mm,92.5mm) on Top Layer And Text "R13" (79.973mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-11(83.975mm,92.5mm) on Top Layer And Text "R14" (82.298mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-11(83.975mm,92.5mm) on Top Layer And Text "R6" (81.523mm,90.867mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.039mm < 0.102mm) Between Pad IS1-11(83.975mm,92.5mm) on Top Layer And Text "R7" (83.073mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.039mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-11(83.975mm,92.5mm) on Top Layer And Text "R8" (83.856mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-2(81.05mm,91.175mm) on Top Layer And Text "R13" (79.973mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-2(81.05mm,91.175mm) on Top Layer And Text "R4" (79.198mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-2(81.05mm,91.175mm) on Top Layer And Text "R5" (80.748mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.061mm < 0.102mm) Between Pad IS1-25(80.125mm,94.5mm) on Top Layer And Text "R12" (77.541mm,92.743mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.061mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-25(80.125mm,94.5mm) on Top Layer And Text "R2" (77.538mm,93.523mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-26(80.125mm,94.1mm) on Top Layer And Text "R12" (77.541mm,92.743mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-26(80.125mm,94.1mm) on Top Layer And Text "R2" (77.538mm,93.523mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.076mm < 0.102mm) Between Pad IS1-27(80.125mm,93.7mm) on Top Layer And Text "R12" (77.541mm,92.743mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.076mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.056mm < 0.102mm) Between Pad IS1-27(80.125mm,93.7mm) on Top Layer And Text "R2" (77.538mm,93.523mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.056mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-27(80.125mm,93.7mm) on Top Layer And Text "R3" (77.519mm,91.964mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-28(80.125mm,93.3mm) on Top Layer And Text "R2" (77.538mm,93.523mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-28(80.125mm,93.3mm) on Top Layer And Text "R3" (77.519mm,91.964mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-29(80.125mm,92.9mm) on Top Layer And Text "R12" (77.541mm,92.743mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-29(80.125mm,92.9mm) on Top Layer And Text "R3" (77.519mm,91.964mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-3(81.45mm,91.175mm) on Top Layer And Text "R13" (79.973mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-3(81.45mm,91.175mm) on Top Layer And Text "R4" (79.198mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-3(81.45mm,91.175mm) on Top Layer And Text "R5" (80.748mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-3(81.45mm,91.175mm) on Top Layer And Text "R6" (81.523mm,90.867mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.006mm < 0.102mm) Between Pad IS1-30(80.125mm,92.5mm) on Top Layer And Text "R12" (77.541mm,92.743mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.006mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-30(80.125mm,92.5mm) on Top Layer And Text "R13" (79.973mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-30(80.125mm,92.5mm) on Top Layer And Text "R3" (77.519mm,91.964mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.047mm < 0.102mm) Between Pad IS1-30(80.125mm,92.5mm) on Top Layer And Text "R4" (79.198mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.047mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-31(80.125mm,92.1mm) on Top Layer And Text "R13" (79.973mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-31(80.125mm,92.1mm) on Top Layer And Text "R3" (77.519mm,91.964mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-31(80.125mm,92.1mm) on Top Layer And Text "R4" (79.198mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-32(80.125mm,91.7mm) on Top Layer And Text "R13" (79.973mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.027mm < 0.102mm) Between Pad IS1-32(80.125mm,91.7mm) on Top Layer And Text "R3" (77.519mm,91.964mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.027mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-32(80.125mm,91.7mm) on Top Layer And Text "R4" (79.198mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-33(82.05mm,93.1mm) on Top Layer And Text "R12" (77.541mm,92.743mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-33(82.05mm,93.1mm) on Top Layer And Text "R13" (79.973mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-33(82.05mm,93.1mm) on Top Layer And Text "R14" (82.298mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-33(82.05mm,93.1mm) on Top Layer And Text "R4" (79.198mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-33(82.05mm,93.1mm) on Top Layer And Text "R5" (80.748mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-33(82.05mm,93.1mm) on Top Layer And Text "R6" (81.523mm,90.867mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-33(82.05mm,93.1mm) on Top Layer And Text "R7" (83.073mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-4(81.85mm,91.175mm) on Top Layer And Text "R13" (79.973mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-4(81.85mm,91.175mm) on Top Layer And Text "R4" (79.198mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-4(81.85mm,91.175mm) on Top Layer And Text "R5" (80.748mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-4(81.85mm,91.175mm) on Top Layer And Text "R6" (81.523mm,90.867mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.009mm < 0.102mm) Between Pad IS1-5(82.25mm,91.175mm) on Top Layer And Text "R13" (79.973mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.009mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-5(82.25mm,91.175mm) on Top Layer And Text "R14" (82.298mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-5(82.25mm,91.175mm) on Top Layer And Text "R5" (80.748mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-5(82.25mm,91.175mm) on Top Layer And Text "R6" (81.523mm,90.867mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-6(82.65mm,91.175mm) on Top Layer And Text "R13" (79.973mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-6(82.65mm,91.175mm) on Top Layer And Text "R14" (82.298mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-6(82.65mm,91.175mm) on Top Layer And Text "R5" (80.748mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-6(82.65mm,91.175mm) on Top Layer And Text "R6" (81.523mm,90.867mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-7(83.05mm,91.175mm) on Top Layer And Text "R13" (79.973mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-7(83.05mm,91.175mm) on Top Layer And Text "R14" (82.298mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-7(83.05mm,91.175mm) on Top Layer And Text "R5" (80.748mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-7(83.05mm,91.175mm) on Top Layer And Text "R6" (81.523mm,90.867mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-7(83.05mm,91.175mm) on Top Layer And Text "R7" (83.073mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-8(83.45mm,91.175mm) on Top Layer And Text "R13" (79.973mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-8(83.45mm,91.175mm) on Top Layer And Text "R14" (82.298mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-8(83.45mm,91.175mm) on Top Layer And Text "R5" (80.748mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-8(83.45mm,91.175mm) on Top Layer And Text "R6" (81.523mm,90.867mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-8(83.45mm,91.175mm) on Top Layer And Text "R7" (83.073mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-9(83.975mm,91.7mm) on Top Layer And Text "R13" (79.973mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-9(83.975mm,91.7mm) on Top Layer And Text "R14" (82.298mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-9(83.975mm,91.7mm) on Top Layer And Text "R6" (81.523mm,90.867mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-9(83.975mm,91.7mm) on Top Layer And Text "R7" (83.073mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad IS1-9(83.975mm,91.7mm) on Top Layer And Text "R8" (83.856mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.044mm < 0.102mm) Between Pad LED10-1(100.544mm,112.204mm) on Bottom Layer And Text "LED5" (103.435mm,109.943mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.044mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED10-2(98.206mm,110.854mm) on Bottom Layer And Text "LED5" (103.435mm,109.943mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED10-3(100.994mm,111.425mm) on Bottom Layer And Text "LED5" (103.435mm,109.943mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED10-4(98.656mm,110.075mm) on Bottom Layer And Text "LED5" (103.435mm,109.943mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED10-5(101.444mm,110.646mm) on Bottom Layer And Text "LED5" (103.435mm,109.943mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED10-6(99.106mm,109.296mm) on Bottom Layer And Text "LED5" (103.435mm,109.943mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED11-1(72.529mm,120.467mm) on Bottom Layer And Text "LED16" (72.409mm,120.802mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED12-1(60.876mm,98.289mm) on Bottom Layer And Text "LED17" (65.184mm,98.019mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED12-2(63.562mm,98.571mm) on Bottom Layer And Text "LED17" (65.184mm,98.019mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED12-3(60.782mm,99.184mm) on Bottom Layer And Text "LED17" (65.184mm,98.019mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED12-4(63.468mm,99.466mm) on Bottom Layer And Text "LED17" (65.184mm,98.019mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED14-2(97.706mm,91.504mm) on Bottom Layer And Text "LED9" (98.411mm,90.351mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED14-4(97.256mm,90.725mm) on Bottom Layer And Text "LED9" (98.411mm,90.351mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED14-6(96.806mm,89.946mm) on Bottom Layer And Text "LED9" (98.411mm,90.351mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED15-1(98.076mm,115.497mm) on Bottom Layer And Text "LED10" (102.111mm,113.773mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED15-2(96.07mm,113.691mm) on Bottom Layer And Text "LED10" (102.111mm,113.773mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED15-3(98.678mm,114.828mm) on Bottom Layer And Text "LED10" (102.111mm,113.773mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED15-4(96.672mm,113.022mm) on Bottom Layer And Text "LED10" (102.111mm,113.773mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED15-5(99.28mm,114.159mm) on Bottom Layer And Text "LED10" (102.111mm,113.773mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED16-1(68.753mm,118.063mm) on Bottom Layer And Text "LED21" (69.436mm,117.926mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED16-2(70.34mm,115.879mm) on Bottom Layer And Text "ACE1" (73.389mm,114.812mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED16-3(69.481mm,118.592mm) on Bottom Layer And Text "LED21" (69.436mm,117.926mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED16-4(71.069mm,116.408mm) on Bottom Layer And Text "ACE1" (73.389mm,114.812mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.057mm < 0.102mm) Between Pad LED16-5(70.21mm,119.121mm) on Bottom Layer And Text "LED21" (69.436mm,117.926mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.057mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.073mm < 0.102mm) Between Pad LED16-6(71.797mm,116.937mm) on Bottom Layer And Text "ACE1" (73.389mm,114.812mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.073mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED19-2(99.444mm,94.748mm) on Bottom Layer And Text "LED14" (100.711mm,93.073mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED19-4(99.166mm,93.892mm) on Bottom Layer And Text "LED14" (100.711mm,93.073mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED19-6(98.888mm,93.036mm) on Bottom Layer And Text "LED14" (100.711mm,93.073mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED20-1(94.94mm,118.346mm) on Bottom Layer And Text "LED15" (99.936mm,117.151mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED20-3(95.669mm,117.817mm) on Bottom Layer And Text "LED15" (99.936mm,117.151mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED20-5(96.397mm,117.288mm) on Bottom Layer And Text "LED15" (99.936mm,117.151mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.02mm < 0.102mm) Between Pad LED20-6(94.81mm,115.104mm) on Bottom Layer And Text "LED10" (102.111mm,113.773mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.02mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED2-1(61.438mm,107.061mm) on Bottom Layer And Text "LED7" (64.157mm,105.788mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED21-1(65.57mm,114.934mm) on Bottom Layer And Text "LED26" (66.986mm,114.373mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED21-3(66.172mm,115.603mm) on Bottom Layer And Text "LED26" (66.986mm,114.373mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED21-5(66.774mm,116.272mm) on Bottom Layer And Text "LED26" (66.986mm,114.373mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED21-6(68.78mm,114.466mm) on Bottom Layer And Text "ACE1" (73.389mm,114.812mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED2-2(64.006mm,106.227mm) on Bottom Layer And Text "LED7" (64.157mm,105.788mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.025mm < 0.102mm) Between Pad LED2-3(61.716mm,107.917mm) on Bottom Layer And Text "LED7" (64.157mm,105.788mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.025mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.075mm < 0.102mm) Between Pad LED23-2(86.7mm,83.308mm) on Bottom Layer And Text "LED18" (87.743mm,84.246mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.075mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED2-4(64.284mm,107.083mm) on Bottom Layer And Text "LED7" (64.157mm,105.788mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.081mm < 0.102mm) Between Pad LED24-1(103.037mm,97.779mm) on Bottom Layer And Text "LED19" (102.634mm,96.218mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.081mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED24-2(100.351mm,98.061mm) on Bottom Layer And Text "LED19" (102.634mm,96.218mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED24-3(102.943mm,96.884mm) on Bottom Layer And Text "LED19" (102.634mm,96.218mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED24-4(100.257mm,97.166mm) on Bottom Layer And Text "LED19" (102.634mm,96.218mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED24-5(102.849mm,95.989mm) on Bottom Layer And Text "LED19" (102.634mm,96.218mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED24-6(100.163mm,96.271mm) on Bottom Layer And Text "LED19" (102.634mm,96.218mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED25-1(91.052mm,120.724mm) on Bottom Layer And Text "LED20" (97.009mm,120.027mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED25-3(91.874mm,120.358mm) on Bottom Layer And Text "LED20" (97.009mm,120.027mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED25-5(92.696mm,119.992mm) on Bottom Layer And Text "LED20" (97.009mm,120.027mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED27-2(68.73mm,88.259mm) on Bottom Layer And Text "LED3" (72.358mm,88.502mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED27-4(68.128mm,88.928mm) on Bottom Layer And Text "LED3" (72.358mm,88.502mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED27-6(67.526mm,89.597mm) on Bottom Layer And Text "LED3" (72.358mm,88.502mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED30-1(86.275mm,122.283mm) on Bottom Layer And Text "LED25" (93.23mm,122.402mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED30-3(87.156mm,122.096mm) on Bottom Layer And Text "LED25" (93.23mm,122.402mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED30-5(88.036mm,121.908mm) on Bottom Layer And Text "LED25" (93.23mm,122.402mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.057mm < 0.102mm) Between Pad LED3-2(71.772mm,85.763mm) on Bottom Layer And Text "LED13" (79.424mm,84.899mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.057mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED3-2(71.772mm,85.763mm) on Bottom Layer And Text "LED8" (75.755mm,86.377mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED3-4(71.044mm,86.292mm) on Bottom Layer And Text "LED8" (75.755mm,86.377mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED3-6(70.315mm,86.821mm) on Bottom Layer And Text "LED8" (75.755mm,86.377mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED4-4(92.431mm,85.792mm) on Bottom Layer And Text "LED28" (91.93mm,86.327mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED5-2(99.663mm,107.639mm) on Bottom Layer And Text "LED29" (103.982mm,105.862mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED5-3(102.509mm,107.617mm) on Bottom Layer And Text "LED29" (103.982mm,105.862mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED5-4(99.941mm,106.783mm) on Bottom Layer And Text "LED29" (103.982mm,105.862mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED5-5(102.787mm,106.761mm) on Bottom Layer And Text "LED29" (103.982mm,105.862mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED5-6(100.219mm,105.927mm) on Bottom Layer And Text "LED29" (103.982mm,105.862mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED8-4(74.424mm,84.333mm) on Bottom Layer And Text "LED13" (79.424mm,84.899mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED8-6(73.602mm,84.699mm) on Bottom Layer And Text "LED13" (79.424mm,84.899mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED9-2(95.749mm,88.697mm) on Bottom Layer And Text "LED4" (95.333mm,88.002mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED9-4(95.147mm,88.028mm) on Bottom Layer And Text "LED4" (95.333mm,88.002mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad LED9-6(94.545mm,87.359mm) on Bottom Layer And Text "LED4" (95.333mm,88.002mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.081mm < 0.102mm) Between Pad P1-11(87.745mm,104.15mm) on Top Layer And Text "R19" (89.135mm,102.163mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.081mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad P1-11(87.745mm,104.15mm) on Top Layer And Text "R20" (88.385mm,102.163mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad P1-12(91.555mm,104.15mm) on Top Layer And Text "R18" (90.91mm,102.163mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad P1-12(91.555mm,104.15mm) on Top Layer And Text "R19" (89.135mm,102.163mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad P1-12(91.555mm,104.15mm) on Top Layer And Text "R20" (88.385mm,102.163mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad P1-12(91.555mm,104.15mm) on Top Layer And Text "R21" (90.035mm,102.163mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad P2-11(72.52mm,103.875mm) on Top Layer And Text "R24" (73.385mm,102.238mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad P2-12(76.33mm,103.875mm) on Top Layer And Text "R24" (73.385mm,102.238mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad P2-12(76.33mm,103.875mm) on Top Layer And Text "R25" (74.773mm,101.917mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R10-1(85.435mm,92.025mm) on Top Layer And Text "R14" (82.298mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R10-1(85.435mm,92.025mm) on Top Layer And Text "R15" (84.623mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R10-1(85.435mm,92.025mm) on Top Layer And Text "R7" (83.073mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R10-1(85.435mm,92.025mm) on Top Layer And Text "R8" (83.856mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.023mm < 0.102mm) Between Pad R10-1(85.435mm,92.025mm) on Top Layer And Text "R9" (85.294mm,92.418mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.023mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.03mm < 0.102mm) Between Pad R10-2(86.315mm,92.025mm) on Top Layer And Text "R14" (82.298mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.03mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R10-2(86.315mm,92.025mm) on Top Layer And Text "R15" (84.623mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R10-2(86.315mm,92.025mm) on Top Layer And Text "R8" (83.856mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.088mm < 0.102mm) Between Pad R10-2(86.315mm,92.025mm) on Top Layer And Text "R9" (85.294mm,92.418mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.088mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R1-1(80mm,96.085mm) on Top Layer And Text "IS1" (79.934mm,96.227mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R11-1(85.435mm,93.55mm) on Top Layer And Text "R10" (85.298mm,93.193mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.025mm < 0.102mm) Between Pad R11-1(85.435mm,93.55mm) on Top Layer And Text "R16" (85.298mm,93.943mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.025mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R11-1(85.435mm,93.55mm) on Top Layer And Text "R9" (85.294mm,92.418mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R11-2(86.315mm,93.55mm) on Top Layer And Text "R10" (85.298mm,93.193mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.091mm < 0.102mm) Between Pad R11-2(86.315mm,93.55mm) on Top Layer And Text "R16" (85.298mm,93.943mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.091mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R11-2(86.315mm,93.55mm) on Top Layer And Text "R9" (85.294mm,92.418mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R1-2(80mm,96.965mm) on Top Layer And Text "IS1" (79.934mm,96.227mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.086mm < 0.102mm) Between Pad R12-1(78.54mm,91.575mm) on Top Layer And Text "R3" (77.519mm,91.964mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.086mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.02mm < 0.102mm) Between Pad R12-2(77.66mm,91.575mm) on Top Layer And Text "R3" (77.519mm,91.964mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.02mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.048mm < 0.102mm) Between Pad R16-1(85.435mm,92.775mm) on Top Layer And Text "R10" (85.298mm,93.193mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.048mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.018mm < 0.102mm) Between Pad R16-1(85.435mm,92.775mm) on Top Layer And Text "R15" (84.623mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.018mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.003mm < 0.102mm) Between Pad R16-1(85.435mm,92.775mm) on Top Layer And Text "R7" (83.073mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.003mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.012mm < 0.102mm) Between Pad R16-1(85.435mm,92.775mm) on Top Layer And Text "R8" (83.856mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.012mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R16-1(85.435mm,92.775mm) on Top Layer And Text "R9" (85.294mm,92.418mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.098mm < 0.102mm) Between Pad R16-2(86.315mm,92.775mm) on Top Layer And Text "R10" (85.298mm,93.193mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.098mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R16-2(86.315mm,92.775mm) on Top Layer And Text "R15" (84.623mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.018mm < 0.102mm) Between Pad R16-2(86.315mm,92.775mm) on Top Layer And Text "R8" (83.856mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.018mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R16-2(86.315mm,92.775mm) on Top Layer And Text "R9" (85.294mm,92.418mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.094mm < 0.102mm) Between Pad R2-1(78.54mm,92.35mm) on Top Layer And Text "R12" (77.541mm,92.743mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.094mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R2-1(78.54mm,92.35mm) on Top Layer And Text "R3" (77.519mm,91.964mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.034mm < 0.102mm) Between Pad R2-2(77.66mm,92.35mm) on Top Layer And Text "R12" (77.541mm,92.743mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.034mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R2-2(77.66mm,92.35mm) on Top Layer And Text "R3" (77.519mm,91.964mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R23-1(71.875mm,98.485mm) on Top Layer And Text "R22" (71.61mm,97.538mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R23-2(71.875mm,99.365mm) on Top Layer And Text "R22" (71.61mm,97.538mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R24-1(73.525mm,100.21mm) on Top Layer And Text "R23" (71.735mm,100.512mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.085mm < 0.102mm) Between Pad R24-2(73.525mm,101.09mm) on Top Layer And Text "R23" (71.735mm,100.512mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.085mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R25-2(74.925mm,100.765mm) on Top Layer And Text "R23" (71.735mm,100.512mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R9-1(85.435mm,91.25mm) on Top Layer And Text "R14" (82.298mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R9-1(85.435mm,91.25mm) on Top Layer And Text "R15" (84.623mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (0.035mm < 0.102mm) Between Pad R9-1(85.435mm,91.25mm) on Top Layer And Text "R7" (83.073mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.035mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R9-1(85.435mm,91.25mm) on Top Layer And Text "R8" (83.856mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R9-2(86.315mm,91.25mm) on Top Layer And Text "R14" (82.298mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R9-2(86.315mm,91.25mm) on Top Layer And Text "R15" (84.623mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad R9-2(86.315mm,91.25mm) on Top Layer And Text "R8" (83.856mm,90.85mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad U1-25(80.618mm,99.918mm) on Top Layer And Text "R1" (79.848mm,98.1mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad U1-26(80.936mm,99.6mm) on Top Layer And Text "R1" (79.848mm,98.1mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad U1-27(81.255mm,99.282mm) on Top Layer And Text "R1" (79.848mm,98.1mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad U1-28(81.573mm,98.964mm) on Top Layer And Text "R1" (79.848mm,98.1mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+   Violation between Silk To Solder Mask Clearance Constraint: (Collision < 0.102mm) Between Pad U1-8(84.436mm,101.827mm) on Top Layer And Text "TP1" (84.527mm,100.512mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]
+Rule Violations :214
 
 Processing Rule : Silk to Silk (Clearance=0mm) (All),(All)
 Rule Violations :0
 
 Processing Rule : Net Antennae (Tolerance=0mm) (All)
-   Violation between Net Antennae: Via (77.632mm,101.508mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (77.632mm,102.708mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (78.832mm,101.508mm) from Top Layer to Bottom Layer 
-   Violation between Net Antennae: Via (78.832mm,102.708mm) from Top Layer to Bottom Layer 
-Rule Violations :4
+   Violation between Net Antennae: Via (74.041mm,105.156mm) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (74.041mm,106.426mm) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (74.041mm,107.696mm) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (74.041mm,108.966mm) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (74.041mm,110.236mm) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (78.486mm,93.849mm) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (81.201mm,101.35mm) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (82.05mm,100.501mm) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (82.05mm,102.199mm) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (82.899mm,101.35mm) from Top Layer to Bottom Layer 
+   Violation between Net Antennae: Via (84.582mm,90.678mm) from Top Layer to Bottom Layer 
+Rule Violations :11
 
 Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
 Rule Violations :0
@@ -359,6 +502,6 @@ Processing Rule : Height Constraint (Min=0mm) (Max=1816.048mm) (Prefered=12.7mm)
 Rule Violations :0
 
 
-Violations Detected : 307
+Violations Detected : 450
 Waived Violations : 0
 Time Elapsed        : 00:00:01
