@@ -1,1 +1,3 @@
-Record=TopLevelDocument|FileName=Sch1.SchDoc|SheetNumber= 
+Record=TopLevelDocument|FileName=main_sch.SchDoc|SheetNumber= 
+Record=SheetSymbol|SourceDocument=main_sch.SchDoc|Designator=U_ACE|SchDesignator=U_ACE|FileName=ACE.SchDoc|SheetNumber= |SymbolType=Normal|RawFileName=ACE.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=main_sch.SchDoc|Designator=U_led_ring|SchDesignator=U_led_ring|FileName=led_ring.SchDoc|SheetNumber= |SymbolType=Normal|RawFileName=led_ring.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 

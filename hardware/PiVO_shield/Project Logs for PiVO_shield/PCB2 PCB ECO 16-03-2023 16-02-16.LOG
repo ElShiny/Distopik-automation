@@ -1,0 +1,8 @@
+Change Component Footprint: Designator=C1_U_PSU1 Old Footprint=C2012_0805I_M New Footprint=C1608_0603I_L
+Change Component Footprint: Designator=C1_U_PSU2 Old Footprint=C2012_0805I_M New Footprint=C1608_0603I_L
+Change Component Footprint: Designator=C4_U_PSU1 Old Footprint=C2012_0805I_M New Footprint=C1608_0603I_L
+Change Component Footprint: Designator=C4_U_PSU2 Old Footprint=C2012_0805I_M New Footprint=C1608_0603I_L
+Change Component Footprint: Designator=R1_U_PSU1 Old Footprint=R2012_0805I_M New Footprint=R1005_0402i_L
+Change Component Footprint: Designator=R1_U_PSU2 Old Footprint=R2012_0805I_M New Footprint=R1005_0402i_L
+Change Component Footprint: Designator=R2_U_PSU1 Old Footprint=R2012_0805I_M New Footprint=R1005_0402i_L
+Change Component Footprint: Designator=R2_U_PSU2 Old Footprint=R2012_0805I_M New Footprint=R1005_0402i_L

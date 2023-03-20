@@ -1,0 +1,9 @@
+Change Component Footprint: Designator=L1_U_PSU1 Old Footprint=L6060_2424I_M New Footprint=INDUCTOR
+Change Component Footprint: Designator=L1_U_PSU2 Old Footprint=L6060_2424I_M New Footprint=INDUCTOR
+Change Component Footprint: Designator=L2_U_PSU1 Old Footprint=L6060_2424I_M New Footprint=INDUCTOR
+Change Component Footprint: Designator=L2_U_PSU2 Old Footprint=L6060_2424I_M New Footprint=INDUCTOR
+Change Component Comment : Designator=C5_U_PSU1 Old Comment=1u New Comment=22u
+Change Component Comment : Designator=C5_U_PSU2 Old Comment=1u New Comment=22u
+Added Room: Name=main
+Added Room: Name=U_PSU1
+Added Room: Name=U_PSU2

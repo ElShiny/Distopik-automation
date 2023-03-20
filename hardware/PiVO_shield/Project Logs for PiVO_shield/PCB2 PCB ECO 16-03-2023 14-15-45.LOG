@@ -1,0 +1,14 @@
+Added Component: Designator=AP1_U_PSU1(SOT95P280X100-6L)
+Added Component: Designator=AP1_U_PSU2(SOT95P280X100-6L)
+Added Pin To Net: NetName=GND Pin=AP1_U_PSU1-1
+Added Pin To Net: NetName=NetAP1_U_PSU1_2 Pin=AP1_U_PSU1-2
+Added Pin To Net: NetName=+12 Pin=AP1_U_PSU1-3
+Added Pin To Net: NetName=NetAP1_U_PSU1_4 Pin=AP1_U_PSU1-4
+Added Pin To Net: NetName=NetAP1_U_PSU1_6 Pin=AP1_U_PSU1-6
+Added Pin To Net: NetName=GND Pin=AP1_U_PSU2-1
+Added Pin To Net: NetName=NetAP1_U_PSU2_2 Pin=AP1_U_PSU2-2
+Added Pin To Net: NetName=+12 Pin=AP1_U_PSU2-3
+Added Pin To Net: NetName=NetAP1_U_PSU2_4 Pin=AP1_U_PSU2-4
+Added Pin To Net: NetName=NetAP1_U_PSU2_6 Pin=AP1_U_PSU2-6
+Added Member To Class: ClassName=U_PSU1 Member=Component AP1_U_PSU1 (AP1) AP62301
+Added Member To Class: ClassName=U_PSU2 Member=Component AP1_U_PSU2 (AP1) AP62301
