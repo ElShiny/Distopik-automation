@@ -1,0 +1,22 @@
+Removed Pin From Net: NetName=OUT +5 Pin=J1_U_PSU1-2
+Removed Pin From Net: NetName=NetC3_U_PSU2_1 Pin=J1_U_PSU2-1
+Removed Pin From Net: NetName=OUT +5 Pin=L2_U_PSU1-2
+Removed Pin From Net: NetName=OUT +5 Pin=L2_U_PSU1-2
+Removed Pin From Net: NetName=NetC3_U_PSU2_1 Pin=L2_U_PSU2-1
+Removed Pin From Net: NetName=NetC3_U_PSU2_1 Pin=L2_U_PSU2-1
+Removed Member From Class: ClassName=U_PSU1 Member=J1_U_PSU1
+Removed Member From Class: ClassName=U_PSU2 Member=J1_U_PSU2
+Removed Member From Class: ClassName=U_PSU1 Member=L2_U_PSU1
+Removed Member From Class: ClassName=U_PSU2 Member=L2_U_PSU2
+Change Component Comment : Designator=R4 Old Comment=~300 New Comment=~3k
+Added Pin To Net: NetName=OUT +5 Pin=C3_U_PSU1-1
+Added Pin To Net: NetName=OUT +5 Pin=C4_U_PSU1-1
+Added Pin To Net: NetName=NetC3_U_PSU2_1 Pin=C5_U_PSU2-1
+Added Pin To Net: NetName=OUT +5 Pin=C7_U_PSU1-1
+Added Pin To Net: NetName=OUT +5 Pin=L1_U_PSU1-2
+Added Pin To Net: NetName=OUT +5 Pin=L1_U_PSU1-2
+Added Pin To Net: NetName=NetC3_U_PSU2_1 Pin=P1-2
+Added Pin To Net: NetName=NetC3_U_PSU2_1 Pin=P1-4
+Added Pin To Net: NetName=OUT +5 Pin=R1_U_PSU1-1
+Added Pin To Net: NetName=NetC3_U_PSU2_1 Pin=R3_U_PSU2-1
+Change Net Name : Old Net Name=NetC3_U_PSU2_1 New Net Name=RPI +5

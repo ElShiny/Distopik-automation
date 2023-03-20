@@ -1,0 +1,11 @@
+Change Component Designator: OldDesignator=C?_U_PSU1 NewDesignator=C7_U_PSU1
+Change Component Designator: OldDesignator=C?_U_PSU2 NewDesignator=C7_U_PSU2
+Added Component: Designator=C6_U_PSU1(C3216_1206I_L)
+Added Component: Designator=C6_U_PSU2(C3216_1206I_L)
+Added Pin To Net: NetName=+12 Pin=C6_U_PSU1-1
+Added Pin To Net: NetName=GND Pin=C6_U_PSU1-2
+Added Pin To Net: NetName=+12 Pin=C6_U_PSU2-1
+Added Pin To Net: NetName=GND Pin=C6_U_PSU2-2
+Added Member To Class: ClassName=U_PSU1 Member=Component C6_U_PSU1 (C6) 100n
+Added Member To Class: ClassName=U_PSU2 Member=Component C6_U_PSU2 (C6) 100n
+Added Room: Name=main

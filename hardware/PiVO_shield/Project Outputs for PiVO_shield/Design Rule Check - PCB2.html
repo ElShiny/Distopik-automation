@@ -1,0 +1,875 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD20\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">20/03/2023</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">12:05:15</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc" class="file"><acronym title="C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc">C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">173</td></tr>
+</table>
+</td>
+</table><a name="IDKLBWSNEOICEGNP12APJI5IZQ3IX2REP3KGBU0BWBG02RYLDMHWM"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDW4VAUTAEO3P2OZIHV3CJJZ0WUMM0OZYQLQSA14BK0NTW4GWAECLB">Clearance Constraint (Gap=0.102mm) (All),(All)</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDOUBFJRG5LYORPU4KRQ4WKKJILEHRDAKF3BSHNJCLZ2WY4RAB1P1E">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID350Z240NVUU5CIX3BPOULJJ1PN20LX2SSPFBNEE02SDVCRNGANNP">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">86</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDRX51DX4YKJTHFPVHQ22VMLED3GBUEPM213O2KKIAG10XDN35K4PJ">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDP0C5EPQAGUO3OM14YHGGVTFVSBESTR3WOJVTHXH1WDQ0JA2YSPEI">Width Constraint (Min=0.102mm) (Max=1816.048mm) (Preferred=0.102mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID3Y1MMMXIAVGZ5ZJ35PEF5AQUNKQWKKDNYENOPBCOJX3YQAUDG2L">Power Plane Connect Rule(Direct Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (InPadClass('PowerPads'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDXBVTCOL3ZGMEP2TDK4DTROW23C5X3PKMEFZYPJEV0F2FBQ3NUGEE">Power Plane Connect Rule(Relief Connect )(Expansion=0.3mm) (Conductor Width=0.102mm) (Air Gap=0.102mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDEFOBDYWMTDVTJDLGEO0BLZ55FI5OAMCKACUBQPLESTQFVZDCJ0IC">Minimum Annular Ring (Minimum=0.076mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDHM0ETUECLWKTCF1MTNG2BK350FD5X1P0JPRYRQKFHEQ2O0C5A25E">Hole Size Constraint (Min=0.2mm) (Max=6.3mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDH02314GAF3G4KSNYY5DLTZQYQINEM1GBNKKNMUJV2PRTTUXQ3QMG">Hole To Hole Clearance (Gap=0.25mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID3KOBGW3O1N10FGXIQFSHVZ1GXFMK1F5QK4J0QPLAS1GCQJRN1EYO">Minimum Solder Mask Sliver (Gap=0mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDJCQ2YAFV45HTL3FG2R3V0PRSCFOTVS4PCONI4XV2QAG1E0W05KM">Silk To Solder Mask (Clearance=0.102mm) (IsPad),(All)</a></td>
+<td class="column2">81</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMLA1AIN11J1OKDOQ0KGBWOE1AERBM14VZFVD00G3YVTB0SLJR2QD">Silk to Silk (Clearance=0mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDPAWP04I0PDR2DBCCXA5DITW13HRIFJJ5JBHSMM4DUXP0RKTMYWF">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDN1VXBIAOKIXOPSKWB3F3F0CKM1Y3HU3DKTMRYO4GKHTYPA505VC">Board Clearance Constraint (Gap=0mm) (All)</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDDUYZUCG4SMPKFVZUKS3OSRWRRG2M0HUNKAQSWTHY2C5UZHCHHT2K">Height Constraint (Min=0mm) (Max=1816.048mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">173</td>
+</tr>
+</table><br><a name="IDW4VAUTAEO3P2OZIHV3CJJZ0WUMM0OZYQLQSA14BK0NTW4GWAECLB"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=0.102mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3837.438mil|Location2.X=3841.105mil|Location1.Y=3495.631mil|Location2.Y=3499.297mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3837.438mil|Location2.X=3841.105mil|Location1.Y=3495.631mil|Location2.Y=3499.297mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.102mm) Between Pad J1_U_PSU1-1(97.2mm,89.108mm) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3837.438mil|Location2.X=3841.105mil|Location1.Y=3477.081mil|Location2.Y=3480.747mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3837.438mil|Location2.X=3841.105mil|Location1.Y=3477.081mil|Location2.Y=3480.747mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.102mm) Between Pad J1_U_PSU1-2(97.2mm,88.092mm) on Top Layer And Region (0 hole(s)) Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDOUBFJRG5LYORPU4KRQ4WKKJILEHRDAKF3BSHNJCLZ2WY4RAB1P1E"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Short-Circuit Constraint (Allowed=No) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3809.261mil|Location2.X=3844.283mil|Location1.Y=3488.183mil|Location2.Y=3523.205mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3809.261mil|Location2.X=3844.283mil|Location1.Y=3488.183mil|Location2.Y=3523.205mil|Absolute=True">Short-Circuit Constraint: Between Pad J1_U_PSU1-1(97.2mm,89.108mm) on Top Layer And Region (0 hole(s)) Top Layer Location : [X = 97.2mm][Y = 89.045mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3809.261mil|Location2.X=3844.283mil|Location1.Y=3453.173mil|Location2.Y=3488.195mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3809.261mil|Location2.X=3844.283mil|Location1.Y=3453.173mil|Location2.Y=3488.195mil|Absolute=True">Short-Circuit Constraint: Between Pad J1_U_PSU1-2(97.2mm,88.092mm) on Top Layer And Region (0 hole(s)) Top Layer Location : [X = 97.2mm][Y = 88.155mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="ID350Z240NVUU5CIX3BPOULJJ1PN20LX2SSPFBNEE02SDVCRNGANNP"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3667.874mil|Location2.X=3796.26mil|Location1.Y=3801.228mil|Location2.Y=3850.441mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3667.874mil|Location2.X=3796.26mil|Location1.Y=3801.228mil|Location2.Y=3850.441mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C4_U_PSU2-2(94.089mm,97.176mm) on Top Layer And Pad AP1_U_PSU1-1(95.85mm,97.05mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3750.984mil|Location2.X=3831.386mil|Location1.Y=3608.189mil|Location2.Y=3835.63mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3750.984mil|Location2.X=3831.386mil|Location1.Y=3608.189mil|Location2.Y=3835.63mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad AP1_U_PSU1-1(95.85mm,97.05mm) on Top Layer And Pad R2_U_PSU2-2(96.962mm,91.983mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3492.693mil|Location2.X=3796.26mil|Location1.Y=3561.732mil|Location2.Y=3798.228mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3492.693mil|Location2.X=3796.26mil|Location1.Y=3561.732mil|Location2.Y=3798.228mil|Absolute=True">Un-Routed Net Constraint: Net NetAP1_U_PSU1_2 Between Pad C1_U_PSU1-2(89.339mm,91.393mm) on Top Layer And Pad AP1_U_PSU1-2(95.85mm,96.1mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3750.984mil|Location2.X=3932.236mil|Location1.Y=3768.701mil|Location2.Y=4409.543mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3750.984mil|Location2.X=3932.236mil|Location1.Y=3768.701mil|Location2.Y=4409.543mil|Absolute=True">Un-Routed Net Constraint: Net NetAP1_U_PSU1_2 Between Pad AP1_U_PSU1-2(95.85mm,96.1mm) on Top Layer And Pad L1_U_PSU1-1(98.854mm,110.677mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3750.984mil|Location2.X=4035.252mil|Location1.Y=3706.74mil|Location2.Y=3760.827mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3750.984mil|Location2.X=4035.252mil|Location1.Y=3706.74mil|Location2.Y=3760.827mil|Absolute=True">Un-Routed Net Constraint: Net +12 Between Pad AP1_U_PSU1-3(95.85mm,95.15mm) on Top Layer And Pad AP1_U_PSU2-3(102.12mm,94.726mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3232.331mil|Location2.X=3796.26mil|Location1.Y=3694.929mil|Location2.Y=3760.827mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3232.331mil|Location2.X=3796.26mil|Location1.Y=3694.929mil|Location2.Y=3760.827mil|Absolute=True">Un-Routed Net Constraint: Net +12 Between Pad C2_U_PSU2-1(83.501mm,94.526mm) on Top Layer And Pad AP1_U_PSU1-3(95.85mm,95.15mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3720.276mil|Location2.X=3796.26mil|Location1.Y=2483.268mil|Location2.Y=3760.827mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3720.276mil|Location2.X=3796.26mil|Location1.Y=2483.268mil|Location2.Y=3760.827mil|Absolute=True">Un-Routed Net Constraint: Net +12 Between Pad P3-3(95.32mm,63.9mm) on Multi-Layer And Pad AP1_U_PSU1-3(95.85mm,95.15mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3849.409mil|Location2.X=3944.669mil|Location1.Y=3606.614mil|Location2.Y=3760.827mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3849.409mil|Location2.X=3944.669mil|Location1.Y=3606.614mil|Location2.Y=3760.827mil|Absolute=True">Un-Routed Net Constraint: Net NetAP1_U_PSU1_4 Between Pad AP1_U_PSU1-4(98.35mm,95.15mm) on Top Layer And Pad R2_U_PSU1-1(99.86mm,91.963mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3390.331mil|Location2.X=3894.685mil|Location1.Y=3561.732mil|Location2.Y=3835.63mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3390.331mil|Location2.X=3894.685mil|Location1.Y=3561.732mil|Location2.Y=3835.63mil|Absolute=True">Un-Routed Net Constraint: Net NetAP1_U_PSU1_6 Between Pad C1_U_PSU1-1(86.739mm,91.393mm) on Top Layer And Pad AP1_U_PSU1-6(98.35mm,97.05mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3930.921mil|Location2.X=3979.315mil|Location1.Y=3606.614mil|Location2.Y=3752.016mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3930.921mil|Location2.X=3979.315mil|Location1.Y=3606.614mil|Location2.Y=3752.016mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad AP1_U_PSU2-1(100.22mm,94.726mm) on Top Layer And Pad R2_U_PSU1-2(100.74mm,91.963mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3587.039mil|Location2.X=3997.85mil|Location1.Y=3706.74mil|Location2.Y=3850.441mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3587.039mil|Location2.X=3997.85mil|Location1.Y=3706.74mil|Location2.Y=3850.441mil|Absolute=True">Un-Routed Net Constraint: Net NetAP1_U_PSU2_2 Between Pad C1_U_PSU2-2(92.036mm,97.176mm) on Top Layer And Pad AP1_U_PSU2-2(101.17mm,94.726mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3803.433mil|Location2.X=4035.252mil|Location1.Y=3573.543mil|Location2.Y=3850.441mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3803.433mil|Location2.X=4035.252mil|Location1.Y=3573.543mil|Location2.Y=3850.441mil|Absolute=True">Un-Routed Net Constraint: Net NetAP1_U_PSU2_4 Between Pad R2_U_PSU2-1(96.962mm,91.103mm) on Top Layer And Pad AP1_U_PSU2-4(102.12mm,97.226mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3587.039mil|Location2.X=3960.449mil|Location1.Y=3698.866mil|Location2.Y=3850.441mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3587.039mil|Location2.X=3960.449mil|Location1.Y=3698.866mil|Location2.Y=3850.441mil|Absolute=True">Un-Routed Net Constraint: Net NetAP1_U_PSU2_6 Between Pad C1_U_PSU2-1(92.036mm,94.576mm) on Top Layer And Pad AP1_U_PSU2-6(100.22mm,97.226mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2899.795mil|Location2.X=3116.457mil|Location1.Y=3524.331mil|Location2.Y=3634.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2899.795mil|Location2.X=3116.457mil|Location1.Y=3524.331mil|Location2.Y=3634.567mil|Absolute=True">Un-Routed Net Constraint: Net NetC3_U_PSU1_1 Between Pad C3_U_PSU1-1(74.33mm,90.918mm) on Top Layer And Pad C?_U_PSU1-1(78.483mm,90.918mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3063.307mil|Location2.X=3599.118mil|Location1.Y=3524.331mil|Location2.Y=3634.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3063.307mil|Location2.X=3599.118mil|Location1.Y=3524.331mil|Location2.Y=3634.567mil|Absolute=True">Un-Routed Net Constraint: Net NetC3_U_PSU1_1 Between Pad C?_U_PSU1-1(78.483mm,90.918mm) on Top Layer And Pad C4_U_PSU1-1(90.793mm,91.393mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3002.157mil|Location2.X=3218.819mil|Location1.Y=3524.331mil|Location2.Y=3634.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3002.157mil|Location2.X=3218.819mil|Location1.Y=3524.331mil|Location2.Y=3634.567mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C3_U_PSU1-2(76.93mm,90.918mm) on Top Layer And Pad C?_U_PSU1-2(81.083mm,90.918mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3165.669mil|Location2.X=3382.331mil|Location1.Y=3524.331mil|Location2.Y=3634.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3165.669mil|Location2.X=3382.331mil|Location1.Y=3524.331mil|Location2.Y=3634.567mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C?_U_PSU1-2(81.083mm,90.918mm) on Top Layer And Pad C5_U_PSU1-2(85.236mm,90.918mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3114.094mil|Location2.X=3579.039mil|Location1.Y=3694.929mil|Location2.Y=3748.079mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3114.094mil|Location2.X=3579.039mil|Location1.Y=3694.929mil|Location2.Y=3748.079mil|Absolute=True">Un-Routed Net Constraint: Net NetC3_U_PSU2_1 Between Pad C?_U_PSU2-1(80.498mm,94.526mm) on Top Layer And Pad C3_U_PSU2-1(89.508mm,94.526mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3114.094mil|Location2.X=3342.567mil|Location1.Y=3797.291mil|Location2.Y=3850.441mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3114.094mil|Location2.X=3342.567mil|Location1.Y=3797.291mil|Location2.Y=3850.441mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C?_U_PSU2-2(80.498mm,97.126mm) on Top Layer And Pad C2_U_PSU2-2(83.501mm,97.126mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3019.677mil|Location2.X=3224.331mil|Location1.Y=3764.024mil|Location2.Y=3850.441mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3019.677mil|Location2.X=3224.331mil|Location1.Y=3764.024mil|Location2.Y=3850.441mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad P6-2(77.525mm,96.431mm) on Multi-Layer And Pad C?_U_PSU2-2(80.498mm,97.126mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3456.551mil|Location2.X=3659.874mil|Location1.Y=3801.228mil|Location2.Y=4293.087mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3456.551mil|Location2.X=3659.874mil|Location1.Y=3801.228mil|Location2.Y=4293.087mil|Absolute=True">Un-Routed Net Constraint: Net NetAP1_U_PSU2_2 Between Pad L1_U_PSU2-1(89.121mm,108.019mm) on Top Layer And Pad C1_U_PSU2-2(92.036mm,97.176mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2736.284mil|Location2.X=3084.638mil|Location1.Y=3524.331mil|Location2.Y=3728.984mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2736.284mil|Location2.X=3084.638mil|Location1.Y=3524.331mil|Location2.Y=3728.984mil|Absolute=True">Un-Routed Net Constraint: Net +12 Between Pad C2_U_PSU1-1(70.177mm,90.918mm) on Top Layer And Pad P6-1(77.525mm,93.891mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2838.646mil|Location2.X=3055.307mil|Location1.Y=3524.331mil|Location2.Y=3634.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2838.646mil|Location2.X=3055.307mil|Location1.Y=3524.331mil|Location2.Y=3634.567mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C2_U_PSU1-2(72.777mm,90.918mm) on Top Layer And Pad C3_U_PSU1-2(76.93mm,90.918mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2438.78mil|Location2.X=2891.795mil|Location1.Y=3524.331mil|Location2.Y=3687.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2438.78mil|Location2.X=2891.795mil|Location1.Y=3524.331mil|Location2.Y=3687.992mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad P1-25(62.77mm,92.85mm) on Multi-Layer And Pad C2_U_PSU1-2(72.777mm,90.918mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3019.677mil|Location2.X=3342.567mil|Location1.Y=3664.024mil|Location2.Y=3748.079mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3019.677mil|Location2.X=3342.567mil|Location1.Y=3664.024mil|Location2.Y=3748.079mil|Absolute=True">Un-Routed Net Constraint: Net +12 Between Pad P6-1(77.525mm,93.891mm) on Multi-Layer And Pad C2_U_PSU2-1(83.501mm,94.526mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3232.331mil|Location2.X=3460.803mil|Location1.Y=3797.291mil|Location2.Y=3850.441mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3232.331mil|Location2.X=3460.803mil|Location1.Y=3797.291mil|Location2.Y=3850.441mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C2_U_PSU2-2(83.501mm,97.126mm) on Top Layer And Pad C5_U_PSU2-2(86.504mm,97.126mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2736.284mil|Location2.X=2952.945mil|Location1.Y=3524.331mil|Location2.Y=3793.669mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2736.284mil|Location2.X=2952.945mil|Location1.Y=3524.331mil|Location2.Y=3793.669mil|Absolute=True">Un-Routed Net Constraint: Net NetC3_U_PSU1_1 Between Pad L2_U_PSU1-1(70.527mm,95.034mm) on Top Layer And Pad C3_U_PSU1-1(74.33mm,90.918mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3002.157mil|Location2.X=3084.638mil|Location1.Y=3524.331mil|Location2.Y=3828.984mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3002.157mil|Location2.X=3084.638mil|Location1.Y=3524.331mil|Location2.Y=3828.984mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C3_U_PSU1-2(76.93mm,90.918mm) on Top Layer And Pad P6-2(77.525mm,96.431mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3468.803mil|Location2.X=3740.708mil|Location1.Y=3694.929mil|Location2.Y=3748.079mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3468.803mil|Location2.X=3740.708mil|Location1.Y=3694.929mil|Location2.Y=3748.079mil|Absolute=True">Un-Routed Net Constraint: Net NetC3_U_PSU2_1 Between Pad C3_U_PSU2-1(89.508mm,94.526mm) on Top Layer And Pad C4_U_PSU2-1(94.089mm,94.576mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3468.803mil|Location2.X=3740.708mil|Location1.Y=3797.291mil|Location2.Y=3850.441mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3468.803mil|Location2.X=3740.708mil|Location1.Y=3797.291mil|Location2.Y=3850.441mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C3_U_PSU2-2(89.508mm,97.126mm) on Top Layer And Pad C4_U_PSU2-2(94.089mm,97.176mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3350.567mil|Location2.X=3579.039mil|Location1.Y=3797.291mil|Location2.Y=3850.441mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3350.567mil|Location2.X=3579.039mil|Location1.Y=3797.291mil|Location2.Y=3850.441mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C5_U_PSU2-2(86.504mm,97.126mm) on Top Layer And Pad C3_U_PSU2-2(89.508mm,97.126mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3549.905mil|Location2.X=3842.224mil|Location1.Y=3492.736mil|Location2.Y=3634.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3549.905mil|Location2.X=3842.224mil|Location1.Y=3492.736mil|Location2.Y=3634.567mil|Absolute=True">Un-Routed Net Constraint: Net NetC3_U_PSU1_1 Between Pad C4_U_PSU1-1(90.793mm,91.393mm) on Top Layer And Pad J1_U_PSU1-1(97.2mm,89.108mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3652.268mil|Location2.X=3831.386mil|Location1.Y=3561.732mil|Location2.Y=3634.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3652.268mil|Location2.X=3831.386mil|Location1.Y=3561.732mil|Location2.Y=3634.567mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad C4_U_PSU1-2(93.393mm,91.393mm) on Top Layer And Pad R2_U_PSU2-2(96.962mm,91.983mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3667.874mil|Location2.X=3786.756mil|Location1.Y=3698.866mil|Location2.Y=4293.087mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3667.874mil|Location2.X=3786.756mil|Location1.Y=3698.866mil|Location2.Y=4293.087mil|Absolute=True">Un-Routed Net Constraint: Net NetC3_U_PSU2_1 Between Pad C4_U_PSU2-1(94.089mm,94.576mm) on Top Layer And Pad L2_U_PSU2-1(94.859mm,108.019mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3667.874mil|Location2.X=3795.433mil|Location1.Y=3573.543mil|Location2.Y=3748.079mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3667.874mil|Location2.X=3795.433mil|Location1.Y=3573.543mil|Location2.Y=3748.079mil|Absolute=True">Un-Routed Net Constraint: Net NetC3_U_PSU2_1 Between Pad C4_U_PSU2-1(94.089mm,94.576mm) on Top Layer And Pad R1_U_PSU2-1(96.049mm,91.103mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3226.819mil|Location2.X=3842.224mil|Location1.Y=3452.736mil|Location2.Y=3634.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3226.819mil|Location2.X=3842.224mil|Location1.Y=3452.736mil|Location2.Y=3634.567mil|Absolute=True">Un-Routed Net Constraint: Net OUT +5 Between Pad C5_U_PSU1-1(82.636mm,90.918mm) on Top Layer And Pad J1_U_PSU1-2(97.2mm,88.092mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2909.512mil|Location2.X=3279.968mil|Location1.Y=3524.331mil|Location2.Y=3793.669mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2909.512mil|Location2.X=3279.968mil|Location1.Y=3524.331mil|Location2.Y=3793.669mil|Absolute=True">Un-Routed Net Constraint: Net OUT +5 Between Pad L2_U_PSU1-2(74.927mm,95.034mm) on Top Layer And Pad C5_U_PSU1-1(82.636mm,90.918mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3350.567mil|Location2.X=3731.988mil|Location1.Y=3444.547mil|Location2.Y=3748.079mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3350.567mil|Location2.X=3731.988mil|Location1.Y=3444.547mil|Location2.Y=3748.079mil|Absolute=True">Un-Routed Net Constraint: Net RPI +5 Between Pad C5_U_PSU2-1(86.504mm,94.526mm) on Top Layer And Pad J1_U_PSU2-2(94.4mm,87.884mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=3460.803mil|Location1.Y=2523.032mil|Location2.Y=3748.079mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=3460.803mil|Location1.Y=2523.032mil|Location2.Y=3748.079mil|Absolute=True">Un-Routed Net Constraint: Net RPI +5 Between Pad P1-4(60.23mm,64.91mm) on Multi-Layer And Pad C5_U_PSU2-1(86.504mm,94.526mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3811.319mil|Location2.X=4013.693mil|Location1.Y=3492.736mil|Location2.Y=3634.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3811.319mil|Location2.X=4013.693mil|Location1.Y=3492.736mil|Location2.Y=3634.567mil|Absolute=True">Un-Routed Net Constraint: Net NetC3_U_PSU1_1 Between Pad J1_U_PSU1-1(97.2mm,89.108mm) on Top Layer And Pad R1_U_PSU1-1(101.613mm,91.963mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3811.319mil|Location2.X=3885.236mil|Location1.Y=2483.268mil|Location2.Y=3483.642mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3811.319mil|Location2.X=3885.236mil|Location1.Y=2483.268mil|Location2.Y=3483.642mil|Absolute=True">Un-Routed Net Constraint: Net OUT +5 Between Pad J1_U_PSU1-2(97.2mm,88.092mm) on Top Layer And Pad P3-2(97.86mm,63.9mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3701.083mil|Location2.X=3795.433mil|Location1.Y=3484.547mil|Location2.Y=3599.921mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3701.083mil|Location2.X=3795.433mil|Location1.Y=3484.547mil|Location2.Y=3599.921mil|Absolute=True">Un-Routed Net Constraint: Net NetC3_U_PSU2_1 Between Pad J1_U_PSU2-1(94.4mm,88.9mm) on Top Layer And Pad R1_U_PSU2-1(96.049mm,91.103mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3682.425mil|Location2.X=3786.756mil|Location1.Y=3444.547mil|Location2.Y=4466.315mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3682.425mil|Location2.X=3786.756mil|Location1.Y=3444.547mil|Location2.Y=4466.315mil|Absolute=True">Un-Routed Net Constraint: Net RPI +5 Between Pad J1_U_PSU2-2(94.4mm,87.884mm) on Top Layer And Pad L2_U_PSU2-2(94.859mm,112.419mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3987.315mil|Location2.X=4105.464mil|Location1.Y=3606.614mil|Location2.Y=4409.543mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3987.315mil|Location2.X=4105.464mil|Location1.Y=3606.614mil|Location2.Y=4409.543mil|Absolute=True">Un-Routed Net Constraint: Net NetC3_U_PSU1_1 Between Pad R1_U_PSU1-1(101.613mm,91.963mm) on Top Layer And Pad L1_U_PSU1-2(103.254mm,110.677mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3456.551mil|Location2.X=3786.756mil|Location1.Y=4212.378mil|Location2.Y=4466.315mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3456.551mil|Location2.X=3786.756mil|Location1.Y=4212.378mil|Location2.Y=4466.315mil|Absolute=True">Un-Routed Net Constraint: Net NetC3_U_PSU2_1 Between Pad L1_U_PSU2-2(89.121mm,112.419mm) on Top Layer And Pad L2_U_PSU2-1(94.859mm,108.019mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=2403.74mil|Location1.Y=3023.032mil|Location2.Y=3387.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=2403.74mil|Location1.Y=3023.032mil|Location2.Y=3387.992mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad P1-14(60.23mm,77.61mm) on Multi-Layer And Pad P1-20(60.23mm,85.23mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=2503.74mil|Location1.Y=2823.032mil|Location2.Y=3087.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=2503.74mil|Location1.Y=2823.032mil|Location2.Y=3087.992mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad P1-14(60.23mm,77.61mm) on Multi-Layer And Pad P1-9(62.77mm,72.53mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=3293.11mil|Location1.Y=2331.299mil|Location2.Y=3287.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=3293.11mil|Location1.Y=2331.299mil|Location2.Y=3287.992mil|Absolute=True">Un-Routed Net Constraint: Net UI_INT Between Pad P1-18(60.23mm,82.69mm) on Multi-Layer And Pad P4-12(82.82mm,60.04mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2438.78mil|Location2.X=2893.11mil|Location1.Y=2331.299mil|Location2.Y=3387.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2438.78mil|Location2.X=2893.11mil|Location1.Y=2331.299mil|Location2.Y=3387.992mil|Absolute=True">Un-Routed Net Constraint: Net UI_MOSI Between Pad P1-19(62.77mm,85.23mm) on Multi-Layer And Pad P4-4(72.66mm,60.04mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=2403.74mil|Location1.Y=2423.032mil|Location2.Y=2587.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=2403.74mil|Location1.Y=2423.032mil|Location2.Y=2587.992mil|Absolute=True">Un-Routed Net Constraint: Net RPI +5 Between Pad P1-2(60.23mm,62.37mm) on Multi-Layer And Pad P1-4(60.23mm,64.91mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=2503.74mil|Location1.Y=3323.032mil|Location2.Y=3687.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=2503.74mil|Location1.Y=3323.032mil|Location2.Y=3687.992mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad P1-20(60.23mm,85.23mm) on Multi-Layer And Pad P1-25(62.77mm,92.85mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2438.78mil|Location2.X=2793.11mil|Location1.Y=2331.299mil|Location2.Y=3487.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2438.78mil|Location2.X=2793.11mil|Location1.Y=2331.299mil|Location2.Y=3487.992mil|Absolute=True">Un-Routed Net Constraint: Net UI_MISO Between Pad P1-21(62.77mm,87.77mm) on Multi-Layer And Pad P4-2(70.12mm,60.04mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=3193.11mil|Location1.Y=2331.299mil|Location2.Y=3487.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=3193.11mil|Location1.Y=2331.299mil|Location2.Y=3487.992mil|Absolute=True">Un-Routed Net Constraint: Net UI_R\E\S\E\T\ Between Pad P1-22(60.23mm,87.77mm) on Multi-Layer And Pad P4-10(80.28mm,60.04mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2438.78mil|Location2.X=2993.11mil|Location1.Y=2331.299mil|Location2.Y=3587.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2438.78mil|Location2.X=2993.11mil|Location1.Y=2331.299mil|Location2.Y=3587.992mil|Absolute=True">Un-Routed Net Constraint: Net UI_SCK Between Pad P1-23(62.77mm,90.31mm) on Multi-Layer And Pad P4-6(75.2mm,60.04mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=3093.11mil|Location1.Y=2331.299mil|Location2.Y=3587.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=3093.11mil|Location1.Y=2331.299mil|Location2.Y=3587.992mil|Absolute=True">Un-Routed Net Constraint: Net UI_S\S\ Between Pad P1-24(60.23mm,90.31mm) on Multi-Layer And Pad P4-8(77.74mm,60.04mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=2503.74mil|Location1.Y=3623.032mil|Location2.Y=3887.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=2503.74mil|Location1.Y=3623.032mil|Location2.Y=3887.992mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad P1-30(60.23mm,97.93mm) on Multi-Layer And Pad P1-25(62.77mm,92.85mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=2403.74mil|Location1.Y=3823.032mil|Location2.Y=4087.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=2403.74mil|Location1.Y=3823.032mil|Location2.Y=4087.992mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad P1-30(60.23mm,97.93mm) on Multi-Layer And Pad P1-34(60.23mm,103.01mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2438.78mil|Location2.X=4085.236mil|Location1.Y=2331.299mil|Location2.Y=4087.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2438.78mil|Location2.X=4085.236mil|Location1.Y=2331.299mil|Location2.Y=4087.992mil|Absolute=True">Un-Routed Net Constraint: Net ACT_INT Between Pad P1-33(62.77mm,103.01mm) on Multi-Layer And Pad P5-12(102.94mm,60.04mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=2503.74mil|Location1.Y=4023.032mil|Location2.Y=4387.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=2503.74mil|Location1.Y=4023.032mil|Location2.Y=4387.992mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad P1-34(60.23mm,103.01mm) on Multi-Layer And Pad P1-39(62.77mm,110.63mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2438.78mil|Location2.X=3585.236mil|Location1.Y=2331.299mil|Location2.Y=4187.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2438.78mil|Location2.X=3585.236mil|Location1.Y=2331.299mil|Location2.Y=4187.992mil|Absolute=True">Un-Routed Net Constraint: Net ACT_MISO Between Pad P1-35(62.77mm,105.55mm) on Multi-Layer And Pad P5-2(90.24mm,60.04mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=3885.236mil|Location1.Y=2331.299mil|Location2.Y=4187.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=3885.236mil|Location1.Y=2331.299mil|Location2.Y=4187.992mil|Absolute=True">Un-Routed Net Constraint: Net ACT_S\S\ Between Pad P1-36(60.23mm,105.55mm) on Multi-Layer And Pad P5-8(97.86mm,60.04mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2438.78mil|Location2.X=3985.236mil|Location1.Y=2331.299mil|Location2.Y=4287.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2438.78mil|Location2.X=3985.236mil|Location1.Y=2331.299mil|Location2.Y=4287.992mil|Absolute=True">Un-Routed Net Constraint: Net ACT_R\E\S\E\T\ Between Pad P1-37(62.77mm,108.09mm) on Multi-Layer And Pad P5-10(100.4mm,60.04mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=3685.236mil|Location1.Y=2331.299mil|Location2.Y=4287.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=3685.236mil|Location1.Y=2331.299mil|Location2.Y=4287.992mil|Absolute=True">Un-Routed Net Constraint: Net ACT_MOSI Between Pad P1-38(60.23mm,108.09mm) on Multi-Layer And Pad P5-4(92.78mm,60.04mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=3785.236mil|Location1.Y=2331.299mil|Location2.Y=4387.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=3785.236mil|Location1.Y=2331.299mil|Location2.Y=4387.992mil|Absolute=True">Un-Routed Net Constraint: Net ACT_SCK Between Pad P1-40(60.23mm,110.63mm) on Multi-Layer And Pad P5-6(95.32mm,60.04mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=2503.74mil|Location1.Y=2623.032mil|Location2.Y=2887.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=2503.74mil|Location1.Y=2623.032mil|Location2.Y=2887.992mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad P1-6(60.23mm,67.45mm) on Multi-Layer And Pad P1-9(62.77mm,72.53mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=2893.11mil|Location1.Y=2491.142mil|Location2.Y=2687.992mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2338.78mil|Location2.X=2893.11mil|Location1.Y=2491.142mil|Location2.Y=2687.992mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad P1-6(60.23mm,67.45mm) on Multi-Layer And Pad P2-4(72.66mm,64.1mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3128.15mil|Location2.X=3193.11mil|Location1.Y=2231.299mil|Location2.Y=2556.102mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3128.15mil|Location2.X=3193.11mil|Location1.Y=2231.299mil|Location2.Y=2556.102mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad P4-9(80.28mm,57.5mm) on Multi-Layer And Pad P2-1(80.28mm,64.1mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2928.15mil|Location2.X=3093.11mil|Location1.Y=2491.142mil|Location2.Y=2556.102mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2928.15mil|Location2.X=3093.11mil|Location1.Y=2491.142mil|Location2.Y=2556.102mil|Absolute=True">Un-Routed Net Constraint: Net OUT +5 Between Pad P2-3(75.2mm,64.1mm) on Multi-Layer And Pad P2-2(77.74mm,64.1mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3028.15mil|Location2.X=3885.236mil|Location1.Y=2483.268mil|Location2.Y=2556.102mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3028.15mil|Location2.X=3885.236mil|Location1.Y=2483.268mil|Location2.Y=2556.102mil|Absolute=True">Un-Routed Net Constraint: Net OUT +5 Between Pad P2-2(77.74mm,64.1mm) on Multi-Layer And Pad P3-2(97.86mm,63.9mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2828.149mil|Location2.X=2893.11mil|Location1.Y=2231.299mil|Location2.Y=2556.102mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2828.149mil|Location2.X=2893.11mil|Location1.Y=2231.299mil|Location2.Y=2556.102mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad P4-3(72.66mm,57.5mm) on Multi-Layer And Pad P2-4(72.66mm,64.1mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3920.276mil|Location2.X=3985.236mil|Location1.Y=2231.299mil|Location2.Y=2548.228mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3920.276mil|Location2.X=3985.236mil|Location1.Y=2231.299mil|Location2.Y=2548.228mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad P3-1(100.4mm,63.9mm) on Multi-Layer And Pad P5-9(100.4mm,57.5mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3620.276mil|Location2.X=3685.236mil|Location1.Y=2231.299mil|Location2.Y=2548.228mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3620.276mil|Location2.X=3685.236mil|Location1.Y=2231.299mil|Location2.Y=2548.228mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad P5-3(92.78mm,57.5mm) on Multi-Layer And Pad P3-4(92.78mm,63.9mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2728.149mil|Location2.X=2893.11mil|Location1.Y=2231.299mil|Location2.Y=2296.26mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2728.149mil|Location2.X=2893.11mil|Location1.Y=2231.299mil|Location2.Y=2296.26mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad P4-1(70.12mm,57.5mm) on Multi-Layer And Pad P4-3(72.66mm,57.5mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3128.15mil|Location2.X=3293.11mil|Location1.Y=2231.299mil|Location2.Y=2296.26mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3128.15mil|Location2.X=3293.11mil|Location1.Y=2231.299mil|Location2.Y=2296.26mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad P4-9(80.28mm,57.5mm) on Multi-Layer And Pad P4-11(82.82mm,57.5mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3228.149mil|Location2.X=3585.236mil|Location1.Y=2231.299mil|Location2.Y=2296.26mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3228.149mil|Location2.X=3585.236mil|Location1.Y=2231.299mil|Location2.Y=2296.26mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad P4-11(82.82mm,57.5mm) on Multi-Layer And Pad P5-1(90.24mm,57.5mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2828.149mil|Location2.X=2993.11mil|Location1.Y=2231.299mil|Location2.Y=2296.26mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2828.149mil|Location2.X=2993.11mil|Location1.Y=2231.299mil|Location2.Y=2296.26mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad P4-3(72.66mm,57.5mm) on Multi-Layer And Pad P4-5(75.2mm,57.5mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2928.149mil|Location2.X=3093.11mil|Location1.Y=2231.299mil|Location2.Y=2296.26mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2928.149mil|Location2.X=3093.11mil|Location1.Y=2231.299mil|Location2.Y=2296.26mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad P4-5(75.2mm,57.5mm) on Multi-Layer And Pad P4-7(77.74mm,57.5mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3028.149mil|Location2.X=3193.11mil|Location1.Y=2231.299mil|Location2.Y=2296.26mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3028.149mil|Location2.X=3193.11mil|Location1.Y=2231.299mil|Location2.Y=2296.26mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad P4-7(77.74mm,57.5mm) on Multi-Layer And Pad P4-9(80.28mm,57.5mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3520.276mil|Location2.X=3685.236mil|Location1.Y=2231.299mil|Location2.Y=2296.26mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3520.276mil|Location2.X=3685.236mil|Location1.Y=2231.299mil|Location2.Y=2296.26mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad P5-1(90.24mm,57.5mm) on Multi-Layer And Pad P5-3(92.78mm,57.5mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3920.276mil|Location2.X=4085.236mil|Location1.Y=2231.299mil|Location2.Y=2296.26mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3920.276mil|Location2.X=4085.236mil|Location1.Y=2231.299mil|Location2.Y=2296.26mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad P5-9(100.4mm,57.5mm) on Multi-Layer And Pad P5-11(102.94mm,57.5mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3620.276mil|Location2.X=3785.236mil|Location1.Y=2231.299mil|Location2.Y=2296.26mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3620.276mil|Location2.X=3785.236mil|Location1.Y=2231.299mil|Location2.Y=2296.26mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad P5-3(92.78mm,57.5mm) on Multi-Layer And Pad P5-5(95.32mm,57.5mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3720.276mil|Location2.X=3885.236mil|Location1.Y=2231.299mil|Location2.Y=2296.26mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3720.276mil|Location2.X=3885.236mil|Location1.Y=2231.299mil|Location2.Y=2296.26mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad P5-5(95.32mm,57.5mm) on Multi-Layer And Pad P5-7(97.86mm,57.5mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3820.276mil|Location2.X=3985.236mil|Location1.Y=2231.299mil|Location2.Y=2296.26mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3820.276mil|Location2.X=3985.236mil|Location1.Y=2231.299mil|Location2.Y=2296.26mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad P5-7(97.86mm,57.5mm) on Multi-Layer And Pad P5-9(100.4mm,57.5mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3918.291mil|Location2.X=4048.339mil|Location1.Y=3606.614mil|Location2.Y=3634.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3918.291mil|Location2.X=4048.339mil|Location1.Y=3606.614mil|Location2.Y=3634.567mil|Absolute=True">Un-Routed Net Constraint: Net NetAP1_U_PSU1_4 Between Pad R2_U_PSU1-1(99.86mm,91.963mm) on Top Layer And Pad R1_U_PSU1-2(102.493mm,91.963mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3767.48mil|Location2.X=3831.386mil|Location1.Y=3573.543mil|Location2.Y=3634.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3767.48mil|Location2.X=3831.386mil|Location1.Y=3573.543mil|Location2.Y=3634.567mil|Absolute=True">Un-Routed Net Constraint: Net NetAP1_U_PSU2_4 Between Pad R1_U_PSU2-2(96.049mm,91.983mm) on Top Layer And Pad R2_U_PSU2-1(96.962mm,91.103mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3803.433mil|Location2.X=3979.315mil|Location1.Y=3606.614mil|Location2.Y=3634.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3803.433mil|Location2.X=3979.315mil|Location1.Y=3606.614mil|Location2.Y=3634.567mil|Absolute=True">Un-Routed Net Constraint: Net GND Between Pad R2_U_PSU2-2(96.962mm,91.983mm) on Top Layer And Pad R2_U_PSU1-2(100.74mm,91.963mm) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDJCQ2YAFV45HTL3FG2R3V0PRSCFOTVS4PCONI4XV2QAG1E0W05KM"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=0.102mm) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3787.668mil|Location2.X=3791.334mil|Location1.Y=3734.702mil|Location2.Y=3738.369mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3787.668mil|Location2.X=3791.334mil|Location1.Y=3734.702mil|Location2.Y=3738.369mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad AP1_U_PSU1-3(95.85mm,95.15mm) on Top Layer And Text "R1_U_PSU2" (95.909mm,93.385mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3849.023mil|Location2.X=3854.273mil|Location1.Y=3731.627mil|Location2.Y=3736.877mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3849.023mil|Location2.X=3854.273mil|Location1.Y=3731.627mil|Location2.Y=3736.877mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.036mm &lt; 0.102mm) Between Pad AP1_U_PSU1-4(98.35mm,95.15mm) on Top Layer And Text "R1_U_PSU2" (95.909mm,93.385mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.036mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3886.093mil|Location2.X=3889.759mil|Location1.Y=3734.702mil|Location2.Y=3738.369mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3886.093mil|Location2.X=3889.759mil|Location1.Y=3734.702mil|Location2.Y=3738.369mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad AP1_U_PSU1-4(98.35mm,95.15mm) on Top Layer And Text "R2_U_PSU2" (96.823mm,93.385mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3860.988mil|Location2.X=3864.655mil|Location1.Y=3787.167mil|Location2.Y=3790.833mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3860.988mil|Location2.X=3864.655mil|Location1.Y=3787.167mil|Location2.Y=3790.833mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad AP1_U_PSU1-5(98.35mm,96.1mm) on Top Layer And Text "AP1_U_PSU1" (97.1mm,96.1mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3853.614mil|Location2.X=3857.28mil|Location1.Y=3828.993mil|Location2.Y=3832.66mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3853.614mil|Location2.X=3857.28mil|Location1.Y=3828.993mil|Location2.Y=3832.66mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad AP1_U_PSU1-6(98.35mm,97.05mm) on Top Layer And Text "AP1_U_PSU1" (97.1mm,96.1mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3944.068mil|Location2.X=3947.735mil|Location1.Y=3734.702mil|Location2.Y=3738.369mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3944.068mil|Location2.X=3947.735mil|Location1.Y=3734.702mil|Location2.Y=3738.369mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad AP1_U_PSU2-1(100.22mm,94.726mm) on Top Layer And Text "R1_U_PSU2" (95.909mm,93.385mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3984.055mil|Location2.X=3987.722mil|Location1.Y=3734.702mil|Location2.Y=3738.369mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3984.055mil|Location2.X=3987.722mil|Location1.Y=3734.702mil|Location2.Y=3738.369mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad AP1_U_PSU2-2(101.17mm,94.726mm) on Top Layer And Text "R1_U_PSU2" (95.909mm,93.385mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3990.018mil|Location2.X=3993.685mil|Location1.Y=3734.702mil|Location2.Y=3738.369mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3990.018mil|Location2.X=3993.685mil|Location1.Y=3734.702mil|Location2.Y=3738.369mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad AP1_U_PSU2-2(101.17mm,94.726mm) on Top Layer And Text "R2_U_PSU2" (96.823mm,93.385mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4030.005mil|Location2.X=4033.672mil|Location1.Y=3734.702mil|Location2.Y=3738.369mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4030.005mil|Location2.X=4033.672mil|Location1.Y=3734.702mil|Location2.Y=3738.369mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad AP1_U_PSU2-3(102.12mm,94.726mm) on Top Layer And Text "R2_U_PSU2" (96.823mm,93.385mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3950.959mil|Location2.X=3954.626mil|Location1.Y=3841.612mil|Location2.Y=3845.278mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3950.959mil|Location2.X=3954.626mil|Location1.Y=3841.612mil|Location2.Y=3845.278mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad AP1_U_PSU2-6(100.22mm,97.226mm) on Top Layer And Text "AP1_U_PSU1" (97.1mm,96.1mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3096.67mil|Location2.X=3100.337mil|Location1.Y=3569.681mil|Location2.Y=3573.348mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3096.67mil|Location2.X=3100.337mil|Location1.Y=3569.681mil|Location2.Y=3573.348mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C?_U_PSU1-1(78.483mm,90.918mm) on Top Layer And Text "C2_U_PSU1" (71.477mm,90.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3075.686mil|Location2.X=3079.352mil|Location1.Y=3627.599mil|Location2.Y=3631.266mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3075.686mil|Location2.X=3079.352mil|Location1.Y=3627.599mil|Location2.Y=3631.266mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C?_U_PSU1-1(78.483mm,90.918mm) on Top Layer And Text "C3_U_PSU1" (75.63mm,90.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3179.217mil|Location2.X=3182.883mil|Location1.Y=3627.599mil|Location2.Y=3631.266mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3179.217mil|Location2.X=3182.883mil|Location1.Y=3627.599mil|Location2.Y=3631.266mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C?_U_PSU1-2(81.083mm,90.918mm) on Top Layer And Text "C?_U_PSU1" (79.783mm,90.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3212.077mil|Location2.X=3215.743mil|Location1.Y=3627.599mil|Location2.Y=3631.266mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3212.077mil|Location2.X=3215.743mil|Location1.Y=3627.599mil|Location2.Y=3631.266mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C?_U_PSU1-2(81.083mm,90.918mm) on Top Layer And Text "C2_U_PSU1" (71.477mm,90.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3170.657mil|Location2.X=3174.323mil|Location1.Y=3577.616mil|Location2.Y=3581.282mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3170.657mil|Location2.X=3174.323mil|Location1.Y=3577.616mil|Location2.Y=3581.282mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C?_U_PSU1-2(81.083mm,90.918mm) on Top Layer And Text "C3_U_PSU1" (75.63mm,90.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3143.391mil|Location2.X=3147.057mil|Location1.Y=3734.229mil|Location2.Y=3737.895mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3143.391mil|Location2.X=3147.057mil|Location1.Y=3734.229mil|Location2.Y=3737.895mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C?_U_PSU2-1(80.498mm,94.526mm) on Top Layer And Text "L2_U_PSU1" (72.727mm,95.034mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3161.322mil|Location2.X=3164.988mil|Location1.Y=3799.651mil|Location2.Y=3803.318mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3161.322mil|Location2.X=3164.988mil|Location1.Y=3799.651mil|Location2.Y=3803.318mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C?_U_PSU2-2(80.498mm,97.126mm) on Top Layer And Text "L2_U_PSU1" (72.727mm,95.034mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3419.139mil|Location2.X=3422.806mil|Location1.Y=3567.619mil|Location2.Y=3571.285mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3419.139mil|Location2.X=3422.806mil|Location1.Y=3567.619mil|Location2.Y=3571.285mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C1_U_PSU1-1(86.739mm,91.393mm) on Top Layer And Text "C?_U_PSU1" (79.783mm,90.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3395.582mil|Location2.X=3399.249mil|Location1.Y=3623.395mil|Location2.Y=3627.062mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3395.582mil|Location2.X=3399.249mil|Location1.Y=3623.395mil|Location2.Y=3627.062mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C1_U_PSU1-1(86.739mm,91.393mm) on Top Layer And Text "C3_U_PSU1" (75.63mm,90.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3406.907mil|Location2.X=3410.574mil|Location1.Y=3610.322mil|Location2.Y=3613.989mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3406.907mil|Location2.X=3410.574mil|Location1.Y=3610.322mil|Location2.Y=3613.989mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C1_U_PSU1-1(86.739mm,91.393mm) on Top Layer And Text "C5_U_PSU1" (83.936mm,90.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3537.119mil|Location2.X=3540.786mil|Location1.Y=3629.58mil|Location2.Y=3633.247mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3537.119mil|Location2.X=3540.786mil|Location1.Y=3629.58mil|Location2.Y=3633.247mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C1_U_PSU1-2(89.339mm,91.393mm) on Top Layer And Text "C?_U_PSU1" (79.783mm,90.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3494.275mil|Location2.X=3497.942mil|Location1.Y=3596.316mil|Location2.Y=3599.983mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3494.275mil|Location2.X=3497.942mil|Location1.Y=3596.316mil|Location2.Y=3599.983mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C1_U_PSU1-2(89.339mm,91.393mm) on Top Layer And Text "C1_U_PSU1" (88.039mm,91.393mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3497.68mil|Location2.X=3501.347mil|Location1.Y=3577.616mil|Location2.Y=3581.282mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3497.68mil|Location2.X=3501.347mil|Location1.Y=3577.616mil|Location2.Y=3581.282mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C1_U_PSU1-2(89.339mm,91.393mm) on Top Layer And Text "C5_U_PSU1" (83.936mm,90.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2754.328mil|Location2.X=2759.578mil|Location1.Y=3629.466mil|Location2.Y=3634.716mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2754.328mil|Location2.X=2759.578mil|Location1.Y=3629.466mil|Location2.Y=3634.716mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.024mm &lt; 0.102mm) Between Pad C2_U_PSU1-1(70.177mm,90.918mm) on Top Layer And Track (70.027mm,92.367mm)(70.027mm,93.51mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2783.855mil|Location2.X=2789.105mil|Location1.Y=3629.466mil|Location2.Y=3634.716mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2783.855mil|Location2.X=2789.105mil|Location1.Y=3629.466mil|Location2.Y=3634.716mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.024mm &lt; 0.102mm) Between Pad C2_U_PSU1-1(70.177mm,90.918mm) on Top Layer And Track (70.027mm,92.367mm)(75.427mm,92.367mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2852.193mil|Location2.X=2855.86mil|Location1.Y=3627.599mil|Location2.Y=3631.266mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2852.193mil|Location2.X=2855.86mil|Location1.Y=3627.599mil|Location2.Y=3631.266mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C2_U_PSU1-2(72.777mm,90.918mm) on Top Layer And Text "C2_U_PSU1" (71.477mm,90.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2838.974mil|Location2.X=2844.224mil|Location1.Y=3629.466mil|Location2.Y=3634.716mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2838.974mil|Location2.X=2844.224mil|Location1.Y=3629.466mil|Location2.Y=3634.716mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.024mm &lt; 0.102mm) Between Pad C2_U_PSU1-2(72.777mm,90.918mm) on Top Layer And Track (70.027mm,92.367mm)(75.427mm,92.367mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3251.293mil|Location2.X=3254.959mil|Location1.Y=3739.671mil|Location2.Y=3743.337mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3251.293mil|Location2.X=3254.959mil|Location1.Y=3739.671mil|Location2.Y=3743.337mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C2_U_PSU2-1(83.501mm,94.526mm) on Top Layer And Text "L2_U_PSU1" (72.727mm,95.034mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3251.293mil|Location2.X=3254.959mil|Location1.Y=3799.651mil|Location2.Y=3803.318mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3251.293mil|Location2.X=3254.959mil|Location1.Y=3799.651mil|Location2.Y=3803.318mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C2_U_PSU2-2(83.501mm,97.126mm) on Top Layer And Text "L2_U_PSU1" (72.727mm,95.034mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2912.174mil|Location2.X=2915.84mil|Location1.Y=3577.616mil|Location2.Y=3581.282mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2912.174mil|Location2.X=2915.84mil|Location1.Y=3577.616mil|Location2.Y=3581.282mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C3_U_PSU1-1(74.33mm,90.918mm) on Top Layer And Text "C2_U_PSU1" (71.477mm,90.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2900.123mil|Location2.X=2905.373mil|Location1.Y=3629.466mil|Location2.Y=3634.716mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2900.123mil|Location2.X=2905.373mil|Location1.Y=3629.466mil|Location2.Y=3634.716mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.024mm &lt; 0.102mm) Between Pad C3_U_PSU1-1(74.33mm,90.918mm) on Top Layer And Track (70.027mm,92.367mm)(75.427mm,92.367mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.024mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3007.145mil|Location2.X=3010.811mil|Location1.Y=3577.616mil|Location2.Y=3581.282mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3007.145mil|Location2.X=3010.811mil|Location1.Y=3577.616mil|Location2.Y=3581.282mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C3_U_PSU1-2(76.93mm,90.918mm) on Top Layer And Text "C2_U_PSU1" (71.477mm,90.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3015.705mil|Location2.X=3019.372mil|Location1.Y=3627.599mil|Location2.Y=3631.266mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3015.705mil|Location2.X=3019.372mil|Location1.Y=3627.599mil|Location2.Y=3631.266mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C3_U_PSU1-2(76.93mm,90.918mm) on Top Layer And Text "C3_U_PSU1" (75.63mm,90.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3559.094mil|Location2.X=3562.76mil|Location1.Y=3617.311mil|Location2.Y=3620.977mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3559.094mil|Location2.X=3562.76mil|Location1.Y=3617.311mil|Location2.Y=3620.977mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C4_U_PSU1-1(90.793mm,91.393mm) on Top Layer And Text "C?_U_PSU1" (79.783mm,90.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3579.147mil|Location2.X=3582.814mil|Location1.Y=3586.32mil|Location2.Y=3589.986mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3579.147mil|Location2.X=3582.814mil|Location1.Y=3586.32mil|Location2.Y=3589.986mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C4_U_PSU1-1(90.793mm,91.393mm) on Top Layer And Text "C1_U_PSU1" (88.039mm,91.393mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3586.988mil|Location2.X=3593.9mil|Location1.Y=3566.112mil|Location2.Y=3575.396mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3586.988mil|Location2.X=3593.9mil|Location1.Y=3566.112mil|Location2.Y=3575.396mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.056mm &lt; 0.102mm) Between Pad C4_U_PSU1-1(90.793mm,91.393mm) on Top Layer And Text "C5_U_PSU1" (83.936mm,90.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.056mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3664.22mil|Location2.X=3667.887mil|Location1.Y=3596.316mil|Location2.Y=3599.983mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3664.22mil|Location2.X=3667.887mil|Location1.Y=3596.316mil|Location2.Y=3599.983mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C4_U_PSU1-2(93.393mm,91.393mm) on Top Layer And Text "C1_U_PSU1" (88.039mm,91.393mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3653.85mil|Location2.X=3657.517mil|Location1.Y=3596.316mil|Location2.Y=3599.983mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3653.85mil|Location2.X=3657.517mil|Location1.Y=3596.316mil|Location2.Y=3599.983mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C4_U_PSU1-2(93.393mm,91.393mm) on Top Layer And Text "C4_U_PSU1" (92.093mm,91.393mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3696.694mil|Location2.X=3700.361mil|Location1.Y=3629.781mil|Location2.Y=3633.448mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3696.694mil|Location2.X=3700.361mil|Location1.Y=3629.781mil|Location2.Y=3633.448mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C4_U_PSU1-2(93.393mm,91.393mm) on Top Layer And Text "C5_U_PSU1" (83.936mm,90.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3696.694mil|Location2.X=3700.361mil|Location1.Y=3563.664mil|Location2.Y=3567.33mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3696.694mil|Location2.X=3700.361mil|Location1.Y=3563.664mil|Location2.Y=3567.33mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C4_U_PSU1-2(93.393mm,91.393mm) on Top Layer And Text "J1_U_PSU2" (94.006mm,90.31mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3239.197mil|Location2.X=3242.864mil|Location1.Y=3627.599mil|Location2.Y=3631.266mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3239.197mil|Location2.X=3242.864mil|Location1.Y=3627.599mil|Location2.Y=3631.266mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C5_U_PSU1-1(82.636mm,90.918mm) on Top Layer And Text "C?_U_PSU1" (79.783mm,90.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3232.07mil|Location2.X=3235.737mil|Location1.Y=3620.656mil|Location2.Y=3624.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3232.07mil|Location2.X=3235.737mil|Location1.Y=3620.656mil|Location2.Y=3624.323mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C5_U_PSU1-1(82.636mm,90.918mm) on Top Layer And Text "C2_U_PSU1" (71.477mm,90.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3260.182mil|Location2.X=3263.849mil|Location1.Y=3569.681mil|Location2.Y=3573.348mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3260.182mil|Location2.X=3263.849mil|Location1.Y=3569.681mil|Location2.Y=3573.348mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C5_U_PSU1-1(82.636mm,90.918mm) on Top Layer And Text "C3_U_PSU1" (75.63mm,90.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3334.168mil|Location2.X=3337.835mil|Location1.Y=3577.616mil|Location2.Y=3581.282mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3334.168mil|Location2.X=3337.835mil|Location1.Y=3577.616mil|Location2.Y=3581.282mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C5_U_PSU1-2(85.236mm,90.918mm) on Top Layer And Text "C?_U_PSU1" (79.783mm,90.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3375.589mil|Location2.X=3379.255mil|Location1.Y=3627.599mil|Location2.Y=3631.266mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3375.589mil|Location2.X=3379.255mil|Location1.Y=3627.599mil|Location2.Y=3631.266mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C5_U_PSU1-2(85.236mm,90.918mm) on Top Layer And Text "C3_U_PSU1" (75.63mm,90.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3342.729mil|Location2.X=3346.395mil|Location1.Y=3627.599mil|Location2.Y=3631.266mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3342.729mil|Location2.X=3346.395mil|Location1.Y=3627.599mil|Location2.Y=3631.266mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C5_U_PSU1-2(85.236mm,90.918mm) on Top Layer And Text "C5_U_PSU1" (83.936mm,90.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3361.257mil|Location2.X=3364.923mil|Location1.Y=3739.671mil|Location2.Y=3743.337mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3361.257mil|Location2.X=3364.923mil|Location1.Y=3739.671mil|Location2.Y=3743.337mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C5_U_PSU2-1(86.504mm,94.526mm) on Top Layer And Text "L2_U_PSU1" (72.727mm,95.034mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3356.26mil|Location2.X=3359.927mil|Location1.Y=3798.411mil|Location2.Y=3802.077mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3356.26mil|Location2.X=3359.927mil|Location1.Y=3798.411mil|Location2.Y=3802.077mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad C5_U_PSU2-2(86.504mm,97.126mm) on Top Layer And Text "L2_U_PSU1" (72.727mm,95.034mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4046.64mil|Location2.X=4050.307mil|Location1.Y=4377.435mil|Location2.Y=4381.102mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4046.64mil|Location2.X=4050.307mil|Location1.Y=4377.435mil|Location2.Y=4381.102mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad L1_U_PSU1-2(103.254mm,110.677mm) on Top Layer And Text "L1_U_PSU1" (101.054mm,110.677mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2961.386mil|Location2.X=2965.053mil|Location1.Y=3739.671mil|Location2.Y=3743.337mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2961.386mil|Location2.X=2965.053mil|Location1.Y=3739.671mil|Location2.Y=3743.337mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad L2_U_PSU1-2(74.927mm,95.034mm) on Top Layer And Text "L2_U_PSU1" (72.727mm,95.034mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3020.005mil|Location2.X=3025.255mil|Location1.Y=3723.644mil|Location2.Y=3728.894mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3020.005mil|Location2.X=3025.255mil|Location1.Y=3723.644mil|Location2.Y=3728.894mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.012mm &lt; 0.102mm) Between Pad P6-1(77.525mm,93.891mm) on Multi-Layer And Text "L2_U_PSU1" (72.727mm,95.034mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.012mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3077.262mil|Location2.X=3080.929mil|Location1.Y=3782.547mil|Location2.Y=3786.213mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3077.262mil|Location2.X=3080.929mil|Location1.Y=3782.547mil|Location2.Y=3786.213mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad P6-2(77.525mm,96.431mm) on Multi-Layer And Text "L2_U_PSU1" (72.727mm,95.034mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3990.614mil|Location2.X=3994.281mil|Location1.Y=3628.859mil|Location2.Y=3632.526mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3990.614mil|Location2.X=3994.281mil|Location1.Y=3628.859mil|Location2.Y=3632.526mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad R1_U_PSU1-1(101.613mm,91.963mm) on Top Layer And Text "C4_U_PSU1" (92.093mm,91.393mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3986.081mil|Location2.X=3991.331mil|Location1.Y=3611.171mil|Location2.Y=3616.421mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3986.081mil|Location2.X=3991.331mil|Location1.Y=3611.171mil|Location2.Y=3616.421mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.083mm &lt; 0.102mm) Between Pad R1_U_PSU1-1(101.613mm,91.963mm) on Top Layer And Text "J1_U_PSU1" (96.828mm,90.519mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.083mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3994.108mil|Location2.X=3997.774mil|Location1.Y=3613.736mil|Location2.Y=3617.403mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3994.108mil|Location2.X=3997.774mil|Location1.Y=3613.736mil|Location2.Y=3617.403mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad R1_U_PSU1-1(101.613mm,91.963mm) on Top Layer And Text "J1_U_PSU2" (94.006mm,90.31mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4008.246mil|Location2.X=4013.496mil|Location1.Y=3617.966mil|Location2.Y=3623.216mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4008.246mil|Location2.X=4013.496mil|Location1.Y=3617.966mil|Location2.Y=3623.216mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.099mm &lt; 0.102mm) Between Pad R1_U_PSU1-1(101.613mm,91.963mm) on Top Layer And Text "R1_U_PSU1" (102.053mm,91.963mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.099mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3991.956mil|Location2.X=3995.623mil|Location1.Y=3618.846mil|Location2.Y=3622.513mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3991.956mil|Location2.X=3995.623mil|Location1.Y=3618.846mil|Location2.Y=3622.513mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad R1_U_PSU1-1(101.613mm,91.963mm) on Top Layer And Text "R2_U_PSU1" (100.3mm,91.963mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4028.729mil|Location2.X=4032.396mil|Location1.Y=3616.399mil|Location2.Y=3620.066mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4028.729mil|Location2.X=4032.396mil|Location1.Y=3616.399mil|Location2.Y=3620.066mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad R1_U_PSU1-2(102.493mm,91.963mm) on Top Layer And Text "C4_U_PSU1" (92.093mm,91.393mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4025.224mil|Location2.X=4028.891mil|Location1.Y=3621.984mil|Location2.Y=3625.651mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4025.224mil|Location2.X=4028.891mil|Location1.Y=3621.984mil|Location2.Y=3625.651mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad R1_U_PSU1-2(102.493mm,91.963mm) on Top Layer And Text "J1_U_PSU1" (96.828mm,90.519mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4028.211mil|Location2.X=4031.878mil|Location1.Y=3611.606mil|Location2.Y=3615.273mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4028.211mil|Location2.X=4031.878mil|Location1.Y=3611.606mil|Location2.Y=3615.273mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad R1_U_PSU1-2(102.493mm,91.963mm) on Top Layer And Text "J1_U_PSU2" (94.006mm,90.31mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4039.76mil|Location2.X=4043.427mil|Location1.Y=3629.611mil|Location2.Y=3633.278mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4039.76mil|Location2.X=4043.427mil|Location1.Y=3629.611mil|Location2.Y=3633.278mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad R1_U_PSU1-2(102.493mm,91.963mm) on Top Layer And Text "R1_U_PSU1" (102.053mm,91.963mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4025.08mil|Location2.X=4028.747mil|Location1.Y=3618.757mil|Location2.Y=3622.424mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4025.08mil|Location2.X=4028.747mil|Location1.Y=3618.757mil|Location2.Y=3622.424mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad R1_U_PSU1-2(102.493mm,91.963mm) on Top Layer And Text "R2_U_PSU1" (100.3mm,91.963mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3770.572mil|Location2.X=3774.239mil|Location1.Y=3586.32mil|Location2.Y=3589.986mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3770.572mil|Location2.X=3774.239mil|Location1.Y=3586.32mil|Location2.Y=3589.986mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad R1_U_PSU2-1(96.049mm,91.103mm) on Top Layer And Text "C4_U_PSU1" (92.093mm,91.393mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3782.586mil|Location2.X=3786.253mil|Location1.Y=3577.616mil|Location2.Y=3581.282mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3782.586mil|Location2.X=3786.253mil|Location1.Y=3577.616mil|Location2.Y=3581.282mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad R1_U_PSU2-1(96.049mm,91.103mm) on Top Layer And Text "C5_U_PSU1" (83.936mm,90.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3774.18mil|Location2.X=3777.846mil|Location1.Y=3593.942mil|Location2.Y=3597.608mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3774.18mil|Location2.X=3777.846mil|Location1.Y=3593.942mil|Location2.Y=3597.608mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad R1_U_PSU2-1(96.049mm,91.103mm) on Top Layer And Text "J1_U_PSU2" (94.006mm,90.31mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3782.161mil|Location2.X=3785.827mil|Location1.Y=3615.145mil|Location2.Y=3618.811mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3782.161mil|Location2.X=3785.827mil|Location1.Y=3615.145mil|Location2.Y=3618.811mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad R1_U_PSU2-2(96.049mm,91.983mm) on Top Layer And Text "C1_U_PSU1" (88.039mm,91.393mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3776.774mil|Location2.X=3783.656mil|Location1.Y=3619.565mil|Location2.Y=3629.163mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3776.774mil|Location2.X=3783.656mil|Location1.Y=3619.565mil|Location2.Y=3629.163mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.04mm &lt; 0.102mm) Between Pad R1_U_PSU2-2(96.049mm,91.983mm) on Top Layer And Text "C5_U_PSU1" (83.936mm,90.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.04mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3774.179mil|Location2.X=3777.845mil|Location1.Y=3613.744mil|Location2.Y=3617.41mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3774.179mil|Location2.X=3777.845mil|Location1.Y=3613.744mil|Location2.Y=3617.41mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad R1_U_PSU2-2(96.049mm,91.983mm) on Top Layer And Text "J1_U_PSU2" (94.006mm,90.31mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3919.396mil|Location2.X=3924.646mil|Location1.Y=3627.796mil|Location2.Y=3633.046mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3919.396mil|Location2.X=3924.646mil|Location1.Y=3627.796mil|Location2.Y=3633.046mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.053mm &lt; 0.102mm) Between Pad R2_U_PSU1-1(99.86mm,91.963mm) on Top Layer And Text "C1_U_PSU1" (88.039mm,91.393mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.053mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3921.591mil|Location2.X=3925.257mil|Location1.Y=3608.655mil|Location2.Y=3612.322mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3921.591mil|Location2.X=3925.257mil|Location1.Y=3608.655mil|Location2.Y=3612.322mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad R2_U_PSU1-1(99.86mm,91.963mm) on Top Layer And Text "C4_U_PSU1" (92.093mm,91.393mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3939.222mil|Location2.X=3944.472mil|Location1.Y=3617.966mil|Location2.Y=3623.216mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3939.222mil|Location2.X=3944.472mil|Location1.Y=3617.966mil|Location2.Y=3623.216mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.099mm &lt; 0.102mm) Between Pad R2_U_PSU1-1(99.86mm,91.963mm) on Top Layer And Text "R2_U_PSU1" (100.3mm,91.963mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.099mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3956.059mil|Location2.X=3959.726mil|Location1.Y=3618.616mil|Location2.Y=3622.283mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3956.059mil|Location2.X=3959.726mil|Location1.Y=3618.616mil|Location2.Y=3622.283mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad R2_U_PSU1-2(100.74mm,91.963mm) on Top Layer And Text "C4_U_PSU1" (92.093mm,91.393mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3973.002mil|Location2.X=3978.252mil|Location1.Y=3607.864mil|Location2.Y=3613.114mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3973.002mil|Location2.X=3978.252mil|Location1.Y=3607.864mil|Location2.Y=3613.114mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.073mm &lt; 0.102mm) Between Pad R2_U_PSU1-2(100.74mm,91.963mm) on Top Layer And Text "J1_U_PSU1" (96.828mm,90.519mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.073mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3970.737mil|Location2.X=3974.403mil|Location1.Y=3629.611mil|Location2.Y=3633.278mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3970.737mil|Location2.X=3974.403mil|Location1.Y=3629.611mil|Location2.Y=3633.278mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad R2_U_PSU1-2(100.74mm,91.963mm) on Top Layer And Text "R2_U_PSU1" (100.3mm,91.963mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3822.808mil|Location2.X=3826.474mil|Location1.Y=3594.966mil|Location2.Y=3598.632mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3822.808mil|Location2.X=3826.474mil|Location1.Y=3594.966mil|Location2.Y=3598.632mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad R2_U_PSU2-1(96.962mm,91.103mm) on Top Layer And Text "C1_U_PSU1" (88.039mm,91.393mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3806.465mil|Location2.X=3814.212mil|Location1.Y=3591.52mil|Location2.Y=3599.196mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3806.465mil|Location2.X=3814.212mil|Location1.Y=3591.52mil|Location2.Y=3599.196mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.038mm &lt; 0.102mm) Between Pad R2_U_PSU2-1(96.962mm,91.103mm) on Top Layer And Text "C4_U_PSU1" (92.093mm,91.393mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.038mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3807.579mil|Location2.X=3811.245mil|Location1.Y=3577.712mil|Location2.Y=3581.379mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3807.579mil|Location2.X=3811.245mil|Location1.Y=3577.712mil|Location2.Y=3581.379mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad R2_U_PSU2-1(96.962mm,91.103mm) on Top Layer And Text "C5_U_PSU1" (83.936mm,90.918mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3805.981mil|Location2.X=3813.79mil|Location1.Y=3574.751mil|Location2.Y=3582.365mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3805.981mil|Location2.X=3813.79mil|Location1.Y=3574.751mil|Location2.Y=3582.365mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.003mm &lt; 0.102mm) Between Pad R2_U_PSU2-1(96.962mm,91.103mm) on Top Layer And Text "J1_U_PSU1" (96.828mm,90.519mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.003mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3822.808mil|Location2.X=3826.474mil|Location1.Y=3626.307mil|Location2.Y=3629.973mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3822.808mil|Location2.X=3826.474mil|Location1.Y=3626.307mil|Location2.Y=3629.973mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad R2_U_PSU2-2(96.962mm,91.983mm) on Top Layer And Text "C1_U_PSU1" (88.039mm,91.393mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3808.801mil|Location2.X=3812.468mil|Location1.Y=3628.587mil|Location2.Y=3632.254mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3808.801mil|Location2.X=3812.468mil|Location1.Y=3628.587mil|Location2.Y=3632.254mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.102mm) Between Pad R2_U_PSU2-2(96.962mm,91.983mm) on Top Layer And Text "C4_U_PSU1" (92.093mm,91.393mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3823.255mil|Location2.X=3828.505mil|Location1.Y=3621.104mil|Location2.Y=3626.354mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3823.255mil|Location2.X=3828.505mil|Location1.Y=3621.104mil|Location2.Y=3626.354mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.063mm &lt; 0.102mm) Between Pad R2_U_PSU2-2(96.962mm,91.983mm) on Top Layer And Text "J1_U_PSU1" (96.828mm,90.519mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.063mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDN1VXBIAOKIXOPSKWB3F3F0CKM1Y3HU3DKTMRYO4GKHTYPA505VC"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Board Clearance Constraint (Gap=0mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4486.171mil|Location2.X=4492.42mil|Location1.Y=3911.958mil|Location2.Y=3918.207mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4486.171mil|Location2.X=4492.42mil|Location1.Y=3911.958mil|Location2.Y=3918.207mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.2mm) Between Board Edge And Text "AP1_U_PSU2" (99.329mm,98.808mm) on Top Overlay </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4499.804mil|Location2.X=4506.053mil|Location1.Y=3642.458mil|Location2.Y=3648.707mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4499.804mil|Location2.X=4506.053mil|Location1.Y=3642.458mil|Location2.Y=3648.707mil|Absolute=True">Board Outline Clearance(Outline Edge): (Collision &lt; 0.2mm) Between Board Edge And Text "R1_U_PSU1" (102.053mm,91.963mm) on Top Overlay </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

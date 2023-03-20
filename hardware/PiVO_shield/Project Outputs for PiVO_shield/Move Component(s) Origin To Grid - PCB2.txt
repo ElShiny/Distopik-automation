@@ -1,0 +1,42 @@
+Move Component(s) Origin to Grid
+Filename     : C:\Users\Matej\Desktop\Distopik-automation\hardware\PiVO_shield\PCB2.PcbDoc
+Date         : 20/03/2023
+Time         : 15:56:37
+Time Elapsed : 00:00:00
+
+
+    SMT Small Component R4-~3k (93.8mm,69.1mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component D2-LED (93.9mm,67.6mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R3_U_PSU2-~300 (84.4mm,68.2mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component R3_U_PSU1-~300 (90.9mm,69.1mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component D1_U_PSU2-LED (84.4mm,66.8mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component D1_U_PSU1-LED (90.9mm,67.6mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component C6_U_PSU2-100n (83.5mm,104.3mm) on Top Layer - Origin changed from [83.5mm:104.3mm] to [83.5mm:104.3mm]
+    SMT Small Component C6_U_PSU1-100n (105.6mm,104.3mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component R2_U_PSU2-10k 1% (76.1mm,106.3mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component R2_U_PSU1-10k 1% (98.2mm,106.3mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component R1_U_PSU2-52.3k 1% (74.2mm,106.3mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT Small Component R1_U_PSU1-52.3k 1% (96.3mm,106.3mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    Small Component P6-Header 2 (112.1mm,105.3mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    DIP Component P5-ACTUATOR (90.24mm,57.5mm) on Top Layer - Component pads are OFF grid. No action taken.
+    DIP Component P4-UI (70.12mm,57.5mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SIP Component P3-ACT PWR (92.78mm,64mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SIP Component P2-UI PWR (80.28mm,64.1mm) on Top Layer - Component pads are OFF grid. No action taken.
+    DIP Component P1-RPI Header (62.77mm,62.37mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SMT SIP Component L1_U_PSU2-3.3uH (73.9mm,96.5mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT SIP Component L1_U_PSU1-3.3uH (96mm,96.5mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+    SMT Small Component C7_U_PSU2-22u (80.7mm,99.2mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component C7_U_PSU1-22u (102.8mm,99.2mm) on Top Layer - Origin changed from [102.8mm:99.2mm] to [102.8mm:99.2mm]
+    SMT Small Component C5_U_PSU2-22u (66.3mm,67.6mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component C5_U_PSU1-22u (95.2mm,73.3mm) on Top Layer - Origin changed from [95.2mm:73.3mm] to [95.2mm:73.3mm]
+    SMT Small Component C4_U_PSU2-100n (86.2mm,99.2mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component C4_U_PSU1-100n (108.3mm,99.2mm) on Top Layer - Origin changed from [108.3mm:99.2mm] to [108.3mm:99.2mm]
+    SMT Small Component C3_U_PSU2-22u (83.6mm,99.2mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component C3_U_PSU1-22u (105.7mm,99.2mm) on Top Layer - Origin changed from [105.7mm:99.2mm] to [105.7mm:99.2mm]
+    SMT Small Component C2_U_PSU2-10u (80.7mm,104.3mm) on Top Layer - Origin changed from [80.7mm:104.3mm] to [80.7mm:104.3mm]
+    SMT Small Component C2_U_PSU1-10u (102.8mm,104.3mm) on Top Layer - Origin changed from [102.8mm:104.3mm] to [102.8mm:104.3mm]
+    SMT Small Component C1_U_PSU2-100n (72.7mm,103.2mm) on Top Layer - Component origin is already ON grid.
+    SMT Small Component C1_U_PSU1-100n (94.8mm,103.2mm) on Top Layer - Component origin is already ON grid.
+    SOIC Component AP1_U_PSU2-AP62301 (76.9mm,104.1mm) on Top Layer - Component pads are OFF grid. No action taken.
+    SOIC Component AP1_U_PSU1-AP62301 (99mm,104.1mm) on Top Layer - Component origin is already ON grid. - Component pads are OFF grid. No action taken.
+count : 34
