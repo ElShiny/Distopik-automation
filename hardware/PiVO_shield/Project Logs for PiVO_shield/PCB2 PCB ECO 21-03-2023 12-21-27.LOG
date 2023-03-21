@@ -1,0 +1,8 @@
+Added Component: Designator=CN1(VRSTNA SPONKA 2P/16A)
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=CN1-1
+Added Pin To Net: NetName=NetCN1_2 Pin=CN1-2
+Added Pin To Net: NetName=NetCN1_2 Pin=F1-2
+Added Net: Name=NetCN1_2
+Added Member To Class: ClassName=main Member=Component CN1 VRSTNA SPONKA 2P/16A
+Added Room: Name=main
