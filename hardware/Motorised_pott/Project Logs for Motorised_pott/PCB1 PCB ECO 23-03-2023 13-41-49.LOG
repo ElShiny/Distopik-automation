@@ -1,0 +1,9 @@
+Added Component: Designator=SN?(SON35P100X40-6N)
+Added Pin To Net: NetName=MS Pin=SN?-1
+Added Pin To Net: NetName=GND Pin=SN?-2
+Added Pin To Net: NetName=PWM Pin=SN?-3
+Added Pin To Net: NetName=NetB2_5 Pin=SN?-4
+Added Pin To Net: NetName=+3.3V Pin=SN?-5
+Added Pin To Net: NetName=NetB2_6 Pin=SN?-6
+Added Member To Class: ClassName=main Member=Component SN? SN74LV
+Added Room: Name=main

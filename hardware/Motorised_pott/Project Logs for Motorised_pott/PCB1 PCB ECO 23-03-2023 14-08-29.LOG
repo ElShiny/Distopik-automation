@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=R1 Old Footprint=R2012_0805I_M New Footprint=R2012_0805I_N
+Change Component Footprint: Designator=R2 Old Footprint=R2012_0805I_M New Footprint=R2012_0805I_N
+Change Component Footprint: Designator=R3 Old Footprint=R2012_0805I_M New Footprint=R2012_0805I_N
+Change Component Footprint: Designator=R4 Old Footprint=R2012_0805I_M New Footprint=R2012_0805I_N
+Added Room: Name=main

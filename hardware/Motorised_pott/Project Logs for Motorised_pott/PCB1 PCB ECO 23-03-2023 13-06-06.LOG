@@ -1,0 +1,205 @@
+Added Component: Designator=B1(PRM162K415K103B1)
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.bourns.com/docs/product-datasheets/PDB18.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "28.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "PRM162-K420K-103B1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "652-PRM162K420K103B1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Bourns/PRM162-K420K-103B1?qs=U%2FacTlguYxaZbpiLvzzeCA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=B2(SON50P200X200X80-9N)
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.ti.com/lit/gpn/drv8837c"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "0.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "DRV8837CDSGR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "595-DRV8837CDSGR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/DRV8837CDSGR?qs=vcbl%252BK4rRlftuEtjGJGzZQ%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=C1(R1005_0402i_M)
+Added Component: Designator=C2(R1005_0402i_M)
+Added Component: Designator=C3(R1005_0402i_M)
+Added Component: Designator=C4(R1005_0402i_L)
+Added Component: Designator=C5(C1608_0603I_L)
+Added Component: Designator=C6(R1005_0402i_L)
+Added Component: Designator=C7(R1005_0402i_L)
+Added Component: Designator=C8(R1005_0402i_L)
+Added Component: Designator=FB1(R1608_0603I_L)
+Added Component: Designator=J1(solderJumper)
+Added Component: Designator=K1(H1x1)
+Added Component: Designator=K2(H1x1)
+Added Component: Designator=LD1(TSOP95P280X110-6L)
+Added Component: Designator=P1(HDR1X3)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P2(HDR1X4)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P3(HDR1X4)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P4(1.27mm SMD conn)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P5(1.27mm SMD conn)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=R1(R2012_0805I_M)
+Added Component: Designator=R2(R2012_0805I_M)
+Added Component: Designator=R3(R2012_0805I_M)
+Added Component: Designator=R4(R2012_0805I_M)
+Added Component: Designator=R5(R1005_0402i_L)
+Added Component: Designator=R6(R1005_0402i_L)
+Added Component: Designator=TP1(PAD)
+Added Component: Designator=U1(28M1_N)
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Manufacturer Link"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.atmel.com/products/avr/default.asp?"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2Description"; Value = "ATtiny48/88 Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink2URL"; Value = "http://www.atmel.com/dyn/resources/prod_documents/doc8008.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3Description"; Value = "ATtiny48/88 Summary"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink3URL"; Value = "http://www.atmel.com/dyn/resources/prod_documents/8008S.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4Description"; Value = "Atmel.com Home"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink4URL"; Value = "http://www.atmel.com"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "revC, Mar-2009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "28-pad, 4x4x1.0mm Body, Pitch 0.45mm, 2.4x2.4mm Exposed Pad, Plastic Very Thin QFN Package (VQFN)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "28M1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageVersion"; Value = "revB, Nov-2008"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Published"; Value = "1-Apr-2010"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 2"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "ATTINY88-MMU-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 2"; Value = "556-ATTINY88-MMU"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+3.3V Pin=B1-6
+Added Pin To Net: NetName=+3.3V Pin=B2-8
+Added Pin To Net: NetName=+3.3V Pin=C1-2
+Added Pin To Net: NetName=+3.3V Pin=C2-2
+Added Pin To Net: NetName=+3.3V Pin=C5-1
+Added Pin To Net: NetName=+3.3V Pin=C6-1
+Added Pin To Net: NetName=+3.3V Pin=C7-1
+Added Pin To Net: NetName=+3.3V Pin=FB1-1
+Added Pin To Net: NetName=+3.3V Pin=LD1-5
+Added Pin To Net: NetName=+3.3V Pin=R5-1
+Added Pin To Net: NetName=+3.3V Pin=R6-1
+Added Pin To Net: NetName=+3.3V Pin=U1-3
+Added Net: Name=+3.3V
+Added Pin To Net: NetName=+5 Pin=B2-1
+Added Pin To Net: NetName=+5 Pin=C3-1
+Added Pin To Net: NetName=+5 Pin=C4-1
+Added Pin To Net: NetName=+5 Pin=LD1-1
+Added Pin To Net: NetName=+5 Pin=LD1-3
+Added Pin To Net: NetName=+5 Pin=P2-2
+Added Pin To Net: NetName=+5 Pin=P2-3
+Added Pin To Net: NetName=+5 Pin=P3-2
+Added Pin To Net: NetName=+5 Pin=P3-3
+Added Net: Name=+5
+Added Pin To Net: NetName=AVCC Pin=C8-1
+Added Pin To Net: NetName=AVCC Pin=FB1-2
+Added Pin To Net: NetName=AVCC Pin=U1-16
+Added Net: Name=AVCC
+Added Pin To Net: NetName=GND Pin=B1-4
+Added Pin To Net: NetName=GND Pin=B1-MH1
+Added Pin To Net: NetName=GND Pin=B1-MH2
+Added Pin To Net: NetName=GND Pin=B2-4
+Added Pin To Net: NetName=GND Pin=B2-9
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=GND Pin=C4-2
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Pin To Net: NetName=GND Pin=C6-2
+Added Pin To Net: NetName=GND Pin=C7-2
+Added Pin To Net: NetName=GND Pin=C8-2
+Added Pin To Net: NetName=GND Pin=LD1-2
+Added Pin To Net: NetName=GND Pin=P2-1
+Added Pin To Net: NetName=GND Pin=P2-4
+Added Pin To Net: NetName=GND Pin=P3-1
+Added Pin To Net: NetName=GND Pin=P3-4
+Added Pin To Net: NetName=GND Pin=P4-1
+Added Pin To Net: NetName=GND Pin=P4-3
+Added Pin To Net: NetName=GND Pin=P4-5
+Added Pin To Net: NetName=GND Pin=P4-7
+Added Pin To Net: NetName=GND Pin=P4-9
+Added Pin To Net: NetName=GND Pin=P4-11
+Added Pin To Net: NetName=GND Pin=P5-1
+Added Pin To Net: NetName=GND Pin=P5-3
+Added Pin To Net: NetName=GND Pin=P5-5
+Added Pin To Net: NetName=GND Pin=P5-7
+Added Pin To Net: NetName=GND Pin=P5-9
+Added Pin To Net: NetName=GND Pin=P5-11
+Added Pin To Net: NetName=GND Pin=R1-2
+Added Pin To Net: NetName=GND Pin=R2-2
+Added Pin To Net: NetName=GND Pin=R3-2
+Added Pin To Net: NetName=GND Pin=R4-2
+Added Pin To Net: NetName=GND Pin=U1-4
+Added Pin To Net: NetName=GND Pin=U1-18
+Added Pin To Net: NetName=GND Pin=U1-29
+Added Net: Name=GND
+Added Pin To Net: NetName=INT Pin=P4-12
+Added Pin To Net: NetName=INT Pin=P5-12
+Added Pin To Net: NetName=INT Pin=R6-2
+Added Pin To Net: NetName=INT Pin=U1-6
+Added Net: Name=INT
+Added Pin To Net: NetName=MISO_T88 Pin=J1-1
+Added Pin To Net: NetName=MISO_T88 Pin=P5-4
+Added Pin To Net: NetName=MISO_T88 Pin=U1-14
+Added Net: Name=MISO_T88
+Added Pin To Net: NetName=MISO Pin=J1-2
+Added Pin To Net: NetName=MISO Pin=P4-2
+Added Pin To Net: NetName=MISO Pin=P5-2
+Added Net: Name=MISO
+Added Pin To Net: NetName=MOSI_T88 Pin=P4-4
+Added Pin To Net: NetName=MOSI_T88 Pin=U1-13
+Added Net: Name=MOSI_T88
+Added Pin To Net: NetName=MS Pin=R1-1
+Added Pin To Net: NetName=MS Pin=U1-10
+Added Net: Name=MS
+Added Pin To Net: NetName=NetB1_1 Pin=B1-1
+Added Pin To Net: NetName=NetB1_1 Pin=P1-1
+Added Net: Name=NetB1_1
+Added Pin To Net: NetName=NetB1_2 Pin=B1-2
+Added Pin To Net: NetName=NetB1_2 Pin=P1-2
+Added Net: Name=NetB1_2
+Added Pin To Net: NetName=NetB1_3 Pin=B1-3
+Added Pin To Net: NetName=NetB1_3 Pin=P1-3
+Added Net: Name=NetB1_3
+Added Pin To Net: NetName=NetB2_2 Pin=B2-2
+Added Pin To Net: NetName=NetB2_2 Pin=K1-1
+Added Net: Name=NetB2_2
+Added Pin To Net: NetName=NetB2_3 Pin=B2-3
+Added Pin To Net: NetName=NetB2_3 Pin=K2-1
+Added Net: Name=NetB2_3
+Added Pin To Net: NetName=NetB2_5 Pin=B2-5
+Added Pin To Net: NetName=NetB2_5 Pin=R4-1
+Added Net: Name=NetB2_5
+Added Pin To Net: NetName=NetB2_6 Pin=B2-6
+Added Pin To Net: NetName=NetB2_6 Pin=R3-1
+Added Net: Name=NetB2_6
+Added Pin To Net: NetName=NetTP1_1 Pin=TP1-1
+Added Pin To Net: NetName=NetTP1_1 Pin=U1-5
+Added Net: Name=NetTP1_1
+Added Pin To Net: NetName=PWM Pin=R2-1
+Added Pin To Net: NetName=PWM Pin=U1-11
+Added Net: Name=PWM
+Added Pin To Net: NetName=R\E\S\E\T\ Pin=P4-10
+Added Pin To Net: NetName=R\E\S\E\T\ Pin=P5-10
+Added Pin To Net: NetName=R\E\S\E\T\ Pin=R5-2
+Added Pin To Net: NetName=R\E\S\E\T\ Pin=U1-25
+Added Net: Name=R\E\S\E\T\
+Added Pin To Net: NetName=S\S\ Pin=P4-8
+Added Pin To Net: NetName=S\S\ Pin=P5-8
+Added Pin To Net: NetName=S\S\ Pin=U1-12
+Added Net: Name=S\S\
+Added Pin To Net: NetName=SCK Pin=P4-6
+Added Pin To Net: NetName=SCK Pin=P5-6
+Added Pin To Net: NetName=SCK Pin=U1-15
+Added Net: Name=SCK
+Added Pin To Net: NetName=SLEEP Pin=B2-7
+Added Pin To Net: NetName=SLEEP Pin=U1-26
+Added Net: Name=SLEEP
+Added Pin To Net: NetName=WIPER2 Pin=B1-5
+Added Pin To Net: NetName=WIPER2 Pin=U1-19
+Added Net: Name=WIPER2
+Added Class: Name=main
+Added Room: Name=main
