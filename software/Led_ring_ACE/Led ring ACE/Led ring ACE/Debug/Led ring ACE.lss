@@ -1,0 +1,130 @@
+
+Led ring ACE.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  000000de  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000008a  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  000000de  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000110  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000020  00000000  00000000  0000014c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000006b8  00000000  00000000  0000016c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 0000061c  00000000  00000000  00000824  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   0000024d  00000000  00000000  00000e40  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000024  00000000  00000000  00001090  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000391  00000000  00000000  000010b4  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_ranges 00000010  00000000  00000000  00001445  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	13 c0       	rjmp	.+38     	; 0x28 <__ctors_end>
+   2:	25 c0       	rjmp	.+74     	; 0x4e <__bad_interrupt>
+   4:	24 c0       	rjmp	.+72     	; 0x4e <__bad_interrupt>
+   6:	23 c0       	rjmp	.+70     	; 0x4e <__bad_interrupt>
+   8:	22 c0       	rjmp	.+68     	; 0x4e <__bad_interrupt>
+   a:	21 c0       	rjmp	.+66     	; 0x4e <__bad_interrupt>
+   c:	20 c0       	rjmp	.+64     	; 0x4e <__bad_interrupt>
+   e:	1f c0       	rjmp	.+62     	; 0x4e <__bad_interrupt>
+  10:	1e c0       	rjmp	.+60     	; 0x4e <__bad_interrupt>
+  12:	1d c0       	rjmp	.+58     	; 0x4e <__bad_interrupt>
+  14:	1c c0       	rjmp	.+56     	; 0x4e <__bad_interrupt>
+  16:	1b c0       	rjmp	.+54     	; 0x4e <__bad_interrupt>
+  18:	1a c0       	rjmp	.+52     	; 0x4e <__bad_interrupt>
+  1a:	19 c0       	rjmp	.+50     	; 0x4e <__bad_interrupt>
+  1c:	18 c0       	rjmp	.+48     	; 0x4e <__bad_interrupt>
+  1e:	17 c0       	rjmp	.+46     	; 0x4e <__bad_interrupt>
+  20:	16 c0       	rjmp	.+44     	; 0x4e <__bad_interrupt>
+  22:	15 c0       	rjmp	.+42     	; 0x4e <__bad_interrupt>
+  24:	14 c0       	rjmp	.+40     	; 0x4e <__bad_interrupt>
+  26:	13 c0       	rjmp	.+38     	; 0x4e <__bad_interrupt>
+
+00000028 <__ctors_end>:
+  28:	11 24       	eor	r1, r1
+  2a:	1f be       	out	0x3f, r1	; 63
+  2c:	cf ef       	ldi	r28, 0xFF	; 255
+  2e:	d2 e0       	ldi	r29, 0x02	; 2
+  30:	de bf       	out	0x3e, r29	; 62
+  32:	cd bf       	out	0x3d, r28	; 61
+
+00000034 <__do_copy_data>:
+  34:	11 e0       	ldi	r17, 0x01	; 1
+  36:	a0 e0       	ldi	r26, 0x00	; 0
+  38:	b1 e0       	ldi	r27, 0x01	; 1
+  3a:	ea e8       	ldi	r30, 0x8A	; 138
+  3c:	f0 e0       	ldi	r31, 0x00	; 0
+  3e:	02 c0       	rjmp	.+4      	; 0x44 <__EEPROM_REGION_LENGTH__+0x4>
+  40:	05 90       	lpm	r0, Z+
+  42:	0d 92       	st	X+, r0
+  44:	a0 30       	cpi	r26, 0x00	; 0
+  46:	b1 07       	cpc	r27, r17
+  48:	d9 f7       	brne	.-10     	; 0x40 <__EEPROM_REGION_LENGTH__>
+  4a:	02 d0       	rcall	.+4      	; 0x50 <main>
+  4c:	1c c0       	rjmp	.+56     	; 0x86 <_exit>
+
+0000004e <__bad_interrupt>:
+  4e:	d8 cf       	rjmp	.-80     	; 0x0 <__vectors>
+
+00000050 <main>:
+
+
+int main(void)
+{
+	/* Replace with your application code */
+	DDRB |= (1<<PINB6);
+  50:	84 b1       	in	r24, 0x04	; 4
+  52:	80 64       	ori	r24, 0x40	; 64
+  54:	84 b9       	out	0x04, r24	; 4
+	DDRD |= (1<<ACE_EN);
+  56:	8a b1       	in	r24, 0x0a	; 10
+  58:	88 60       	ori	r24, 0x08	; 8
+  5a:	8a b9       	out	0x0a, r24	; 10
+	PORTD |= (1<<ACE_EN);
+  5c:	8b b1       	in	r24, 0x0b	; 11
+  5e:	88 60       	ori	r24, 0x08	; 8
+  60:	8b b9       	out	0x0b, r24	; 11
+	while (1)
+	{
+		PORTB ^= (1<<PINB6);
+  62:	95 b1       	in	r25, 0x05	; 5
+  64:	80 e4       	ldi	r24, 0x40	; 64
+  66:	89 27       	eor	r24, r25
+  68:	85 b9       	out	0x05, r24	; 5
+		PORTD ^= (1<<ACE_EN);
+  6a:	9b b1       	in	r25, 0x0b	; 11
+  6c:	88 e0       	ldi	r24, 0x08	; 8
+  6e:	89 27       	eor	r24, r25
+  70:	8b b9       	out	0x0b, r24	; 11
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  72:	2f ef       	ldi	r18, 0xFF	; 255
+  74:	83 ed       	ldi	r24, 0xD3	; 211
+  76:	90 e3       	ldi	r25, 0x30	; 48
+  78:	21 50       	subi	r18, 0x01	; 1
+  7a:	80 40       	sbci	r24, 0x00	; 0
+  7c:	90 40       	sbci	r25, 0x00	; 0
+  7e:	e1 f7       	brne	.-8      	; 0x78 <main+0x28>
+  80:	00 c0       	rjmp	.+0      	; 0x82 <main+0x32>
+  82:	00 00       	nop
+  84:	ee cf       	rjmp	.-36     	; 0x62 <main+0x12>
+
+00000086 <_exit>:
+  86:	f8 94       	cli
+
+00000088 <__stop_program>:
+  88:	ff cf       	rjmp	.-2      	; 0x88 <__stop_program>

@@ -1,0 +1,88 @@
+
+Led ring ACE.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000000  00800100  00800100  000000be  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         0000006a  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  000000be  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000000f0  2**2
+                  CONTENTS, READONLY
+  4 .debug_info   00000576  00000000  00000000  0000012c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_abbrev 0000052b  00000000  00000000  000006a2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_line   00000110  00000000  00000000  00000bcd  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_str    000001d9  00000000  00000000  00000cdd  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	13 c0       	rjmp	.+38     	; 0x28 <__ctors_end>
+   2:	1a c0       	rjmp	.+52     	; 0x38 <__bad_interrupt>
+   4:	19 c0       	rjmp	.+50     	; 0x38 <__bad_interrupt>
+   6:	18 c0       	rjmp	.+48     	; 0x38 <__bad_interrupt>
+   8:	17 c0       	rjmp	.+46     	; 0x38 <__bad_interrupt>
+   a:	16 c0       	rjmp	.+44     	; 0x38 <__bad_interrupt>
+   c:	15 c0       	rjmp	.+42     	; 0x38 <__bad_interrupt>
+   e:	14 c0       	rjmp	.+40     	; 0x38 <__bad_interrupt>
+  10:	13 c0       	rjmp	.+38     	; 0x38 <__bad_interrupt>
+  12:	12 c0       	rjmp	.+36     	; 0x38 <__bad_interrupt>
+  14:	11 c0       	rjmp	.+34     	; 0x38 <__bad_interrupt>
+  16:	10 c0       	rjmp	.+32     	; 0x38 <__bad_interrupt>
+  18:	0f c0       	rjmp	.+30     	; 0x38 <__bad_interrupt>
+  1a:	0e c0       	rjmp	.+28     	; 0x38 <__bad_interrupt>
+  1c:	0d c0       	rjmp	.+26     	; 0x38 <__bad_interrupt>
+  1e:	0c c0       	rjmp	.+24     	; 0x38 <__bad_interrupt>
+  20:	0b c0       	rjmp	.+22     	; 0x38 <__bad_interrupt>
+  22:	0a c0       	rjmp	.+20     	; 0x38 <__bad_interrupt>
+  24:	09 c0       	rjmp	.+18     	; 0x38 <__bad_interrupt>
+  26:	08 c0       	rjmp	.+16     	; 0x38 <__bad_interrupt>
+
+00000028 <__ctors_end>:
+  28:	11 24       	eor	r1, r1
+  2a:	1f be       	out	0x3f, r1	; 63
+  2c:	cf ef       	ldi	r28, 0xFF	; 255
+  2e:	d2 e0       	ldi	r29, 0x02	; 2
+  30:	de bf       	out	0x3e, r29	; 62
+  32:	cd bf       	out	0x3d, r28	; 61
+  34:	02 d0       	rcall	.+4      	; 0x3a <main>
+  36:	17 c0       	rjmp	.+46     	; 0x66 <_exit>
+
+00000038 <__bad_interrupt>:
+  38:	e3 cf       	rjmp	.-58     	; 0x0 <__vectors>
+
+0000003a <main>:
+  3a:	26 9a       	sbi	0x04, 6	; 4
+  3c:	2e 9a       	sbi	0x05, 6	; 5
+  3e:	2f ef       	ldi	r18, 0xFF	; 255
+  40:	84 e3       	ldi	r24, 0x34	; 52
+  42:	9c e0       	ldi	r25, 0x0C	; 12
+  44:	21 50       	subi	r18, 0x01	; 1
+  46:	80 40       	sbci	r24, 0x00	; 0
+  48:	90 40       	sbci	r25, 0x00	; 0
+  4a:	e1 f7       	brne	.-8      	; 0x44 <__EEPROM_REGION_LENGTH__+0x4>
+  4c:	00 c0       	rjmp	.+0      	; 0x4e <__EEPROM_REGION_LENGTH__+0xe>
+  4e:	00 00       	nop
+  50:	2e 98       	cbi	0x05, 6	; 5
+  52:	2f ef       	ldi	r18, 0xFF	; 255
+  54:	84 e3       	ldi	r24, 0x34	; 52
+  56:	9c e0       	ldi	r25, 0x0C	; 12
+  58:	21 50       	subi	r18, 0x01	; 1
+  5a:	80 40       	sbci	r24, 0x00	; 0
+  5c:	90 40       	sbci	r25, 0x00	; 0
+  5e:	e1 f7       	brne	.-8      	; 0x58 <__EEPROM_REGION_LENGTH__+0x18>
+  60:	00 c0       	rjmp	.+0      	; 0x62 <__EEPROM_REGION_LENGTH__+0x22>
+  62:	00 00       	nop
+  64:	eb cf       	rjmp	.-42     	; 0x3c <main+0x2>
+
+00000066 <_exit>:
+  66:	f8 94       	cli
+
+00000068 <__stop_program>:
+  68:	ff cf       	rjmp	.-2      	; 0x68 <__stop_program>
