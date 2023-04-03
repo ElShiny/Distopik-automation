@@ -2,26 +2,47 @@
  * ACE.h
  *
  * Created: 31/03/2023 18:38:24
- *  Author: Matej
+ *  Author: ElShiny
  */ 
 
 
 #ifndef ACE_H_
 #define ACE_H_
 
-/* ACE PIN ASSIGMENTS */
-#define ACE_P1 PINC2 //D0
-#define ACE_P2 PINC1 //D1
-#define ACE_P3 PINC0 //D2
-#define ACE_P4 PINC7 //D3
-#define ACE_P5 PINB1 //D4
-#define ACE_P6 PINB0 //D5
-#define ACE_P7 PIND7 //D6
-#define ACE_P8 PIND6 //D7
+#include <stdint.h>
+//#define ACE_PIN_INV
+
+
+/* ACE PIN ASSIGMENTS 1 */
+#define ACE_P1 1<<PINB1 //D0
+#define ACE_P2 1<<PINB0 //D1
+#define ACE_P3 1<<PIND7 //D2
+#define ACE_P4 1<<PIND6 //D3
+#define ACE_P5 1<<PINC2 //D4
+#define ACE_P6 1<<PINC1 //D5
+#define ACE_P7 1<<PINC0 //D6
+#define ACE_P8 1<<PINC7 //D7
+
+#define ACE_P1_PORT PINB
+#define ACE_P2_PORT PINB
+#define ACE_P3_PORT PIND
+#define ACE_P4_PORT PIND
+#define ACE_P5_PORT PINC
+#define ACE_P6_PORT PINC
+#define ACE_P7_PORT PINC
+#define ACE_P8_PORT PINC
 
 #define ACE_EN PIND3
 
- const uint8_t encoderMap[256] = {
+
+void initACE(void);
+uint8_t readACEValRaw(void);
+uint8_t ACETransform(uint8_t val);
+uint8_t isBitSet(uint8_t reg, uint8_t pin);
+uint8_t readACEQuick(void);
+
+
+ static __flash const uint8_t encoderMap[256] = {
 	0xFF,0x38,0x28,0x37,0x18,0xFF,0x27,0x34,0x08,0x39,0xFF,0xFF,0x17,0xFF,0x24,0x0D,
 	0x78,0xFF,0x29,0x36,0xFF,0xFF,0xFF,0x35,0x07,0xFF,0xFF,0xFF,0x14,0x13,0x7D,0x12,
 	0x68,0x69,0xFF,0xFF,0x19,0x6A,0x26,0xFF,0xFF,0x3A,0xFF,0xFF,0xFF,0xFF,0x25,0x0E,
