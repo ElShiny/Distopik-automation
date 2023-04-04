@@ -4,6 +4,8 @@
 
 ACE.c
 
+I2C.c
+
 main.c
 
 SoftwareSerial.c

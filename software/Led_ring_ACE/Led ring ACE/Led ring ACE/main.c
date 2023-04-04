@@ -22,7 +22,8 @@ int main(void)
 	initACE();
 	while (1) {
 			debug_printf("raw: %d\r\n",readACEQuick());
-// 			_delay_ms(100);
+			readACEQuick();
+ 			_delay_ms(100);
 		}
 	
 }

@@ -7,8 +7,6 @@
 
 #include "ACE.h"
 #include <avr/io.h>
-#include <util/delay.h>
-#define  F_CPU 8000000
 
 
 void initACE(){
@@ -26,8 +24,8 @@ uint8_t readACEValRaw(void){
 	uint8_t raw_val = 0;
 	PORTD &= ~(1<<ACE_EN);
 	
-	asm("nop\n\t" 
-		"nop\n\t" 
+	asm("nop\n\t"
+		"nop\n\t"
 		"nop\n\t");
 	raw_val = isBitSet(ACE_P8_PORT , ACE_P8)<<7|isBitSet(ACE_P7_PORT , ACE_P7)<<6|isBitSet(ACE_P6_PORT , ACE_P6)<<5|
 	isBitSet(ACE_P5_PORT , ACE_P5)<<4|isBitSet(ACE_P4_PORT , ACE_P4)<<3|isBitSet(ACE_P3_PORT , ACE_P3)<<2|
