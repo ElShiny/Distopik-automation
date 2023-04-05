@@ -11,18 +11,24 @@
 
 void LEDInit(void){
 	
+	const int rgb = 0b001100;
+	
+	LEDSetReg(0xCF, 0xAE); //reset 
+	
 	LEDSetReg(0xA0, 0x01);
 	LEDSetReg(0xA1, 30);
 
-	for(int a = 0x90; a < 0x9E; a++){
+	for(int a = 0x90; a < 0x9F; a++){
 		LEDSetReg(a, 100);
 	}
 	
-	
-	
-	LEDSetReg(0x01, 150);
-	LEDSetReg(0x12, 150);
-	LEDSetReg(0x23, 150);	
+// 	for(int i = 0; i<0x90; i=i+0x10){
+// 		for(int a = 0x1; a < 0x0F; a=a+3){
+// 			LEDSetReg(i+a, 30*(0x3&rgb));
+// 			LEDSetReg(i+a+1, 30*(0x3&(rgb>>2)));
+// 			LEDSetReg(i+a+2, 30*(0x3&(rgb>>4)));
+// 		}
+// 	}
 	
 	DDRC |= 1<<PINC3;
 	PORTC |= 1<<PINC3;

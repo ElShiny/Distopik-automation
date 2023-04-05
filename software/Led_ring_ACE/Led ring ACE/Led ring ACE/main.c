@@ -25,8 +25,27 @@ int main(void)
 	softSerialBegin(9600);
 	ACEInit();
 	I2CInit();
-	
 	LEDInit();
+	
+	while(1){
+	
+	//debug_printf("ACE: %d\r\n", readACEQuick());
+	int led = ((uint16_t)readACEQuick()*15)>>6;
+	//debug_printf("LED: %d\r\n", led);
+		for(int i = 1; i<(led+1); i++){
+			if( i <led){
+				LEDSetReg(i, 100);
+				LEDSetReg(i+1, 100);
+				LEDSetReg(i+2, 100);}
+				else{
+									LEDSetReg(i, 0);
+									LEDSetReg(i+1, 0);
+									LEDSetReg(i+2, 0);
+				}
+
+		}
+	//_delay_ms(100);
+	}
 	
 }
 
