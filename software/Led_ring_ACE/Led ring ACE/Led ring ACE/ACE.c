@@ -9,7 +9,7 @@
 #include <avr/io.h>
 
 
-void initACE(){
+void ACEInit(void){
 	
 	DDRB &= ~(0x03); //set ace pins on portx to input
 	DDRC &= ~(0x87);

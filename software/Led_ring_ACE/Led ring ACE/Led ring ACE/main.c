@@ -10,21 +10,23 @@
 #endif
 
 
+
+
 #include <avr/io.h>
 #include <util/delay.h>
 #include "ACE.h"
+#include "I2C.h"
 #include "SoftwareSerial.h"
+#include "led_drv.h"
 
 
 int main(void)
 {
 	softSerialBegin(9600);
-	initACE();
-	while (1) {
-			debug_printf("raw: %d\r\n",readACEQuick());
-			readACEQuick();
- 			_delay_ms(100);
-		}
+	ACEInit();
+	I2CInit();
+	
+	LEDInit();
 	
 }
 

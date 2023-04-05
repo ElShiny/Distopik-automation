@@ -35,7 +35,7 @@
 #define ACE_EN PIND3
 
 
-void initACE(void);
+void ACEInit(void);
 uint8_t readACEValRaw(void);
 uint8_t ACETransform(uint8_t val);
 uint8_t isBitSet(uint8_t reg, uint8_t pin);
