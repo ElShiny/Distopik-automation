@@ -8,8 +8,8 @@
 #include "I2C.h"
 
 // 222kHz clock
-#define BITRATE 10                             // Hardware I2C bitrate
-#define PRESCALER 0							// SET PRESCALER TO 1
+#define BITRATE 2       // Hardware I2C bitrate// 2 for 400kHz, 32 for 100kHz
+#define PRESCALER 0		// SET PRESCALER TO 1
 
 
 void I2CInit(void){

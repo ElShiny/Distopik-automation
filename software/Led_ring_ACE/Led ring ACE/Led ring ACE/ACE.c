@@ -6,7 +6,14 @@
  */ 
 
 #include "ACE.h"
+#include "SoftwareSerial.h"
 #include <avr/io.h>
+#include <avr/interrupt.h>
+
+int ace_val = 0;
+uint8_t ace_val_new = 0;
+uint8_t ace_val_old = 0;
+int cnt = 0;
 
 
 void ACEInit(void){
@@ -15,8 +22,14 @@ void ACEInit(void){
 	DDRC &= ~(0x87);
 	DDRD = 0x08; //set EN to output
 	
-	PORTD |= 1<<ACE_EN;
-	//PORTD &= ~(1<<ACE_EN);
+	PORTD |= 1<<ACE_EN; 
+	
+	TCCR0A = 1<<CTC0|1<<CS02|1<<CS00; //timer enable
+	OCR0A = 78;			//10 ms delay
+	TIMSK0 = 1<<OCIE0A; //timer interrupt
+	sei();				// enable global interrupts
+	TCNT0 = 0;			//empty timer counter
+	
 }
 
 
@@ -41,7 +54,6 @@ uint8_t ACETransform(uint8_t val){
 }
 
 uint8_t readACEQuick(void){
-	
 	PORTD &= ~(1<<ACE_EN);
 	asm("nop\n\t"
 		"nop\n\t"
@@ -57,4 +69,28 @@ uint8_t readACEQuick(void){
 uint8_t isBitSet(uint8_t reg, uint8_t pin){
 	if (reg & pin) return 0;
 	else return 1;
+}
+
+void absoluteToRelative(uint8_t *old_val, uint8_t *new_val, int *save){
+	
+	int delta = 0;
+	
+	delta = *new_val - *old_val;
+	//debug_printf("d: %d\r\n", delta);
+	
+	*save = *save + delta;	
+	
+	*old_val = *new_val;
+	
+}
+
+
+ISR(TIMER0_COMPA_vect){
+	ace_val_new = readACEQuick();
+	absoluteToRelative(&ace_val_old, &ace_val_new, &ace_val);
+
+	if(cnt++ == 600){
+		ace_val	= 0;
+		cnt = 0;
+	}
 }
