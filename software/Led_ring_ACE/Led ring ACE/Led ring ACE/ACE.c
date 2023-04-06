@@ -7,6 +7,7 @@
 
 #include "ACE.h"
 #include "SoftwareSerial.h"
+#include "led_drv.h"
 #include <avr/io.h>
 #include <avr/interrupt.h>
 
@@ -89,11 +90,22 @@ void absoluteToRelative(uint8_t *old_val, uint8_t *new_val, int *save){
 
 
 ISR(TIMER0_COMPA_vect){
-	ace_val_new = readACEQuick();
-	absoluteToRelative(&ace_val_old, &ace_val_new, &ace_val);
+	
+	if(cnt == 0){
+		ace_val_new = readACEQuick();
+		absoluteToRelative(&ace_val_old, &ace_val_new, &ace_val);
+		cnt ++;
+	}
+	
+	else if(cnt == 1){
+		int led = ((ace_val>>2)*15)>>5;
+				
+		for(int i = 0; i<30; i++){
+			if(i<=led)setLED(i, 0b001100);
+			else setLED(i, 0b010000);
+		}
+		cnt = 0;
+	}
 
-// 	if(cnt++ == 600){
-// 		ace_val	= 0;
-// 		cnt = 0;
-// 	}
+
 }

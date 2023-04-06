@@ -29,15 +29,9 @@ int main(void)
 	
 	while(1){
 	
-		int led = ((ace_val>>2)*15)>>5;
-		debug_printf("LED: %d, ACE: %d\r\n", led, ace_val);
+		debug_printf("ACE: %d\r\n", ace_val);
 
-		for(int i = 0; i<30; i++){
-			if(i<=led)setLED(i, 0b000100);
-			else setLED(i, 0b010000);
-		}
-	
-	//_delay_ms(500);
+	_delay_ms(100);
 	}
 	
 }
