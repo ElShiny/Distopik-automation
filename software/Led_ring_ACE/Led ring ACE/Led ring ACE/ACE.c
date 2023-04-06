@@ -30,6 +30,8 @@ void ACEInit(void){
 	sei();				// enable global interrupts
 	TCNT0 = 0;			//empty timer counter
 	
+	ace_val_old = readACEQuick();
+	
 }
 
 
@@ -75,8 +77,9 @@ void absoluteToRelative(uint8_t *old_val, uint8_t *new_val, int *save){
 	
 	int delta = 0;
 	
-	delta = *new_val - *old_val;
-	//debug_printf("d: %d\r\n", delta);
+	if(*old_val > 117 && *new_val < 10) delta = *new_val - *old_val + 128;		//corrections for zero crossing
+	else if(*old_val < 15 && *new_val > 110) delta = *new_val - *old_val - 128;
+	else delta = *new_val - *old_val;
 	
 	*save = *save + delta;	
 	
@@ -89,8 +92,8 @@ ISR(TIMER0_COMPA_vect){
 	ace_val_new = readACEQuick();
 	absoluteToRelative(&ace_val_old, &ace_val_new, &ace_val);
 
-	if(cnt++ == 600){
-		ace_val	= 0;
-		cnt = 0;
-	}
+// 	if(cnt++ == 600){
+// 		ace_val	= 0;
+// 		cnt = 0;
+// 	}
 }
