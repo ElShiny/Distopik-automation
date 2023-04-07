@@ -6,7 +6,7 @@
  */ 
 
 #include "ACE.h"
-#include "SoftwareSerial.h"
+//#include "SoftwareSerial.h"
 #include "led_drv.h"
 #include <avr/io.h>
 #include <avr/interrupt.h>
@@ -28,7 +28,6 @@ void ACEInit(void){
 	TCCR0A = 1<<CTC0|1<<CS02|1<<CS00; //timer enable
 	OCR0A = 78;			//10 ms delay
 	TIMSK0 = 1<<OCIE0A; //timer interrupt
-	sei();				// enable global interrupts
 	TCNT0 = 0;			//empty timer counter
 	
 	ace_val_old = readACEQuick();

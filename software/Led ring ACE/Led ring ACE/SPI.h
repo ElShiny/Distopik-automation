@@ -12,8 +12,13 @@
 #include <stdint.h>
 #include <avr/io.h>
 
-void SPISlaveInit(void);
+#define BUFFER_SIZE 100
 
+
+void SPIInit(void);
+void bufferInit(void);
+int writeBuffer(uint8_t val);
+int readBuffer(void);
 
 
 #endif /* SPI_H_ */

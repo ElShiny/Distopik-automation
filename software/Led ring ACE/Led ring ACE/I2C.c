@@ -53,9 +53,3 @@ uint8_t I2CRead (uint8_t ack) {
 	(TWSR & 0xF8) != (1<<TWS6|1<<TWS4|1<<TWS3)) return 1;
 	return TWDR;
 }
-
-
-// uint8_t TinyI2CMaster::readLast (void) {
-//   I2Ccount = 0;
-//   return TinyI2CMaster::read();
-// }
