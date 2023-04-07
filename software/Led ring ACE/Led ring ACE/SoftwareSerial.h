@@ -54,7 +54,7 @@ Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 #define SERDDR	DDRB
 #define SERPORT	PORTB
 #define SERPIN	PINB
-#define RXPIN	PINB7
+#define RXPIN	PINB0
 #define TXPIN	PINB6
 
 //

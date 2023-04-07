@@ -12,3 +12,5 @@ main.c
 
 SoftwareSerial.c
 
+SPI.c
+

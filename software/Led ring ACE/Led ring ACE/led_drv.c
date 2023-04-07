@@ -22,14 +22,6 @@ void LEDInit(void){
 		LEDSetReg(a, 60);
 	}
 	
-// 	for(int i = 0; i<0x90; i=i+0x10){
-// 		for(int a = 0x1; a < 0x0F; a=a+3){
-// 			LEDSetReg(i+a, 30*(0x3&rgb));
-// 			LEDSetReg(i+a+1, 30*(0x3&(rgb>>2)));
-// 			LEDSetReg(i+a+2, 30*(0x3&(rgb>>4)));
-// 		}
-// 	}
-	
 	DDRC |= 1<<PINC3;
 	PORTC |= 1<<PINC3;
 	

@@ -18,8 +18,6 @@
 
 
 void I2CInit(void);
-//uint8_t read(void);
-//uint8_t readLast(void);
 uint8_t I2CWrite (uint8_t data);
 uint8_t I2CRead (uint8_t ack);
 uint8_t I2CStart(uint8_t address, uint8_t rw); 
