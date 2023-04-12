@@ -3,33 +3,33 @@ Led ring ACE.elf:     file format elf32-avr
 
 Sections:
 Idx Name          Size      VMA       LMA       File off  Algn
-  0 .data         0000001e  00800100  00000632  000006c6  2**0
+  0 .data         0000001e  00800100  000006e0  00000774  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  1 .text         00000632  00000000  00000000  00000094  2**1
+  1 .text         000006e0  00000000  00000000  00000094  2**1
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  2 .bss          0000006d  0080011e  0080011e  000006e4  2**0
+  2 .bss          000000b8  0080011e  0080011e  00000792  2**0
                   ALLOC
-  3 .comment      00000030  00000000  00000000  000006e4  2**0
+  3 .comment      00000030  00000000  00000000  00000792  2**0
                   CONTENTS, READONLY
-  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  00000714  2**2
+  4 .note.gnu.avr.deviceinfo 0000003c  00000000  00000000  000007c4  2**2
                   CONTENTS, READONLY
-  5 .debug_aranges 00000128  00000000  00000000  00000750  2**0
+  5 .debug_aranges 00000188  00000000  00000000  00000800  2**0
                   CONTENTS, READONLY, DEBUGGING
-  6 .debug_info   0000130e  00000000  00000000  00000878  2**0
+  6 .debug_info   00001a13  00000000  00000000  00000988  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_abbrev 00000abd  00000000  00000000  00001b86  2**0
+  7 .debug_abbrev 00000d78  00000000  00000000  0000239b  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_line   0000128a  00000000  00000000  00002643  2**0
+  8 .debug_line   00001803  00000000  00000000  00003113  2**0
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_frame  000002ac  00000000  00000000  000038d0  2**2
+  9 .debug_frame  00000378  00000000  00000000  00004918  2**2
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_str    00006c7e  00000000  00000000  00003b7c  2**0
+ 10 .debug_str    000088c5  00000000  00000000  00004c90  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_loc    000006ab  00000000  00000000  0000a7fa  2**0
+ 11 .debug_loc    00000adc  00000000  00000000  0000d555  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_ranges 000000d8  00000000  00000000  0000aea5  2**0
+ 12 .debug_ranges 00000140  00000000  00000000  0000e031  2**0
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_macro  00002c7b  00000000  00000000  0000af7d  2**0
+ 13 .debug_macro  000031c7  00000000  00000000  0000e171  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -38,7 +38,7 @@ Disassembly of section .text:
    0:	93 c0       	rjmp	.+294    	; 0x128 <__ctors_end>
    2:	ad c0       	rjmp	.+346    	; 0x15e <__bad_interrupt>
    4:	ac c0       	rjmp	.+344    	; 0x15e <__bad_interrupt>
-   6:	e7 c2       	rjmp	.+1486   	; 0x5d6 <__vector_3>
+   6:	a9 c2       	rjmp	.+1362   	; 0x55a <__vector_3>
    8:	aa c0       	rjmp	.+340    	; 0x15e <__bad_interrupt>
    a:	a9 c0       	rjmp	.+338    	; 0x15e <__bad_interrupt>
    c:	a8 c0       	rjmp	.+336    	; 0x15e <__bad_interrupt>
@@ -198,7 +198,7 @@ Disassembly of section .text:
  134:	11 e0       	ldi	r17, 0x01	; 1
  136:	a0 e0       	ldi	r26, 0x00	; 0
  138:	b1 e0       	ldi	r27, 0x01	; 1
- 13a:	e2 e3       	ldi	r30, 0x32	; 50
+ 13a:	e0 ee       	ldi	r30, 0xE0	; 224
  13c:	f6 e0       	ldi	r31, 0x06	; 6
  13e:	02 c0       	rjmp	.+4      	; 0x144 <__do_copy_data+0x10>
  140:	05 90       	lpm	r0, Z+
@@ -217,11 +217,11 @@ Disassembly of section .text:
  152:	1d 92       	st	X+, r1
 
 00000154 <.do_clear_bss_start>:
- 154:	ab 38       	cpi	r26, 0x8B	; 139
+ 154:	a6 3d       	cpi	r26, 0xD6	; 214
  156:	b2 07       	cpc	r27, r18
  158:	e1 f7       	brne	.-8      	; 0x152 <.do_clear_bss_loop>
  15a:	ef d1       	rcall	.+990    	; 0x53a <main>
- 15c:	68 c2       	rjmp	.+1232   	; 0x62e <_exit>
+ 15c:	bf c2       	rjmp	.+1406   	; 0x6dc <_exit>
 
 0000015e <__bad_interrupt>:
  15e:	50 cf       	rjmp	.-352    	; 0x0 <__vectors>
@@ -931,9 +931,9 @@ int main(void)
 	LEDInit();
  53e:	a0 df       	rcall	.-192    	; 0x480 <LEDInit>
 	SPIInit();
- 540:	0c d0       	rcall	.+24     	; 0x55a <SPIInit>
+ 540:	8f d0       	rcall	.+286    	; 0x660 <SPIInit>
 	bufferInit();
- 542:	24 d0       	rcall	.+72     	; 0x58c <bufferInit>
+ 542:	a7 d0       	rcall	.+334    	; 0x692 <bufferInit>
 	
 	sei();
  544:	78 94       	sei
@@ -954,173 +954,328 @@ int main(void)
  556:	00 00       	nop
  558:	f6 cf       	rjmp	.-20     	; 0x546 <main+0xc>
 
-0000055a <SPIInit>:
+0000055a <__vector_3>:
+
+
+//
+// Interrupt handling, receive routine
+//
+ISR(PCINT0_vect) {
+ 55a:	1f 92       	push	r1
+ 55c:	0f 92       	push	r0
+ 55e:	0f b6       	in	r0, 0x3f	; 63
+ 560:	0f 92       	push	r0
+ 562:	11 24       	eor	r1, r1
+ 564:	2f 93       	push	r18
+ 566:	3f 93       	push	r19
+ 568:	4f 93       	push	r20
+ 56a:	5f 93       	push	r21
+ 56c:	6f 93       	push	r22
+ 56e:	7f 93       	push	r23
+ 570:	8f 93       	push	r24
+ 572:	9f 93       	push	r25
+ 574:	af 93       	push	r26
+ 576:	bf 93       	push	r27
+ 578:	ef 93       	push	r30
+ 57a:	ff 93       	push	r31
+	uint8_t d = 0;
+
+	// If RX line is high, then we don't see any start bit
+	// so interrupt is probably not for us
+	if ( !rx_pin_read() ) {
+ 57c:	18 99       	sbic	0x03, 0	; 3
+ 57e:	49 c0       	rjmp	.+146    	; 0x612 <__vector_3+0xb8>
+		// Wait approximately 1/2 of a bit width to "center" the sample
+		tunedDelay(_rx_delay_centering);
+ 580:	80 91 6d 01 	lds	r24, 0x016D	; 0x80016d <_rx_delay_centering>
+ 584:	90 91 6e 01 	lds	r25, 0x016E	; 0x80016e <_rx_delay_centering+0x1>
+
+/* static */
+inline void tunedDelay(uint16_t delay) {
+	uint8_t tmp = 0;
+
+	asm volatile("sbiw    %0, 0x01 \n\t"
+ 588:	20 e0       	ldi	r18, 0x00	; 0
+ 58a:	01 97       	sbiw	r24, 0x01	; 1
+ 58c:	2f ef       	ldi	r18, 0xFF	; 255
+ 58e:	8f 3f       	cpi	r24, 0xFF	; 255
+ 590:	92 07       	cpc	r25, r18
+ 592:	d9 f7       	brne	.-10     	; 0x58a <__vector_3+0x30>
+	if ( !rx_pin_read() ) {
+		// Wait approximately 1/2 of a bit width to "center" the sample
+		tunedDelay(_rx_delay_centering);
+
+		// Read each of the 8 bits
+		for (uint8_t i = 0x1; i; i <<= 1) {
+ 594:	21 e0       	ldi	r18, 0x01	; 1
+
+//
+// Interrupt handling, receive routine
+//
+ISR(PCINT0_vect) {
+	uint8_t d = 0;
+ 596:	40 e0       	ldi	r20, 0x00	; 0
+	if ( !rx_pin_read() ) {
+		// Wait approximately 1/2 of a bit width to "center" the sample
+		tunedDelay(_rx_delay_centering);
+
+		// Read each of the 8 bits
+		for (uint8_t i = 0x1; i; i <<= 1) {
+ 598:	12 c0       	rjmp	.+36     	; 0x5be <__vector_3+0x64>
+			tunedDelay(_rx_delay_intrabit);
+ 59a:	80 91 6b 01 	lds	r24, 0x016B	; 0x80016b <_rx_delay_intrabit>
+ 59e:	90 91 6c 01 	lds	r25, 0x016C	; 0x80016c <_rx_delay_intrabit+0x1>
+
+/* static */
+inline void tunedDelay(uint16_t delay) {
+	uint8_t tmp = 0;
+
+	asm volatile("sbiw    %0, 0x01 \n\t"
+ 5a2:	30 e0       	ldi	r19, 0x00	; 0
+ 5a4:	01 97       	sbiw	r24, 0x01	; 1
+ 5a6:	3f ef       	ldi	r19, 0xFF	; 255
+ 5a8:	8f 3f       	cpi	r24, 0xFF	; 255
+ 5aa:	93 07       	cpc	r25, r19
+ 5ac:	d9 f7       	brne	.-10     	; 0x5a4 <__vector_3+0x4a>
+		tunedDelay(_rx_delay_centering);
+
+		// Read each of the 8 bits
+		for (uint8_t i = 0x1; i; i <<= 1) {
+			tunedDelay(_rx_delay_intrabit);
+			uint8_t noti = ~i;
+ 5ae:	82 2f       	mov	r24, r18
+ 5b0:	80 95       	com	r24
+			if (rx_pin_read())
+ 5b2:	18 9b       	sbis	0x03, 0	; 3
+ 5b4:	02 c0       	rjmp	.+4      	; 0x5ba <__vector_3+0x60>
+				d |= i;
+ 5b6:	42 2b       	or	r20, r18
+ 5b8:	01 c0       	rjmp	.+2      	; 0x5bc <__vector_3+0x62>
+			else // else clause added to ensure function timing is ~balanced
+				d &= noti;
+ 5ba:	48 23       	and	r20, r24
+	if ( !rx_pin_read() ) {
+		// Wait approximately 1/2 of a bit width to "center" the sample
+		tunedDelay(_rx_delay_centering);
+
+		// Read each of the 8 bits
+		for (uint8_t i = 0x1; i; i <<= 1) {
+ 5bc:	22 0f       	add	r18, r18
+ 5be:	21 11       	cpse	r18, r1
+ 5c0:	ec cf       	rjmp	.-40     	; 0x59a <__vector_3+0x40>
+			else // else clause added to ensure function timing is ~balanced
+				d &= noti;
+		}
+
+		// skip the stop bit
+		tunedDelay(_rx_delay_stopbit);
+ 5c2:	80 91 69 01 	lds	r24, 0x0169	; 0x800169 <_rx_delay_stopbit>
+ 5c6:	90 91 6a 01 	lds	r25, 0x016A	; 0x80016a <_rx_delay_stopbit+0x1>
+
+/* static */
+inline void tunedDelay(uint16_t delay) {
+	uint8_t tmp = 0;
+
+	asm volatile("sbiw    %0, 0x01 \n\t"
+ 5ca:	01 97       	sbiw	r24, 0x01	; 1
+ 5cc:	2f ef       	ldi	r18, 0xFF	; 255
+ 5ce:	8f 3f       	cpi	r24, 0xFF	; 255
+ 5d0:	92 07       	cpc	r25, r18
+ 5d2:	d9 f7       	brne	.-10     	; 0x5ca <__vector_3+0x70>
+
+		// skip the stop bit
+		tunedDelay(_rx_delay_stopbit);
+
+		// if buffer full, set the overflow flag and return
+		if (((_receive_buffer_tail + 1) & _SS_RX_BUFF_MASK) != _receive_buffer_head) {  // circular buffer
+ 5d4:	80 91 26 01 	lds	r24, 0x0126	; 0x800126 <_receive_buffer_tail>
+ 5d8:	90 e0       	ldi	r25, 0x00	; 0
+ 5da:	01 96       	adiw	r24, 0x01	; 1
+ 5dc:	8f 73       	andi	r24, 0x3F	; 63
+ 5de:	99 27       	eor	r25, r25
+ 5e0:	20 91 25 01 	lds	r18, 0x0125	; 0x800125 <_receive_buffer_head>
+ 5e4:	30 e0       	ldi	r19, 0x00	; 0
+ 5e6:	82 17       	cp	r24, r18
+ 5e8:	93 07       	cpc	r25, r19
+ 5ea:	69 f0       	breq	.+26     	; 0x606 <__vector_3+0xac>
+			// save new data in buffer: tail points to where byte goes
+			_receive_buffer[_receive_buffer_tail] = d; // save new byte
+ 5ec:	e0 91 26 01 	lds	r30, 0x0126	; 0x800126 <_receive_buffer_tail>
+ 5f0:	f0 e0       	ldi	r31, 0x00	; 0
+ 5f2:	e9 5d       	subi	r30, 0xD9	; 217
+ 5f4:	fe 4f       	sbci	r31, 0xFE	; 254
+ 5f6:	40 83       	st	Z, r20
+			_receive_buffer_tail = (_receive_buffer_tail + 1) & _SS_RX_BUFF_MASK;  // circular buffer
+ 5f8:	80 91 26 01 	lds	r24, 0x0126	; 0x800126 <_receive_buffer_tail>
+ 5fc:	8f 5f       	subi	r24, 0xFF	; 255
+ 5fe:	8f 73       	andi	r24, 0x3F	; 63
+ 600:	80 93 26 01 	sts	0x0126, r24	; 0x800126 <_receive_buffer_tail>
+ 604:	06 c0       	rjmp	.+12     	; 0x612 <__vector_3+0xb8>
+		} else {
+			_buffer_overflow = true;
+ 606:	81 e0       	ldi	r24, 0x01	; 1
+ 608:	90 e0       	ldi	r25, 0x00	; 0
+ 60a:	90 93 68 01 	sts	0x0168, r25	; 0x800168 <_buffer_overflow+0x1>
+ 60e:	80 93 67 01 	sts	0x0167, r24	; 0x800167 <_buffer_overflow>
+		}
+	}
+	
+		if((PINB & 1<<PINB2) && was_set==1){
+ 612:	1a 9b       	sbis	0x03, 2	; 3
+ 614:	0f c0       	rjmp	.+30     	; 0x634 <__vector_3+0xda>
+ 616:	80 91 24 01 	lds	r24, 0x0124	; 0x800124 <was_set>
+ 61a:	81 30       	cpi	r24, 0x01	; 1
+ 61c:	59 f4       	brne	.+22     	; 0x634 <__vector_3+0xda>
+		cli();
+ 61e:	f8 94       	cli
+		
+		writeBuffer(SPDR);
+ 620:	8e b5       	in	r24, 0x2e	; 46
+ 622:	3e d0       	rcall	.+124    	; 0x6a0 <writeBuffer>
+		PORTB ^= 1<<PORTB6;
+ 624:	95 b1       	in	r25, 0x05	; 5
+ 626:	80 e4       	ldi	r24, 0x40	; 64
+ 628:	89 27       	eor	r24, r25
+ 62a:	85 b9       	out	0x05, r24	; 5
+		
+		sei();
+ 62c:	78 94       	sei
+		was_set = 0;
+ 62e:	10 92 24 01 	sts	0x0124, r1	; 0x800124 <was_set>
+ 632:	05 c0       	rjmp	.+10     	; 0x63e <__vector_3+0xe4>
+		}
+		else if(!(PINB & 1<<PINB2)){
+ 634:	1a 99       	sbic	0x03, 2	; 3
+ 636:	03 c0       	rjmp	.+6      	; 0x63e <__vector_3+0xe4>
+			was_set = 1;
+ 638:	81 e0       	ldi	r24, 0x01	; 1
+ 63a:	80 93 24 01 	sts	0x0124, r24	; 0x800124 <was_set>
+		}
 }
+ 63e:	ff 91       	pop	r31
+ 640:	ef 91       	pop	r30
+ 642:	bf 91       	pop	r27
+ 644:	af 91       	pop	r26
+ 646:	9f 91       	pop	r25
+ 648:	8f 91       	pop	r24
+ 64a:	7f 91       	pop	r23
+ 64c:	6f 91       	pop	r22
+ 64e:	5f 91       	pop	r21
+ 650:	4f 91       	pop	r20
+ 652:	3f 91       	pop	r19
+ 654:	2f 91       	pop	r18
+ 656:	0f 90       	pop	r0
+ 658:	0f be       	out	0x3f, r0	; 63
+ 65a:	0f 90       	pop	r0
+ 65c:	1f 90       	pop	r1
+ 65e:	18 95       	reti
+
+00000660 <SPIInit>:
+// }
 
 
 void SPIInit(void){
 			
 	DDRB &= ~(1<<PINB7); //set HIZ mode
- 55a:	84 b1       	in	r24, 0x04	; 4
- 55c:	8f 77       	andi	r24, 0x7F	; 127
- 55e:	84 b9       	out	0x04, r24	; 4
+ 660:	84 b1       	in	r24, 0x04	; 4
+ 662:	8f 77       	andi	r24, 0x7F	; 127
+ 664:	84 b9       	out	0x04, r24	; 4
 	PORTB &= ~(1<<PINB7);
- 560:	85 b1       	in	r24, 0x05	; 5
- 562:	8f 77       	andi	r24, 0x7F	; 127
- 564:	85 b9       	out	0x05, r24	; 5
+ 666:	85 b1       	in	r24, 0x05	; 5
+ 668:	8f 77       	andi	r24, 0x7F	; 127
+ 66a:	85 b9       	out	0x05, r24	; 5
 	
 	DDRB |= 1<<DDB4; //set MISO output
- 566:	84 b1       	in	r24, 0x04	; 4
- 568:	80 61       	ori	r24, 0x10	; 16
- 56a:	84 b9       	out	0x04, r24	; 4
+ 66c:	84 b1       	in	r24, 0x04	; 4
+ 66e:	80 61       	ori	r24, 0x10	; 16
+ 670:	84 b9       	out	0x04, r24	; 4
 	
 	DDRB |= 1<< DDB6;
- 56c:	84 b1       	in	r24, 0x04	; 4
- 56e:	80 64       	ori	r24, 0x40	; 64
- 570:	84 b9       	out	0x04, r24	; 4
+ 672:	84 b1       	in	r24, 0x04	; 4
+ 674:	80 64       	ori	r24, 0x40	; 64
+ 676:	84 b9       	out	0x04, r24	; 4
 	
 	PCICR |= 1<< PCIE0; //interrupt for SS
- 572:	e8 e6       	ldi	r30, 0x68	; 104
- 574:	f0 e0       	ldi	r31, 0x00	; 0
- 576:	80 81       	ld	r24, Z
- 578:	81 60       	ori	r24, 0x01	; 1
- 57a:	80 83       	st	Z, r24
+ 678:	e8 e6       	ldi	r30, 0x68	; 104
+ 67a:	f0 e0       	ldi	r31, 0x00	; 0
+ 67c:	80 81       	ld	r24, Z
+ 67e:	81 60       	ori	r24, 0x01	; 1
+ 680:	80 83       	st	Z, r24
 	PCMSK0 |= 1<<PCINT2;
- 57c:	eb e6       	ldi	r30, 0x6B	; 107
- 57e:	f0 e0       	ldi	r31, 0x00	; 0
- 580:	80 81       	ld	r24, Z
- 582:	84 60       	ori	r24, 0x04	; 4
- 584:	80 83       	st	Z, r24
+ 682:	eb e6       	ldi	r30, 0x6B	; 107
+ 684:	f0 e0       	ldi	r31, 0x00	; 0
+ 686:	80 81       	ld	r24, Z
+ 688:	84 60       	ori	r24, 0x04	; 4
+ 68a:	80 83       	st	Z, r24
 	
 	SPCR = 1<<SPE; //enable SPI
- 586:	80 e4       	ldi	r24, 0x40	; 64
- 588:	8c bd       	out	0x2c, r24	; 44
- 58a:	08 95       	ret
+ 68c:	80 e4       	ldi	r24, 0x40	; 64
+ 68e:	8c bd       	out	0x2c, r24	; 44
+ 690:	08 95       	ret
 
-0000058c <bufferInit>:
+00000692 <bufferInit>:
 }
 
 
 void bufferInit(void){
 	
 	read_index = 0;
- 58c:	10 92 25 01 	sts	0x0125, r1	; 0x800125 <read_index>
+ 692:	10 92 70 01 	sts	0x0170, r1	; 0x800170 <read_index>
 	write_index = 0;
- 590:	10 92 24 01 	sts	0x0124, r1	; 0x800124 <write_index>
+ 696:	10 92 6f 01 	sts	0x016F, r1	; 0x80016f <write_index>
 	buffer_length = 0;
- 594:	10 92 26 01 	sts	0x0126, r1	; 0x800126 <buffer_length>
- 598:	08 95       	ret
+ 69a:	10 92 71 01 	sts	0x0171, r1	; 0x800171 <buffer_length>
+ 69e:	08 95       	ret
 
-0000059a <writeBuffer>:
+000006a0 <writeBuffer>:
 }
 
 int writeBuffer(uint8_t val){
 	
 	if(buffer_length == BUFFER_SIZE) return -1;
- 59a:	90 91 26 01 	lds	r25, 0x0126	; 0x800126 <buffer_length>
- 59e:	94 36       	cpi	r25, 0x64	; 100
- 5a0:	a1 f0       	breq	.+40     	; 0x5ca <writeBuffer+0x30>
+ 6a0:	90 91 71 01 	lds	r25, 0x0171	; 0x800171 <buffer_length>
+ 6a4:	94 36       	cpi	r25, 0x64	; 100
+ 6a6:	a1 f0       	breq	.+40     	; 0x6d0 <writeBuffer+0x30>
 	buffer[write_index++] = val;
- 5a2:	e0 91 24 01 	lds	r30, 0x0124	; 0x800124 <write_index>
- 5a6:	21 e0       	ldi	r18, 0x01	; 1
- 5a8:	2e 0f       	add	r18, r30
- 5aa:	20 93 24 01 	sts	0x0124, r18	; 0x800124 <write_index>
- 5ae:	f0 e0       	ldi	r31, 0x00	; 0
- 5b0:	e9 5d       	subi	r30, 0xD9	; 217
- 5b2:	fe 4f       	sbci	r31, 0xFE	; 254
- 5b4:	80 83       	st	Z, r24
+ 6a8:	e0 91 6f 01 	lds	r30, 0x016F	; 0x80016f <write_index>
+ 6ac:	21 e0       	ldi	r18, 0x01	; 1
+ 6ae:	2e 0f       	add	r18, r30
+ 6b0:	20 93 6f 01 	sts	0x016F, r18	; 0x80016f <write_index>
+ 6b4:	f0 e0       	ldi	r31, 0x00	; 0
+ 6b6:	ee 58       	subi	r30, 0x8E	; 142
+ 6b8:	fe 4f       	sbci	r31, 0xFE	; 254
+ 6ba:	80 83       	st	Z, r24
 	buffer_length++;
- 5b6:	9f 5f       	subi	r25, 0xFF	; 255
- 5b8:	90 93 26 01 	sts	0x0126, r25	; 0x800126 <buffer_length>
+ 6bc:	9f 5f       	subi	r25, 0xFF	; 255
+ 6be:	90 93 71 01 	sts	0x0171, r25	; 0x800171 <buffer_length>
 	if(write_index == BUFFER_SIZE) write_index = 0;
- 5bc:	24 36       	cpi	r18, 0x64	; 100
- 5be:	41 f4       	brne	.+16     	; 0x5d0 <writeBuffer+0x36>
- 5c0:	10 92 24 01 	sts	0x0124, r1	; 0x800124 <write_index>
+ 6c2:	24 36       	cpi	r18, 0x64	; 100
+ 6c4:	41 f4       	brne	.+16     	; 0x6d6 <writeBuffer+0x36>
+ 6c6:	10 92 6f 01 	sts	0x016F, r1	; 0x80016f <write_index>
 	return 0;
- 5c4:	80 e0       	ldi	r24, 0x00	; 0
- 5c6:	90 e0       	ldi	r25, 0x00	; 0
- 5c8:	08 95       	ret
+ 6ca:	80 e0       	ldi	r24, 0x00	; 0
+ 6cc:	90 e0       	ldi	r25, 0x00	; 0
+ 6ce:	08 95       	ret
 	buffer_length = 0;
 }
 
 int writeBuffer(uint8_t val){
 	
 	if(buffer_length == BUFFER_SIZE) return -1;
- 5ca:	8f ef       	ldi	r24, 0xFF	; 255
- 5cc:	9f ef       	ldi	r25, 0xFF	; 255
- 5ce:	08 95       	ret
+ 6d0:	8f ef       	ldi	r24, 0xFF	; 255
+ 6d2:	9f ef       	ldi	r25, 0xFF	; 255
+ 6d4:	08 95       	ret
 	buffer[write_index++] = val;
 	buffer_length++;
 	if(write_index == BUFFER_SIZE) write_index = 0;
 	return 0;
- 5d0:	80 e0       	ldi	r24, 0x00	; 0
- 5d2:	90 e0       	ldi	r25, 0x00	; 0
+ 6d6:	80 e0       	ldi	r24, 0x00	; 0
+ 6d8:	90 e0       	ldi	r25, 0x00	; 0
 }
- 5d4:	08 95       	ret
+ 6da:	08 95       	ret
 
-000005d6 <__vector_3>:
-uint8_t read_index;
-uint8_t write_index;
+000006dc <_exit>:
+ 6dc:	f8 94       	cli
 
-
-
-ISR(PCINT0_vect){
- 5d6:	1f 92       	push	r1
- 5d8:	0f 92       	push	r0
- 5da:	0f b6       	in	r0, 0x3f	; 63
- 5dc:	0f 92       	push	r0
- 5de:	11 24       	eor	r1, r1
- 5e0:	2f 93       	push	r18
- 5e2:	3f 93       	push	r19
- 5e4:	4f 93       	push	r20
- 5e6:	5f 93       	push	r21
- 5e8:	6f 93       	push	r22
- 5ea:	7f 93       	push	r23
- 5ec:	8f 93       	push	r24
- 5ee:	9f 93       	push	r25
- 5f0:	af 93       	push	r26
- 5f2:	bf 93       	push	r27
- 5f4:	ef 93       	push	r30
- 5f6:	ff 93       	push	r31
-
-	if(!(PINB & 1<<PINB2)) return;
- 5f8:	1a 9b       	sbis	0x03, 2	; 3
- 5fa:	08 c0       	rjmp	.+16     	; 0x60c <__vector_3+0x36>
-	cli();
- 5fc:	f8 94       	cli
-	
-	writeBuffer(SPDR);
- 5fe:	8e b5       	in	r24, 0x2e	; 46
- 600:	cc df       	rcall	.-104    	; 0x59a <writeBuffer>
-	PORTB ^= 1<<PORTB6;
- 602:	95 b1       	in	r25, 0x05	; 5
- 604:	80 e4       	ldi	r24, 0x40	; 64
- 606:	89 27       	eor	r24, r25
- 608:	85 b9       	out	0x05, r24	; 5
-	
-	sei();
- 60a:	78 94       	sei
-}
- 60c:	ff 91       	pop	r31
- 60e:	ef 91       	pop	r30
- 610:	bf 91       	pop	r27
- 612:	af 91       	pop	r26
- 614:	9f 91       	pop	r25
- 616:	8f 91       	pop	r24
- 618:	7f 91       	pop	r23
- 61a:	6f 91       	pop	r22
- 61c:	5f 91       	pop	r21
- 61e:	4f 91       	pop	r20
- 620:	3f 91       	pop	r19
- 622:	2f 91       	pop	r18
- 624:	0f 90       	pop	r0
- 626:	0f be       	out	0x3f, r0	; 63
- 628:	0f 90       	pop	r0
- 62a:	1f 90       	pop	r1
- 62c:	18 95       	reti
-
-0000062e <_exit>:
- 62e:	f8 94       	cli
-
-00000630 <__stop_program>:
- 630:	ff cf       	rjmp	.-2      	; 0x630 <__stop_program>
+000006de <__stop_program>:
+ 6de:	ff cf       	rjmp	.-2      	; 0x6de <__stop_program>

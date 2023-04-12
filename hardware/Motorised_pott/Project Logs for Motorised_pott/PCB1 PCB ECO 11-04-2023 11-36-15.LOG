@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=TCH_1 Pin=U1-28
+Added Component: Designator=R?(R1005_0402i_L)
+Added Pin To Net: NetName=TCH_1 Pin=R?-2
+Added Pin To Net: NetName=NetR?_1 Pin=R?-1
+Added Pin To Net: NetName=NetR?_1 Pin=U1-28
+Added Net: Name=NetR?_1
+Added Member To Class: ClassName=main Member=Component R? 1k

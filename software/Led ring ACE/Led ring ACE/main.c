@@ -35,7 +35,7 @@ int main(void)
 	
 	while(1){
 	
-		//debug_printf("ACE: %d\r\n", ace_val);
+		debug_printf("ACE: %d\r\n", ace_val);
 
 	_delay_ms(1000);
 	}

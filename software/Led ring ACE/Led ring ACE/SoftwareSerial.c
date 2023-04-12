@@ -57,6 +57,7 @@ More notes:
 #include "SoftwareSerial.h"
 #include "stdarg.h"
 #include <stdio.h>
+#include "SPI.h"
 //
 // Globals
 //
@@ -72,6 +73,7 @@ uint16_t _buffer_overflow = false;
 static char _receive_buffer[_SS_MAX_RX_BUFF];
 static volatile uint8_t _receive_buffer_tail;
 static volatile uint8_t _receive_buffer_head;
+static uint8_t was_set;
 //static SoftwareSerial *active_object;
 
 // private methods
@@ -168,6 +170,19 @@ ISR(PCINT0_vect) {
 			_buffer_overflow = true;
 		}
 	}
+	
+		if((PINB & 1<<PINB2) && was_set==1){
+		cli();
+		
+		writeBuffer(SPDR);
+		PORTB ^= 1<<PORTB6;
+		
+		sei();
+		was_set = 0;
+		}
+		else if(!(PINB & 1<<PINB2)){
+			was_set = 1;
+		}
 }
 
 

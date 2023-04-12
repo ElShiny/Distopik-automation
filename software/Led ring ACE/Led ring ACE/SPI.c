@@ -16,16 +16,16 @@ uint8_t write_index;
 
 
 
-ISR(PCINT0_vect){
-
-	if(!(PINB & 1<<PINB2)) return;
-	cli();
-	
-	writeBuffer(SPDR);
-	PORTB ^= 1<<PORTB6;
-	
-	sei();
-}
+// ISR(PCINT0_vect){
+// 
+// 	if(!(PINB & 1<<PINB2)) return;
+// 	cli();
+// 	
+// 	writeBuffer(SPDR);
+// 	PORTB ^= 1<<PORTB6;
+// 	
+// 	sei();
+// }
 
 
 void SPIInit(void){
