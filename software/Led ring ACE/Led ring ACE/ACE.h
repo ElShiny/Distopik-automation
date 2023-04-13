@@ -36,6 +36,8 @@
 
 
 void ACEInit(void);
+void enableTimer(void);
+void disableTimer(void);
 uint8_t readACEValRaw(void);
 uint8_t ACETransform(uint8_t val);
 uint8_t isBitSet(uint8_t reg, uint8_t pin);
@@ -43,6 +45,7 @@ uint8_t readACEQuick(void);
 void absoluteToRelative(uint8_t *old_val, uint8_t *new_val, int *save);
 
 extern int ace_val;
+extern uint8_t ace_changed;
 
  static __flash const uint8_t encoderMap[256] = {
 	0xFF,0x38,0x28,0x37,0x18,0xFF,0x27,0x34,0x08,0x39,0xFF,0xFF,0x17,0xFF,0x24,0x0D,

@@ -41,7 +41,6 @@ C_SRCS +=  \
 ../I2C.c \
 ../led_drv.c \
 ../main.c \
-../SoftwareSerial.c \
 ../SPI.c
 
 
@@ -56,7 +55,6 @@ ACE.o \
 I2C.o \
 led_drv.o \
 main.o \
-SoftwareSerial.o \
 SPI.o
 
 OBJS_AS_ARGS +=  \
@@ -64,7 +62,6 @@ ACE.o \
 I2C.o \
 led_drv.o \
 main.o \
-SoftwareSerial.o \
 SPI.o
 
 C_DEPS +=  \
@@ -72,7 +69,6 @@ ACE.d \
 I2C.d \
 led_drv.d \
 main.d \
-SoftwareSerial.d \
 SPI.d
 
 C_DEPS_AS_ARGS +=  \
@@ -80,7 +76,6 @@ ACE.d \
 I2C.d \
 led_drv.d \
 main.d \
-SoftwareSerial.d \
 SPI.d
 
 OUTPUT_FILE_PATH +=Led\ ring\ ACE.elf
@@ -119,13 +114,6 @@ LINKER_SCRIPT_DEP+=
 	
 
 ./main.o: .././main.c
-	@echo Building file: $<
-	@echo Invoking: AVR/GNU C Compiler : 5.4.0
-	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATtiny_DFP\1.10.348\include"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g3 -Wall -mmcu=attiny88 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATtiny_DFP\1.10.348\gcc\dev\attiny88" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 
-	@echo Finished building: $<
-	
-
-./SoftwareSerial.o: .././SoftwareSerial.c
 	@echo Building file: $<
 	@echo Invoking: AVR/GNU C Compiler : 5.4.0
 	$(QUOTE)C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avr8-gnu-toolchain\bin\avr-gcc.exe$(QUOTE)  -x c -funsigned-char -funsigned-bitfields -DDEBUG  -I"C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATtiny_DFP\1.10.348\include"  -Og -ffunction-sections -fdata-sections -fpack-struct -fshort-enums -g3 -Wall -mmcu=attiny88 -B "C:\Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATtiny_DFP\1.10.348\gcc\dev\attiny88" -c -std=gnu99 -MD -MP -MF "$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -MT"$(@:%.o=%.o)"   -o "$@" "$<" 

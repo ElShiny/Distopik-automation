@@ -19,6 +19,7 @@ void SPIInit(void);
 void bufferInit(void);
 int writeBuffer(uint8_t val);
 int readBuffer(void);
+void writeSpi(uint8_t data);
 
 
 #endif /* SPI_H_ */

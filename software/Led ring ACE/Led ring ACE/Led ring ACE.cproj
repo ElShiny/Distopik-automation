@@ -169,12 +169,6 @@
     <Compile Include="main.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="SoftwareSerial.c">
-      <SubType>compile</SubType>
-    </Compile>
-    <Compile Include="SoftwareSerial.h">
-      <SubType>compile</SubType>
-    </Compile>
     <Compile Include="SPI.c">
       <SubType>compile</SubType>
     </Compile>

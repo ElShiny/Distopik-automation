@@ -14,7 +14,6 @@
 #include <avr/interrupt.h>
 #include "ACE.h"
 #include "I2C.h"
-//#include "SoftwareSerial.h"
 #include "led_drv.h"
 #include "SPI.h"
 
@@ -24,7 +23,6 @@
 
 int main(void)
 {
-	//softSerialBegin(9600);
 	ACEInit();
 	I2CInit();
 	LEDInit();
@@ -32,12 +30,27 @@ int main(void)
 	bufferInit();
 	
 	sei();
-	
-	while(1){
-	
-		debug_printf("ACE: %d\r\n", ace_val);
 
-	_delay_ms(1000);
+	while(1){
+
+		int data = readBuffer();
+		if (data != -1){
+			disableTimer();
+			if(data == 15){
+				while((data = readBuffer()) == -1);
+				ace_val = data;
+				//writeSpi(ace_val);
+			}
+			else if(data == 30){
+				writeSpi(ace_val);
+			}
+		}
+		enableTimer();
+// 		if(ace_changed){
+// 			writeSpi(0xcc);
+// 			writeSpi(ace_val);
+// 			ace_changed = 0;
+// 		}
 	}
 	
 }

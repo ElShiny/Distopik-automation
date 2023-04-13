@@ -13,25 +13,26 @@ uint8_t buffer[BUFFER_SIZE];
 uint8_t buffer_length;
 uint8_t read_index;
 uint8_t write_index;
+uint8_t spi_busy;
 
 
 
-// ISR(PCINT0_vect){
-// 
-// 	if(!(PINB & 1<<PINB2)) return;
-// 	cli();
-// 	
-// 	writeBuffer(SPDR);
-// 	PORTB ^= 1<<PORTB6;
-// 	
-// 	sei();
-// }
+ISR(PCINT0_vect){
+
+	if(!(PINB & 1<<PINB2)){
+		if(DDRB & 1<<DDB7) DDRB &= ~(1<<DDB7);
+		 return;}
+	else spi_busy = 0;
+	cli();
+	writeBuffer(SPDR);
+	sei();
+}
 
 
 void SPIInit(void){
 			
-	DDRB &= ~(1<<PINB7); //set HIZ mode
-	PORTB &= ~(1<<PINB7);
+	DDRB &= ~(1<<DDB7); //set HIZ mode
+	PORTB &= ~(1<<PORTB7);
 	
 	DDRB |= 1<<DDB4; //set MISO output
 	
@@ -68,4 +69,14 @@ int readBuffer(void){
 	buffer_length--;
 	if(read_index == BUFFER_SIZE) read_index = 0;
 	return buf;
+}
+
+void writeSpi(uint8_t data){
+	while(spi_busy);
+	
+	spi_busy = 1;
+	SPDR = data;
+	PORTB &= ~(1<<PORTB7);
+	DDRB |= 1<<DDB7;
+	
 }

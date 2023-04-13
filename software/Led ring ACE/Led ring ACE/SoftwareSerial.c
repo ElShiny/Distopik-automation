@@ -58,6 +58,7 @@ More notes:
 #include "stdarg.h"
 #include <stdio.h>
 #include "SPI.h"
+#include "ACE.h"
 //
 // Globals
 //
@@ -105,7 +106,7 @@ static const DELAY_TABLE table[] PROGMEM =
 	{ 28800,    11,         35,        35,     32,     },
 	{ 19200,    20,         55,        55,     52,     },
 	{ 14400,    30,         75,        75,     72,     },
-	{ 9600,     50,         114,       114,    112,    },
+	{ 9600,     50,         114,       114,    121,    },
 	{ 4800,     110,        233,       233,    230,    },
 	{ 2400,     229,        472,       472,    469,    },
 	{ 1200,     467,        948,       948,    945,    },
@@ -113,7 +114,7 @@ static const DELAY_TABLE table[] PROGMEM =
 	{ 300,      1895,       3805,      3805,   3802,   },
 };
 
-const int XMIT_START_ADJUSTMENT = 4;
+const int XMIT_START_ADJUSTMENT = 6;
 
 
 
@@ -123,6 +124,7 @@ const int XMIT_START_ADJUSTMENT = 4;
 
 /* static */
 inline void tunedDelay(uint16_t delay) {
+	
 	uint8_t tmp = 0;
 
 	asm volatile("sbiw    %0, 0x01 \n\t"
@@ -140,6 +142,22 @@ inline void tunedDelay(uint16_t delay) {
 // Interrupt handling, receive routine
 //
 ISR(PCINT0_vect) {
+			if((PINB & 1<<PINB2) && was_set==1){
+				cli();
+				
+				writeBuffer(SPDR);
+				PORTB ^= 1<<PORTB6;
+				
+				sei();
+				was_set = 0;
+				//ace_val --;
+				return;
+			}
+			else if(!(PINB & 1<<PINB2)){
+				was_set = 1;
+				ace_val ++;
+				return;
+			}
 	uint8_t d = 0;
 
 	// If RX line is high, then we don't see any start bit
@@ -171,18 +189,7 @@ ISR(PCINT0_vect) {
 		}
 	}
 	
-		if((PINB & 1<<PINB2) && was_set==1){
-		cli();
-		
-		writeBuffer(SPDR);
-		PORTB ^= 1<<PORTB6;
-		
-		sei();
-		was_set = 0;
-		}
-		else if(!(PINB & 1<<PINB2)){
-			was_set = 1;
-		}
+
 }
 
 

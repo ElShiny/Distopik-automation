@@ -10,7 +10,5 @@ led_drv.c
 
 main.c
 
-SoftwareSerial.c
-
 SPI.c
 

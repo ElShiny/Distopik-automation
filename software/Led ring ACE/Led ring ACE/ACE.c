@@ -6,7 +6,6 @@
  */ 
 
 #include "ACE.h"
-//#include "SoftwareSerial.h"
 #include "led_drv.h"
 #include <avr/io.h>
 #include <avr/interrupt.h>
@@ -15,6 +14,7 @@ int ace_val = 0;
 uint8_t ace_val_new = 0;
 uint8_t ace_val_old = 0;
 int cnt = 0;
+uint8_t ace_changed = 0;
 
 
 void ACEInit(void){
@@ -26,12 +26,20 @@ void ACEInit(void){
 	PORTD |= 1<<ACE_EN; 
 	
 	TCCR0A = 1<<CTC0|1<<CS02|1<<CS00; //timer enable
-	OCR0A = 78;			//10 ms delay
+	OCR0A = 78;			//78 is 10 ms delay
 	TIMSK0 = 1<<OCIE0A; //timer interrupt
 	TCNT0 = 0;			//empty timer counter
 	
 	ace_val_old = readACEQuick();
 	
+}
+
+void enableTimer(void){
+	TIMSK0 |= 1<<OCIE0A;
+}
+
+void disableTimer(void){
+	TIMSK0 &= ~(1<<OCIE0A);
 }
 
 
@@ -85,23 +93,27 @@ void absoluteToRelative(uint8_t *old_val, uint8_t *new_val, int *save){
 	
 	*old_val = *new_val;
 	
+	if(delta) ace_changed = 1;
 }
 
 
 ISR(TIMER0_COMPA_vect){
 	
-	if(cnt == 0){
+	if(cnt == 0){//reading ace values
 		ace_val_new = readACEQuick();
 		absoluteToRelative(&ace_val_old, &ace_val_new, &ace_val);
 		cnt ++;
 	}
 	
-	else if(cnt == 1){
-		int led = ((ace_val>>2)*15)>>5;
-				
+	else if(cnt == 1){//setting leds
+		int led = ((ace_val)*15)>>6;
+		int bck_clr;
+		
 		for(int i = 0; i<30; i++){
-			if(i<=led)setLED(i, 0b001100);
-			else setLED(i, 0b010000);
+			if(i<=led && led<= 30){setLED(i, 0b110000); bck_clr = 0;}
+			else if(i<=led-30 && 30<=led && led<=60){setLED(i, 0b001100);bck_clr = 0b110000;}
+			else if(i<=led-60 && 60<=led && led<=90){setLED(i, 0b000011);bck_clr = 0b001100;}
+			else setLED(i, bck_clr);
 		}
 		cnt = 0;
 	}
