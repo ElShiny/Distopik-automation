@@ -106,15 +106,7 @@ ISR(TIMER0_COMPA_vect){
 	}
 	
 	else if(cnt == 1){//setting leds
-		int led = ((ace_val)*15)>>6;
-		int bck_clr;
-		
-		for(int i = 0; i<30; i++){
-			if(i<=led && led<= 30){setLED(i, 0b110000); bck_clr = 0;}
-			else if(i<=led-30 && 30<=led && led<=60){setLED(i, 0b001100);bck_clr = 0b110000;}
-			else if(i<=led-60 && 60<=led && led<=90){setLED(i, 0b000011);bck_clr = 0b001100;}
-			else setLED(i, bck_clr);
-		}
+		setLEDRgb(ace_val);
 		cnt = 0;
 	}
 

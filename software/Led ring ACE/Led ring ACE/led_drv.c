@@ -6,6 +6,7 @@
  */ 
 
 #include "led_drv.h"
+#include "ACE.h"
 #include "I2C.h"
 
 
@@ -59,4 +60,16 @@ uint8_t setLED(uint8_t led, uint8_t rgb){
 	
 	I2CStop();
 	return 0;
+}
+
+void setLEDRgb(uint8_t value){
+	int led = value;//((value)*15)>>6;
+	int bck_clr = 0;
+	
+	for(int i = 0; i<30; i++){
+		if(i<=led && led<= 30){setLED(i, 0b110000); bck_clr = 0;}
+		else if(i<=led-30 && 30<=led && led<=60){setLED(i, 0b001100);bck_clr = 0b110000;}
+		else if(i<=led-60 && 60<=led && led<=90){setLED(i, 0b000011);bck_clr = 0b001100;}
+		else setLED(i, bck_clr);
+		}
 }

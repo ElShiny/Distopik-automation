@@ -10,5 +10,7 @@ led_drv.c
 
 main.c
 
+settings.c
+
 SPI.c
 
