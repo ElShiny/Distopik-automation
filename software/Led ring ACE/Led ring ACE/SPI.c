@@ -7,28 +7,40 @@
 #define F_CPU 8000000
 
 #include "SPI.h"
+#include "ACE.h"
+#include "housekeeping.h"
 #include <avr/interrupt.h>
 #include <util/delay.h>
 
 
 
 
-uint8_t buffer[BUFFER_SIZE];
-uint8_t buffer_length;
-uint8_t read_index;
-uint8_t write_index;
-uint8_t spi_busy;
+uint8_t volatile buffer[BUFFER_SIZE];
+uint8_t volatile buffer_length = 0;
+uint8_t volatile read_index = 0;
+uint8_t volatile write_index = 0;
+uint8_t volatile spi_busy = 0;
 
 
 
-ISR(PCINT0_vect){
-
-	if(!(PINB & 1<<PINB2) || !(PINB & 1<<PINB7 ) || spi_busy)return;
+ ISR(PCINT0_vect){
+	if(!(PINB & 1<<PINB2) || !(PINB & 1<<PINB7) || spi_busy )return;
 	cli();
 	writeBuffer(SPDR);
 	SPDR = 0;
 	sei();
+
 }
+
+// ISR(SPI_STC_vect){
+// 	while(!(PINB & 1<<PINB2));
+// 		cli();
+// 		writeBuffer(SPDR);
+// 		SPDR = 0;
+// 		//ace_val = 6;
+// 		sei();
+// 		DDRB ^= 1<<DDB7;
+// }
 
 
 void SPIInit(void){
@@ -43,7 +55,7 @@ void SPIInit(void){
 	PCICR |= 1<< PCIE0; //interrupt for SS
 	PCMSK0 |= 1<<PCINT2;
 	
-	SPCR = 1<<SPE; //enable SPI
+	SPCR = 1<<SPE;// | 1<<SPIE; //enable SPI
 }
 
 
@@ -76,41 +88,38 @@ int readBuffer(void){
 	return buf;
 }
 
-void writeSpi(uint8_t instr, uint8_t data){
-	_delay_us(50);
-	while(spi_busy);
+void writeSpi(uint8_t instr, uint8_t data, uint8_t timeout){
 	
-
-		
+	while(!(PINB & 1<<PINB7));
 	spi_busy = 1;
+	PCMSK0 &= ~(1<<PCINT2);
+	uint32_t start_tick = getTick();
+
 	SPSR;
 	SPDR = instr;
 	
 	PORTB &= ~(1<<PORTB7);//set INT low
 	DDRB |= 1<<DDB7;
 	
-	cli();
-	
-	while(!(SPSR & 1<<SPIF) || !(PINB & 1<<PINB2));
+	while(!(SPSR & 1<<SPIF) || !(PINB & 1<<PINB2)){if(getTick()>start_tick+timeout)break;}
 	
 	SPDR = data;
 	
-	while(!(SPSR & 1<<SPIF) || !(PINB & 1<<PINB2));
+	while(!(SPSR & 1<<SPIF) || !(PINB & 1<<PINB2)){if(getTick()>start_tick+timeout)break;}
 	
 	PORTB &= ~(1<<PORTB7); //set INT high
 	DDRB &= ~(1<<DDB7);
-	//_delay_us(10);
 	
-	sei();
+	PCMSK0 |= 1<<PCINT2;
 	spi_busy = 0;	
 }
 
-void writeSpiBuffer(uint8_t instr, uint8_t* data, uint8_t length){
+void writeSpiBuffer(uint8_t instr, uint8_t* data, uint8_t length, uint8_t timeout){
 	
-	while(spi_busy || !(PINB & 1<<PINB7));
+	while(!(PINB & 1<<PINB7));
 	spi_busy = 1; //set global busy flag
-	
-	cli();
+	//SPCR &= ~(1<<SPIE);//disable spi interrupt
+	uint32_t start_tick = getTick();
 	
 	SPSR;		//clearing spif flag
 	SPDR = instr;		//set instr
@@ -119,18 +128,18 @@ void writeSpiBuffer(uint8_t instr, uint8_t* data, uint8_t length){
 	DDRB |= 1<<DDB7;
 
 	
-	while(!(SPSR & 1<<SPIF) || !(PINB & 1<<PINB2));
+	while(!(SPSR & 1<<SPIF) || !(PINB & 1<<PINB2)){if(getTick()>start_tick+timeout)break;}
 	SPDR = length;
 	
 	for(int i=0; i<length; i++){
-		while(!(SPSR & 1<<SPIF) || !(PINB & 1<<PINB2));
+		while(!(SPSR & 1<<SPIF) || !(PINB & 1<<PINB2)){if(getTick()>start_tick+timeout)break;}
 		SPDR = data[i];
 	}
-	while(!(SPSR & 1<<SPIF) || !(PINB & 1<<PINB2));
+	while(!(SPSR & 1<<SPIF) || !(PINB & 1<<PINB2)){if(getTick()>start_tick+timeout)break;}
 	PORTB &= ~(1<<PORTB7); //set INT high
 	DDRB &= ~(1<<DDB7);
 	//_delay_us(10);
 	
-	sei();
+	//SPCR |= 1<<SPIE;
 	spi_busy = 0;
 }

@@ -36,8 +36,6 @@
 
 
 void ACEInit(void);
-void enableTimer(void);
-void disableTimer(void);
 uint8_t readACEValRaw(void);
 uint8_t ACETransform(uint8_t val);
 uint8_t isBitSet(uint8_t reg, uint8_t pin);

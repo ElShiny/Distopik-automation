@@ -1,6 +1,7 @@
-SPI.d SPI.o: .././SPI.c .././SPI.h \
+housekeeping.d housekeeping.o: .././housekeeping.c .././ACE.h \
  e:\atmel_studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdint.h \
  e:\atmel_studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdint.h \
+ .././led_drv.h \
  e:\atmel_studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h \
  e:\atmel_studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\sfr_defs.h \
  e:\atmel_studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\inttypes.h \
@@ -10,17 +11,16 @@ SPI.d SPI.o: .././SPI.c .././SPI.h \
  e:\atmel_studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\version.h \
  e:\atmel_studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\fuse.h \
  e:\atmel_studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h \
- .././ACE.h .././housekeeping.h \
- e:\atmel_studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h \
- e:\atmel_studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h \
- e:\atmel_studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
- e:\atmel_studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h
+ .././housekeeping.h \
+ e:\atmel_studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h
 
-.././SPI.h:
+.././ACE.h:
 
 e:\atmel_studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stdint.h:
 
 e:\atmel_studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\stdint.h:
+
+.././led_drv.h:
 
 e:\atmel_studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\io.h:
 
@@ -40,14 +40,6 @@ e:\atmel_studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\fuse.h:
 
 e:\atmel_studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h:
 
-.././ACE.h:
-
 .././housekeeping.h:
 
 e:\atmel_studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h:
-
-e:\atmel_studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h:
-
-e:\atmel_studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h:
-
-e:\atmel_studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h:

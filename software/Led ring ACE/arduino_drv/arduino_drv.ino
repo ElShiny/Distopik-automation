@@ -74,8 +74,8 @@ void readSpi(void){
   a = SPI.transfer(0x00);
   digitalWrite(ssPin, HIGH);
 
-  Serial.print("INSTR: ");
-  Serial.println(a, DEC);
+  //Serial.print("INSTR: ");
+  //Serial.println(a, DEC);
 
   if(a == 10)readSpiByte();
   if(a == 20)readSpiBuffer();
@@ -86,14 +86,15 @@ void readSpi(void){
 void readSpiByte(void){
   cli();
 
-  _delay_us(10);
+  //_delay_us(10);
   digitalWrite(ssPin, LOW);
   int b = SPI.transfer(0x00);
   digitalWrite(ssPin, HIGH);
 
   Serial.print("DATA: ");
   Serial.println(b, DEC);
-
+  writeSpiBuffer(0);
+  delay(2000);
   sei();
 }
 
@@ -118,7 +119,10 @@ void readSpiBuffer(){
     digitalWrite(ssPin, HIGH);    
   }
   Serial.println(" ");
-  sei();
+
+   delay(10);
+  //sei();
+
 }
 
 void writeSpiBuffer(uint8_t length){
@@ -141,18 +145,21 @@ void writeSpiBuffer(uint8_t length){
 
 
   uint8_t data[90] = {};
+  if(length>90)length = 90;
   for(int i = 0; i<length; i++){
     data[i] = i;
   }
 
 
   for(int i = 0; i<length; i++){
-    _delay_us(10);
+    _delay_us(5);
     digitalWrite(ssPin, LOW);
-    SPI.transfer(data[i]);
+    //SPI.transfer(0xff);
+    int ret = SPI.transfer(data[i]);
     //SPI.transfer(0x00);
     digitalWrite(ssPin, HIGH);    
+    if(ret)Serial.println("err");
   }
-  delay(1);
-  sei();
+  delay(10);
+  //sei();
 }

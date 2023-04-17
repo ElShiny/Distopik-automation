@@ -16,6 +16,8 @@ uint8_t ace_val_old = 0;
 int cnt = 0;
 uint8_t ace_changed = 0;
 
+volatile uint32_t tick = 0;
+
 
 void ACEInit(void){
 	
@@ -25,23 +27,9 @@ void ACEInit(void){
 	
 	PORTD |= 1<<ACE_EN; 
 	
-	TCCR0A = 1<<CTC0|1<<CS02|1<<CS00; //timer enable
-	OCR0A = 78;			//78 is 10 ms delay
-	TIMSK0 = 1<<OCIE0A; //timer interrupt
-	TCNT0 = 0;			//empty timer counter
-	
 	ace_val_old = readACEQuick();
 	
 }
-
-void enableTimer(void){
-	TIMSK0 |= 1<<OCIE0A;
-}
-
-void disableTimer(void){
-	TIMSK0 &= ~(1<<OCIE0A);
-}
-
 
 uint8_t readACEValRaw(void){
 	uint8_t raw_val = 0;
@@ -94,21 +82,4 @@ void absoluteToRelative(uint8_t *old_val, uint8_t *new_val, int *save){
 	*old_val = *new_val;
 	
 	if(delta) ace_changed = 1;
-}
-
-
-ISR(TIMER0_COMPA_vect){
-	
-	if(cnt == 0){//reading ace values
-		ace_val_new = readACEQuick();
-		absoluteToRelative(&ace_val_old, &ace_val_new, &ace_val);
-		cnt ++;
-	}
-	
-	else if(cnt == 1){//setting leds
-		setLEDRgb(ace_val);
-		cnt = 0;
-	}
-
-
 }
