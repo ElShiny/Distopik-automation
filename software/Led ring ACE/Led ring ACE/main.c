@@ -17,6 +17,7 @@
 #include "led_drv.h"
 #include "SPI.h"
 #include "housekeeping.h"
+#include "settings.h"
 
 
 
@@ -34,14 +35,20 @@ int main(void)
 	sei();
 	
 					
-		_delay_ms(100);
+	_delay_ms(100);
+	//DDRB |= 1<<DDB6;
+	//PORTB |= 1<<PORTB6;
 		
-		writeSpi(10, buffer_length, 10);
-		//setLEDRgb(30);
-		int start_tick = 0;
-		while(buffer_length != 3){if(getTick()>start_tick+1000)break;};
-		writeSpi(10, buffer_length, 10);
-		setLEDRgb(90);
+		
+	while (1){
+		
+		parseSPI();
+		//_delay_ms(20);
+		if(ace_changed){
+			ace_changed = 0;
+			writeSpi(1, ace_val, 10);
+		}
+	}
 
 	while(1); //shouldnt reach this
 }

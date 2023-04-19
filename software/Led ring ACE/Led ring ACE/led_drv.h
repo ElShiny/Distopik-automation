@@ -19,11 +19,13 @@
 void LEDInit(void);
 uint8_t LEDSetReg(uint8_t adr, uint8_t val);
 uint8_t LEDGetReg(uint8_t adr);
-uint8_t setLED(uint8_t led, uint8_t rgb);
-void setLEDRgb(uint8_t value);
+uint8_t setLED(uint8_t led, uint8_t *rgb);
+void setDEMOLEDRgb(uint8_t value);
+int bufToRGBArray(void);
+uint8_t* RGBFrom222(uint8_t color);
+uint8_t RGBTo222(uint8_t *color);
 
-
-static uint8_t rgb_array[90] = {};
+extern uint8_t rgb_array[90];
 
 static const uint8_t led_adr_arr[]={0x01, 0x11, 0x21, 0x31, 0x41, 0x51,
 									0x04, 0x14, 0x24, 0x34, 0x44, 0x54,

@@ -14,6 +14,8 @@
 
 #define BUFFER_SIZE 100
 
+enum spi_states_e{SPI_READ, SPI_WRITE, SPI_ERR};
+
 volatile uint8_t buffer[BUFFER_SIZE];
 volatile uint8_t buffer_length;
 volatile uint8_t read_index;
@@ -23,6 +25,7 @@ void SPIInit(void);
 void bufferInit(void);
 int writeBuffer(uint8_t val);
 int readBuffer(void);
+int readBufferLength(void);
 void writeSpi(uint8_t instr, uint8_t data, uint8_t timeout);
 void writeSpiBuffer(uint8_t instr, uint8_t* data, uint8_t length, uint8_t timeout);
 

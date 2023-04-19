@@ -10,11 +10,11 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 
-int ace_val = 0;
+int volatile ace_val = 0;
 uint8_t ace_val_new = 0;
 uint8_t ace_val_old = 0;
 int cnt = 0;
-uint8_t ace_changed = 0;
+uint8_t volatile ace_changed = 0;
 
 volatile uint32_t tick = 0;
 

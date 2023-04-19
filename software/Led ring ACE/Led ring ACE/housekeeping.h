@@ -15,13 +15,16 @@
 volatile uint16_t tick;
 extern uint8_t ace_val_new;
 extern uint8_t ace_val_old;
-extern uint8_t ace_changed;
+extern volatile uint8_t hskp_en;
+
 
 
 
 void timersInit(void);
 void enableTimer(void);
 void disableTimer(void);
+void enableHSKP(void);
+void disableHSKP(void);
 uint16_t getTick(void);
 
 
