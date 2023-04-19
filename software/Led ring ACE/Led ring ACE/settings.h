@@ -10,6 +10,7 @@
 #define SETTINGS_H_
 
 #include <stdio.h>
+#include <avr/wdt.h>
 
 #define ACE_LED_RING 1
 
@@ -24,5 +25,13 @@ void errorHandler(void);
 enum setting_states_e parsing_state;
 
 
+#define soft_reset()        \
+do                          \
+{                           \
+	wdt_enable(WDTO_15MS);  \
+	for(;;)                 \
+	{                       \
+	}                       \
+} while(0)
 
 #endif /* SETTINGS_H_ */

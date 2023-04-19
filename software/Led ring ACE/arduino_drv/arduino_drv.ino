@@ -151,16 +151,16 @@ void writeSpiBuffer(uint8_t instr, uint8_t length, uint8_t start){
 
   uint8_t data[90] = {};
 
-  for(int i = 0; i<length; i++){
-    data[i+start] = i;
+  for(int i = 0; i<90; i++){
+    data[i] = i;
   }
 
 
   for(int i = 0; i<length; i++){
-    _delay_us(20);
+    _delay_us(1);
     digitalWrite(ssPin, LOW);
     //SPI.transfer(0xff);
-    SPI.transfer(data[i]);
+    ret = SPI.transfer(data[i]);
     //SPI.transfer(0x00);
     digitalWrite(ssPin, HIGH);    
     if(ret){Serial.println("err"); return;}

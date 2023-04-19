@@ -57,7 +57,12 @@ ISR(TIMER0_COMPA_vect, ISR_NOBLOCK){
 	}
 	
 	else if(cnt >= 10 && hskp_en){//setting leds
-		setDEMOLEDRgb(ace_val);
+		if(led_settings.mode == 0){
+			setDEMOLEDRgb(ace_val);
+		}
+		else if(led_settings.mode == 1){
+			setLEDArray(&led_settings);
+		}
 		cnt = 1;
 	}
 	enableTimer();

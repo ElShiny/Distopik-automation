@@ -141,5 +141,5 @@ void writeSpiBuffer(uint8_t instr, uint8_t* data, uint8_t length, uint8_t timeou
 	PCICR |= 1<< PCIE0;
 	enableHSKP();
 	spi_busy = 0;
-	if(getTick()>start_tick+timeout)errorHandler();
+	//if(getTick()>start_tick+timeout)errorHandler();
 }

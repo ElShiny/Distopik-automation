@@ -12,6 +12,7 @@
 #include <avr/io.h>
 #include <util/delay.h>
 #include <avr/interrupt.h>
+#include <avr/wdt.h>
 #include "ACE.h"
 #include "I2C.h"
 #include "led_drv.h"
@@ -25,6 +26,9 @@
 
 int main(void)
 {
+	MCUSR = 0;//disable watchdog
+	wdt_disable();
+	
 	ACEInit();
 	timersInit();
 	I2CInit();

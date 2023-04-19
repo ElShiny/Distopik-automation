@@ -44,19 +44,22 @@ int parseSPI(void){
 			
 		case 20:// LED mode
 			while(readBufferLength() == 0){if(getTick()>(start_tick+MAX_TIMEOUT))return -1;}
-			ace_val = readBuffer();
-			
+			led_settings.mode = readBuffer();
 			break;
 			
 		case 21:// set LED buffer
-			bufToRGBArray();
-			writeSpi(101, 0xaa, 100);
+			bufToRGBArray(&led_settings);
+			//writeSpi(101, 0xaa, 100);
 			break;
 
 		case 22:// read LED buffer
-			writeSpiBuffer(22, rgb_array, 90, 100);
+			writeSpiBuffer(22, led_settings.rgb_array, 90, 100);
 			break;
+		//case 23:// set LED 
 			
+		case 252://report current buffer
+			soft_reset();
+			break;
 		case 253://report current buffer
 			writeSpi(253, readBufferLength(), 100);
 			break;
