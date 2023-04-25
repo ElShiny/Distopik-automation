@@ -24,9 +24,10 @@ typedef struct{
 	uint8_t start_angle;
 	uint8_t stop_angle;
 	uint8_t rot_percent;
+	uint8_t ace_en;
 	}led_drv_t;
 
-extern led_drv_t led_settings;
+extern volatile led_drv_t led_settings;
 
 void LEDInit(void);
 

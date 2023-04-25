@@ -21,7 +21,7 @@ int parseSPI(void){
 	
 	if(buffer_length == 0)return 0;
 
-	PORTB ^= 1<<PORTB6;
+	//PORTB ^= 1<<PORTB6;
 	//disableHSKP();
 	int start_tick = getTick();
 	
@@ -40,6 +40,11 @@ int parseSPI(void){
 		case 2: //get ace value
 			while(readBufferLength() == 0){if(getTick()>(start_tick+MAX_TIMEOUT))return -1;}
 			ace_val = readBuffer();
+			break;
+		
+		case 3: //get ace value
+			while(readBufferLength() == 0){if(getTick()>(start_tick+MAX_TIMEOUT))return -1;}
+			led_settings.ace_en = readBuffer();
 			break;
 			
 		case 20:// LED mode
@@ -74,8 +79,8 @@ int parseSPI(void){
 		default: bufferInit();
 		
 	}
-	
-	PORTB ^= 1<<PORTB6;
+	bufferInit();
+	//PORTB ^= 1<<PORTB6;
 	return 0;	
 }
 

@@ -51,7 +51,7 @@ uint16_t getTick(void){
 ISR(TIMER0_COMPA_vect, ISR_NOBLOCK){
 		
 	disableTimer();
-	if(cnt == 1 && hskp_en){//reading ace values
+	if(cnt == 1 && hskp_en && led_settings.ace_en){//reading ace values
 		ace_val_new = readACEQuick();
 		absoluteToRelative(&ace_val_old, &ace_val_new, &ace_val);
 	}

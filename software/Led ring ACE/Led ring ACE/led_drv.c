@@ -12,7 +12,7 @@
 #include "housekeeping.h"
 #include "settings.h"
 
-led_drv_t led_settings;
+volatile led_drv_t led_settings;
 
 void LEDInit(void){
 	
@@ -26,6 +26,7 @@ void LEDInit(void){
 	for(int a = 0x90; a < 0x9F; a++){
 		LEDSetReg(a, 60);
 	}
+	led_settings.ace_en= 1;
 	
 	DDRC |= 1<<PINC3;
 	PORTC |= 1<<PINC3;

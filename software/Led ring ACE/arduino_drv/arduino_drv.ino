@@ -19,6 +19,9 @@
 const int ssPin = 7;
 const int intPin = 2;
 int a;
+uint8_t devs;
+
+#define F_CPU 16000000
 
 #define F_CPU 16000000
 
@@ -42,6 +45,11 @@ void setup() {
 
   // give the sensor time to set up:
   delay(100);
+
+  devs = howManyDevs();
+  Serial.print("DEVS: ");
+  Serial.println(devs, DEC);
+
 }
 
 void loop() {
@@ -51,10 +59,10 @@ void loop() {
     int b = Serial.parseInt();
    if (Serial.read() == '\n') {
      Serial.println(a, DEC);
-     if(a == 0){
+     if(a == 256){
        writeSpiBuffer(21, 90, b);
      }
-     else if(a != 0)writeByte(a);
+     else writeByte(a);
      //writeSpiBuffer(a);
     }
   }
@@ -67,33 +75,42 @@ void writeByte(uint8_t data){
 }
 
 void readSpi(void){
+  uint8_t data[5];
 
   digitalWrite(ssPin, LOW);
-  a = SPI.transfer(0x00);
+  for(int i = 0; i<devs; i++){
+  data[i] = SPI.transfer(0x00);
+  }
   digitalWrite(ssPin, HIGH);
-  if(a == 0)return;
+  
+  for(int i = 0; i < devs; i++){
+  if(data[i] != 0){
   Serial.print("INSTR: ");
-  Serial.println(a, DEC);
+  Serial.println(data[i], DEC);
 
 
-  if(a < 10)readSpiByte();
-  if(a >= 20 && a<100)readSpiBuffer();
-  if(a == 253)readSpiByte();
-  if(a == 254){readSpiBuffer();}
-  if(a == 255)readSpiByte();
-  if(a == 101){readSpiByte(); writeSpiBuffer(21, 90, 0);}
+  if(data[i] < 10)readSpiByte();
+  if(data[i] >= 20 && data[i]<100)readSpiBuffer();
+  if(data[i] == 253)readSpiByte();
+  if(data[i] == 254){readSpiBuffer();}
+  if(data[i] == 255)readSpiByte();
+  if(data[i] == 101){readSpiByte(); writeSpiBuffer(21, 90, 0);}
+  }}
 
 }
 
 void readSpiByte(void){
-
+int b;
   //_delay_us(10);
   digitalWrite(ssPin, LOW);
-  int b = SPI.transfer(0x00);
-  digitalWrite(ssPin, HIGH);
-
+  
+  for(int i = 0; i < devs; i++){
+   b = SPI.transfer(0x00);
   Serial.print("DATA: ");
   Serial.println(b, DEC);
+  }
+
+  digitalWrite(ssPin, HIGH);
   Serial.println("END");
 }
 
@@ -167,4 +184,27 @@ void writeSpiBuffer(uint8_t instr, uint8_t length, uint8_t start){
   }
   Serial.println("WRITE END");
   //delay(1);
+}
+
+uint8_t howManyDevs(void){
+
+  uint8_t word = 0xab;
+  int ret = 0;
+  int i = 0;
+
+  while(!digitalRead(2));
+
+  digitalWrite(ssPin, LOW);
+  ret = SPI.transfer(word);
+  if(ret != 0){digitalWrite(ssPin, HIGH); return 0;}
+
+  while(ret != word){
+    ret = SPI.transfer(0x00);
+
+    if(i > 30)break;
+    i++;
+  }
+  digitalWrite(ssPin, HIGH);    
+
+  return i;
 }
