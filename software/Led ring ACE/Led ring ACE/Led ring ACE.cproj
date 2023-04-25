@@ -154,6 +154,12 @@
     <Compile Include="ACE.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="housekeeping.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="housekeeping.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="I2C.c">
       <SubType>compile</SubType>
     </Compile>

@@ -15,15 +15,38 @@
 
 #define IS3_ADR 0x34
 
+typedef struct{
+	uint8_t rgb_array[90];
+	uint8_t front_color[3];
+	uint8_t back_color[3];
+	
+	uint8_t mode;
+	uint8_t start_angle;
+	uint8_t stop_angle;
+	uint8_t rot_percent;
+	uint8_t ace_en;
+	}led_drv_t;
+
+extern volatile led_drv_t led_settings;
 
 void LEDInit(void);
-uint8_t LEDSetReg(uint8_t adr, uint8_t val);
+
+uint8_t LEDSetReg(uint8_t adr, uint8_t val);//writing functions
 uint8_t LEDGetReg(uint8_t adr);
-uint8_t setLED(uint8_t led, uint8_t rgb);
-void setLEDRgb(uint8_t value);
+
+uint8_t setLED(uint8_t led, uint8_t *rgb);//led setting
+uint8_t setLEDArray(led_drv_t *settings);
+
+void RGBFrom222(uint8_t *arr, uint8_t color);//color manipulation
+uint8_t RGBTo222(uint8_t *color);
+
+void setDEMOLEDRgb(uint8_t value);//helper functions
+int bufToRGBArray(led_drv_t *settings);
 
 
-static uint8_t rgb_array[90] = {};
+
+
+
 
 static const uint8_t led_adr_arr[]={0x01, 0x11, 0x21, 0x31, 0x41, 0x51,
 									0x04, 0x14, 0x24, 0x34, 0x44, 0x54,

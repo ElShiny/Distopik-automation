@@ -12,12 +12,16 @@
 
 #include <SPI.h>
 
+
 // pins used for the connection with the sensor
 // the other you need are controlled by the SPI library):
 
 const int ssPin = 7;
 const int intPin = 2;
 int a;
+uint8_t devs;
+
+#define F_CPU 16000000
 
 void setup() {
   Serial.begin(115200);
@@ -39,26 +43,27 @@ void setup() {
 
   // give the sensor time to set up:
   delay(100);
+
+  devs = howManyDevs();
+  Serial.print("DEVS: ");
+  Serial.println(devs, DEC);
+
 }
 
 void loop() {
 
   while (Serial.available() > 0) {
     int a = Serial.parseInt();
+    int b = Serial.parseInt();
    if (Serial.read() == '\n') {
      Serial.println(a, DEC);
-     //writeByte(a);
-     writeSpiBuffer(a);
+     if(a == 256){
+       writeSpiBuffer(21, 90, b);
+     }
+     else writeByte(a);
+     //writeSpiBuffer(a);
     }
   }
-//  for(uint8_t i = 0; i<256; i+=2){
-//    delay(2);
-//    writeByte(15);
-//    delay(1);
-//    writeByte(i);
-//  
-//  }
-//  delay(1000);
 }
 
 void writeByte(uint8_t data){
@@ -68,37 +73,46 @@ void writeByte(uint8_t data){
 }
 
 void readSpi(void){
-  cli();
+  uint8_t data[5];
 
   digitalWrite(ssPin, LOW);
-  a = SPI.transfer(0x00);
+  for(int i = 0; i<devs; i++){
+  data[i] = SPI.transfer(0x00);
+  }
   digitalWrite(ssPin, HIGH);
-
+  
+  for(int i = 0; i < devs; i++){
+  if(data[i] != 0){
   Serial.print("INSTR: ");
-  Serial.println(a, DEC);
+  Serial.println(data[i], DEC);
 
-  if(a == 10)readSpiByte();
-  if(a == 20)readSpiBuffer();
 
-  sei();
+  if(data[i] < 10)readSpiByte();
+  if(data[i] >= 20 && data[i]<100)readSpiBuffer();
+  if(data[i] == 253)readSpiByte();
+  if(data[i] == 254){readSpiBuffer();}
+  if(data[i] == 255)readSpiByte();
+  if(data[i] == 101){readSpiByte(); writeSpiBuffer(21, 90, 0);}
+  }}
+
 }
 
 void readSpiByte(void){
-  cli();
-
-  _delay_us(10);
+int b;
+  //_delay_us(10);
   digitalWrite(ssPin, LOW);
-  int b = SPI.transfer(0x00);
-  digitalWrite(ssPin, HIGH);
-
+  
+  for(int i = 0; i < devs; i++){
+   b = SPI.transfer(0x00);
   Serial.print("DATA: ");
   Serial.println(b, DEC);
+  }
 
-  sei();
+  digitalWrite(ssPin, HIGH);
+  Serial.println("END");
 }
 
 void readSpiBuffer(){
-  cli();
 
   digitalWrite(ssPin, LOW);
   int length = SPI.transfer(0x00);
@@ -118,41 +132,77 @@ void readSpiBuffer(){
     digitalWrite(ssPin, HIGH);    
   }
   Serial.println(" ");
-  sei();
+  Serial.println("READ END");
+
 }
 
-void writeSpiBuffer(uint8_t length){
+void writeSpiBuffer(uint8_t instr, uint8_t length, uint8_t start){
   while(!digitalRead(2));
-  cli();
+
+  if(length>90)length = 90;
+
+  int ret = 0;
 
   digitalWrite(ssPin, LOW);
-  SPI.transfer(15);
+  ret = SPI.transfer(instr);
   digitalWrite(ssPin, HIGH);
+
+  if(ret){Serial.println("err"); return;}
 
   _delay_us(10);
   digitalWrite(ssPin, LOW);
-  SPI.transfer(length);
+  ret = SPI.transfer(length);
   digitalWrite(ssPin, HIGH);
+
+  if(ret){Serial.println("err"); return;}
 
   _delay_us(10);
   digitalWrite(ssPin, LOW);
-  SPI.transfer(0);
+  ret = SPI.transfer(start);
   digitalWrite(ssPin, HIGH);
+
+  if(ret){Serial.println("err"); return;}
 
 
   uint8_t data[90] = {};
-  for(int i = 0; i<length; i++){
+
+  for(int i = 0; i<90; i++){
     data[i] = i;
   }
 
 
   for(int i = 0; i<length; i++){
-    _delay_us(10);
+    _delay_us(1);
     digitalWrite(ssPin, LOW);
-    SPI.transfer(data[i]);
+    //SPI.transfer(0xff);
+    ret = SPI.transfer(data[i]);
     //SPI.transfer(0x00);
     digitalWrite(ssPin, HIGH);    
+    if(ret){Serial.println("err"); return;}
   }
-  delay(1);
-  sei();
+  Serial.println("WRITE END");
+  //delay(1);
+}
+
+uint8_t howManyDevs(void){
+
+  uint8_t word = 0xab;
+  int ret = 0;
+  int i = 0;
+
+  while(!digitalRead(2));
+
+  digitalWrite(ssPin, LOW);
+  ret = SPI.transfer(word);
+  if(ret != 0){digitalWrite(ssPin, HIGH); return 0;}
+
+  while(ret != word){
+    ret = SPI.transfer(0x00);
+
+    if(i > 30)break;
+    i++;
+  }
+  digitalWrite(ssPin, HIGH);    
+
+  return i;
 }

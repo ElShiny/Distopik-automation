@@ -4,6 +4,8 @@
 
 ACE.c
 
+housekeeping.c
+
 I2C.c
 
 led_drv.c
