@@ -1,0 +1,33 @@
+Removed Pin From Net: NetName=GND Pin=J5-2
+Removed Member From Class: ClassName=POT 10x8 Member=J5
+Added Pin To Net: NetName=GND Pin=C12-2
+Added Pin To Net: NetName=GND Pin=C13-2
+Added Pin To Net: NetName=GND Pin=C16-2
+Added Pin To Net: NetName=GND Pin=C17-2
+Added Pin To Net: NetName=GND Pin=C20-2
+Added Pin To Net: NetName=GND Pin=C21-2
+Added Pin To Net: NetName=GND Pin=C24-2
+Added Pin To Net: NetName=GND Pin=C25-2
+Added Pin To Net: NetName=GND Pin=C28-2
+Added Pin To Net: NetName=GND Pin=C34-2
+Added Pin To Net: NetName=GND Pin=ULN3-8
+Added Pin To Net: NetName=GND Pin=ULN3-21
+Added Pin To Net: NetName=GND Pin=ULN4-8
+Added Pin To Net: NetName=GND Pin=ULN4-21
+Added Pin To Net: NetName=GND Pin=ULN5-8
+Added Pin To Net: NetName=GND Pin=ULN5-21
+Added Pin To Net: NetName=GND Pin=ULN6-8
+Added Pin To Net: NetName=GND Pin=ULN6-21
+Added Pin To Net: NetName=GND Pin=ULN7-8
+Added Pin To Net: NetName=GND Pin=ULN7-21
+Added Pin To Net: NetName=GND Pin=ULN8-8
+Added Pin To Net: NetName=GND Pin=ULN8-21
+Added Pin To Net: NetName=GND Pin=ULN9-8
+Added Pin To Net: NetName=GND Pin=ULN9-21
+Added Pin To Net: NetName=GND Pin=ULN10-8
+Added Pin To Net: NetName=GND Pin=ULN10-21
+Added Pin To Net: NetName=GND Pin=ULN11-8
+Added Pin To Net: NetName=GND Pin=ULN11-21
+Added Pin To Net: NetName=GND Pin=ULN12-8
+Added Pin To Net: NetName=GND Pin=ULN12-21
+Added Room: Name=POT 10x8

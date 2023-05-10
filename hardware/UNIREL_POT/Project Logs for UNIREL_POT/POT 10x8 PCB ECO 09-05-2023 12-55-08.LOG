@@ -1,0 +1,120 @@
+Added Pin To Net: NetName=GPIO6_0 Pin=MCP4-25
+Added Pin To Net: NetName=GPIO6_0 Pin=ULN8-6
+Added Net: Name=GPIO6_0
+Added Pin To Net: NetName=GPIO6_1 Pin=MCP4-26
+Added Pin To Net: NetName=GPIO6_1 Pin=ULN8-5
+Added Net: Name=GPIO6_1
+Added Pin To Net: NetName=GPIO6_2 Pin=MCP4-27
+Added Pin To Net: NetName=GPIO6_2 Pin=ULN8-4
+Added Net: Name=GPIO6_2
+Added Pin To Net: NetName=GPIO6_3 Pin=MCP4-28
+Added Pin To Net: NetName=GPIO6_3 Pin=ULN8-3
+Added Net: Name=GPIO6_3
+Added Pin To Net: NetName=GPIO6_4 Pin=MCP4-1
+Added Pin To Net: NetName=GPIO6_4 Pin=ULN8-2
+Added Net: Name=GPIO6_4
+Added Pin To Net: NetName=GPIO6_5 Pin=MCP4-2
+Added Pin To Net: NetName=GPIO6_5 Pin=ULN8-1
+Added Net: Name=GPIO6_5
+Added Pin To Net: NetName=GPIO6_6 Pin=MCP4-3
+Added Pin To Net: NetName=GPIO6_6 Pin=ULN8-20
+Added Net: Name=GPIO6_6
+Added Pin To Net: NetName=GPIO6_7 Pin=MCP4-4
+Added Pin To Net: NetName=GPIO6_7 Pin=ULN8-19
+Added Net: Name=GPIO6_7
+Added Pin To Net: NetName=GPIO7_0 Pin=MCP5-17
+Added Pin To Net: NetName=GPIO7_0 Pin=ULN9-6
+Added Net: Name=GPIO7_0
+Added Pin To Net: NetName=GPIO7_1 Pin=MCP5-18
+Added Pin To Net: NetName=GPIO7_1 Pin=ULN9-5
+Added Net: Name=GPIO7_1
+Added Pin To Net: NetName=GPIO7_2 Pin=MCP5-19
+Added Pin To Net: NetName=GPIO7_2 Pin=ULN9-4
+Added Net: Name=GPIO7_2
+Added Pin To Net: NetName=GPIO7_3 Pin=MCP5-20
+Added Pin To Net: NetName=GPIO7_3 Pin=ULN9-3
+Added Net: Name=GPIO7_3
+Added Pin To Net: NetName=GPIO7_4 Pin=MCP5-21
+Added Pin To Net: NetName=GPIO7_4 Pin=ULN9-2
+Added Net: Name=GPIO7_4
+Added Pin To Net: NetName=GPIO7_5 Pin=MCP5-22
+Added Pin To Net: NetName=GPIO7_5 Pin=ULN9-1
+Added Net: Name=GPIO7_5
+Added Pin To Net: NetName=GPIO7_6 Pin=MCP5-23
+Added Pin To Net: NetName=GPIO7_6 Pin=ULN9-20
+Added Net: Name=GPIO7_6
+Added Pin To Net: NetName=GPIO7_7 Pin=MCP5-24
+Added Pin To Net: NetName=GPIO7_7 Pin=ULN9-19
+Added Net: Name=GPIO7_7
+Added Pin To Net: NetName=GPIO8_0 Pin=MCP5-25
+Added Pin To Net: NetName=GPIO8_0 Pin=ULN10-6
+Added Net: Name=GPIO8_0
+Added Pin To Net: NetName=GPIO8_1 Pin=MCP5-26
+Added Pin To Net: NetName=GPIO8_1 Pin=ULN10-5
+Added Net: Name=GPIO8_1
+Added Pin To Net: NetName=GPIO8_2 Pin=MCP5-27
+Added Pin To Net: NetName=GPIO8_2 Pin=ULN10-4
+Added Net: Name=GPIO8_2
+Added Pin To Net: NetName=GPIO8_3 Pin=MCP5-28
+Added Pin To Net: NetName=GPIO8_3 Pin=ULN10-3
+Added Net: Name=GPIO8_3
+Added Pin To Net: NetName=GPIO8_4 Pin=MCP5-1
+Added Pin To Net: NetName=GPIO8_4 Pin=ULN10-2
+Added Net: Name=GPIO8_4
+Added Pin To Net: NetName=GPIO8_5 Pin=MCP5-2
+Added Pin To Net: NetName=GPIO8_5 Pin=ULN10-1
+Added Net: Name=GPIO8_5
+Added Pin To Net: NetName=GPIO8_6 Pin=MCP5-3
+Added Pin To Net: NetName=GPIO8_6 Pin=ULN10-20
+Added Net: Name=GPIO8_6
+Added Pin To Net: NetName=GPIO8_7 Pin=MCP5-4
+Added Pin To Net: NetName=GPIO8_7 Pin=ULN10-19
+Added Net: Name=GPIO8_7
+Added Pin To Net: NetName=GPIO9_0 Pin=MCP6-17
+Added Pin To Net: NetName=GPIO9_0 Pin=ULN11-6
+Added Net: Name=GPIO9_0
+Added Pin To Net: NetName=GPIO9_1 Pin=MCP6-18
+Added Pin To Net: NetName=GPIO9_1 Pin=ULN11-5
+Added Net: Name=GPIO9_1
+Added Pin To Net: NetName=GPIO9_2 Pin=MCP6-19
+Added Pin To Net: NetName=GPIO9_2 Pin=ULN11-4
+Added Net: Name=GPIO9_2
+Added Pin To Net: NetName=GPIO9_3 Pin=MCP6-20
+Added Pin To Net: NetName=GPIO9_3 Pin=ULN11-3
+Added Net: Name=GPIO9_3
+Added Pin To Net: NetName=GPIO9_4 Pin=MCP6-21
+Added Pin To Net: NetName=GPIO9_4 Pin=ULN11-2
+Added Net: Name=GPIO9_4
+Added Pin To Net: NetName=GPIO9_5 Pin=MCP6-22
+Added Pin To Net: NetName=GPIO9_5 Pin=ULN11-1
+Added Net: Name=GPIO9_5
+Added Pin To Net: NetName=GPIO9_6 Pin=MCP6-23
+Added Pin To Net: NetName=GPIO9_6 Pin=ULN11-20
+Added Net: Name=GPIO9_6
+Added Pin To Net: NetName=GPIO9_7 Pin=MCP6-24
+Added Pin To Net: NetName=GPIO9_7 Pin=ULN11-19
+Added Net: Name=GPIO9_7
+Added Pin To Net: NetName=GPIO10_0 Pin=MCP6-25
+Added Pin To Net: NetName=GPIO10_0 Pin=ULN12-6
+Added Net: Name=GPIO10_0
+Added Pin To Net: NetName=GPIO10_1 Pin=MCP6-26
+Added Pin To Net: NetName=GPIO10_1 Pin=ULN12-5
+Added Net: Name=GPIO10_1
+Added Pin To Net: NetName=GPIO10_2 Pin=MCP6-27
+Added Pin To Net: NetName=GPIO10_2 Pin=ULN12-4
+Added Net: Name=GPIO10_2
+Added Pin To Net: NetName=GPIO10_3 Pin=MCP6-28
+Added Pin To Net: NetName=GPIO10_3 Pin=ULN12-3
+Added Net: Name=GPIO10_3
+Added Pin To Net: NetName=GPIO10_4 Pin=MCP6-1
+Added Pin To Net: NetName=GPIO10_4 Pin=ULN12-2
+Added Net: Name=GPIO10_4
+Added Pin To Net: NetName=GPIO10_5 Pin=MCP6-2
+Added Pin To Net: NetName=GPIO10_5 Pin=ULN12-1
+Added Net: Name=GPIO10_5
+Added Pin To Net: NetName=GPIO10_6 Pin=MCP6-3
+Added Pin To Net: NetName=GPIO10_6 Pin=ULN12-20
+Added Net: Name=GPIO10_6
+Added Pin To Net: NetName=GPIO10_7 Pin=MCP6-4
+Added Pin To Net: NetName=GPIO10_7 Pin=ULN12-19
+Added Net: Name=GPIO10_7

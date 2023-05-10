@@ -1,0 +1,9 @@
+Added Component: Designator=C?(C AlElko 8x__ R3.5)
+Added Component: Designator=C?(C AlElko 8x__ R3.5)
+Added Pin To Net: NetName=+5 Pin=C?-1
+Added Pin To Net: NetName=+12 Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-2
+Added Pin To Net: NetName=GND Pin=C?-2
+Added Member To Class: ClassName=POT 10x8 Member=Component C? 220uF
+Added Member To Class: ClassName=POT 10x8 Member=Component C? 220uF
+Added Room: Name=POT 10x8

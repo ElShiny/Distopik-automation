@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=C? Old Footprint=C AlElko 8x__ R3.5 New Footprint=C AlElko 5x11 R2
+Change Component Footprint: Designator=C? Old Footprint=C AlElko 8x__ R3.5 New Footprint=C AlElko 5x11 R2
+Added Member To Class: ClassName=POT 10x8 Member=Component C? 220uF
