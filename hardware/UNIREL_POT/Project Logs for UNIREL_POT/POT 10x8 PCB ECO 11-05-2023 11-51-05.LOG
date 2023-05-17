@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=GND Pin=MCP2-29
+Removed Pin From Net: NetName=GND Pin=MCP3-29
+Removed Pin From Net: NetName=GND Pin=MCP4-29
+Removed Pin From Net: NetName=GND Pin=MCP5-29
+Removed Pin From Net: NetName=GND Pin=MCP6-29
+Change Component Designator: OldDesignator=C? NewDesignator=C35
+Change Component Designator: OldDesignator=C? NewDesignator=C36
+Added Member To Class: ClassName=POT 10x8 Member=Component C35 220uF
+Added Member To Class: ClassName=POT 10x8 Member=Component C36 220uF
