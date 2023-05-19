@@ -1,0 +1,273 @@
+Removed Pin From Net: NetName=B9 Pin=J2_U_rel_ladder9-1
+Removed Pin From Net: NetName=B9 Pin=J2_U_rel_ladder9-2
+Removed Pin From Net: NetName=+12 Pin=K1_U_rel_ladder9-1
+Removed Pin From Net: NetName=B9 Pin=K1_U_rel_ladder9-3
+Removed Pin From Net: NetName=B9 Pin=K1_U_rel_ladder9-7
+Removed Pin From Net: NetName=+12 Pin=K2_U_rel_ladder9-1
+Removed Pin From Net: NetName=+12 Pin=K3_U_rel_ladder9-1
+Removed Pin From Net: NetName=+12 Pin=K4_U_rel_ladder9-1
+Removed Pin From Net: NetName=+12 Pin=K5_U_rel_ladder9-1
+Removed Pin From Net: NetName=+12 Pin=K6_U_rel_ladder9-1
+Removed Pin From Net: NetName=+12 Pin=K7_U_rel_ladder9-1
+Removed Pin From Net: NetName=+12 Pin=K8_U_rel_ladder9-1
+Removed Pin From Net: NetName=C9 Pin=K8_U_rel_ladder9-4
+Removed Pin From Net: NetName=A9 Pin=K8_U_rel_ladder9-6
+Removed Pin From Net: NetName=A9 Pin=R1_U_rel_ladder9-1
+Removed Pin From Net: NetName=C9 Pin=R2_U_rel_ladder9-1
+Removed Pin From Net: NetName=B9 Pin=R15_U_rel_ladder9-2
+Removed Pin From Net: NetName=B9 Pin=R16_U_rel_ladder9-2
+Removed Member From Class: ClassName=U_rel_ladder9 Member=J2_U_rel_ladder9
+Removed Member From Class: ClassName=U_rel_ladder9 Member=K1_U_rel_ladder9
+Removed Member From Class: ClassName=U_rel_ladder9 Member=K2_U_rel_ladder9
+Removed Member From Class: ClassName=U_rel_ladder9 Member=K3_U_rel_ladder9
+Removed Member From Class: ClassName=U_rel_ladder9 Member=K4_U_rel_ladder9
+Removed Member From Class: ClassName=U_rel_ladder9 Member=K5_U_rel_ladder9
+Removed Member From Class: ClassName=U_rel_ladder9 Member=K6_U_rel_ladder9
+Removed Member From Class: ClassName=U_rel_ladder9 Member=K7_U_rel_ladder9
+Removed Member From Class: ClassName=U_rel_ladder9 Member=K8_U_rel_ladder9
+Removed Member From Class: ClassName=U_rel_ladder9 Member=R1_U_rel_ladder9
+Removed Member From Class: ClassName=U_rel_ladder9 Member=R2_U_rel_ladder9
+Removed Member From Class: ClassName=U_rel_ladder9 Member=R3_U_rel_ladder9
+Removed Member From Class: ClassName=U_rel_ladder9 Member=R4_U_rel_ladder9
+Removed Member From Class: ClassName=U_rel_ladder9 Member=R5_U_rel_ladder9
+Removed Member From Class: ClassName=U_rel_ladder9 Member=R6_U_rel_ladder9
+Removed Member From Class: ClassName=U_rel_ladder9 Member=R7_U_rel_ladder9
+Removed Member From Class: ClassName=U_rel_ladder9 Member=R8_U_rel_ladder9
+Removed Member From Class: ClassName=U_rel_ladder9 Member=R9_U_rel_ladder9
+Removed Member From Class: ClassName=U_rel_ladder9 Member=R10_U_rel_ladder9
+Removed Member From Class: ClassName=U_rel_ladder9 Member=R11_U_rel_ladder9
+Removed Member From Class: ClassName=U_rel_ladder9 Member=R12_U_rel_ladder9
+Removed Member From Class: ClassName=U_rel_ladder9 Member=R13_U_rel_ladder9
+Removed Member From Class: ClassName=U_rel_ladder9 Member=R14_U_rel_ladder9
+Removed Member From Class: ClassName=U_rel_ladder9 Member=R15_U_rel_ladder9
+Removed Member From Class: ClassName=U_rel_ladder9 Member=R16_U_rel_ladder9
+Change Component Designator: OldDesignator=J2_U_rel_ladder10 NewDesignator=J2_U_rel_ladder101
+Change Component Designator: OldDesignator=K1_U_rel_ladder10 NewDesignator=K1_U_rel_ladder101
+Change Component Designator: OldDesignator=K2_U_rel_ladder10 NewDesignator=K2_U_rel_ladder101
+Change Component Designator: OldDesignator=K3_U_rel_ladder10 NewDesignator=K3_U_rel_ladder101
+Change Component Designator: OldDesignator=K4_U_rel_ladder10 NewDesignator=K4_U_rel_ladder101
+Change Component Designator: OldDesignator=K5_U_rel_ladder10 NewDesignator=K5_U_rel_ladder101
+Change Component Designator: OldDesignator=K6_U_rel_ladder10 NewDesignator=K6_U_rel_ladder101
+Change Component Designator: OldDesignator=K7_U_rel_ladder10 NewDesignator=K7_U_rel_ladder101
+Change Component Designator: OldDesignator=K8_U_rel_ladder10 NewDesignator=K8_U_rel_ladder101
+Change Component Designator: OldDesignator=R1_U_rel_ladder10 NewDesignator=R1_U_rel_ladder101
+Change Component Designator: OldDesignator=R2_U_rel_ladder10 NewDesignator=R2_U_rel_ladder101
+Change Component Designator: OldDesignator=R3_U_rel_ladder10 NewDesignator=R3_U_rel_ladder101
+Change Component Designator: OldDesignator=R4_U_rel_ladder10 NewDesignator=R4_U_rel_ladder101
+Change Component Designator: OldDesignator=R5_U_rel_ladder10 NewDesignator=R5_U_rel_ladder101
+Change Component Designator: OldDesignator=R6_U_rel_ladder10 NewDesignator=R6_U_rel_ladder101
+Change Component Designator: OldDesignator=R7_U_rel_ladder10 NewDesignator=R7_U_rel_ladder101
+Change Component Designator: OldDesignator=R8_U_rel_ladder10 NewDesignator=R8_U_rel_ladder101
+Change Component Designator: OldDesignator=R9_U_rel_ladder10 NewDesignator=R9_U_rel_ladder101
+Change Component Designator: OldDesignator=R10_U_rel_ladder10 NewDesignator=R10_U_rel_ladder101
+Change Component Designator: OldDesignator=R11_U_rel_ladder10 NewDesignator=R11_U_rel_ladder101
+Change Component Designator: OldDesignator=R12_U_rel_ladder10 NewDesignator=R12_U_rel_ladder101
+Change Component Designator: OldDesignator=R13_U_rel_ladder10 NewDesignator=R13_U_rel_ladder101
+Change Component Designator: OldDesignator=R14_U_rel_ladder10 NewDesignator=R14_U_rel_ladder101
+Change Component Designator: OldDesignator=R15_U_rel_ladder10 NewDesignator=R15_U_rel_ladder101
+Change Component Designator: OldDesignator=R16_U_rel_ladder10 NewDesignator=R16_U_rel_ladder101
+Added Component: Designator=J2_U_rel_ladder102(solderJumper)
+Added Component: Designator=K1_U_rel_ladder102(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K2_U_rel_ladder102(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K3_U_rel_ladder102(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K4_U_rel_ladder102(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K5_U_rel_ladder102(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K6_U_rel_ladder102(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K7_U_rel_ladder102(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K8_U_rel_ladder102(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=R1_U_rel_ladder102(R2012_0805I_L)
+Added Component: Designator=R2_U_rel_ladder102(R2012_0805I_L)
+Added Component: Designator=R3_U_rel_ladder102(R2012_0805I_L)
+Added Component: Designator=R4_U_rel_ladder102(R2012_0805I_L)
+Added Component: Designator=R5_U_rel_ladder102(R2012_0805I_L)
+Added Component: Designator=R6_U_rel_ladder102(R2012_0805I_L)
+Added Component: Designator=R7_U_rel_ladder102(R2012_0805I_L)
+Added Component: Designator=R8_U_rel_ladder102(R2012_0805I_L)
+Added Component: Designator=R9_U_rel_ladder102(R2012_0805I_L)
+Added Component: Designator=R10_U_rel_ladder102(R2012_0805I_L)
+Added Component: Designator=R11_U_rel_ladder102(R2012_0805I_L)
+Added Component: Designator=R12_U_rel_ladder102(R2012_0805I_L)
+Added Component: Designator=R13_U_rel_ladder102(R2012_0805I_L)
+Added Component: Designator=R14_U_rel_ladder102(R2012_0805I_L)
+Added Component: Designator=R15_U_rel_ladder102(R2012_0805I_L)
+Added Component: Designator=R16_U_rel_ladder102(R2012_0805I_L)
+Added Pin To Net: NetName=B9 Pin=J2_U_rel_ladder102-1
+Added Pin To Net: NetName=B9 Pin=J2_U_rel_ladder102-2
+Added Pin To Net: NetName=+12 Pin=K1_U_rel_ladder102-1
+Added Pin To Net: NetName=B9 Pin=K1_U_rel_ladder102-3
+Added Pin To Net: NetName=B9 Pin=K1_U_rel_ladder102-7
+Added Pin To Net: NetName=+12 Pin=K2_U_rel_ladder102-1
+Added Pin To Net: NetName=+12 Pin=K3_U_rel_ladder102-1
+Added Pin To Net: NetName=+12 Pin=K4_U_rel_ladder102-1
+Added Pin To Net: NetName=+12 Pin=K5_U_rel_ladder102-1
+Added Pin To Net: NetName=+12 Pin=K6_U_rel_ladder102-1
+Added Pin To Net: NetName=+12 Pin=K7_U_rel_ladder102-1
+Added Pin To Net: NetName=+12 Pin=K8_U_rel_ladder102-1
+Added Pin To Net: NetName=C9 Pin=K8_U_rel_ladder102-4
+Added Pin To Net: NetName=A9 Pin=K8_U_rel_ladder102-6
+Added Pin To Net: NetName=A9 Pin=R1_U_rel_ladder102-1
+Added Pin To Net: NetName=C9 Pin=R2_U_rel_ladder102-1
+Added Pin To Net: NetName=B9 Pin=R15_U_rel_ladder102-2
+Added Pin To Net: NetName=B9 Pin=R16_U_rel_ladder102-2
+Change Net Name : Old Net Name=NetK1_U_rel_ladder10_4 New Net Name=NetK1_U_rel_ladder101_4
+Change Net Name : Old Net Name=NetK1_U_rel_ladder10_6 New Net Name=NetK1_U_rel_ladder101_6
+Change Net Name : Old Net Name=NetK1_U_rel_ladder10_8 New Net Name=NetK1_U_rel_ladder101_8
+Change Net Name : Old Net Name=NetK2_U_rel_ladder10_4 New Net Name=NetK2_U_rel_ladder101_4
+Change Net Name : Old Net Name=NetK2_U_rel_ladder10_6 New Net Name=NetK2_U_rel_ladder101_6
+Change Net Name : Old Net Name=NetK2_U_rel_ladder10_8 New Net Name=NetK2_U_rel_ladder101_8
+Change Net Name : Old Net Name=NetK3_U_rel_ladder10_4 New Net Name=NetK3_U_rel_ladder101_4
+Change Net Name : Old Net Name=NetK3_U_rel_ladder10_6 New Net Name=NetK3_U_rel_ladder101_6
+Change Net Name : Old Net Name=NetK3_U_rel_ladder10_8 New Net Name=NetK3_U_rel_ladder101_8
+Change Net Name : Old Net Name=NetK4_U_rel_ladder10_4 New Net Name=NetK4_U_rel_ladder101_4
+Change Net Name : Old Net Name=NetK4_U_rel_ladder10_6 New Net Name=NetK4_U_rel_ladder101_6
+Change Net Name : Old Net Name=NetK4_U_rel_ladder10_8 New Net Name=NetK4_U_rel_ladder101_8
+Change Net Name : Old Net Name=NetK5_U_rel_ladder10_4 New Net Name=NetK5_U_rel_ladder101_4
+Change Net Name : Old Net Name=NetK5_U_rel_ladder10_6 New Net Name=NetK5_U_rel_ladder101_6
+Change Net Name : Old Net Name=NetK5_U_rel_ladder10_8 New Net Name=NetK5_U_rel_ladder101_8
+Change Net Name : Old Net Name=NetK6_U_rel_ladder10_4 New Net Name=NetK6_U_rel_ladder101_4
+Change Net Name : Old Net Name=NetK6_U_rel_ladder10_6 New Net Name=NetK6_U_rel_ladder101_6
+Change Net Name : Old Net Name=NetK6_U_rel_ladder10_8 New Net Name=NetK6_U_rel_ladder101_8
+Change Net Name : Old Net Name=NetK7_U_rel_ladder10_4 New Net Name=NetK7_U_rel_ladder101_4
+Change Net Name : Old Net Name=NetK7_U_rel_ladder10_6 New Net Name=NetK7_U_rel_ladder101_6
+Change Net Name : Old Net Name=NetK7_U_rel_ladder10_8 New Net Name=NetK7_U_rel_ladder101_8
+Change Net Name : Old Net Name=NetK8_U_rel_ladder10_8 New Net Name=NetK8_U_rel_ladder101_8
+Added Pin To Net: NetName=NetK1_U_rel_ladder102_4 Pin=K1_U_rel_ladder102-4
+Added Pin To Net: NetName=NetK1_U_rel_ladder102_4 Pin=K2_U_rel_ladder102-3
+Added Pin To Net: NetName=NetK1_U_rel_ladder102_4 Pin=R14_U_rel_ladder102-2
+Added Pin To Net: NetName=NetK1_U_rel_ladder102_4 Pin=R16_U_rel_ladder102-1
+Added Net: Name=NetK1_U_rel_ladder102_4
+Added Pin To Net: NetName=NetK1_U_rel_ladder102_6 Pin=K1_U_rel_ladder102-6
+Added Pin To Net: NetName=NetK1_U_rel_ladder102_6 Pin=K2_U_rel_ladder102-7
+Added Pin To Net: NetName=NetK1_U_rel_ladder102_6 Pin=R13_U_rel_ladder102-2
+Added Pin To Net: NetName=NetK1_U_rel_ladder102_6 Pin=R15_U_rel_ladder102-1
+Added Net: Name=NetK1_U_rel_ladder102_6
+Added Pin To Net: NetName=NetK1_U_rel_ladder102_8 Pin=K1_U_rel_ladder102-8
+Added Pin To Net: NetName=NetK1_U_rel_ladder102_8 Pin=ULN11-10
+Added Net: Name=NetK1_U_rel_ladder102_8
+Added Pin To Net: NetName=NetK2_U_rel_ladder102_4 Pin=K2_U_rel_ladder102-4
+Added Pin To Net: NetName=NetK2_U_rel_ladder102_4 Pin=K3_U_rel_ladder102-3
+Added Pin To Net: NetName=NetK2_U_rel_ladder102_4 Pin=R12_U_rel_ladder102-2
+Added Pin To Net: NetName=NetK2_U_rel_ladder102_4 Pin=R14_U_rel_ladder102-1
+Added Net: Name=NetK2_U_rel_ladder102_4
+Added Pin To Net: NetName=NetK2_U_rel_ladder102_6 Pin=K2_U_rel_ladder102-6
+Added Pin To Net: NetName=NetK2_U_rel_ladder102_6 Pin=K3_U_rel_ladder102-7
+Added Pin To Net: NetName=NetK2_U_rel_ladder102_6 Pin=R11_U_rel_ladder102-2
+Added Pin To Net: NetName=NetK2_U_rel_ladder102_6 Pin=R13_U_rel_ladder102-1
+Added Net: Name=NetK2_U_rel_ladder102_6
+Added Pin To Net: NetName=NetK2_U_rel_ladder102_8 Pin=K2_U_rel_ladder102-8
+Added Pin To Net: NetName=NetK2_U_rel_ladder102_8 Pin=ULN11-11
+Added Net: Name=NetK2_U_rel_ladder102_8
+Added Pin To Net: NetName=NetK3_U_rel_ladder102_4 Pin=K3_U_rel_ladder102-4
+Added Pin To Net: NetName=NetK3_U_rel_ladder102_4 Pin=K4_U_rel_ladder102-3
+Added Pin To Net: NetName=NetK3_U_rel_ladder102_4 Pin=R10_U_rel_ladder102-2
+Added Pin To Net: NetName=NetK3_U_rel_ladder102_4 Pin=R12_U_rel_ladder102-1
+Added Net: Name=NetK3_U_rel_ladder102_4
+Added Pin To Net: NetName=NetK3_U_rel_ladder102_6 Pin=K3_U_rel_ladder102-6
+Added Pin To Net: NetName=NetK3_U_rel_ladder102_6 Pin=K4_U_rel_ladder102-7
+Added Pin To Net: NetName=NetK3_U_rel_ladder102_6 Pin=R9_U_rel_ladder102-2
+Added Pin To Net: NetName=NetK3_U_rel_ladder102_6 Pin=R11_U_rel_ladder102-1
+Added Net: Name=NetK3_U_rel_ladder102_6
+Added Pin To Net: NetName=NetK3_U_rel_ladder102_8 Pin=K3_U_rel_ladder102-8
+Added Pin To Net: NetName=NetK3_U_rel_ladder102_8 Pin=ULN11-12
+Added Net: Name=NetK3_U_rel_ladder102_8
+Added Pin To Net: NetName=NetK4_U_rel_ladder102_4 Pin=K4_U_rel_ladder102-4
+Added Pin To Net: NetName=NetK4_U_rel_ladder102_4 Pin=K5_U_rel_ladder102-3
+Added Pin To Net: NetName=NetK4_U_rel_ladder102_4 Pin=R8_U_rel_ladder102-2
+Added Pin To Net: NetName=NetK4_U_rel_ladder102_4 Pin=R10_U_rel_ladder102-1
+Added Net: Name=NetK4_U_rel_ladder102_4
+Added Pin To Net: NetName=NetK4_U_rel_ladder102_6 Pin=K4_U_rel_ladder102-6
+Added Pin To Net: NetName=NetK4_U_rel_ladder102_6 Pin=K5_U_rel_ladder102-7
+Added Pin To Net: NetName=NetK4_U_rel_ladder102_6 Pin=R7_U_rel_ladder102-2
+Added Pin To Net: NetName=NetK4_U_rel_ladder102_6 Pin=R9_U_rel_ladder102-1
+Added Net: Name=NetK4_U_rel_ladder102_6
+Added Pin To Net: NetName=NetK4_U_rel_ladder102_8 Pin=K4_U_rel_ladder102-8
+Added Pin To Net: NetName=NetK4_U_rel_ladder102_8 Pin=ULN11-13
+Added Net: Name=NetK4_U_rel_ladder102_8
+Added Pin To Net: NetName=NetK5_U_rel_ladder102_4 Pin=K5_U_rel_ladder102-4
+Added Pin To Net: NetName=NetK5_U_rel_ladder102_4 Pin=K6_U_rel_ladder102-3
+Added Pin To Net: NetName=NetK5_U_rel_ladder102_4 Pin=R6_U_rel_ladder102-2
+Added Pin To Net: NetName=NetK5_U_rel_ladder102_4 Pin=R8_U_rel_ladder102-1
+Added Net: Name=NetK5_U_rel_ladder102_4
+Added Pin To Net: NetName=NetK5_U_rel_ladder102_6 Pin=K5_U_rel_ladder102-6
+Added Pin To Net: NetName=NetK5_U_rel_ladder102_6 Pin=K6_U_rel_ladder102-7
+Added Pin To Net: NetName=NetK5_U_rel_ladder102_6 Pin=R5_U_rel_ladder102-2
+Added Pin To Net: NetName=NetK5_U_rel_ladder102_6 Pin=R7_U_rel_ladder102-1
+Added Net: Name=NetK5_U_rel_ladder102_6
+Added Pin To Net: NetName=NetK5_U_rel_ladder102_8 Pin=K5_U_rel_ladder102-8
+Added Pin To Net: NetName=NetK5_U_rel_ladder102_8 Pin=ULN11-14
+Added Net: Name=NetK5_U_rel_ladder102_8
+Added Pin To Net: NetName=NetK6_U_rel_ladder102_4 Pin=K6_U_rel_ladder102-4
+Added Pin To Net: NetName=NetK6_U_rel_ladder102_4 Pin=K7_U_rel_ladder102-3
+Added Pin To Net: NetName=NetK6_U_rel_ladder102_4 Pin=R4_U_rel_ladder102-2
+Added Pin To Net: NetName=NetK6_U_rel_ladder102_4 Pin=R6_U_rel_ladder102-1
+Added Net: Name=NetK6_U_rel_ladder102_4
+Added Pin To Net: NetName=NetK6_U_rel_ladder102_6 Pin=K6_U_rel_ladder102-6
+Added Pin To Net: NetName=NetK6_U_rel_ladder102_6 Pin=K7_U_rel_ladder102-7
+Added Pin To Net: NetName=NetK6_U_rel_ladder102_6 Pin=R3_U_rel_ladder102-2
+Added Pin To Net: NetName=NetK6_U_rel_ladder102_6 Pin=R5_U_rel_ladder102-1
+Added Net: Name=NetK6_U_rel_ladder102_6
+Added Pin To Net: NetName=NetK6_U_rel_ladder102_8 Pin=K6_U_rel_ladder102-8
+Added Pin To Net: NetName=NetK6_U_rel_ladder102_8 Pin=ULN11-15
+Added Net: Name=NetK6_U_rel_ladder102_8
+Added Pin To Net: NetName=NetK7_U_rel_ladder102_4 Pin=K7_U_rel_ladder102-4
+Added Pin To Net: NetName=NetK7_U_rel_ladder102_4 Pin=K8_U_rel_ladder102-3
+Added Pin To Net: NetName=NetK7_U_rel_ladder102_4 Pin=R2_U_rel_ladder102-2
+Added Pin To Net: NetName=NetK7_U_rel_ladder102_4 Pin=R4_U_rel_ladder102-1
+Added Net: Name=NetK7_U_rel_ladder102_4
+Added Pin To Net: NetName=NetK7_U_rel_ladder102_6 Pin=K7_U_rel_ladder102-6
+Added Pin To Net: NetName=NetK7_U_rel_ladder102_6 Pin=K8_U_rel_ladder102-7
+Added Pin To Net: NetName=NetK7_U_rel_ladder102_6 Pin=R1_U_rel_ladder102-2
+Added Pin To Net: NetName=NetK7_U_rel_ladder102_6 Pin=R3_U_rel_ladder102-1
+Added Net: Name=NetK7_U_rel_ladder102_6
+Added Pin To Net: NetName=NetK7_U_rel_ladder102_8 Pin=K7_U_rel_ladder102-8
+Added Pin To Net: NetName=NetK7_U_rel_ladder102_8 Pin=ULN11-16
+Added Net: Name=NetK7_U_rel_ladder102_8
+Added Pin To Net: NetName=NetK8_U_rel_ladder102_8 Pin=K8_U_rel_ladder102-8
+Added Pin To Net: NetName=NetK8_U_rel_ladder102_8 Pin=ULN11-17
+Added Net: Name=NetK8_U_rel_ladder102_8
+Change Class Name : Old Net Name=U_rel_ladder9 New Net Name=U_rel_ladder102
+Change Class Name : Old Net Name=U_rel_ladder10 New Net Name=U_rel_ladder101
+Added Member To Class: ClassName=U_rel_ladder102 Member=Component J2_U_rel_ladder102 (J2) JMP_mini
+Added Member To Class: ClassName=U_rel_ladder102 Member=Component K1_U_rel_ladder102 (K1) DPDT
+Added Member To Class: ClassName=U_rel_ladder102 Member=Component K2_U_rel_ladder102 (K2) DPDT
+Added Member To Class: ClassName=U_rel_ladder102 Member=Component K3_U_rel_ladder102 (K3) DPDT
+Added Member To Class: ClassName=U_rel_ladder102 Member=Component K4_U_rel_ladder102 (K4) DPDT
+Added Member To Class: ClassName=U_rel_ladder102 Member=Component K5_U_rel_ladder102 (K5) DPDT
+Added Member To Class: ClassName=U_rel_ladder102 Member=Component K6_U_rel_ladder102 (K6) DPDT
+Added Member To Class: ClassName=U_rel_ladder102 Member=Component K7_U_rel_ladder102 (K7) DPDT
+Added Member To Class: ClassName=U_rel_ladder102 Member=Component K8_U_rel_ladder102 (K8) DPDT
+Added Member To Class: ClassName=U_rel_ladder102 Member=Component R1_U_rel_ladder102 (R1) R/2
+Added Member To Class: ClassName=U_rel_ladder102 Member=Component R2_U_rel_ladder102 (R2) R/2
+Added Member To Class: ClassName=U_rel_ladder102 Member=Component R3_U_rel_ladder102 (R3) R/4
+Added Member To Class: ClassName=U_rel_ladder102 Member=Component R4_U_rel_ladder102 (R4) R/4
+Added Member To Class: ClassName=U_rel_ladder102 Member=Component R5_U_rel_ladder102 (R5) R/8
+Added Member To Class: ClassName=U_rel_ladder102 Member=Component R6_U_rel_ladder102 (R6) R/8
+Added Member To Class: ClassName=U_rel_ladder102 Member=Component R7_U_rel_ladder102 (R7) R/16
+Added Member To Class: ClassName=U_rel_ladder102 Member=Component R8_U_rel_ladder102 (R8) R/16
+Added Member To Class: ClassName=U_rel_ladder102 Member=Component R9_U_rel_ladder102 (R9) R/32
+Added Member To Class: ClassName=U_rel_ladder102 Member=Component R10_U_rel_ladder102 (R10) R/32
+Added Member To Class: ClassName=U_rel_ladder102 Member=Component R11_U_rel_ladder102 (R11) R/64
+Added Member To Class: ClassName=U_rel_ladder102 Member=Component R12_U_rel_ladder102 (R12) R/64
+Added Member To Class: ClassName=U_rel_ladder102 Member=Component R13_U_rel_ladder102 (R13) R/128
+Added Member To Class: ClassName=U_rel_ladder102 Member=Component R14_U_rel_ladder102 (R14) R/128
+Added Member To Class: ClassName=U_rel_ladder102 Member=Component R15_U_rel_ladder102 (R15) R/256
+Added Member To Class: ClassName=U_rel_ladder102 Member=Component R16_U_rel_ladder102 (R16) R/256
+Change Room Name: Old Name=U_rel_ladder10 New Name=U_rel_ladder102
+Change Room Scope: Old Scope=InComponentClass('U_rel_ladder10') New Scope=InComponentClass('U_rel_ladder102')
+Added Room: Name=U_rel_ladder101

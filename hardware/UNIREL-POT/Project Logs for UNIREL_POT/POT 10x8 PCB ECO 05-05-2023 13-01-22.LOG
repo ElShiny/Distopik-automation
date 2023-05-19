@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=GND Pin=MCP3-11
+Removed Pin From Net: NetName=GND Pin=MCP4-12
+Removed Pin From Net: NetName=GND Pin=MCP5-11
+Removed Pin From Net: NetName=GND Pin=MCP5-12
+Removed Pin From Net: NetName=GND Pin=MCP6-13
+Added Pin To Net: NetName=+3.3V Pin=MCP3-11
+Added Pin To Net: NetName=+3.3V Pin=MCP4-12
+Added Pin To Net: NetName=+3.3V Pin=MCP5-11
+Added Pin To Net: NetName=+3.3V Pin=MCP5-12
+Added Pin To Net: NetName=+3.3V Pin=MCP6-13
+Added Room: Name=POT 10x8
+Added Room: Name=U_rel_ladder3

@@ -1,0 +1,4 @@
+Change Component Designator: OldDesignator=C? NewDesignator=C35
+Change Component Designator: OldDesignator=C? NewDesignator=C36
+Added Member To Class: ClassName=POT 10x8 Member=Component C35 220uF
+Added Member To Class: ClassName=POT 10x8 Member=Component C36 220uF

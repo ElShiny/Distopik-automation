@@ -1,0 +1,7 @@
+Change Component Designator: OldDesignator=CN? NewDesignator=CN1
+Change Component Designator: OldDesignator=CN? NewDesignator=CN2
+Change Component Designator: OldDesignator=CN? NewDesignator=CN3
+Change Component Designator: OldDesignator=CN? NewDesignator=CN4
+Added Member To Class: ClassName=POT 2x8 Member=Component CN1 VRSTNA SPONKA 2P/16A
+Added Member To Class: ClassName=POT 2x8 Member=Component CN2 VRSTNA SPONKA 2P/16A
+Added Member To Class: ClassName=POT 2x8 Member=Component CN3 VRSTNA SPONKA 2P/16A

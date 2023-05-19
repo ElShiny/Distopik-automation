@@ -1,0 +1,6 @@
+Added Component: Designator=J2_U_rel_ladder1(solderJumper)
+Added Pin To Net: NetName=C2 Pin=J2_U_rel_ladder1-1
+Added Pin To Net: NetName=C2 Pin=J2_U_rel_ladder1-2
+Added Member To Class: ClassName=U_rel_ladder1 Member=Component J2_U_rel_ladder1 (J2) JMP_mini
+Added Room: Name=U_rel_ladder1
+Added Room: Name=U_rel_ladder2
