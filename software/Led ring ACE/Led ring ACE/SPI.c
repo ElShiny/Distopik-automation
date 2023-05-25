@@ -85,10 +85,10 @@ int readBufferLength(void){
 
 void writeSpi(uint8_t instr, uint8_t data, uint8_t timeout){
 	
-	while(!(PINB & 1<<PINB7));
+
+	while(!(PINB & 1<<PINB7) && !(PINB & 1<<PINB2));
+	disableTimer();
 	spi_busy = 1;
-	PCICR &= ~(1<< PCIE0);
-	hskp_en = 0;
 	uint32_t start_tick = getTick();
 
 	SPSR;
@@ -107,7 +107,7 @@ void writeSpi(uint8_t instr, uint8_t data, uint8_t timeout){
 	DDRB &= ~(1<<DDB7);
 	
 	PCICR |= 1<< PCIE0;
-	hskp_en = 1;
+	enableTimer();
 	spi_busy = 0;	
 }
 
@@ -138,7 +138,6 @@ void writeSpiBuffer(uint8_t instr, uint8_t* data, uint8_t length, uint8_t timeou
 	DDRB &= ~(1<<DDB7);
 	//_delay_us(10);
 	
-	PCICR |= 1<< PCIE0;
 	enableHSKP();
 	spi_busy = 0;
 	//if(getTick()>start_tick+timeout)errorHandler();

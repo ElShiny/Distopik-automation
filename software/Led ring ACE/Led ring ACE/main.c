@@ -46,12 +46,12 @@ int main(void)
 		
 	while (1){
 		
-		parseSPI();
+		if(parseSPI() == -1)errorHandler;
 		//_delay_ms(20);
-		if(ace_changed){
-			ace_changed = 0;
-			writeSpi(1, ace_val, 10);
-		}
+// 		if(ace_changed){
+// 			ace_changed = 0;
+// 			writeSpi(1, ace_val, 10);
+// 		}
 	}
 
 	while(1); //shouldnt reach this

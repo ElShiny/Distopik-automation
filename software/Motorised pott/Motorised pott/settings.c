@@ -73,7 +73,7 @@ int parseSPI(void){
 			break;
 					
 		case 255:
-			writeSpi(255, MOTORISED_POTT, 10);
+			writeSpi(255, MOTORISED_POTT, 100);
 			break;
 		default: bufferInit();
 		
@@ -85,7 +85,5 @@ int parseSPI(void){
 
 void errorHandler(void){
 	cli();
-	//setDEMOLEDRgb(30);
 	while(1);
-	
 }

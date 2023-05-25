@@ -20,14 +20,18 @@
 int parseSPI(void){
 	
 	if(buffer_length == 0)return 0;
+	int cmd = readBuffer();
+	if(cmd != 0xcf)return 0;
+	ace_val = 10;
 
 	//PORTB ^= 1<<PORTB6;
 	//disableHSKP();
 	int start_tick = getTick();
 	
 	parsing_state = PARSING_INSTR;
-	int cmd = readBuffer();
-	
+	while(readBufferLength() == 0){if(getTick()>(start_tick+MAX_TIMEOUT))return -1;}
+	cmd = readBuffer();
+	ace_val = 20;
 	switch(cmd){
 		
 		case 0: //do nothing
@@ -74,19 +78,19 @@ int parseSPI(void){
 			break;
 					
 		case 255:
-			writeSpi(255, ACE_LED_RING, 10);
+			writeSpi(255, ACE_LED_RING, 100);
 			break;
 		default: bufferInit();
 		
 	}
-	bufferInit();
+	//bufferInit();
 	//PORTB ^= 1<<PORTB6;
 	return 0;	
 }
 
 void errorHandler(void){
 	cli();
-	setDEMOLEDRgb(30);
+	setDEMOLEDRgb(90);
 	while(1);
 	
 }
