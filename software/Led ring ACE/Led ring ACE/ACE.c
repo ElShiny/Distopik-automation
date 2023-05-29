@@ -10,24 +10,16 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 
-int volatile ace_val = 0;
-uint8_t ace_val_new = 0;
-uint8_t ace_val_old = 0;
-int cnt = 0;
-uint8_t volatile ace_changed = 0;
 
-volatile uint32_t tick = 0;
-
-
-void ACEInit(void){
+void ACEInit(ace_t *ace){
 	
 	DDRB &= ~(0x03); //set ace pins on portx to input
 	DDRC &= ~(0x87);
 	DDRD = 0x08; //set EN to output
 	
-	PORTD |= 1<<ACE_EN; 
-	
-	ace_val_old = readACEQuick();
+	PORTD |= 1<<ACE_EN;
+		
+	ace->ace_val_old = readACEQuick();
 	
 }
 
@@ -69,17 +61,17 @@ uint8_t isBitSet(uint8_t reg, uint8_t pin){
 	else return 1;
 }
 
-void absoluteToRelative(uint8_t *old_val, uint8_t *new_val, int *save){
+void absoluteToRelative(ace_t *ace){
 	
 	int delta = 0;
 	
-	if(*old_val > 117 && *new_val < 10) delta = *new_val - *old_val + 128;		//corrections for zero crossing
-	else if(*old_val < 15 && *new_val > 110) delta = *new_val - *old_val - 128;
-	else delta = *new_val - *old_val;
+	if(ace->ace_val_old > 117 && ace->ace_val_new < 10) delta = ace->ace_val_new- ace->ace_val_old + 128;		//corrections for zero crossing
+	else if(ace->ace_val_old < 15 && ace->ace_val_new > 110) delta = ace->ace_val_new - ace->ace_val_old - 128;
+	else delta = ace->ace_val_new - ace->ace_val_old;
 	
-	*save = *save + delta;	
+	ace->ace_val = ace->ace_val + delta;	
 	
-	*old_val = *new_val;
+	ace->ace_val_old = ace->ace_val_new;
 	
-	if(delta) ace_changed = 1;
+	if(delta) ace->ace_changed = 1;
 }

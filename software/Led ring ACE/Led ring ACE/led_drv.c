@@ -83,13 +83,13 @@ uint8_t setLEDArray(led_drv_t *settings){
 	return 0;
 }
 
-void setColors(led_drv_t *settings){
+void setColors(led_drv_t *settings, hskp_t *hskp){
 	
-	int start_tick = getTick();
-	while(readBufferLength() < 3){if(getTick()>(start_tick+MAX_TIMEOUT))break;}
-	for(int i = 0; i < 3; i++){settings->front_color[i] = readBuffer();}
-	while(readBufferLength() < 3){if(getTick()>(start_tick+MAX_TIMEOUT))break;}
-	for(int i = 0; i < 3; i++){settings->back_color[i] = readBuffer();}
+	int start_tick = getTick(hskp);
+	while(readBufferLength(&buf) < 3){if(getTick(hskp)>(start_tick+MAX_TIMEOUT))break;}
+	for(int i = 0; i < 3; i++){settings->front_color[i] = readBuffer(&buf);}
+	while(readBufferLength(&buf) < 3){if(getTick(hskp)>(start_tick+MAX_TIMEOUT))break;}
+	for(int i = 0; i < 3; i++){settings->back_color[i] = readBuffer(&buf);}
 }
 
 uint8_t RGBTo222(uint8_t *color){
@@ -117,18 +117,18 @@ void setDEMOLEDRgb(uint8_t value){
 	}
 }
 
-int bufToRGBArray(led_drv_t *settings){
-	int start_tick = getTick();
+int bufToRGBArray(led_drv_t *settings, hskp_t *hskp){
+	int start_tick = getTick(hskp);
 		
-	while(readBufferLength() < 2){if(getTick()>(start_tick+MAX_TIMEOUT)){break;}}
+	while(readBufferLength(&buf) < 2){if(getTick(hskp)>(start_tick+MAX_TIMEOUT)){break;}}
 	
-	int length = readBuffer();
-	int start = readBuffer();
+	int length = readBuffer(&buf);
+	int start = readBuffer(&buf);
 
-	while(readBufferLength() < length){if(getTick()>(start_tick+MAX_TIMEOUT)){break;}}
+	while(readBufferLength(&buf) < length){if(getTick(hskp)>(start_tick+MAX_TIMEOUT)){break;}}
 	
 	for(int i = 0; i < length; i++){
-		settings->rgb_array[i+start] = readBuffer();	
+		settings->rgb_array[i+start] = readBuffer(&buf);	
 	}
 	return 0;
 }

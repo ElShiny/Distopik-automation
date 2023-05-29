@@ -35,15 +35,22 @@
 #define ACE_EN PIND3
 
 
-void ACEInit(void);
+typedef struct{
+	int volatile ace_val;
+	uint8_t ace_val_new;
+	uint8_t ace_val_old;
+	uint8_t volatile ace_changed;
+}ace_t;
+
+ace_t ace_rot;
+
+
+void ACEInit(ace_t *ace);
 uint8_t readACEValRaw(void);
 uint8_t ACETransform(uint8_t val);
 uint8_t isBitSet(uint8_t reg, uint8_t pin);
 uint8_t readACEQuick(void);
-void absoluteToRelative(uint8_t *old_val, uint8_t *new_val, int *save);
-
-extern volatile int ace_val;
-extern volatile uint8_t ace_changed;
+void absoluteToRelative(ace_t *ace);
 
  static __flash const uint8_t encoderMap[256] = {
 	0xFF,0x38,0x28,0x37,0x18,0xFF,0x27,0x34,0x08,0x39,0xFF,0xFF,0x17,0xFF,0x24,0x0D,

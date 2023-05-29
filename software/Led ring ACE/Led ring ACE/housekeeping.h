@@ -12,20 +12,25 @@
 #include <stdint.h>
 
 
-volatile uint16_t tick;
-extern uint8_t ace_val_new;
-extern uint8_t ace_val_old;
-extern volatile uint8_t hskp_en;
+
+
+typedef struct{
+	volatile uint32_t tick;
+	volatile uint8_t en;
+	volatile uint8_t cnt;
+	}hskp_t;
+
+hskp_t housekp;
 
 
 
 
-void timersInit(void);
+void timersInit(hskp_t *hskp);
 void enableTimer(void);
 void disableTimer(void);
-void enableHSKP(void);
-void disableHSKP(void);
-uint16_t getTick(void);
+void enableHSKP(hskp_t *hskp);
+void disableHSKP(hskp_t *hskp);
+uint16_t getTick(hskp_t *hskp);
 
 
 

@@ -14,16 +14,14 @@
 #include <avr/interrupt.h>
 
 
-uint8_t cnt;
-volatile uint8_t hskp_en = 0;
 
-void timersInit(void){
+void timersInit(hskp_t *hskp){
 	
 	TCCR0A = 1<<CTC0|1<<CS02; //timer enable
 	OCR0A = 30;			//31 is 1 ms delay
 	TIMSK0 = 1<<OCIE0A; //timer interrupt
 	TCNT0 = 0;			//empty timer counter
-	hskp_en = 1;
+	hskp->en = 1;
 }
 
 
@@ -35,38 +33,38 @@ void disableTimer(void){
 	TIMSK0 &= ~(1<<OCIE0A);
 }
 
-void enableHSKP(void){
-	hskp_en = 1;
+void enableHSKP(hskp_t *hskp){
+	hskp->en = 1;
 }
 
-void disableHSKP(void){
-	hskp_en = 0;
+void disableHSKP(hskp_t *hskp){
+	hskp->en = 0;
 }
 
-uint16_t getTick(void){
-	return tick;
+uint16_t getTick(hskp_t *hskp){
+	return hskp->tick;
 }
 
 
 ISR(TIMER0_COMPA_vect, ISR_NOBLOCK){
 		
 	disableTimer();
-	if(cnt == 1 && hskp_en && led_settings.ace_en){//reading ace values
-		ace_val_new = readACEQuick();
-		absoluteToRelative(&ace_val_old, &ace_val_new, &ace_val);
+	if(housekp.cnt == 1 && housekp.en && led_settings.ace_en){//reading ace values
+		ace_rot.ace_val_new = readACEQuick();
+		absoluteToRelative(&ace_rot);
 	}
 	
-	else if(cnt >= 10 && hskp_en){//setting leds
+	else if(housekp.cnt >= 10 && housekp.en){//setting leds
 		if(led_settings.mode == 0){
-			setDEMOLEDRgb(ace_val);
+			setDEMOLEDRgb(ace_rot.ace_val);
 		}
 		else if(led_settings.mode == 1){
 			setLEDArray(&led_settings);
 		}
-		cnt = 1;
+		housekp.cnt = 1;
 	}
 	enableTimer();
 	
-	cnt++;
-	tick++;
+	housekp.cnt++;
+	housekp.tick++;
 }

@@ -15,19 +15,10 @@
 
 
 
-
-uint8_t volatile buffer[BUFFER_SIZE];
-uint8_t volatile buffer_length = 0;
-uint8_t volatile read_index = 0;
-uint8_t volatile write_index = 0;
-uint8_t volatile spi_busy = 0;
-
-
-
  ISR(PCINT0_vect){
-	if(!(PINB & 1<<PINB2) ||/* !(PINB & 1<<PINB7)*/ spi_busy)return;
+	if(!(PINB & 1<<PINB2) ||/* !(PINB & 1<<PINB7)*/ spi_s.spi_busy)return;
 	
-	writeBuffer(SPDR);
+	writeBuffer(&buf, SPDR);
 	SPDR = 0;
 }
 
@@ -50,46 +41,46 @@ void SPIInit(void){
 }
 
 
-void bufferInit(void){
+void bufferInit(buffer_t *buffer){
 	
-	read_index = 0;
-	write_index = 0;
-	buffer_length = 0;
-	buffer[0] = 0;
-	buffer[1] = 0;
+	buffer->read_index = 0;
+	buffer->write_index = 0;
+	buffer->buffer_length = 0;
+	buffer->buffer[0] = 0;
+	buffer->buffer[1] = 0;
 }
 
-int writeBuffer(uint8_t val){
+int writeBuffer(buffer_t *buffer, uint8_t val){
 	
-	if(buffer_length == BUFFER_SIZE - 1) return -1;
-	buffer[write_index] = val;
-	write_index++;
-	buffer_length++;
-	if(write_index == BUFFER_SIZE - 1) write_index = 0;
+	if(buffer->buffer_length == BUFFER_SIZE - 1) return -1;
+	buffer->buffer[buffer->write_index] = val;
+	buffer->write_index++;
+	buffer->buffer_length++;
+	if(buffer->write_index == BUFFER_SIZE - 1) buffer->write_index = 0;
 	return 0;
 }
 
-int readBuffer(void){
+int readBuffer(buffer_t *buffer){
 	
-	if(buffer_length == 0) return -1;
-	int buf = buffer[read_index];
-	read_index++;
-	buffer_length--;
-	if(read_index == BUFFER_SIZE - 1) read_index = 0;
+	if(buffer->buffer_length == 0) return -1;
+	int buf = buffer->buffer[buffer->read_index];
+	buffer->read_index++;
+	buffer->buffer_length--;
+	if(buffer->read_index == BUFFER_SIZE - 1) buffer->read_index = 0;
 	return buf;
 }
 
-int readBufferLength(void){
-	return buffer_length;
+int readBufferLength(buffer_t *buffer){
+	return buffer->buffer_length;
 }
 
-void writeSpi(uint8_t instr, uint8_t data, uint8_t timeout){
+void writeSpi(spi_t *spi, hskp_t *hskp, uint8_t instr, uint8_t data, uint8_t timeout){
 	
-
-	while(!(PINB & 1<<PINB7) && !(PINB & 1<<PINB2));
+	uint32_t start_tick = getTick(hskp);
+	while(!(PINB & 1<<PINB2)){}
 	disableTimer();
-	spi_busy = 1;
-	uint32_t start_tick = getTick();
+	spi->spi_busy = 1;
+
 
 	SPSR;
 	SPDR = instr;
@@ -97,27 +88,27 @@ void writeSpi(uint8_t instr, uint8_t data, uint8_t timeout){
 	PORTB &= ~(1<<PORTB7);//set INT low
 	DDRB |= 1<<DDB7;
 	
-	while(!(SPSR & 1<<SPIF) || !(PINB & 1<<PINB2)){if(getTick()>start_tick+timeout)break;}
+	while(!(SPSR & 1<<SPIF) || !(PINB & 1<<PINB2)){if(getTick(hskp)>start_tick+timeout)break;}
 	
 	SPDR = data;
 	
-	while(!(SPSR & 1<<SPIF) || !(PINB & 1<<PINB2)){if(getTick()>start_tick+timeout)break;}
+	while(!(SPSR & 1<<SPIF) || !(PINB & 1<<PINB2)){if(getTick(hskp)>start_tick+timeout)break;}
 	
 	PORTB &= ~(1<<PORTB7); //set INT high
 	DDRB &= ~(1<<DDB7);
 	
 	PCICR |= 1<< PCIE0;
 	enableTimer();
-	spi_busy = 0;	
+	spi->spi_busy = 0;	
 }
 
-void writeSpiBuffer(uint8_t instr, uint8_t* data, uint8_t length, uint8_t timeout){
+void writeSpiBuffer(spi_t *spi, hskp_t *hskp, uint8_t instr, uint8_t* data, uint8_t length, uint8_t timeout){
 	
 	while(!(PINB & 1<<PINB7));
-	spi_busy = 1; //set global busy flag
-	disableHSKP();
+	spi->spi_busy = 1; //set global busy flag
+	disableHSKP(hskp);
 	PCICR &= ~(1<< PCIE0);
-	uint32_t start_tick = getTick();
+	uint32_t start_tick = getTick(hskp);
 	
 	SPSR;		//clearing spif flag
 	SPDR = instr;		//set instr
@@ -126,19 +117,19 @@ void writeSpiBuffer(uint8_t instr, uint8_t* data, uint8_t length, uint8_t timeou
 	DDRB |= 1<<DDB7;
 
 	
-	while(!(SPSR & 1<<SPIF) || !(PINB & 1<<PINB2)){if(getTick()>start_tick+timeout)break;}
+	while(!(SPSR & 1<<SPIF) || !(PINB & 1<<PINB2)){if(getTick(hskp)>start_tick+timeout)break;}
 	SPDR = length;
 	
 	for(int i=0; i<length; i++){
-		while(!(SPSR & 1<<SPIF) || !(PINB & 1<<PINB2)){if(getTick()>start_tick+timeout)break;}
+		while(!(SPSR & 1<<SPIF) || !(PINB & 1<<PINB2)){if(getTick(hskp)>start_tick+timeout)break;}
 		SPDR = data[i];
 	}
-	while(!(SPSR & 1<<SPIF) || !(PINB & 1<<PINB2)){if(getTick()>start_tick+timeout) break;}
+	while(!(SPSR & 1<<SPIF) || !(PINB & 1<<PINB2)){if(getTick(hskp)>start_tick+timeout) break;}
 	PORTB &= ~(1<<PORTB7); //set INT high
 	DDRB &= ~(1<<DDB7);
 	//_delay_us(10);
 	
-	enableHSKP();
-	spi_busy = 0;
+	enableHSKP(hskp);
+	spi->spi_busy = 0;
 	//if(getTick()>start_tick+timeout)errorHandler();
 }

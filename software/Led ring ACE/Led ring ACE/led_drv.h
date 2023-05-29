@@ -12,6 +12,7 @@
 
 #include <stdint.h>
 #include <avr/io.h>
+#include "housekeeping.h"
 
 #define IS3_ADR 0x34
 
@@ -41,7 +42,7 @@ void RGBFrom222(uint8_t *arr, uint8_t color);//color manipulation
 uint8_t RGBTo222(uint8_t *color);
 
 void setDEMOLEDRgb(uint8_t value);//helper functions
-int bufToRGBArray(led_drv_t *settings);
+int bufToRGBArray(led_drv_t *settings, hskp_t *hskp);
 
 
 
