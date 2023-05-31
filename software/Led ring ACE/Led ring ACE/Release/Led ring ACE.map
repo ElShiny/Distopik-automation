@@ -33,6 +33,10 @@ Discarded input sections
  .text          0x00000000        0x0 housekeeping.o
  .data          0x00000000        0x0 housekeeping.o
  .bss           0x00000000        0x0 housekeeping.o
+ .text.enableTimer
+                0x00000000        0xc housekeeping.o
+ .text.disableTimer
+                0x00000000        0xc housekeeping.o
  .text          0x00000000        0x0 I2C.o
  .data          0x00000000        0x0 I2C.o
  .bss           0x00000000        0x0 I2C.o
@@ -335,70 +339,64 @@ END GROUP
  .text.timersInit
                 0x00000406       0x18 housekeeping.o
                 0x00000406                timersInit
- .text.enableTimer
-                0x0000041e        0xc housekeeping.o
-                0x0000041e                enableTimer
- .text.disableTimer
-                0x0000042a        0xc housekeeping.o
-                0x0000042a                disableTimer
  .text.enableHSKP
-                0x00000436        0x8 housekeeping.o
-                0x00000436                enableHSKP
+                0x0000041e        0x8 housekeeping.o
+                0x0000041e                enableHSKP
  .text.disableHSKP
-                0x0000043e        0x6 housekeeping.o
-                0x0000043e                disableHSKP
- .text.getTick  0x00000444        0xc housekeeping.o
-                0x00000444                getTick
+                0x00000426        0x6 housekeeping.o
+                0x00000426                disableHSKP
+ .text.getTick  0x0000042c        0xc housekeeping.o
+                0x0000042c                getTick
  .text.__vector_12
-                0x00000450       0xf4 housekeeping.o
-                0x00000450                __vector_12
- .text.I2CInit  0x00000544       0x10 I2C.o
-                0x00000544                I2CInit
+                0x00000438       0xf4 housekeeping.o
+                0x00000438                __vector_12
+ .text.I2CInit  0x0000052c       0x10 I2C.o
+                0x0000052c                I2CInit
  .text.I2CStart
-                0x00000554       0x58 I2C.o
-                0x00000554                I2CStart
- .text.I2CStop  0x000005ac        0x8 I2C.o
-                0x000005ac                I2CStop
+                0x0000053c       0x58 I2C.o
+                0x0000053c                I2CStart
+ .text.I2CStop  0x00000594        0x8 I2C.o
+                0x00000594                I2CStop
  .text.I2CWrite
-                0x000005b4       0x24 I2C.o
-                0x000005b4                I2CWrite
- .text.LEDInit  0x000005d8       0x96 led_drv.o
-                0x000005d8                LEDInit
+                0x0000059c       0x24 I2C.o
+                0x0000059c                I2CWrite
+ .text.LEDInit  0x000005c0       0x96 led_drv.o
+                0x000005c0                LEDInit
  .text.setLEDArray
-                0x0000066e       0x8a led_drv.o
-                0x0000066e                setLEDArray
+                0x00000656       0x8a led_drv.o
+                0x00000656                setLEDArray
  .text.setDEMOLEDRgb
-                0x000006f8      0x170 led_drv.o
-                0x000006f8                setDEMOLEDRgb
+                0x000006e0      0x170 led_drv.o
+                0x000006e0                setDEMOLEDRgb
  .text.bufToRGBArray
-                0x00000868       0xaa led_drv.o
-                0x00000868                bufToRGBArray
+                0x00000850       0xaa led_drv.o
+                0x00000850                bufToRGBArray
  .text.startup.main
-                0x00000912       0x78 main.o
-                0x00000912                main
+                0x000008fa       0x8e main.o
+                0x000008fa                main
  .text.parseSPI
-                0x0000098a      0x220 settings.o
-                0x0000098a                parseSPI
+                0x00000988      0x220 settings.o
+                0x00000988                parseSPI
  .text.errorHandler
-                0x00000baa        0x8 settings.o
-                0x00000baa                errorHandler
+                0x00000ba8        0x8 settings.o
+                0x00000ba8                errorHandler
  .text.__vector_3
-                0x00000bb2       0x6c SPI.o
-                0x00000bb2                __vector_3
- .text.SPIInit  0x00000c1e       0x22 SPI.o
-                0x00000c1e                SPIInit
+                0x00000bb0       0x6c SPI.o
+                0x00000bb0                __vector_3
+ .text.SPIInit  0x00000c1c       0x22 SPI.o
+                0x00000c1c                SPIInit
  .text.bufferInit
-                0x00000c40       0x18 SPI.o
-                0x00000c40                bufferInit
+                0x00000c3e       0x18 SPI.o
+                0x00000c3e                bufferInit
  .text.readBuffer
-                0x00000c58       0x4c SPI.o
-                0x00000c58                readBuffer
+                0x00000c56       0x4c SPI.o
+                0x00000c56                readBuffer
  .text.readBufferLength
-                0x00000ca4        0xc SPI.o
-                0x00000ca4                readBufferLength
+                0x00000ca2        0xc SPI.o
+                0x00000ca2                readBufferLength
  .text.writeSpi
-                0x00000cb0       0xc8 SPI.o
-                0x00000cb0                writeSpi
+                0x00000cae       0xca SPI.o
+                0x00000cae                writeSpi
  .text.writeSpiBuffer
                 0x00000d78      0x120 SPI.o
                 0x00000d78                writeSpiBuffer

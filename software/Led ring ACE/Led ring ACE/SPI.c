@@ -78,7 +78,7 @@ void writeSpi(spi_t *spi, hskp_t *hskp, uint8_t instr, uint8_t data, uint8_t tim
 	
 	uint32_t start_tick = getTick(hskp);
 	while(!(PINB & 1<<PINB2)){}
-	disableTimer();
+	disableHSKP(&housekp);
 	spi->spi_busy = 1;
 
 
@@ -98,7 +98,7 @@ void writeSpi(spi_t *spi, hskp_t *hskp, uint8_t instr, uint8_t data, uint8_t tim
 	DDRB &= ~(1<<DDB7);
 	
 	PCICR |= 1<< PCIE0;
-	enableTimer();
+	enableHSKP(&housekp);
 	spi->spi_busy = 0;	
 }
 
