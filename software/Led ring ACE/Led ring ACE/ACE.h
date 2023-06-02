@@ -40,6 +40,7 @@ typedef struct{
 	uint8_t ace_val_new;
 	uint8_t ace_val_old;
 	uint8_t volatile ace_changed;
+	uint8_t volatile ace_led_changed;
 }ace_t;
 
 ace_t ace_rot;

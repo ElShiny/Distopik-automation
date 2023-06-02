@@ -11,7 +11,7 @@ Allocating common symbols
 Common symbol       size              file
 
 spi_s               0x1               housekeeping.o
-ace_rot             0x5               ACE.o
+ace_rot             0x6               ACE.o
 parsing_state       0x1               housekeeping.o
 housekp             0x6               ACE.o
 led_settings        0x65              led_drv.o
@@ -247,7 +247,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000      0xe9c
+.text           0x00000000      0xee0
  *(.vectors)
  .vectors       0x00000000       0x28 C:/Program Files (x86)/Atmel/Studio/7.0/Packs/atmel/ATtiny_DFP/1.10.348/gcc/dev/attiny88/avr25/crtattiny88.o
                 0x00000000                __vector_default
@@ -334,77 +334,77 @@ END GROUP
                 0x00000296      0x11e ACE.o
                 0x00000296                readACEQuick
  .text.absoluteToRelative
-                0x000003b4       0x52 ACE.o
+                0x000003b4       0x54 ACE.o
                 0x000003b4                absoluteToRelative
  .text.timersInit
-                0x00000406       0x18 housekeeping.o
-                0x00000406                timersInit
+                0x00000408       0x18 housekeeping.o
+                0x00000408                timersInit
  .text.enableHSKP
-                0x0000041e        0x8 housekeeping.o
-                0x0000041e                enableHSKP
+                0x00000420        0x8 housekeeping.o
+                0x00000420                enableHSKP
  .text.disableHSKP
-                0x00000426        0x6 housekeeping.o
-                0x00000426                disableHSKP
- .text.getTick  0x0000042c        0xc housekeeping.o
-                0x0000042c                getTick
+                0x00000428        0x6 housekeeping.o
+                0x00000428                disableHSKP
+ .text.getTick  0x0000042e        0xc housekeeping.o
+                0x0000042e                getTick
  .text.__vector_12
-                0x00000438       0xf4 housekeeping.o
-                0x00000438                __vector_12
- .text.I2CInit  0x0000052c       0x10 I2C.o
-                0x0000052c                I2CInit
+                0x0000043a       0xfc housekeeping.o
+                0x0000043a                __vector_12
+ .text.I2CInit  0x00000536       0x10 I2C.o
+                0x00000536                I2CInit
  .text.I2CStart
-                0x0000053c       0x58 I2C.o
-                0x0000053c                I2CStart
- .text.I2CStop  0x00000594        0x8 I2C.o
-                0x00000594                I2CStop
+                0x00000546       0x58 I2C.o
+                0x00000546                I2CStart
+ .text.I2CStop  0x0000059e        0x8 I2C.o
+                0x0000059e                I2CStop
  .text.I2CWrite
-                0x0000059c       0x24 I2C.o
-                0x0000059c                I2CWrite
- .text.LEDInit  0x000005c0       0x96 led_drv.o
-                0x000005c0                LEDInit
+                0x000005a6       0x24 I2C.o
+                0x000005a6                I2CWrite
+ .text.LEDInit  0x000005ca       0x96 led_drv.o
+                0x000005ca                LEDInit
  .text.setLEDArray
-                0x00000656       0x8a led_drv.o
-                0x00000656                setLEDArray
+                0x00000660       0x8a led_drv.o
+                0x00000660                setLEDArray
  .text.setDEMOLEDRgb
-                0x000006e0      0x170 led_drv.o
-                0x000006e0                setDEMOLEDRgb
+                0x000006ea      0x170 led_drv.o
+                0x000006ea                setDEMOLEDRgb
  .text.bufToRGBArray
-                0x00000850       0xaa led_drv.o
-                0x00000850                bufToRGBArray
+                0x0000085a       0xaa led_drv.o
+                0x0000085a                bufToRGBArray
  .text.startup.main
-                0x000008fa       0x8e main.o
-                0x000008fa                main
+                0x00000904       0x8e main.o
+                0x00000904                main
  .text.parseSPI
-                0x00000988      0x220 settings.o
-                0x00000988                parseSPI
+                0x00000992      0x20c settings.o
+                0x00000992                parseSPI
  .text.errorHandler
-                0x00000ba8        0x8 settings.o
-                0x00000ba8                errorHandler
+                0x00000b9e        0x8 settings.o
+                0x00000b9e                errorHandler
  .text.__vector_3
-                0x00000bb0       0x6c SPI.o
-                0x00000bb0                __vector_3
- .text.SPIInit  0x00000c1c       0x22 SPI.o
-                0x00000c1c                SPIInit
+                0x00000ba6       0x6c SPI.o
+                0x00000ba6                __vector_3
+ .text.SPIInit  0x00000c12       0x22 SPI.o
+                0x00000c12                SPIInit
  .text.bufferInit
-                0x00000c3e       0x18 SPI.o
-                0x00000c3e                bufferInit
+                0x00000c34       0x18 SPI.o
+                0x00000c34                bufferInit
  .text.readBuffer
-                0x00000c56       0x4c SPI.o
-                0x00000c56                readBuffer
+                0x00000c4c       0x4c SPI.o
+                0x00000c4c                readBuffer
  .text.readBufferLength
-                0x00000ca2        0xc SPI.o
-                0x00000ca2                readBufferLength
+                0x00000c98        0xc SPI.o
+                0x00000c98                readBufferLength
  .text.writeSpi
-                0x00000cae       0xca SPI.o
-                0x00000cae                writeSpi
+                0x00000ca4       0xf0 SPI.o
+                0x00000ca4                writeSpi
  .text.writeSpiBuffer
-                0x00000d78      0x120 SPI.o
-                0x00000d78                writeSpiBuffer
-                0x00000e98                . = ALIGN (0x2)
+                0x00000d94      0x148 SPI.o
+                0x00000d94                writeSpiBuffer
+                0x00000edc                . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x00000e98        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr25\libgcc.a(_exit.o)
-                0x00000e98                _exit
-                0x00000e98                exit
+ .fini9         0x00000edc        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr25\libgcc.a(_exit.o)
+                0x00000edc                _exit
+                0x00000edc                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -423,11 +423,11 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x00000e98        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr25\libgcc.a(_exit.o)
+ .fini0         0x00000edc        0x4 c:/program files (x86)/atmel/studio/7.0/toolchain/avr8/avr8-gnu-toolchain/bin/../lib/gcc/avr/5.4.0/avr25\libgcc.a(_exit.o)
  *(.fini0)
-                0x00000e9c                _etext = .
+                0x00000ee0                _etext = .
 
-.data           0x00800100       0x1e load address 0x00000e9c
+.data           0x00800100       0x1e load address 0x00000ee0
                 0x00800100                PROVIDE (__data_start, .)
  *(.data)
  *(.data*)
@@ -441,29 +441,29 @@ END GROUP
                 0x0080011e                _edata = .
                 0x0080011e                PROVIDE (__data_end, .)
 
-.bss            0x0080011e       0xd9
+.bss            0x0080011e       0xda
                 0x0080011e                PROVIDE (__bss_start, .)
  *(.bss)
  *(.bss*)
  *(COMMON)
- COMMON         0x0080011e        0xb ACE.o
+ COMMON         0x0080011e        0xc ACE.o
                 0x0080011e                ace_rot
-                0x00800123                housekp
- COMMON         0x00800129       0x69 housekeeping.o
-                0x00800129                spi_s
-                0x0080012a                parsing_state
-                0x0080012b                buf
- COMMON         0x00800192       0x65 led_drv.o
-                0x00800192                led_settings
-                0x008001f7                PROVIDE (__bss_end, .)
-                0x00000e9c                __data_load_start = LOADADDR (.data)
-                0x00000eba                __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x00800124                housekp
+ COMMON         0x0080012a       0x69 housekeeping.o
+                0x0080012a                spi_s
+                0x0080012b                parsing_state
+                0x0080012c                buf
+ COMMON         0x00800193       0x65 led_drv.o
+                0x00800193                led_settings
+                0x008001f8                PROVIDE (__bss_end, .)
+                0x00000ee0                __data_load_start = LOADADDR (.data)
+                0x00000efe                __data_load_end = (__data_load_start + SIZEOF (.data))
 
-.noinit         0x008001f7        0x0
+.noinit         0x008001f8        0x0
                 [!provide]                PROVIDE (__noinit_start, .)
  *(.noinit*)
                 [!provide]                PROVIDE (__noinit_end, .)
-                0x008001f7                _end = .
+                0x008001f8                _end = .
                 [!provide]                PROVIDE (__heap_start, .)
 
 .eeprom         0x00810000        0x0

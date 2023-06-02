@@ -11,6 +11,9 @@
 
 #include <stdio.h>
 #include <avr/wdt.h>
+#include "ADC.h"
+#include "SPI.h"
+
 
 #define MOTORISED_POTT 2
 
@@ -19,7 +22,7 @@
 enum setting_states_e{PARSE_READY, PARSING_INSTR, IS_BYTE, IS_BUFFER, READING_LENGTH, READING_START,
 	 READING_START_VAL, READING_VAL, READING_END, PARSE_END};
 
-int parseSPI(void);
+int parseSPI(spi_t *spi, adc_t *adc, buffer_t *buffer, hskp_t *hskp);
 void errorHandler(void);
 
 enum setting_states_e parsing_state;

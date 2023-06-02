@@ -10,9 +10,8 @@
 #include "housekeeping.h"
 #include <avr/io.h>
 
-uint8_t pot_pos = 0;
 
-void ADCInit(void){
+void ADCInit(adc_t *adc){
 	
 	ADMUX |= 1<<REFS0 | ADC4D;
 	ADCSRA |= 1<<ADEN | 0b111;
@@ -26,7 +25,7 @@ void ADCInit(void){
 	DDRB |= 1<<DDB0;//motor smer
 	
 	
-	//adc_val_old = ADCRead();
+	adc->pot_pos = ADCRead();
 }
 
 uint8_t ADCRead(void){
@@ -39,16 +38,16 @@ uint8_t ADCRead(void){
 	return (uint8_t)(val>>2);
 }
 
-void MovePot(uint8_t pos){
+void MovePot(adc_t *adc, uint8_t pos){
 	//if(old_pos == pos) break;
 	
-	if(pos < adc_val_new){
+	if(pos < adc->adc_val_new){
 		PORTB |= 1<<PORTB0;
 	}
-	if(pos > adc_val_new){
+	if(pos > adc->adc_val_new){
 		PORTB &= ~(1<<PORTB0);
 	}
-	if(((pos-5) < adc_val_new) && ((pos+5) > adc_val_new)){
+	if(((pos-5) < adc->adc_val_new) && ((pos+5) > adc->adc_val_new)){
 		PORTD &= ~(1<<PORTD0);
 	}
 	else PORTD |= 1<<PORTD0;

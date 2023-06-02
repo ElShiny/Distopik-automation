@@ -27,10 +27,10 @@ int main(void)
 	MCUSR = 0;//disable watchdog
 	wdt_disable();
 
-	ADCInit();
-	timersInit();
+	ADCInit(&adc_rot);
+	timersInit(&housekp);
 	SPIInit();
-	bufferInit();
+	bufferInit(&buf);
 	
 	sei();		
 	_delay_ms(100);
@@ -41,11 +41,11 @@ int main(void)
 		
 	while (1){
 		
-		parseSPI();
+		parseSPI(&spi_s, &adc_rot, &buf, &housekp);
 		
-		if(adc_changed){
-			writeSpi(1, adc_val_new, 10);
-			adc_changed = 0;
+		if(adc_rot.adc_changed){
+			writeSpi(&spi_s, &housekp, 1, adc_rot.adc_val_new, 10);
+			adc_rot.adc_changed = 0;
 		}
 		//_delay_ms(50);
 	}

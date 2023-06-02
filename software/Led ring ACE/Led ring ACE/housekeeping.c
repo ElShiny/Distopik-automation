@@ -55,13 +55,14 @@ ISR(TIMER0_COMPA_vect, ISR_NOBLOCK){
 	}
 	
 	else if(housekp.cnt >= 10 && housekp.en){//setting leds
-		if(led_settings.mode == 0){
+		if((led_settings.mode == 0)&&ace_rot.ace_led_changed){
 			setDEMOLEDRgb(ace_rot.ace_val);
+			ace_rot.ace_led_changed = 0;
 		}
 		else if(led_settings.mode == 1){
 			setLEDArray(&led_settings);
 		}
-		housekp.cnt = 1;
+		housekp.cnt = 0;
 	}
 	enableTimer();
 	

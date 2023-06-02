@@ -14,19 +14,13 @@
 #include <avr/interrupt.h>
 
 
-uint8_t cnt = 0;
-volatile uint8_t hskp_en = 0;
-volatile uint8_t adc_changed = 0;
-uint8_t adc_val_new = 0;
-uint8_t adc_val_old = 0;
-
-void timersInit(void){
+void timersInit(hskp_t *hskp){
 	
 	TCCR0A = 1<<CTC0|1<<CS02; //timer enable
 	OCR0A = 30;			//31 is 1 ms delay
 	TIMSK0 = 1<<OCIE0A; //timer interrupt
 	TCNT0 = 0;			//empty timer counter
-	hskp_en = 1;
+	hskp->en = 1;
 }
 
 
@@ -38,36 +32,37 @@ void disableTimer(void){
 	TIMSK0 &= ~(1<<OCIE0A);
 }
 
-void enableHSKP(void){
-	hskp_en = 1;
+void enableHSKP(hskp_t *hskp){
+	hskp->en = 1;
 }
 
-void disableHSKP(void){
-	hskp_en = 0;
+void disableHSKP(hskp_t *hskp){
+	hskp->en = 0;
 }
 
-uint16_t getTick(void){
-	return tick;
+uint16_t getTick(hskp_t *hskp){
+	return hskp->tick;
 }
+
 
 
 ISR(TIMER0_COMPA_vect, ISR_NOBLOCK){
 		
 	disableTimer();
-	if(cnt == 1 && hskp_en){//reading ace values
-		adc_val_new = ADCRead();
-		if(adc_val_new != adc_val_old){
-			adc_changed = 1;
-			adc_val_old = adc_val_new;
+	if(housekp.cnt == 1 && housekp.en){//reading ace values
+		adc_rot.adc_val_new = ADCRead();
+		if(adc_rot.adc_val_new != adc_rot.adc_val_old){
+			adc_rot.adc_changed = 1;
+			adc_rot.adc_val_old = adc_rot.adc_val_new;
 			}
 	}
 	
-	else if(cnt >= 10 && hskp_en){//setting leds
-		MovePot(pot_pos);
-		cnt = 0;
+	else if(housekp.cnt >= 10 && housekp.en){//setting leds
+		MovePot(&adc_rot, adc_rot.pot_pos);
+		housekp.cnt = 0;
 	}
 	enableTimer();
 	
-	cnt++;
-	tick++;
+	housekp.cnt++;
+	housekp.tick++;
 }

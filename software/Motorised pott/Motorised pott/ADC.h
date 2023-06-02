@@ -11,12 +11,20 @@
 
 #include <stdint.h>
 
+typedef struct{
+	int volatile adc_val;
+	uint8_t pot_pos;
+	uint8_t adc_val_new;
+	uint8_t adc_val_old;
+	uint8_t volatile adc_changed;
+}adc_t;
 
-void ADCInit(void);
+adc_t adc_rot;
+
+
+void ADCInit(adc_t *adc);
 uint8_t ADCRead(void);
-void MovePot(uint8_t pos);
-
-extern uint8_t pot_pos;
+void MovePot(adc_t *adc, uint8_t pos);
 
 
 #endif /* ADC_H_ */

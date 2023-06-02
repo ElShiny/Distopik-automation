@@ -15,6 +15,9 @@
 
 #define BUFFER_SIZE 100
 
+#define RECIEVE_KEYWORD 0xCF
+#define TRANSMIT_KEYWORD 0xDF
+
 enum spi_states_e{SPI_READ, SPI_WRITE, SPI_ERR};
 	
 	

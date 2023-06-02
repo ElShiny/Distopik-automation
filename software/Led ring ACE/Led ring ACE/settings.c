@@ -20,8 +20,7 @@
 int parseSPI(spi_t *spi, ace_t *ace, led_drv_t *led_set, buffer_t *buffer, hskp_t *hskp){
 	
 	if(buffer->buffer_length == 0)return 0;
-	if(readBuffer(buffer) != 0xcf)return 0;
-	ace->ace_val = 10;
+	if(readBuffer(buffer) != RECIEVE_KEYWORD)return 0;
 
 	//PORTB ^= 1<<PORTB6;
 	//disableHSKP();
@@ -30,7 +29,7 @@ int parseSPI(spi_t *spi, ace_t *ace, led_drv_t *led_set, buffer_t *buffer, hskp_
 	parsing_state = PARSING_INSTR;
 	while(readBufferLength(buffer) == 0){if(getTick(hskp)>(start_tick+MAX_TIMEOUT))return -1;}
 	int cmd = readBuffer(buffer);
-	ace->ace_val = 20;
+
 	switch(cmd){
 		
 		case 0: //do nothing
@@ -43,6 +42,7 @@ int parseSPI(spi_t *spi, ace_t *ace, led_drv_t *led_set, buffer_t *buffer, hskp_
 		case 2: //get ace value
 			while(readBufferLength(buffer) == 0){if(getTick(hskp)>(start_tick+MAX_TIMEOUT))return -1;}
 			ace->ace_val = readBuffer(buffer);
+			ace->ace_led_changed = 1;
 			break;
 		
 		case 3: //get ace value

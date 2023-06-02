@@ -73,5 +73,8 @@ void absoluteToRelative(ace_t *ace){
 	
 	ace->ace_val_old = ace->ace_val_new;
 	
-	if(delta) ace->ace_changed = 1;
+	if(delta){ 
+		ace->ace_changed = 1;
+		ace->ace_led_changed = 1;
+	}
 }

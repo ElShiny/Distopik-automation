@@ -83,13 +83,17 @@ void writeSpi(spi_t *spi, hskp_t *hskp, uint8_t instr, uint8_t data, uint8_t tim
 
 
 	SPSR;
-	SPDR = instr;
+	SPDR = TRANSMIT_KEYWORD;
 	
 	PORTB &= ~(1<<PORTB7);//set INT low
 	DDRB |= 1<<DDB7;
 	
 	while(!(SPSR & 1<<SPIF) || !(PINB & 1<<PINB2)){if(getTick(hskp)>start_tick+timeout)break;}
 	
+	SPDR = instr;
+	
+	while(!(SPSR & 1<<SPIF) || !(PINB & 1<<PINB2)){if(getTick(hskp)>start_tick+timeout)break;}
+		
 	SPDR = data;
 	
 	while(!(SPSR & 1<<SPIF) || !(PINB & 1<<PINB2)){if(getTick(hskp)>start_tick+timeout)break;}
@@ -97,27 +101,31 @@ void writeSpi(spi_t *spi, hskp_t *hskp, uint8_t instr, uint8_t data, uint8_t tim
 	PORTB &= ~(1<<PORTB7); //set INT high
 	DDRB &= ~(1<<DDB7);
 	
-	PCICR |= 1<< PCIE0;
+	//PCICR |= 1<< PCIE0;
 	enableHSKP(&housekp);
 	spi->spi_busy = 0;	
 }
 
 void writeSpiBuffer(spi_t *spi, hskp_t *hskp, uint8_t instr, uint8_t* data, uint8_t length, uint8_t timeout){
 	
-	while(!(PINB & 1<<PINB7));
-	spi->spi_busy = 1; //set global busy flag
-	disableHSKP(hskp);
-	PCICR &= ~(1<< PCIE0);
 	uint32_t start_tick = getTick(hskp);
+	while(!(PINB & 1<<PINB2)){}
+	disableHSKP(&housekp);
+	spi->spi_busy = 1;
 	
 	SPSR;		//clearing spif flag
-	SPDR = instr;		//set instr
+	SPDR = TRANSMIT_KEYWORD;		//set instr
 	
 	PORTB &= ~(1<<PORTB7);	//set INT low
 	DDRB |= 1<<DDB7;
 
 	
 	while(!(SPSR & 1<<SPIF) || !(PINB & 1<<PINB2)){if(getTick(hskp)>start_tick+timeout)break;}
+	
+	SPDR = instr;
+		
+	while(!(SPSR & 1<<SPIF) || !(PINB & 1<<PINB2)){if(getTick(hskp)>start_tick+timeout)break;}
+		
 	SPDR = length;
 	
 	for(int i=0; i<length; i++){
@@ -129,7 +137,7 @@ void writeSpiBuffer(spi_t *spi, hskp_t *hskp, uint8_t instr, uint8_t* data, uint
 	DDRB &= ~(1<<DDB7);
 	//_delay_us(10);
 	
-	enableHSKP(hskp);
+	enableHSKP(&housekp);
 	spi->spi_busy = 0;
 	//if(getTick()>start_tick+timeout)errorHandler();
 }
