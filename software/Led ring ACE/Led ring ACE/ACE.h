@@ -37,6 +37,7 @@
 
 typedef struct{
 	int volatile ace_val;
+	uint8_t volatile ace_max;
 	uint8_t ace_val_new;
 	uint8_t ace_val_old;
 	uint8_t volatile ace_changed;

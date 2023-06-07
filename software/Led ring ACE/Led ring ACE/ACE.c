@@ -20,6 +20,8 @@ void ACEInit(ace_t *ace){
 	PORTD |= 1<<ACE_EN;
 		
 	ace->ace_val_old = readACEQuick();
+	ace->ace_max = 127;
+	ace->ace_led_changed = 1;
 	
 }
 
@@ -72,6 +74,9 @@ void absoluteToRelative(ace_t *ace){
 	ace->ace_val = ace->ace_val + delta;	
 	
 	ace->ace_val_old = ace->ace_val_new;
+	
+	if (ace->ace_val > ace->ace_max)ace->ace_val = ace->ace_max;
+	if (ace->ace_val < 0)ace->ace_val = 0;
 	
 	if(delta){ 
 		ace->ace_changed = 1;

@@ -49,19 +49,19 @@ uint16_t getTick(hskp_t *hskp){
 ISR(TIMER0_COMPA_vect, ISR_NOBLOCK){
 		
 	disableTimer();
-	if(housekp.cnt == 1 && housekp.en && led_settings.ace_en){//reading ace values
+	if(housekp.cnt == 1 && housekp.en && led_settings.led_en){//reading ace values
 		ace_rot.ace_val_new = readACEQuick();
 		absoluteToRelative(&ace_rot);
 	}
 	
 	else if(housekp.cnt >= 10 && housekp.en){//setting leds
 		if((led_settings.mode == 0)&&ace_rot.ace_led_changed){
-			setDEMOLEDRgb(ace_rot.ace_val);
-			ace_rot.ace_led_changed = 0;
+			set_ring(&led_settings, &ace_rot, ace_rot.ace_val);
 		}
 		else if(led_settings.mode == 1){
 			setLEDArray(&led_settings);
 		}
+		ace_rot.ace_led_changed = 0;
 		housekp.cnt = 0;
 	}
 	enableTimer();

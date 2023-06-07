@@ -47,7 +47,7 @@ int parseSPI(spi_t *spi, ace_t *ace, led_drv_t *led_set, buffer_t *buffer, hskp_
 		
 		case 3: //get ace value
 			while(readBufferLength(buffer) == 0){if(getTick(hskp)>(start_tick+MAX_TIMEOUT))return -1;}
-			led_set->ace_en = readBuffer(buffer);
+			led_set->led_en = readBuffer(buffer);
 			break;
 			
 		case 20:// LED mode
@@ -63,7 +63,25 @@ int parseSPI(spi_t *spi, ace_t *ace, led_drv_t *led_set, buffer_t *buffer, hskp_
 		case 22:// read LED buffer
 			writeSpiBuffer(spi, hskp, 22, led_set->rgb_array, 90, 100);
 			break;
-		//case 23:// set LED 
+		case 23:// set start led
+			while(readBufferLength(buffer) == 0){if(getTick(hskp)>(start_tick+MAX_TIMEOUT))return -1;}
+			led_set->start_led = readBuffer(buffer);
+			ace->ace_led_changed = 1;
+			break;
+		case 24:// set stop led
+			while(readBufferLength(buffer) == 0){if(getTick(hskp)>(start_tick+MAX_TIMEOUT))return -1;}
+			led_set->stop_led = readBuffer(buffer);
+			ace->ace_led_changed = 1;
+			break;
+		case 25:// set front color
+			bufToRGB(led_set->front_color, buffer, hskp);
+			ace->ace_led_changed = 1;
+			break;
+		case 26:// set back color
+			bufToRGB(led_set->back_color, buffer, hskp);
+			ace->ace_led_changed = 1;
+			break;
+			
 			
 		case 252://report current buffer
 			soft_reset();

@@ -12,9 +12,12 @@
 #include "housekeeping.h"
 #include "settings.h"
 
+#include <stdio.h>
+#include <string.h>
+
 volatile led_drv_t led_settings;
 
-void LEDInit(void){
+void LEDInit(led_drv_t *led){
 	
 // 	const int rgb = 0b001100;
 	
@@ -26,7 +29,12 @@ void LEDInit(void){
 	for(int a = 0x90; a < 0x9F; a++){
 		LEDSetReg(a, 60);
 	}
-	led_settings.led_en= 1;
+	led->led_en= 1;
+	memcpy(led->front_color, (uint8_t[]){255,0,0}, 3);
+	memcpy(led->back_color, (uint8_t[]){0,255,255}, 3);
+		
+	led->start_led = 19;
+	led->stop_led = 11;
 	
 	DDRC |= 1<<PINC3;
 	PORTC |= 1<<PINC3;
@@ -117,22 +125,45 @@ void setDEMOLEDRgb(uint8_t value){
 	}
 }
 
-void set(led_drv_t *led){
+void set_ring(led_drv_t *led, ace_t *ace, uint8_t val){
 	
-	int i = led->start_led;
-	while(1){
+	uint8_t clr[3];
+	uint8_t start_l = led->start_led;
+	uint8_t stop_l = led->stop_led;
+	
+	//i hate circles with a passion
+	//ugly fucking code	
+
+	if(led->start_led<led->stop_led){
+		int leds = led->stop_led - led->start_led;
+		ace->ace_max = (leds+1)*4.267;
+		val = val/4.267;
+		//val = val;
 		
-		if()¸;
-		
-		i++;
-		if(i == 30)i = 0;
+		for(int i = 0; i<30; i++){
+			if((i>=led->start_led)&&(i<=led->stop_led)&&(i>=(led->start_led+val))){setLED(i, led->back_color);}
+			else if((i>=led->start_led)&&(i<=led->stop_led)&&(i<=led->start_led+val)){setLED(i, led->front_color);}
+			else{RGBFrom222(clr, 0), setLED(i, clr);}
+		}
 	}
-	
+	else if(led->start_led>led->stop_led){
+		uint8_t leds = led->stop_led+(30-led->start_led);
+		ace->ace_max = (leds+1)*4.27;
+		val = val/4.26;
+
+		//val = val;
+		
+		for(int i = 0; i<30; i++){
+			if( ((i>=start_l+val)&&(i>=start_l)) || (i>=val-(30-start_l)&&(i<=stop_l))){setLED(i, led->back_color);}
+			else if( ((i<start_l+val)&&(i>=start_l)) || (i<val-(30-start_l)&&(i<=stop_l))){setLED(i, led->front_color);}
+			else{RGBFrom222(clr, 0), setLED(i, clr);}
+		}
+	}
 }
 
 int bufToRGBArray(led_drv_t *settings, hskp_t *hskp){
 	int start_tick = getTick(hskp);
-		
+
 	while(readBufferLength(&buf) < 2){if(getTick(hskp)>(start_tick+MAX_TIMEOUT)){break;}}
 	
 	int length = readBuffer(&buf);
@@ -141,7 +172,23 @@ int bufToRGBArray(led_drv_t *settings, hskp_t *hskp){
 	while(readBufferLength(&buf) < length){if(getTick(hskp)>(start_tick+MAX_TIMEOUT)){break;}}
 	
 	for(int i = 0; i < length; i++){
-		settings->rgb_array[i+start] = readBuffer(&buf);	
+		settings->rgb_array[i+start] = readBuffer(&buf);
+	}
+	return 0;
+}
+
+int bufToRGB(uint8_t *arr, buffer_t *buf, hskp_t *hskp){
+	
+	int start_tick = getTick(hskp);
+
+	while(readBufferLength(buf) == 0){if(getTick(hskp)>(start_tick+MAX_TIMEOUT)){break;}}
+	
+	int length = readBuffer(buf);
+
+	while(readBufferLength(buf) < length){if(getTick(hskp)>(start_tick+MAX_TIMEOUT)){break;}}
+	
+	for(int i = 0; i < 3; i++){
+		arr[i] = readBuffer(buf);
 	}
 	return 0;
 }

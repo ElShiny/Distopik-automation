@@ -32,7 +32,7 @@ int main(void)
 	ACEInit(&ace_rot);
 	timersInit(&housekp);
 	I2CInit();
-	LEDInit();
+	LEDInit(&led_settings);
 	SPIInit();
 	bufferInit(&buf);
 	

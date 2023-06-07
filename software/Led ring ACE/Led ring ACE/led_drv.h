@@ -13,6 +13,8 @@
 #include <stdint.h>
 #include <avr/io.h>
 #include "housekeeping.h"
+#include "ACE.h"
+#include "SPI.h"
 
 #define IS3_ADR 0x34
 
@@ -30,7 +32,7 @@ typedef struct{
 
 extern volatile led_drv_t led_settings;
 
-void LEDInit(void);
+void LEDInit(led_drv_t *led);
 
 uint8_t LEDSetReg(uint8_t adr, uint8_t val);//writing functions
 uint8_t LEDGetReg(uint8_t adr);
@@ -42,7 +44,9 @@ void RGBFrom222(uint8_t *arr, uint8_t color);//color manipulation
 uint8_t RGBTo222(uint8_t *color);
 
 void setDEMOLEDRgb(uint8_t value);//helper functions
+void set_ring(led_drv_t *led, ace_t *ace, uint8_t val);
 int bufToRGBArray(led_drv_t *settings, hskp_t *hskp);
+int bufToRGB(uint8_t *arr, buffer_t *buf, hskp_t *hskp);
 
 
 
