@@ -17,8 +17,14 @@ typedef struct{
 	volatile uint8_t cnt;
 }hskp_t;
 
-hskp_t housekp;
+typedef struct{
+	volatile uint8_t en;
+	volatile uint8_t cnt;
+	volatile uint8_t duty;
+}pwm_t;
 
+hskp_t housekp;
+pwm_t pwm;
 
 
 

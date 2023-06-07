@@ -26,7 +26,7 @@ void LEDInit(void){
 	for(int a = 0x90; a < 0x9F; a++){
 		LEDSetReg(a, 60);
 	}
-	led_settings.ace_en= 1;
+	led_settings.led_en= 1;
 	
 	DDRC |= 1<<PINC3;
 	PORTC |= 1<<PINC3;
@@ -115,6 +115,19 @@ void setDEMOLEDRgb(uint8_t value){
 		else if(i<=led-60 && 60<=led && led<=90){RGBFrom222(clr, 0b000011); setLED(i, clr);bck_clr = 0b001100;}
 		else {RGBFrom222(clr, bck_clr); setLED(i, clr);}
 	}
+}
+
+void set(led_drv_t *led){
+	
+	int i = led->start_led;
+	while(1){
+		
+		if()¸;
+		
+		i++;
+		if(i == 30)i = 0;
+	}
+	
 }
 
 int bufToRGBArray(led_drv_t *settings, hskp_t *hskp){

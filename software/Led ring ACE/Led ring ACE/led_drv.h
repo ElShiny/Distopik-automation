@@ -22,10 +22,10 @@ typedef struct{
 	uint8_t back_color[3];
 	
 	uint8_t mode;
-	uint8_t start_angle;
-	uint8_t stop_angle;
+	uint8_t start_led;
+	uint8_t stop_led;
 	uint8_t rot_percent;
-	uint8_t ace_en;
+	uint8_t led_en;
 	}led_drv_t;
 
 extern volatile led_drv_t led_settings;

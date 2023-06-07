@@ -33,7 +33,7 @@ int parseSPI(spi_t *spi, adc_t *adc, buffer_t *buffer, hskp_t *hskp){
 			break;
 		
 		case 1: //write ace value
-			writeSpi(&spi_s, &housekp, 1, adc->pot_pos, 10);
+			writeSpi(&spi_s, &housekp, 1, (uint8_t)(adc->pot_pos>>2), 10);
 			break;
 		
 		case 2: //get ace value

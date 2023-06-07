@@ -17,7 +17,7 @@
 
 
 
-int parseSPI(spi_t *spi, ace_t *ace, led_drv_t *led_set, buffer_t *buffer, hskp_t *hskp){
+int parseSPI(spi_t *spi, ace_t *ace, led_drv_t *led_set, buffer_t *buffer, hskp_t  *hskp){
 	
 	if(buffer->buffer_length == 0)return 0;
 	if(readBuffer(buffer) != RECIEVE_KEYWORD)return 0;

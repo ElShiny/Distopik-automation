@@ -28,14 +28,14 @@ void ADCInit(adc_t *adc){
 	adc->pot_pos = ADCRead();
 }
 
-uint8_t ADCRead(void){
+uint16_t ADCRead(void){
 	ADCSRA |= 1<<ADSC;
 	while(!(ADCSRA & (1<<ADIF)));
 	ADCSRA |= 1<<ADIF;
 	ADCSRA &= ~(0<<ADIF);
 	uint8_t val_low = ADCL;
 	uint16_t val = ADCH<<8 | val_low;
-	return (uint8_t)(val>>2);
+	return val;
 }
 
 void MovePot(adc_t *adc, uint8_t pos){

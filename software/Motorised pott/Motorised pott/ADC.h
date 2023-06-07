@@ -13,17 +13,18 @@
 
 typedef struct{
 	int volatile adc_val;
-	uint8_t pot_pos;
-	uint8_t adc_val_new;
-	uint8_t adc_val_old;
+	uint16_t pot_pos;
+	uint16_t adc_val_new;
+	uint16_t adc_val_old;
 	uint8_t volatile adc_changed;
+	uint8_t user_changed;
 }adc_t;
 
 adc_t adc_rot;
 
 
 void ADCInit(adc_t *adc);
-uint8_t ADCRead(void);
+uint16_t ADCRead(void);
 void MovePot(adc_t *adc, uint8_t pos);
 
 

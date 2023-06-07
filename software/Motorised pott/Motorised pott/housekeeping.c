@@ -23,6 +23,15 @@ void timersInit(hskp_t *hskp){
 	hskp->en = 1;
 }
 
+void PWMInit(pwm_t *pwm){
+	
+	TCCR0A = 1<<CTC0|1<<CS02; //timer enable
+	OCR0A = 30;			//31 is 1 ms delay
+	TIMSK0 = 1<<OCIE0A; //timer interrupt
+	TCNT0 = 0;			//empty timer counter
+}
+
+
 
 void enableTimer(void){
 	TIMSK0 |= 1<<OCIE0A;
