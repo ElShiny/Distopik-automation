@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=As21 Pin=P7-2
+Removed Pin From Net: NetName=Bs21 Pin=P7-6
+Removed Pin From Net: NetName=As22 Pin=P7-10
+Removed Pin From Net: NetName=Bs22 Pin=P7-14
+Removed Pin From Net: NetName=As23 Pin=P7-18
+Removed Pin From Net: NetName=Bs23 Pin=P7-22
+Removed Pin From Net: NetName=As24 Pin=P7-26
+Removed Pin From Net: NetName=Bs24 Pin=P7-30
+Added Pin To Net: NetName=Bs21 Pin=P7-2
+Added Pin To Net: NetName=As21 Pin=P7-6
+Added Pin To Net: NetName=Bs22 Pin=P7-10
+Added Pin To Net: NetName=As22 Pin=P7-14
+Added Pin To Net: NetName=Bs23 Pin=P7-18
+Added Pin To Net: NetName=As23 Pin=P7-22
+Added Pin To Net: NetName=Bs24 Pin=P7-26
+Added Pin To Net: NetName=As24 Pin=P7-30

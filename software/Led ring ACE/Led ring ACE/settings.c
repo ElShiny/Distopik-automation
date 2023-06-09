@@ -43,6 +43,7 @@ int parseSPI(spi_t *spi, ace_t *ace, led_drv_t *led_set, buffer_t *buffer, hskp_
 			while(readBufferLength(buffer) == 0){if(getTick(hskp)>(start_tick+MAX_TIMEOUT))return -1;}
 			ace->ace_val = readBuffer(buffer);
 			ace->ace_led_changed = 1;
+			ace->ace_changed = 1;
 			break;
 		
 		case 3: //get ace value

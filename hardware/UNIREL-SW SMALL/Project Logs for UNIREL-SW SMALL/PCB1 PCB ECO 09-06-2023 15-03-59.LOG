@@ -1,0 +1,8 @@
+Change Component Footprint: Designator=P6 Old Footprint=HDR2X10H New Footprint=HDR2X10
+Change Component Footprint: Designator=P8 Old Footprint=HDR2X10H New Footprint=HDR2X10
+Change Component Comment : Designator=P6 Old Comment=Header 10X2H New Comment=Header 10X2
+Change Component Comment : Designator=P8 Old Comment=Header 10X2H New Comment=Header 10X2
+Change Component Designator: OldDesignator=R? NewDesignator=R58
+Change Component Designator: OldDesignator=R? NewDesignator=R59
+Added Member To Class: ClassName=SW SMALL Member=Component R58 R
+Added Room: Name=SW SMALL
