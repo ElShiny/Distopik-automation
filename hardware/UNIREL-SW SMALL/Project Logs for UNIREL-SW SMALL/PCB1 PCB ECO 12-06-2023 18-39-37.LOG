@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=R28 Pin=ULN2-10
+Removed Pin From Net: NetName=R27 Pin=ULN2-11
+Removed Pin From Net: NetName=R26 Pin=ULN2-12
+Removed Pin From Net: NetName=R25 Pin=ULN2-13
+Removed Pin From Net: NetName=R24 Pin=ULN2-14
+Removed Pin From Net: NetName=R23 Pin=ULN2-15
+Removed Pin From Net: NetName=R22 Pin=ULN2-16
+Removed Pin From Net: NetName=R21 Pin=ULN2-17
+Added Pin To Net: NetName=R21 Pin=ULN2-10
+Added Pin To Net: NetName=R22 Pin=ULN2-11
+Added Pin To Net: NetName=R23 Pin=ULN2-12
+Added Pin To Net: NetName=R24 Pin=ULN2-13
+Added Pin To Net: NetName=R25 Pin=ULN2-14
+Added Pin To Net: NetName=R26 Pin=ULN2-15
+Added Pin To Net: NetName=R27 Pin=ULN2-16
+Added Pin To Net: NetName=R28 Pin=ULN2-17

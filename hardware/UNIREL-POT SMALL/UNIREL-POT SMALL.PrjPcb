@@ -122,8 +122,161 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
+[Document6]
+DocumentPath=Job1.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [GeneratedDocument1]
 DocumentPath=Project Outputs for UNIREL-POT SMALL\Design Rule Check - POT 2x8.html
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Project Outputs for Free Documents\NC Drill\POT 2x8.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for UNIREL-POT SMALL\NC Drill\POT 2x8.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs for Free Documents\Gerber\POT 2x8.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs for UNIREL-POT SMALL\Gerber\POT 2x8.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs for Free Documents\Gerber\POT 2x8.G1
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs for UNIREL-POT SMALL\Gerber\POT 2x8.G1
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs for Free Documents\Gerber\POT 2x8.G2
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs for UNIREL-POT SMALL\Gerber\POT 2x8.G2
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Project Outputs for Free Documents\Gerber\POT 2x8.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Project Outputs for UNIREL-POT SMALL\Gerber\POT 2x8.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs for Free Documents\Gerber\POT 2x8.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Project Outputs for UNIREL-POT SMALL\Gerber\POT 2x8.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Project Outputs for Free Documents\Gerber\POT 2x8.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Project Outputs for UNIREL-POT SMALL\Gerber\POT 2x8.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Project Outputs for Free Documents\Gerber\POT 2x8.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Project Outputs for UNIREL-POT SMALL\Gerber\POT 2x8.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=Project Outputs for Free Documents\Gerber\POT 2x8.GM1
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=Project Outputs for UNIREL-POT SMALL\Gerber\POT 2x8.GM1
+DItemRevisionGUID=
+
+[GeneratedDocument20]
+DocumentPath=Project Outputs for Free Documents\Gerber\POT 2x8.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument21]
+DocumentPath=Project Outputs for UNIREL-POT SMALL\Gerber\POT 2x8.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument22]
+DocumentPath=Project Outputs for Free Documents\Gerber\POT 2x8.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument23]
+DocumentPath=Project Outputs for UNIREL-POT SMALL\Gerber\POT 2x8.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument24]
+DocumentPath=Project Outputs for Free Documents\Gerber\POT 2x8.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument25]
+DocumentPath=Project Outputs for UNIREL-POT SMALL\Gerber\POT 2x8.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument26]
+DocumentPath=Project Outputs for Free Documents\Gerber\POT 2x8.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument27]
+DocumentPath=Project Outputs for UNIREL-POT SMALL\Gerber\POT 2x8.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument28]
+DocumentPath=Project Outputs for Free Documents\NC Drill\POT 2x8.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument29]
+DocumentPath=Project Outputs for UNIREL-POT SMALL\NC Drill\POT 2x8.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument30]
+DocumentPath=Project Outputs for Free Documents\Gerber\POT 2x8.REP
+DItemRevisionGUID=
+
+[GeneratedDocument31]
+DocumentPath=Project Outputs for UNIREL-POT SMALL\Gerber\POT 2x8.REP
+DItemRevisionGUID=
+
+[GeneratedDocument32]
+DocumentPath=Project Outputs for Free Documents\Gerber\POT 2x8.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument33]
+DocumentPath=Project Outputs for UNIREL-POT SMALL\Gerber\POT 2x8.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument34]
+DocumentPath=Project Outputs for Free Documents\NC Drill\POT 2x8.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument35]
+DocumentPath=Project Outputs for UNIREL-POT SMALL\NC Drill\POT 2x8.TXT
 DItemRevisionGUID=
 
 [Configuration1]

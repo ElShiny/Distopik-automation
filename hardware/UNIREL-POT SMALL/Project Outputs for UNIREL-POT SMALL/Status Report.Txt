@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [POT 2x8.PcbDoc]
+   Generated File[POT 2x8.TXT]
+   Generated File[POT 2x8.LDP]
+   Generated File[POT 2x8.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 20:16:01 On 12/06/2023
