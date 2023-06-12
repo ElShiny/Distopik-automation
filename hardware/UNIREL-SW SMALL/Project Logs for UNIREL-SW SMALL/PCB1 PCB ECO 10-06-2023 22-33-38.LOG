@@ -1,0 +1,21 @@
+Removed Pin From Net: NetName=Bs18 Pin=P6-2
+Removed Pin From Net: NetName=As18 Pin=P6-4
+Removed Pin From Net: NetName=Bd18 Pin=P6-6
+Removed Pin From Net: NetName=Ad18 Pin=P6-8
+Removed Pin From Net: NetName=Bd17 Pin=P6-10
+Removed Pin From Net: NetName=Ad17 Pin=P6-12
+Removed Pin From Net: NetName=Bd16 Pin=P6-14
+Removed Pin From Net: NetName=Ad16 Pin=P6-16
+Removed Pin From Net: NetName=Bd15 Pin=P6-18
+Removed Pin From Net: NetName=Ad15 Pin=P6-20
+Added Pin To Net: NetName=Ad15 Pin=P6-2
+Added Pin To Net: NetName=Bd15 Pin=P6-4
+Added Pin To Net: NetName=Ad16 Pin=P6-6
+Added Pin To Net: NetName=Bd16 Pin=P6-8
+Added Pin To Net: NetName=Ad17 Pin=P6-10
+Added Pin To Net: NetName=Bd17 Pin=P6-12
+Added Pin To Net: NetName=Ad18 Pin=P6-14
+Added Pin To Net: NetName=Bd18 Pin=P6-16
+Added Pin To Net: NetName=As18 Pin=P6-18
+Added Pin To Net: NetName=Bs18 Pin=P6-20
+Added Room: Name=SW SMALL
