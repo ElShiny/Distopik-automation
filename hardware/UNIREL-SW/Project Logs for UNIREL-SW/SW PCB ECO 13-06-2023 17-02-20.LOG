@@ -1,0 +1,107 @@
+Added Component: Designator=MCP1(MCP23017 QFN)
+Added Component: Designator=MCP2(MCP23017 QFN)
+Added Component: Designator=ULN1(QFN127P600-8N)
+Added Component: Designator=ULN2(QFN127P600-8N)
+Added Component: Designator=ULN3(QFN127P600-8N)
+Added Pin To Net: NetName=NetMCP1_1 Pin=MCP1-1
+Added Pin To Net: NetName=NetMCP1_2 Pin=MCP1-2
+Added Pin To Net: NetName=NetMCP1_3 Pin=MCP1-3
+Added Pin To Net: NetName=NetMCP1_4 Pin=MCP1-4
+Added Pin To Net: NetName=+3.3V Pin=MCP1-5
+Added Pin To Net: NetName=GND Pin=MCP1-6
+Added Pin To Net: NetName=SCL Pin=MCP1-8
+Added Pin To Net: NetName=SDA Pin=MCP1-9
+Added Pin To Net: NetName=GND Pin=MCP1-11
+Added Pin To Net: NetName=GND Pin=MCP1-12
+Added Pin To Net: NetName=GND Pin=MCP1-13
+Added Pin To Net: NetName=NetC3_2 Pin=MCP1-14
+Added Pin To Net: NetName=NetMCP1_17 Pin=MCP1-17
+Added Pin To Net: NetName=NetMCP1_18 Pin=MCP1-18
+Added Pin To Net: NetName=NetMCP1_19 Pin=MCP1-19
+Added Pin To Net: NetName=NetMCP1_20 Pin=MCP1-20
+Added Pin To Net: NetName=NetMCP1_21 Pin=MCP1-21
+Added Pin To Net: NetName=NetMCP1_22 Pin=MCP1-22
+Added Pin To Net: NetName=NetMCP1_23 Pin=MCP1-23
+Added Pin To Net: NetName=NetMCP1_24 Pin=MCP1-24
+Added Pin To Net: NetName=NetMCP1_25 Pin=MCP1-25
+Added Pin To Net: NetName=NetMCP1_26 Pin=MCP1-26
+Added Pin To Net: NetName=NetMCP1_27 Pin=MCP1-27
+Added Pin To Net: NetName=NetMCP1_28 Pin=MCP1-28
+Added Pin To Net: NetName=+3.3V Pin=MCP2-5
+Added Pin To Net: NetName=GND Pin=MCP2-6
+Added Pin To Net: NetName=SCL Pin=MCP2-8
+Added Pin To Net: NetName=SDA Pin=MCP2-9
+Added Pin To Net: NetName=GND Pin=MCP2-11
+Added Pin To Net: NetName=GND Pin=MCP2-12
+Added Pin To Net: NetName=GND Pin=MCP2-13
+Added Pin To Net: NetName=NetC13_2 Pin=MCP2-14
+Added Pin To Net: NetName=NetMCP2_17 Pin=MCP2-17
+Added Pin To Net: NetName=NetMCP2_18 Pin=MCP2-18
+Added Pin To Net: NetName=NetMCP2_19 Pin=MCP2-19
+Added Pin To Net: NetName=NetMCP2_20 Pin=MCP2-20
+Added Pin To Net: NetName=NetMCP2_21 Pin=MCP2-21
+Added Pin To Net: NetName=NetMCP2_22 Pin=MCP2-22
+Added Pin To Net: NetName=NetMCP2_23 Pin=MCP2-23
+Added Pin To Net: NetName=NetMCP2_24 Pin=MCP2-24
+Added Pin To Net: NetName=NetMCP1_22 Pin=ULN1-1
+Added Pin To Net: NetName=NetMCP1_21 Pin=ULN1-2
+Added Pin To Net: NetName=NetMCP1_20 Pin=ULN1-3
+Added Pin To Net: NetName=NetMCP1_19 Pin=ULN1-4
+Added Pin To Net: NetName=NetMCP1_18 Pin=ULN1-5
+Added Pin To Net: NetName=NetMCP1_17 Pin=ULN1-6
+Added Pin To Net: NetName=GND Pin=ULN1-8
+Added Pin To Net: NetName=+12 Pin=ULN1-9
+Added Pin To Net: NetName=R18 Pin=ULN1-10
+Added Pin To Net: NetName=R17 Pin=ULN1-11
+Added Pin To Net: NetName=R16 Pin=ULN1-12
+Added Pin To Net: NetName=R15 Pin=ULN1-13
+Added Pin To Net: NetName=R14 Pin=ULN1-14
+Added Pin To Net: NetName=R13 Pin=ULN1-15
+Added Pin To Net: NetName=R12 Pin=ULN1-16
+Added Pin To Net: NetName=R11 Pin=ULN1-17
+Added Pin To Net: NetName=NetMCP1_24 Pin=ULN1-19
+Added Pin To Net: NetName=NetMCP1_23 Pin=ULN1-20
+Added Pin To Net: NetName=GND Pin=ULN1-21
+Added Pin To Net: NetName=NetMCP1_2 Pin=ULN2-1
+Added Pin To Net: NetName=NetMCP1_1 Pin=ULN2-2
+Added Pin To Net: NetName=NetMCP1_28 Pin=ULN2-3
+Added Pin To Net: NetName=NetMCP1_27 Pin=ULN2-4
+Added Pin To Net: NetName=NetMCP1_26 Pin=ULN2-5
+Added Pin To Net: NetName=NetMCP1_25 Pin=ULN2-6
+Added Pin To Net: NetName=GND Pin=ULN2-8
+Added Pin To Net: NetName=+12 Pin=ULN2-9
+Added Pin To Net: NetName=R21 Pin=ULN2-10
+Added Pin To Net: NetName=R22 Pin=ULN2-11
+Added Pin To Net: NetName=R23 Pin=ULN2-12
+Added Pin To Net: NetName=R24 Pin=ULN2-13
+Added Pin To Net: NetName=R25 Pin=ULN2-14
+Added Pin To Net: NetName=R26 Pin=ULN2-15
+Added Pin To Net: NetName=R27 Pin=ULN2-16
+Added Pin To Net: NetName=R28 Pin=ULN2-17
+Added Pin To Net: NetName=NetMCP1_4 Pin=ULN2-19
+Added Pin To Net: NetName=NetMCP1_3 Pin=ULN2-20
+Added Pin To Net: NetName=GND Pin=ULN2-21
+Added Pin To Net: NetName=NetMCP2_22 Pin=ULN3-1
+Added Pin To Net: NetName=NetMCP2_21 Pin=ULN3-2
+Added Pin To Net: NetName=NetMCP2_20 Pin=ULN3-3
+Added Pin To Net: NetName=NetMCP2_19 Pin=ULN3-4
+Added Pin To Net: NetName=NetMCP2_18 Pin=ULN3-5
+Added Pin To Net: NetName=NetMCP2_17 Pin=ULN3-6
+Added Pin To Net: NetName=GND Pin=ULN3-8
+Added Pin To Net: NetName=+12 Pin=ULN3-9
+Added Pin To Net: NetName=R38 Pin=ULN3-10
+Added Pin To Net: NetName=R37 Pin=ULN3-11
+Added Pin To Net: NetName=R36 Pin=ULN3-12
+Added Pin To Net: NetName=R35 Pin=ULN3-13
+Added Pin To Net: NetName=R34 Pin=ULN3-14
+Added Pin To Net: NetName=R33 Pin=ULN3-15
+Added Pin To Net: NetName=R32 Pin=ULN3-16
+Added Pin To Net: NetName=R31 Pin=ULN3-17
+Added Pin To Net: NetName=NetMCP2_24 Pin=ULN3-19
+Added Pin To Net: NetName=NetMCP2_23 Pin=ULN3-20
+Added Pin To Net: NetName=GND Pin=ULN3-21
+Added Member To Class: ClassName=SW Member=Component MCP1 MCP32017
+Added Member To Class: ClassName=SW Member=Component MCP2 MCP32017
+Added Member To Class: ClassName=SW Member=Component ULN1 ULN2803
+Added Member To Class: ClassName=SW Member=Component ULN2 ULN2803
+Added Member To Class: ClassName=SW Member=Component ULN3 ULN2803
