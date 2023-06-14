@@ -1,0 +1,14 @@
+Change Component Designator: OldDesignator=C? NewDesignator=C15
+Change Component Designator: OldDesignator=K? NewDesignator=K25
+Change Component Designator: OldDesignator=K? NewDesignator=K26
+Change Component Designator: OldDesignator=K? NewDesignator=K27
+Change Component Designator: OldDesignator=K? NewDesignator=K28
+Change Component Designator: OldDesignator=K? NewDesignator=K29
+Change Component Designator: OldDesignator=K? NewDesignator=K30
+Change Component Designator: OldDesignator=P? NewDesignator=P11
+Change Component Designator: OldDesignator=ULN? NewDesignator=ULN4
+Added Member To Class: ClassName=SW Member=Component K25 DPDT
+Added Member To Class: ClassName=SW Member=Component K26 DPDT
+Added Member To Class: ClassName=SW Member=Component K27 DPDT
+Added Member To Class: ClassName=SW Member=Component K28 DPDT
+Added Member To Class: ClassName=SW Member=Component K29 DPDT

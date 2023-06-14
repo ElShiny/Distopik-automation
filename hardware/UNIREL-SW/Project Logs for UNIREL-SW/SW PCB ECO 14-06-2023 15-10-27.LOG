@@ -1,0 +1,44 @@
+Removed Pin From Net: NetName=A2 Pin=R25-1
+Removed Pin From Net: NetName=B2 Pin=R26-1
+Added Pin To Net: NetName=B2 Pin=R25-1
+Added Pin To Net: NetName=NetK1_6 Pin=R25-2
+Added Pin To Net: NetName=A2 Pin=R26-1
+Added Pin To Net: NetName=NetK1_3 Pin=R26-2
+Change Net Name : Old Net Name=A2 New Net Name=B2
+Change Net Name : Old Net Name=Ac21 New Net Name=Bc21
+Change Net Name : Old Net Name=Ac22 New Net Name=Bc22
+Change Net Name : Old Net Name=Ac23 New Net Name=Bc23
+Change Net Name : Old Net Name=Ac24 New Net Name=Bc24
+Change Net Name : Old Net Name=Ad21 New Net Name=Bd21
+Change Net Name : Old Net Name=Ad22 New Net Name=Bd22
+Change Net Name : Old Net Name=Ad23 New Net Name=Bd23
+Change Net Name : Old Net Name=Ad24 New Net Name=Bd24
+Change Net Name : Old Net Name=Ad25 New Net Name=Bd25
+Change Net Name : Old Net Name=Ad26 New Net Name=Bd26
+Change Net Name : Old Net Name=Ad27 New Net Name=Bd27
+Change Net Name : Old Net Name=Ad28 New Net Name=Bd28
+Change Net Name : Old Net Name=As21 New Net Name=Bs21
+Change Net Name : Old Net Name=As22 New Net Name=Bs22
+Change Net Name : Old Net Name=As23 New Net Name=Bs23
+Change Net Name : Old Net Name=As24 New Net Name=Bs24
+Change Net Name : Old Net Name=As28 New Net Name=Bs28
+Change Net Name : Old Net Name=B2 New Net Name=A2
+Change Net Name : Old Net Name=Bc21 New Net Name=Ac21
+Change Net Name : Old Net Name=Bc22 New Net Name=Ac22
+Change Net Name : Old Net Name=Bc23 New Net Name=Ac23
+Change Net Name : Old Net Name=Bc24 New Net Name=Ac24
+Change Net Name : Old Net Name=Bd21 New Net Name=Ad21
+Change Net Name : Old Net Name=Bd22 New Net Name=Ad22
+Change Net Name : Old Net Name=Bd23 New Net Name=Ad23
+Change Net Name : Old Net Name=Bd24 New Net Name=Ad24
+Change Net Name : Old Net Name=Bd25 New Net Name=Ad25
+Change Net Name : Old Net Name=Bd26 New Net Name=Ad26
+Change Net Name : Old Net Name=Bd27 New Net Name=Ad27
+Change Net Name : Old Net Name=Bd28 New Net Name=Ad28
+Change Net Name : Old Net Name=Bs21 New Net Name=As21
+Change Net Name : Old Net Name=Bs22 New Net Name=As22
+Change Net Name : Old Net Name=Bs23 New Net Name=As23
+Change Net Name : Old Net Name=Bs24 New Net Name=As24
+Change Net Name : Old Net Name=Bs28 New Net Name=As28
+Change Net Name : Old Net Name=NetK1_3 New Net Name=B1
+Change Net Name : Old Net Name=NetK1_6 New Net Name=A1

@@ -1,0 +1,211 @@
+Added Component: Designator=C?(R1005_0402i_L)
+Added Component: Designator=K?(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K?(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K?(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K?(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K?(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K?(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=P?(HDR2X24)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=ULN?(QFN127P600-8N)
+Added Pin To Net: NetName=+12 Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-2
+Added Pin To Net: NetName=+12 Pin=K?-1
+Added Pin To Net: NetName=+12 Pin=K?-1
+Added Pin To Net: NetName=+12 Pin=K?-1
+Added Pin To Net: NetName=+12 Pin=K?-1
+Added Pin To Net: NetName=+12 Pin=K?-1
+Added Pin To Net: NetName=+12 Pin=K?-1
+Added Pin To Net: NetName=GND Pin=ULN?-8
+Added Pin To Net: NetName=+12 Pin=ULN?-9
+Added Pin To Net: NetName=GND Pin=ULN?-21
+Added Pin To Net: NetName=Ac41 Pin=K?-2
+Added Pin To Net: NetName=Ac41 Pin=P?-3
+Added Net: Name=Ac41
+Added Pin To Net: NetName=Ac42 Pin=K?-2
+Added Pin To Net: NetName=Ac42 Pin=P?-11
+Added Net: Name=Ac42
+Added Pin To Net: NetName=Ac43 Pin=K?-2
+Added Pin To Net: NetName=Ac43 Pin=P?-19
+Added Net: Name=Ac43
+Added Pin To Net: NetName=Ac44 Pin=K?-2
+Added Pin To Net: NetName=Ac44 Pin=P?-27
+Added Net: Name=Ac44
+Added Pin To Net: NetName=Ac45 Pin=K?-2
+Added Pin To Net: NetName=Ac45 Pin=P?-35
+Added Net: Name=Ac45
+Added Pin To Net: NetName=Ac46 Pin=K?-2
+Added Pin To Net: NetName=Ac46 Pin=P?-43
+Added Net: Name=Ac46
+Added Pin To Net: NetName=Ad41 Pin=K?-4
+Added Pin To Net: NetName=Ad41 Pin=P?-2
+Added Net: Name=Ad41
+Added Pin To Net: NetName=Ad42 Pin=K?-4
+Added Pin To Net: NetName=Ad42 Pin=P?-10
+Added Net: Name=Ad42
+Added Pin To Net: NetName=Ad43 Pin=K?-4
+Added Pin To Net: NetName=Ad43 Pin=P?-18
+Added Net: Name=Ad43
+Added Pin To Net: NetName=Ad44 Pin=K?-4
+Added Pin To Net: NetName=Ad44 Pin=P?-26
+Added Net: Name=Ad44
+Added Pin To Net: NetName=Ad45 Pin=K?-4
+Added Pin To Net: NetName=Ad45 Pin=P?-34
+Added Net: Name=Ad45
+Added Pin To Net: NetName=Ad46 Pin=K?-4
+Added Pin To Net: NetName=Ad46 Pin=P?-42
+Added Net: Name=Ad46
+Added Pin To Net: NetName=AGND4 Pin=P?-4
+Added Pin To Net: NetName=AGND4 Pin=P?-8
+Added Pin To Net: NetName=AGND4 Pin=P?-12
+Added Pin To Net: NetName=AGND4 Pin=P?-16
+Added Pin To Net: NetName=AGND4 Pin=P?-20
+Added Pin To Net: NetName=AGND4 Pin=P?-24
+Added Pin To Net: NetName=AGND4 Pin=P?-28
+Added Pin To Net: NetName=AGND4 Pin=P?-32
+Added Pin To Net: NetName=AGND4 Pin=P?-36
+Added Pin To Net: NetName=AGND4 Pin=P?-40
+Added Pin To Net: NetName=AGND4 Pin=P?-44
+Added Pin To Net: NetName=AGND4 Pin=P?-48
+Added Net: Name=AGND4
+Added Pin To Net: NetName=As41 Pin=K?-3
+Added Pin To Net: NetName=As41 Pin=P?-1
+Added Net: Name=As41
+Added Pin To Net: NetName=As42 Pin=K?-3
+Added Pin To Net: NetName=As42 Pin=P?-9
+Added Net: Name=As42
+Added Pin To Net: NetName=As43 Pin=K?-3
+Added Pin To Net: NetName=As43 Pin=P?-17
+Added Net: Name=As43
+Added Pin To Net: NetName=As44 Pin=K?-3
+Added Pin To Net: NetName=As44 Pin=P?-25
+Added Net: Name=As44
+Added Pin To Net: NetName=As45 Pin=K?-3
+Added Pin To Net: NetName=As45 Pin=P?-33
+Added Net: Name=As45
+Added Pin To Net: NetName=As46 Pin=K?-3
+Added Pin To Net: NetName=As46 Pin=P?-41
+Added Net: Name=As46
+Added Pin To Net: NetName=Bc41 Pin=K?-7
+Added Pin To Net: NetName=Bc41 Pin=P?-7
+Added Net: Name=Bc41
+Added Pin To Net: NetName=Bc42 Pin=K?-7
+Added Pin To Net: NetName=Bc42 Pin=P?-15
+Added Net: Name=Bc42
+Added Pin To Net: NetName=Bc43 Pin=K?-7
+Added Pin To Net: NetName=Bc43 Pin=P?-23
+Added Net: Name=Bc43
+Added Pin To Net: NetName=Bc44 Pin=K?-7
+Added Pin To Net: NetName=Bc44 Pin=P?-31
+Added Net: Name=Bc44
+Added Pin To Net: NetName=Bc45 Pin=K?-7
+Added Pin To Net: NetName=Bc45 Pin=P?-39
+Added Net: Name=Bc45
+Added Pin To Net: NetName=Bc46 Pin=K?-7
+Added Pin To Net: NetName=Bc46 Pin=P?-47
+Added Net: Name=Bc46
+Added Pin To Net: NetName=Bd41 Pin=K?-5
+Added Pin To Net: NetName=Bd41 Pin=P?-6
+Added Net: Name=Bd41
+Added Pin To Net: NetName=Bd42 Pin=K?-5
+Added Pin To Net: NetName=Bd42 Pin=P?-14
+Added Net: Name=Bd42
+Added Pin To Net: NetName=Bd43 Pin=K?-5
+Added Pin To Net: NetName=Bd43 Pin=P?-22
+Added Net: Name=Bd43
+Added Pin To Net: NetName=Bd44 Pin=K?-5
+Added Pin To Net: NetName=Bd44 Pin=P?-30
+Added Net: Name=Bd44
+Added Pin To Net: NetName=Bd45 Pin=K?-5
+Added Pin To Net: NetName=Bd45 Pin=P?-38
+Added Net: Name=Bd45
+Added Pin To Net: NetName=Bd46 Pin=K?-5
+Added Pin To Net: NetName=Bd46 Pin=P?-46
+Added Net: Name=Bd46
+Added Pin To Net: NetName=Bs41 Pin=K?-6
+Added Pin To Net: NetName=Bs41 Pin=P?-5
+Added Net: Name=Bs41
+Added Pin To Net: NetName=Bs42 Pin=K?-6
+Added Pin To Net: NetName=Bs42 Pin=P?-13
+Added Net: Name=Bs42
+Added Pin To Net: NetName=Bs43 Pin=K?-6
+Added Pin To Net: NetName=Bs43 Pin=P?-21
+Added Net: Name=Bs43
+Added Pin To Net: NetName=Bs44 Pin=K?-6
+Added Pin To Net: NetName=Bs44 Pin=P?-29
+Added Net: Name=Bs44
+Added Pin To Net: NetName=Bs45 Pin=K?-6
+Added Pin To Net: NetName=Bs45 Pin=P?-37
+Added Net: Name=Bs45
+Added Pin To Net: NetName=Bs46 Pin=K?-6
+Added Pin To Net: NetName=Bs46 Pin=P?-45
+Added Net: Name=Bs46
+Added Pin To Net: NetName=NetMCP2_1 Pin=MCP2-1
+Added Pin To Net: NetName=NetMCP2_1 Pin=ULN?-2
+Added Net: Name=NetMCP2_1
+Added Pin To Net: NetName=NetMCP2_2 Pin=MCP2-2
+Added Pin To Net: NetName=NetMCP2_2 Pin=ULN?-1
+Added Net: Name=NetMCP2_2
+Added Pin To Net: NetName=NetMCP2_3 Pin=MCP2-3
+Added Pin To Net: NetName=NetMCP2_3 Pin=ULN?-20
+Added Net: Name=NetMCP2_3
+Added Pin To Net: NetName=NetMCP2_4 Pin=MCP2-4
+Added Pin To Net: NetName=NetMCP2_4 Pin=ULN?-19
+Added Net: Name=NetMCP2_4
+Added Pin To Net: NetName=NetMCP2_25 Pin=MCP2-25
+Added Pin To Net: NetName=NetMCP2_25 Pin=ULN?-6
+Added Net: Name=NetMCP2_25
+Added Pin To Net: NetName=NetMCP2_26 Pin=MCP2-26
+Added Pin To Net: NetName=NetMCP2_26 Pin=ULN?-5
+Added Net: Name=NetMCP2_26
+Added Pin To Net: NetName=NetMCP2_27 Pin=MCP2-27
+Added Pin To Net: NetName=NetMCP2_27 Pin=ULN?-4
+Added Net: Name=NetMCP2_27
+Added Pin To Net: NetName=NetMCP2_28 Pin=MCP2-28
+Added Pin To Net: NetName=NetMCP2_28 Pin=ULN?-3
+Added Net: Name=NetMCP2_28
+Added Pin To Net: NetName=R41 Pin=K?-8
+Added Pin To Net: NetName=R41 Pin=ULN?-17
+Added Net: Name=R41
+Added Pin To Net: NetName=R42 Pin=K?-8
+Added Pin To Net: NetName=R42 Pin=ULN?-16
+Added Net: Name=R42
+Added Pin To Net: NetName=R43 Pin=K?-8
+Added Pin To Net: NetName=R43 Pin=ULN?-15
+Added Net: Name=R43
+Added Pin To Net: NetName=R44 Pin=K?-8
+Added Pin To Net: NetName=R44 Pin=ULN?-14
+Added Net: Name=R44
+Added Pin To Net: NetName=R45 Pin=K?-8
+Added Pin To Net: NetName=R45 Pin=ULN?-13
+Added Net: Name=R45
+Added Pin To Net: NetName=R46 Pin=K?-8
+Added Pin To Net: NetName=R46 Pin=ULN?-12
+Added Net: Name=R46
+Added Pin To Net: NetName=R47 Pin=ULN?-11
+Added Net: Name=R47
+Added Pin To Net: NetName=R48 Pin=ULN?-10
+Added Net: Name=R48
+Added Member To Class: ClassName=SW Member=Component C? 100n
+Added Member To Class: ClassName=SW Member=Component K? DPDT
+Added Member To Class: ClassName=SW Member=Component K? DPDT
+Added Member To Class: ClassName=SW Member=Component K? DPDT
+Added Member To Class: ClassName=SW Member=Component K? DPDT
+Added Member To Class: ClassName=SW Member=Component K? DPDT
+Added Member To Class: ClassName=SW Member=Component K? DPDT
+Added Member To Class: ClassName=SW Member=Component P? Header 24X2
+Added Member To Class: ClassName=SW Member=Component ULN? ULN2803

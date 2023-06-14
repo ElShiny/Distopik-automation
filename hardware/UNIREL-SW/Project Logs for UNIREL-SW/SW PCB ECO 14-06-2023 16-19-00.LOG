@@ -1,0 +1,84 @@
+Removed Pin From Net: NetName=AGND3 Pin=P?-1
+Removed Pin From Net: NetName=Ad35 Pin=P?-2
+Removed Pin From Net: NetName=AGND3 Pin=P?-3
+Removed Pin From Net: NetName=Bd35 Pin=P?-4
+Removed Pin From Net: NetName=AGND3 Pin=P?-5
+Removed Pin From Net: NetName=Ad36 Pin=P?-6
+Removed Pin From Net: NetName=AGND3 Pin=P?-7
+Removed Pin From Net: NetName=Bd36 Pin=P?-8
+Removed Pin From Net: NetName=AGND3 Pin=P?-9
+Removed Pin From Net: NetName=Ad37 Pin=P?-10
+Removed Pin From Net: NetName=AGND3 Pin=P?-11
+Removed Pin From Net: NetName=Bd37 Pin=P?-12
+Removed Pin From Net: NetName=AGND3 Pin=P?-13
+Removed Pin From Net: NetName=Ad38 Pin=P?-14
+Removed Pin From Net: NetName=AGND3 Pin=P?-15
+Removed Pin From Net: NetName=Bd38 Pin=P?-16
+Removed Pin From Net: NetName=AGND3 Pin=P?-17
+Removed Pin From Net: NetName=As38 Pin=P?-18
+Removed Pin From Net: NetName=AGND3 Pin=P?-19
+Removed Pin From Net: NetName=Bs38 Pin=P?-20
+Removed Member From Class: ClassName=SW Member=P?
+Added Component: Designator=P5(HDR2X16)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P6(HDR2X10)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=As31 Pin=P5-1
+Added Pin To Net: NetName=Ad31 Pin=P5-2
+Added Pin To Net: NetName=Ac31 Pin=P5-3
+Added Pin To Net: NetName=AGND3 Pin=P5-4
+Added Pin To Net: NetName=Bs31 Pin=P5-5
+Added Pin To Net: NetName=Bd31 Pin=P5-6
+Added Pin To Net: NetName=Bc31 Pin=P5-7
+Added Pin To Net: NetName=AGND3 Pin=P5-8
+Added Pin To Net: NetName=As32 Pin=P5-9
+Added Pin To Net: NetName=Ad32 Pin=P5-10
+Added Pin To Net: NetName=Ac32 Pin=P5-11
+Added Pin To Net: NetName=AGND3 Pin=P5-12
+Added Pin To Net: NetName=Bs32 Pin=P5-13
+Added Pin To Net: NetName=Bd32 Pin=P5-14
+Added Pin To Net: NetName=Bc32 Pin=P5-15
+Added Pin To Net: NetName=AGND3 Pin=P5-16
+Added Pin To Net: NetName=As33 Pin=P5-17
+Added Pin To Net: NetName=Ad33 Pin=P5-18
+Added Pin To Net: NetName=Ac33 Pin=P5-19
+Added Pin To Net: NetName=AGND3 Pin=P5-20
+Added Pin To Net: NetName=Bs33 Pin=P5-21
+Added Pin To Net: NetName=Bd33 Pin=P5-22
+Added Pin To Net: NetName=Bc33 Pin=P5-23
+Added Pin To Net: NetName=AGND3 Pin=P5-24
+Added Pin To Net: NetName=As34 Pin=P5-25
+Added Pin To Net: NetName=Ad34 Pin=P5-26
+Added Pin To Net: NetName=Ac34 Pin=P5-27
+Added Pin To Net: NetName=AGND3 Pin=P5-28
+Added Pin To Net: NetName=Bs34 Pin=P5-29
+Added Pin To Net: NetName=Bd34 Pin=P5-30
+Added Pin To Net: NetName=Bc34 Pin=P5-31
+Added Pin To Net: NetName=AGND3 Pin=P5-32
+Added Pin To Net: NetName=Ad35 Pin=P6-1
+Added Pin To Net: NetName=AGND3 Pin=P6-2
+Added Pin To Net: NetName=Bd35 Pin=P6-3
+Added Pin To Net: NetName=AGND3 Pin=P6-4
+Added Pin To Net: NetName=Ad36 Pin=P6-5
+Added Pin To Net: NetName=AGND3 Pin=P6-6
+Added Pin To Net: NetName=Bd36 Pin=P6-7
+Added Pin To Net: NetName=AGND3 Pin=P6-8
+Added Pin To Net: NetName=Ad37 Pin=P6-9
+Added Pin To Net: NetName=AGND3 Pin=P6-10
+Added Pin To Net: NetName=Bd37 Pin=P6-11
+Added Pin To Net: NetName=AGND3 Pin=P6-12
+Added Pin To Net: NetName=Ad38 Pin=P6-13
+Added Pin To Net: NetName=AGND3 Pin=P6-14
+Added Pin To Net: NetName=Bd38 Pin=P6-15
+Added Pin To Net: NetName=AGND3 Pin=P6-16
+Added Pin To Net: NetName=As38 Pin=P6-17
+Added Pin To Net: NetName=AGND3 Pin=P6-18
+Added Pin To Net: NetName=Bs38 Pin=P6-19
+Added Pin To Net: NetName=AGND3 Pin=P6-20
+Added Member To Class: ClassName=SW Member=Component P5 Header 16X2
+Added Member To Class: ClassName=SW Member=Component P6 Header 10X2
+Added Room: Name=SW

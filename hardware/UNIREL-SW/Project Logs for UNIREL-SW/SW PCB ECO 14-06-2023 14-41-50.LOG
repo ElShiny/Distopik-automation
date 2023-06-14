@@ -1,0 +1,108 @@
+Removed Pin From Net: NetName=Ac11 Pin=K1-2
+Removed Pin From Net: NetName=Ad11 Pin=K1-4
+Removed Pin From Net: NetName=Bd11 Pin=K1-5
+Removed Pin From Net: NetName=Bc11 Pin=K1-7
+Removed Pin From Net: NetName=Ac12 Pin=K2-2
+Removed Pin From Net: NetName=Ad12 Pin=K2-4
+Removed Pin From Net: NetName=Bd12 Pin=K2-5
+Removed Pin From Net: NetName=Bc12 Pin=K2-7
+Removed Pin From Net: NetName=Ac13 Pin=K3-2
+Removed Pin From Net: NetName=Ad13 Pin=K3-4
+Removed Pin From Net: NetName=Bd13 Pin=K3-5
+Removed Pin From Net: NetName=Bc13 Pin=K3-7
+Removed Pin From Net: NetName=Ac14 Pin=K4-2
+Removed Pin From Net: NetName=Ad14 Pin=K4-4
+Removed Pin From Net: NetName=Bd14 Pin=K4-5
+Removed Pin From Net: NetName=Bc14 Pin=K4-7
+Removed Pin From Net: NetName=Ad15 Pin=K5-4
+Removed Pin From Net: NetName=Bd15 Pin=K5-5
+Removed Pin From Net: NetName=Ad16 Pin=K6-4
+Removed Pin From Net: NetName=Bd16 Pin=K6-5
+Removed Pin From Net: NetName=Ad17 Pin=K7-4
+Removed Pin From Net: NetName=Bd17 Pin=K7-5
+Removed Pin From Net: NetName=Ad18 Pin=K8-4
+Removed Pin From Net: NetName=Bd18 Pin=K8-5
+Removed Pin From Net: NetName=As11 Pin=R1-2
+Removed Pin From Net: NetName=Bs11 Pin=R2-2
+Removed Pin From Net: NetName=As12 Pin=R3-2
+Removed Pin From Net: NetName=Bs12 Pin=R4-2
+Removed Pin From Net: NetName=As13 Pin=R5-2
+Removed Pin From Net: NetName=Bs13 Pin=R6-2
+Removed Pin From Net: NetName=As14 Pin=R7-2
+Removed Pin From Net: NetName=Bs14 Pin=R8-2
+Removed Pin From Net: NetName=As18 Pin=R9-2
+Removed Pin From Net: NetName=Bs18 Pin=R10-2
+Removed Pin From Net: NetName=A1 Pin=R25-2
+Removed Pin From Net: NetName=B1 Pin=R26-2
+Added Pin To Net: NetName=Bc11 Pin=K1-2
+Added Pin To Net: NetName=Bd11 Pin=K1-4
+Added Pin To Net: NetName=Ad11 Pin=K1-5
+Added Pin To Net: NetName=Ac11 Pin=K1-7
+Added Pin To Net: NetName=Bc12 Pin=K2-2
+Added Pin To Net: NetName=Bd12 Pin=K2-4
+Added Pin To Net: NetName=Ad12 Pin=K2-5
+Added Pin To Net: NetName=Ac12 Pin=K2-7
+Added Pin To Net: NetName=Bc13 Pin=K3-2
+Added Pin To Net: NetName=Bd13 Pin=K3-4
+Added Pin To Net: NetName=Ad13 Pin=K3-5
+Added Pin To Net: NetName=Ac13 Pin=K3-7
+Added Pin To Net: NetName=Bc14 Pin=K4-2
+Added Pin To Net: NetName=Bd14 Pin=K4-4
+Added Pin To Net: NetName=Ad14 Pin=K4-5
+Added Pin To Net: NetName=Ac14 Pin=K4-7
+Added Pin To Net: NetName=Bd15 Pin=K5-4
+Added Pin To Net: NetName=Ad15 Pin=K5-5
+Added Pin To Net: NetName=Bd16 Pin=K6-4
+Added Pin To Net: NetName=Ad16 Pin=K6-5
+Added Pin To Net: NetName=Bd17 Pin=K7-4
+Added Pin To Net: NetName=Ad17 Pin=K7-5
+Added Pin To Net: NetName=Bd18 Pin=K8-4
+Added Pin To Net: NetName=Ad18 Pin=K8-5
+Added Pin To Net: NetName=Bs11 Pin=R1-2
+Added Pin To Net: NetName=As11 Pin=R2-2
+Added Pin To Net: NetName=Bs12 Pin=R3-2
+Added Pin To Net: NetName=As12 Pin=R4-2
+Added Pin To Net: NetName=Bs13 Pin=R5-2
+Added Pin To Net: NetName=As13 Pin=R6-2
+Added Pin To Net: NetName=Bs14 Pin=R7-2
+Added Pin To Net: NetName=As14 Pin=R8-2
+Added Pin To Net: NetName=Bs18 Pin=R9-2
+Added Pin To Net: NetName=As18 Pin=R10-2
+Change Net Name : Old Net Name=A1 New Net Name=NetK1_3
+Change Net Name : Old Net Name=B1 New Net Name=NetK1_6
+Added Pin To Net: NetName=A1 Pin=R25-2
+Added Net: Name=A1
+Added Pin To Net: NetName=B1 Pin=R26-2
+Added Net: Name=B1
+Added Member To Class: ClassName=SW Member=Component C3 100n
+Added Member To Class: ClassName=SW Member=Component C4 100n
+Added Member To Class: ClassName=SW Member=Component C9 C+
+Added Member To Class: ClassName=SW Member=Component C11 100n
+Added Member To Class: ClassName=SW Member=Component C12 1u
+Added Member To Class: ClassName=SW Member=Component C14 100n
+Added Member To Class: ClassName=SW Member=Component C15 100n
+Added Member To Class: ClassName=SW Member=Component P1 Header 16X2
+Added Member To Class: ClassName=SW Member=Component P2 Header 10X2
+Added Member To Class: ClassName=SW Member=Component P3 Header 16X2
+Added Member To Class: ClassName=SW Member=Component P5 Header 16X2
+Added Member To Class: ClassName=SW Member=Component P6 Header 10X2
+Added Member To Class: ClassName=SW Member=Component P8 PWR
+Added Member To Class: ClassName=SW Member=Component P10 Output
+Added Member To Class: ClassName=SW Member=Component R20 R
+Added Member To Class: ClassName=SW Member=Component R22 R
+Added Member To Class: ClassName=SW Member=Component R24 R
+Added Member To Class: ClassName=SW Member=Component R26 R
+Added Member To Class: ClassName=SW Member=Component R35 R
+Added Member To Class: ClassName=SW Member=Component R37 100k
+Added Member To Class: ClassName=SW Member=Component R45 R
+Added Member To Class: ClassName=SW Member=Component R47 R
+Added Member To Class: ClassName=SW Member=Component R49 R
+Added Member To Class: ClassName=SW Member=Component R70 R
+Added Member To Class: ClassName=SW Member=Component R72 R
+Added Member To Class: ClassName=SW Member=Component R74 R
+Added Member To Class: ClassName=SW Member=Component R76 R
+Added Member To Class: ClassName=SW Member=Component R77 500
+Added Member To Class: ClassName=SW Member=Component R79 500
+Added Member To Class: ClassName=SW Member=Component R80 500
+Added Member To Class: ClassName=SW Member=Component R81 100k
+Added Member To Class: ClassName=SW Member=Component R83 10k
