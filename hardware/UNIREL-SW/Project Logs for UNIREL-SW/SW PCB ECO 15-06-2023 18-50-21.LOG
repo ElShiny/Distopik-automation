@@ -1,0 +1,16 @@
+Added Component: Designator=R85(R1608_0603I_L)
+Added Component: Designator=R86(R1608_0603I_L)
+Added Pin To Net: NetName=NetK1_3 Pin=R25-2
+Added Pin To Net: NetName=NetK1_6 Pin=R26-2
+Added Pin To Net: NetName=NetK24_3 Pin=R85-1
+Added Pin To Net: NetName=NetK9_3 Pin=R85-2
+Added Pin To Net: NetName=NetK24_6 Pin=R86-1
+Added Pin To Net: NetName=NetK9_6 Pin=R86-2
+Change Net Name : Old Net Name=NetK1_3 New Net Name=A1
+Change Net Name : Old Net Name=NetK1_6 New Net Name=B1
+Change Net Name : Old Net Name=NetK9_3 New Net Name=A22
+Change Net Name : Old Net Name=NetK9_6 New Net Name=B22
+Change Net Name : Old Net Name=NetK24_3 New Net Name=A23
+Change Net Name : Old Net Name=NetK24_6 New Net Name=B23
+Added Member To Class: ClassName=SW Member=Component R85 R
+Added Member To Class: ClassName=SW Member=Component R86 R

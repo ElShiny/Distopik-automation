@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=Bc41 Pin=K30-2
+Removed Pin From Net: NetName=Bs41 Pin=K30-3
+Removed Pin From Net: NetName=Bd41 Pin=K30-4
+Removed Pin From Net: NetName=Ad41 Pin=K30-5
+Removed Pin From Net: NetName=As41 Pin=K30-6
+Removed Pin From Net: NetName=Ac41 Pin=K30-7
+Added Pin To Net: NetName=Ac41 Pin=K30-2
+Added Pin To Net: NetName=As41 Pin=K30-3
+Added Pin To Net: NetName=Ad41 Pin=K30-4
+Added Pin To Net: NetName=Bd41 Pin=K30-5
+Added Pin To Net: NetName=Bs41 Pin=K30-6
+Added Pin To Net: NetName=Bc41 Pin=K30-7
