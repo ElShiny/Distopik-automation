@@ -8,7 +8,7 @@
 #include "I2C.h"
 
 // 222kHz clock
-#define BITRATE 32       // Hardware I2C bitrate// 2 for 400kHz, 32 for 100kHz
+#define BITRATE 2       // Hardware I2C bitrate// 2 for 400kHz, 32 for 100kHz
 #define PRESCALER 0		// SET PRESCALER TO 1
 
 
@@ -52,4 +52,21 @@ uint8_t I2CRead (uint8_t ack) {
 	if ((TWSR & 0xF8) != (1<<TWS6|1<<TWS4) &&
 	(TWSR & 0xF8) != (1<<TWS6|1<<TWS4|1<<TWS3)) return 1;
 	return TWDR;
+}
+
+uint8_t MCP_init(void){
+	
+	I2CStart(0b0100000, I2C_WRITE);//set gpioa to output
+	I2CWrite(0x00);
+	I2CWrite(0x00);
+	I2CWrite(0x00);
+	I2CStop();
+	
+	I2CStart(0b0100000, I2C_WRITE);//set gpioa high
+	I2CWrite(0x12);
+	I2CWrite(0xff);
+	I2CWrite(0xff);
+	I2CStop();
+	
+	
 }

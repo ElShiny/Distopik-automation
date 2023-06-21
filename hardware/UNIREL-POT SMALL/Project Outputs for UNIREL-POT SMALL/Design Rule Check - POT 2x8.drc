@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\Matej\Desktop\Distopik-automation\hardware\UNIREL-POT SMALL\POT 2x8.PcbDoc
-Date     : 19/05/2023
-Time     : 17:32:47
+Date     : 21/06/2023
+Time     : 21:50:45
 
 Processing Rule : Clearance Constraint (Gap=0.102mm) (All),(All)
 Rule Violations :0
@@ -64,20 +64,45 @@ Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
 Rule Violations :6
 
 Processing Rule : Room U_rel_ladder1 (Bounding Region = (104mm, 71.8mm, 167.4mm, 95.9mm) (InComponentClass('U_rel_ladder1'))
-Rule Violations :0
+   Violation between Room Definition: Between Room U_rel_ladder1 (Bounding Region = (104mm, 71.8mm, 167.4mm, 95.9mm) (InComponentClass('U_rel_ladder1')) And SMT Small Component J2_U_rel_ladder2-JMP_mini (150mm,118.4mm) on Top Layer 
+   Violation between Room Definition: Between Room U_rel_ladder1 (Bounding Region = (104mm, 71.8mm, 167.4mm, 95.9mm) (InComponentClass('U_rel_ladder1')) And SMT Small Component R1_U_rel_ladder2-R/2 (151.95mm,107.4mm) on Top Layer 
+   Violation between Room Definition: Between Room U_rel_ladder1 (Bounding Region = (104mm, 71.8mm, 167.4mm, 95.9mm) (InComponentClass('U_rel_ladder1')) And SMT Small Component R16_U_rel_ladder2-R/256 (146.45mm,118.4mm) on Top Layer 
+   Violation between Room Definition: Between Room U_rel_ladder1 (Bounding Region = (104mm, 71.8mm, 167.4mm, 95.9mm) (InComponentClass('U_rel_ladder1')) And SMT Small Component R2_U_rel_ladder2-R/2 (154.15mm,97.2mm) on Top Layer 
+   Violation between Room Definition: Between Room U_rel_ladder1 (Bounding Region = (104mm, 71.8mm, 167.4mm, 95.9mm) (InComponentClass('U_rel_ladder1')) And SMT Small Component R3_U_rel_ladder2-R/4 (141.65mm,107.4mm) on Top Layer 
+   Violation between Room Definition: Between Room U_rel_ladder1 (Bounding Region = (104mm, 71.8mm, 167.4mm, 95.9mm) (InComponentClass('U_rel_ladder1')) And SMT Small Component R4_U_rel_ladder2-R/4 (143.85mm,97.2mm) on Top Layer 
+   Violation between Room Definition: Between Room U_rel_ladder1 (Bounding Region = (104mm, 71.8mm, 167.4mm, 95.9mm) (InComponentClass('U_rel_ladder1')) And SMT Small Component R5_U_rel_ladder2-R/8 (131.35mm,107.4mm) on Top Layer 
+   Violation between Room Definition: Between Room U_rel_ladder1 (Bounding Region = (104mm, 71.8mm, 167.4mm, 95.9mm) (InComponentClass('U_rel_ladder1')) And SMT Small Component R6_U_rel_ladder2-R/8 (133.55mm,97.2mm) on Top Layer 
+   Violation between Room Definition: Between Room U_rel_ladder1 (Bounding Region = (104mm, 71.8mm, 167.4mm, 95.9mm) (InComponentClass('U_rel_ladder1')) And SMT Small Component R7_U_rel_ladder2-R/16 (121.05mm,107.4mm) on Top Layer 
+   Violation between Room Definition: Between Room U_rel_ladder1 (Bounding Region = (104mm, 71.8mm, 167.4mm, 95.9mm) (InComponentClass('U_rel_ladder1')) And SMT Small Component R8_U_rel_ladder2-R/16 (123.25mm,97.2mm) on Top Layer 
+   Violation between Room Definition: Between Room U_rel_ladder1 (Bounding Region = (104mm, 71.8mm, 167.4mm, 95.9mm) (InComponentClass('U_rel_ladder1')) And SOIC Component K4_U_rel_ladder2-DPDT (118.5mm,113.3mm) on Top Layer 
+   Violation between Room Definition: Between Room U_rel_ladder1 (Bounding Region = (104mm, 71.8mm, 167.4mm, 95.9mm) (InComponentClass('U_rel_ladder1')) And SOIC Component K5_U_rel_ladder2-DPDT (120.3mm,102.3mm) on Top Layer 
+   Violation between Room Definition: Between Room U_rel_ladder1 (Bounding Region = (104mm, 71.8mm, 167.4mm, 95.9mm) (InComponentClass('U_rel_ladder1')) And SOIC Component K6_U_rel_ladder2-DPDT (130.6mm,102.3mm) on Top Layer 
+   Violation between Room Definition: Between Room U_rel_ladder1 (Bounding Region = (104mm, 71.8mm, 167.4mm, 95.9mm) (InComponentClass('U_rel_ladder1')) And SOIC Component K7_U_rel_ladder2-DPDT (140.9mm,102.3mm) on Top Layer 
+   Violation between Room Definition: Between Room U_rel_ladder1 (Bounding Region = (104mm, 71.8mm, 167.4mm, 95.9mm) (InComponentClass('U_rel_ladder1')) And SOIC Component K8_U_rel_ladder2-DPDT (151.2mm,102.3mm) on Top Layer 
+Rule Violations :15
 
 Processing Rule : Room U_rel_ladder2 (Bounding Region = (104mm, 95.9mm, 167.4mm, 120mm) (InComponentClass('U_rel_ladder2'))
-Rule Violations :0
+   Violation between Room Definition: Between Room U_rel_ladder2 (Bounding Region = (104mm, 95.9mm, 167.4mm, 120mm) (InComponentClass('U_rel_ladder2')) And SMT Small Component R10_U_rel_ladder1-R/32 (115.55mm,94.3mm) on Top Layer 
+   Violation between Room Definition: Between Room U_rel_ladder2 (Bounding Region = (104mm, 95.9mm, 167.4mm, 120mm) (InComponentClass('U_rel_ladder2')) And SMT Small Component R11_U_rel_ladder1-R/64 (128.05mm,84.1mm) on Top Layer 
+   Violation between Room Definition: Between Room U_rel_ladder2 (Bounding Region = (104mm, 95.9mm, 167.4mm, 120mm) (InComponentClass('U_rel_ladder2')) And SMT Small Component R12_U_rel_ladder1-R/64 (125.85mm,94.3mm) on Top Layer 
+   Violation between Room Definition: Between Room U_rel_ladder2 (Bounding Region = (104mm, 95.9mm, 167.4mm, 120mm) (InComponentClass('U_rel_ladder2')) And SMT Small Component R13_U_rel_ladder1-R/128 (138.35mm,84.1mm) on Top Layer 
+   Violation between Room Definition: Between Room U_rel_ladder2 (Bounding Region = (104mm, 95.9mm, 167.4mm, 120mm) (InComponentClass('U_rel_ladder2')) And SMT Small Component R14_U_rel_ladder1-R/128 (136.15mm,94.3mm) on Top Layer 
+   Violation between Room Definition: Between Room U_rel_ladder2 (Bounding Region = (104mm, 95.9mm, 167.4mm, 120mm) (InComponentClass('U_rel_ladder2')) And SMT Small Component R15_U_rel_ladder1-R/256 (148.65mm,84.1mm) on Top Layer 
+   Violation between Room Definition: Between Room U_rel_ladder2 (Bounding Region = (104mm, 95.9mm, 167.4mm, 120mm) (InComponentClass('U_rel_ladder2')) And SMT Small Component R9_U_rel_ladder1-R/32 (117.75mm,84.1mm) on Top Layer 
+   Violation between Room Definition: Between Room U_rel_ladder2 (Bounding Region = (104mm, 95.9mm, 167.4mm, 120mm) (InComponentClass('U_rel_ladder2')) And SOIC Component K1_U_rel_ladder1-DPDT (149.4mm,89.2mm) on Top Layer 
+   Violation between Room Definition: Between Room U_rel_ladder2 (Bounding Region = (104mm, 95.9mm, 167.4mm, 120mm) (InComponentClass('U_rel_ladder2')) And SOIC Component K2_U_rel_ladder1-DPDT (139.1mm,89.2mm) on Top Layer 
+   Violation between Room Definition: Between Room U_rel_ladder2 (Bounding Region = (104mm, 95.9mm, 167.4mm, 120mm) (InComponentClass('U_rel_ladder2')) And SOIC Component K3_U_rel_ladder1-DPDT (128.8mm,89.2mm) on Top Layer 
+Rule Violations :10
 
 Processing Rule : Component Clearance Constraint ( Horizontal Gap = 0.102mm, Vertical Gap = 0.102mm ) (All),(All) 
-   Violation between Component Clearance Constraint: (Collision < 0.102mm) Between Small Component CN1-VRSTNA SPONKA 2P/16A (163.6mm,91.48mm) on Top Layer And Small Component CN2-VRSTNA SPONKA 2P/16A (163.6mm,81.4mm) on Top Layer 
-   Violation between Component Clearance Constraint: (Collision < 0.102mm) Between Small Component CN3-VRSTNA SPONKA 2P/16A (163.6mm,115.58mm) on Top Layer And Small Component CN4-VRSTNA SPONKA 2P/16A (163.6mm,105.5mm) on Top Layer 
+   Violation between Component Clearance Constraint: (Collision < 0.102mm) Between Small Component CN1-VRSTNA SPONKA 2P/16A (163.5mm,92.48mm) on Top Layer And Small Component CN2-VRSTNA SPONKA 2P/16A (163.5mm,82.4mm) on Top Layer 
+   Violation between Component Clearance Constraint: (Collision < 0.102mm) Between Small Component CN3-VRSTNA SPONKA 2P/16A (163.6mm,114.38mm) on Top Layer And Small Component CN4-VRSTNA SPONKA 2P/16A (163.6mm,104.3mm) on Top Layer 
 Rule Violations :2
 
 Processing Rule : Height Constraint (Min=0mm) (Max=1816.048mm) (Prefered=12.7mm) (All)
 Rule Violations :0
 
 
-Violations Detected : 8
+Violations Detected : 33
 Waived Violations : 0
 Time Elapsed        : 00:00:02

@@ -88,6 +88,7 @@ uint8_t setLEDArray(led_drv_t *settings){
 			I2CWrite(settings->rgb_array[i+2+j]);
 		}
 	}
+	I2CStop();
 	return 0;
 }
 
