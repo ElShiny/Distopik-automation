@@ -13,7 +13,7 @@
 #include <avr/wdt.h>
 #include "SPI.h"
 
-#define ACE_LED_RING 1
+#define UNIREL_POT_MINI 101 
 
 #define MAX_TIMEOUT 5000
 

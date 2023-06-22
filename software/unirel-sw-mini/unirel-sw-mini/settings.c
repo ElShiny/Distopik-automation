@@ -34,12 +34,17 @@ int parseSPI(spi_t *spi, buffer_t *buffer, hskp_t  *hskp){
 			break;
 		
 		case 1: //write ace value
+		
 			break;
 		
 		case 2: //get ace value
+			while(readBufferLength(buffer) == 0){if(getTick(hskp)>(start_tick+MAX_TIMEOUT))return -1;}
+			set_ladder(readBuffer(buffer), 0);
 			break;
 		
 		case 3: //get ace value
+			while(readBufferLength(buffer) == 0){if(getTick(hskp)>(start_tick+MAX_TIMEOUT))return -1;}
+			set_ladder(readBuffer(buffer), 1);
 			break;
 			
 		case 20:// LED mode
@@ -75,7 +80,7 @@ int parseSPI(spi_t *spi, buffer_t *buffer, hskp_t  *hskp){
 			break;
 					
 		case 255:
-			writeSpi(spi, hskp, 255, ACE_LED_RING, 100);
+			writeSpi(spi, hskp, 255, UNIREL_POT_MINI, 100);
 			break;
 		default: bufferInit(buffer);
 		

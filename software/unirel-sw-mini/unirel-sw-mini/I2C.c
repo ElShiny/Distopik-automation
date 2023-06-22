@@ -54,19 +54,30 @@ uint8_t I2CRead (uint8_t ack) {
 	return TWDR;
 }
 
-uint8_t MCP_init(void){
+void MCP_init(void){
 	
 	I2CStart(0b0100000, I2C_WRITE);//set gpioa to output
 	I2CWrite(0x00);
 	I2CWrite(0x00);
 	I2CWrite(0x00);
 	I2CStop();
+}
+
+uint8_t mirror_byte(uint8_t byte){
+	    int i;
+		uint8_t reverse_byte = 0;
+		
+	    for (i = 0; i < 8; i++) {
+		    if ((byte & (1 << i)))
+		    reverse_byte |= 1 << (7 - i);
+	    }
+		return reverse_byte;
+}
+
+void set_ladder(uint8_t val, uint8_t laddder){
 	
-	I2CStart(0b0100000, I2C_WRITE);//set gpioa high
-	I2CWrite(0x12);
-	I2CWrite(0xff);
-	I2CWrite(0xff);
-	I2CStop();
-	
-	
+		I2CStart(0b0100000, I2C_WRITE);//set gpioa to output
+		I2CWrite(0x12 + laddder);
+		I2CWrite(mirror_byte(val));
+		I2CStop();	
 }

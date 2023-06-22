@@ -22,7 +22,9 @@ uint8_t I2CWrite (uint8_t data);
 uint8_t I2CRead (uint8_t ack);
 uint8_t I2CStart(uint8_t address, uint8_t rw); 
 void I2CStop(void);
-uint8_t MCP_init(void);
+void MCP_init(void);
+uint8_t mirror_byte(uint8_t byte);
+void set_ladder(uint8_t val, uint8_t laddder);
 
 
 #endif /* I2C_H_ */
