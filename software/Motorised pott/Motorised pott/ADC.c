@@ -38,17 +38,29 @@ uint16_t ADCRead(void){
 	return val;
 }
 
-void MovePot(adc_t *adc, uint8_t pos){
-	//if(old_pos == pos) break;
+void PWMInit(){
 	
-	if(pos < adc->adc_val_new){
-		PORTB |= 1<<PORTB0;
+}
+
+void MotorRot(uint8_t rotation){
+	switch(rotation){
+		case POT_LEFT:
+			PORTB |= 1<<PORTB0;
+			break;
+			
+		case POT_RIGHT:
+			PORTB &= ~(1<<PORTB0);
+			break;
 	}
-	if(pos > adc->adc_val_new){
-		PORTB &= ~(1<<PORTB0);
-	}
-	if(((pos-5) < adc->adc_val_new) && ((pos+5) > adc->adc_val_new)){
-		PORTD &= ~(1<<PORTD0);
-	}
+}
+void MotorEn(uint8_t en){
+	if(en) PORTD &= ~(1<<PORTD0);
 	else PORTD |= 1<<PORTD0;
+}
+
+
+void MovePot(adc_t *adc, uint8_t pos){
+
+	
+
 }

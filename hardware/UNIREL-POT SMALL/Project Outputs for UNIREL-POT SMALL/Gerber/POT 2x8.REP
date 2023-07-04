@@ -2,57 +2,6 @@
 FileName = POT 2x8.GBR
 AutoAperture = True
 *************************************************************
-Generating : Top Overlay
-      File : POT 2x8.GTO
-
-    Adding Layer      : Top Overlay
-
-
-Used DCodes :
-    D10
-    D11
-    D12
-    D13
-*************************************************************
-
-*************************************************************
-Generating : Bottom Layer
-      File : POT 2x8.GBL
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D10
-    D64
-    D65
-    D66
-    D67
-    D68
-    D69
-    D70
-    D71
-    D72
-    D73
-    D74
-    D75
-    D76
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 1
-      File : POT 2x8.GM1
-
-    Adding Layer      : Mechanical 1
-
-
-Used DCodes :
-    D10
-*************************************************************
-
-*************************************************************
 Generating : Bottom Paste
       File : POT 2x8.GBP
 
@@ -67,28 +16,29 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Bottom Solder
-      File : POT 2x8.GBS
+Generating : Mechanical 1
+      File : POT 2x8.GM1
 
-    Adding Layer      : Bottom Solder
+    Adding Layer      : Mechanical 1
 
-    Adding Layer      : Bottom Layer
+
+Used DCodes :
+    D10
+*************************************************************
+
+*************************************************************
+Generating : Mid Layer 1
+      File : POT 2x8.G1
+
+    Adding Layer      : Mid Layer 1
 
     Adding Layer      : Multi-Layer
 
 
 Used DCodes :
-    D50
-    D51
-    D52
-    D53
-    D54
-    D55
-    D56
-    D57
-    D58
-    D59
-    D60
+    D10
+    D65
+    D69
 *************************************************************
 
 *************************************************************
@@ -134,54 +84,6 @@ Used DCodes :
     D72
     D73
     D74
-    D75
-*************************************************************
-
-*************************************************************
-Generating : Bottom Overlay
-      File : POT 2x8.GBO
-
-    Adding Layer      : Bottom Overlay
-
-
-Used DCodes :
-*************************************************************
-
-*************************************************************
-Generating : Mid Layer 2
-      File : POT 2x8.G2
-
-    Adding Layer      : Mid Layer 2
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D10
-    D65
-    D66
-    D67
-    D68
-    D71
-    D72
-    D74
-    D75
-    D76
-*************************************************************
-
-*************************************************************
-Generating : Mid Layer 1
-      File : POT 2x8.G1
-
-    Adding Layer      : Mid Layer 1
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D10
-    D66
-    D71
 *************************************************************
 
 *************************************************************
@@ -228,6 +130,78 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
+Generating : Mid Layer 2
+      File : POT 2x8.G2
+
+    Adding Layer      : Mid Layer 2
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D64
+    D65
+    D66
+    D67
+    D69
+    D71
+    D73
+    D74
+    D75
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : POT 2x8.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D63
+    D64
+    D65
+    D66
+    D67
+    D68
+    D69
+    D70
+    D71
+    D72
+    D73
+    D74
+    D75
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : POT 2x8.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : POT 2x8.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+*************************************************************
+
+*************************************************************
 Generating : Top Paste
       File : POT 2x8.GTP
 
@@ -257,5 +231,30 @@ Used DCodes :
     D29
     D30
     D31
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : POT 2x8.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D50
+    D51
+    D52
+    D53
+    D54
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
 *************************************************************
 

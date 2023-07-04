@@ -9,6 +9,9 @@
 #ifndef ADC_H_
 #define ADC_H_
 
+#define POT_LEFT 0
+#define POT_RIGHT 1
+
 #include <stdint.h>
 
 typedef struct{

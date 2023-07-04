@@ -1,0 +1,23 @@
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of PCB Document [SW.PcbDoc]
+   Generated File[SW.GTO]
+   Generated File[SW.GTP]
+   Generated File[SW.GTS]
+   Generated File[SW.GTL]
+   Generated File[SW.G1]
+   Generated File[SW.G2]
+   Generated File[SW.GBL]
+   Generated File[SW.GBS]
+   Generated File[SW.GBP]
+   Generated File[SW.GBO]
+   Generated File[SW.GM1]
+   Generated File[SW.RUL]
+   Generated File[SW.EXTREP]
+   Generated File[SW.REP]
+
+
+Files Generated   : 14
+Documents Printed : 0
+
+Finished Output Generation At 14:19:44 On 27/06/2023

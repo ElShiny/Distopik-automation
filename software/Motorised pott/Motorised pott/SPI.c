@@ -17,7 +17,10 @@
 ISR(PCINT0_vect){
 	if(!(PINB & 1<<PINB2) ||/* !(PINB & 1<<PINB7)*/ spi_s.spi_busy)return;
 	
-	writeBuffer(&buf, SPDR);
+	if(writeBuffer(&buf, SPDR) == -1){	
+		PORTB &= ~(1<<PORTB7);//set INT low
+		DDRB |= 1<<DDB7;
+	}
 	SPDR = 0;
 }
 
@@ -51,7 +54,7 @@ void bufferInit(buffer_t *buffer){
 
 int writeBuffer(buffer_t *buffer, uint8_t val){
 	
-	if(buffer->buffer_length == BUFFER_SIZE - 1) return -1;
+	if(buffer->buffer_length >= BUFFER_SIZE - 5) return -1;
 	buffer->buffer[buffer->write_index] = val;
 	buffer->write_index++;
 	buffer->buffer_length++;

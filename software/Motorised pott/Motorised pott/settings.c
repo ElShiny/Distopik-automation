@@ -51,16 +51,6 @@ int parseSPI(spi_t *spi, adc_t *adc, buffer_t *buffer, hskp_t *hskp){
 			//led_settings.mode = readBuffer();
 			break;
 			
-		case 21:// set LED buffer
-			//bufToRGBArray(&led_settings);
-			//writeSpi(101, 0xaa, 100);
-			break;
-
-		case 22:// read LED buffer
-			//writeSpiBuffer(22, led_settings.rgb_array, 90, 100);
-			break;
-		//case 23:// set LED 
-			
 		case 252://report current buffer
 			soft_reset();
 			break;
