@@ -8,6 +8,7 @@
 
 #include "ADC.h"
 #include "housekeeping.h"
+#include <stdlib.h>
 #include <avr/io.h>
 
 
@@ -20,12 +21,12 @@ void ADCInit(adc_t *adc){
 	//PORTD |= 1<<PORTD0;
 	
 	DDRB |= 1<<DDB1;//motor en
-	PORTB |= 1<<PORTB1;
+	//PORTB |= 1<<PORTB1;
 	
 	DDRB |= 1<<DDB0;//motor smer
 	
-	
-	adc->pot_pos = ADCRead();
+	adc->spi_changed = 1;
+	adc->pot_pos = 4095;
 }
 
 uint16_t ADCRead(void){
@@ -38,29 +39,43 @@ uint16_t ADCRead(void){
 	return val;
 }
 
-void PWMInit(){
-	
-}
-
 void MotorRot(uint8_t rotation){
 	switch(rotation){
-		case POT_LEFT:
+		case LEFT:
 			PORTB |= 1<<PORTB0;
 			break;
 			
-		case POT_RIGHT:
+		case RIGHT:
 			PORTB &= ~(1<<PORTB0);
 			break;
 	}
 }
 void MotorEn(uint8_t en){
-	if(en) PORTD &= ~(1<<PORTD0);
+	if(!en) PORTD &= ~(1<<PORTD0);
 	else PORTD |= 1<<PORTD0;
 }
 
 
-void MovePot(adc_t *adc, uint8_t pos){
-
+void MovePot(adc_t *adc, pwm_t *pwm, uint8_t pos){
 	
+	if(adc->spi_changed == 0){
+		MotorEn(0);
+		return;
+	}
+	else MotorEn(1);
+
+	if(pos < adc->adc_val_new){MotorRot(LEFT);}
+	if(pos > adc->adc_val_new){MotorRot(RIGHT);}
+		
+	if(abs(pos - adc->adc_val_new) < 400)OCR1A = 75;
+	else OCR1A = 150;
+	
+	if(pos == adc->adc_val_new){
+		if(pwm->first_time == 1){pwm->first_time = 0;}
+		MotorEn(0);
+		adc->spi_changed = 0;
+	}
+		
+	//MotorEn(1);
 
 }

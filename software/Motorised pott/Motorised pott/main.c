@@ -31,6 +31,7 @@ int main(void)
 	timersInit(&housekp);
 	SPIInit();
 	bufferInit(&buf);
+	PWMInit(&pwm);
 	
 	sei();		
 	_delay_ms(100);
@@ -43,8 +44,8 @@ int main(void)
 		
 		parseSPI(&spi_s, &adc_rot, &buf, &housekp);
 		
-		if(adc_rot.adc_changed){
-			writeSpi(&spi_s, &housekp, 1, adc_rot.adc_val_new, 10);
+		if(adc_rot.adc_changed && !pwm.first_time){
+			writeSpiBuffer(&spi_s, &housekp, 1, &adc_rot.adc_val_new, 2, 10);
 			adc_rot.adc_changed = 0;
 		}
 		//_delay_ms(50);

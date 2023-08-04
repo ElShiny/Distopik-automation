@@ -13,7 +13,7 @@
 #include <avr/io.h>
 #include "housekeeping.h"
 
-#define BUFFER_SIZE 100
+#define BUFFER_SIZE 120
 
 #define RECIEVE_KEYWORD 0xCF
 #define TRANSMIT_KEYWORD 0xDF

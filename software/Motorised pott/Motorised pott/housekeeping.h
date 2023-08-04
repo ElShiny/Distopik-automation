@@ -19,8 +19,8 @@ typedef struct{
 
 typedef struct{
 	volatile uint8_t en;
-	volatile uint8_t cnt;
 	volatile uint8_t duty;
+	volatile uint8_t first_time;
 }pwm_t;
 
 hskp_t housekp;
@@ -34,6 +34,9 @@ void disableTimer(void);
 void enableHSKP(hskp_t *hskp);
 void disableHSKP(hskp_t *hskp);
 uint16_t getTick(hskp_t *hskp);
+void PWMInit(pwm_t *pwm);
+void PWMDisable(pwm_t *pwm);
+void PWMEnable(pwm_t *pwm);
 
 
 

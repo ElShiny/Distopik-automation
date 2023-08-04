@@ -39,6 +39,7 @@ int parseSPI(spi_t *spi, adc_t *adc, buffer_t *buffer, hskp_t *hskp){
 		case 2: //get ace value
 			while(readBufferLength(buffer) == 0){if(getTick(hskp)>(start_tick+MAX_TIMEOUT))return -1;}
 			adc->pot_pos = readBuffer(buffer);
+			adc->spi_changed = 1;
 			break;
 		
 		case 3: //get ace value
@@ -59,7 +60,7 @@ int parseSPI(spi_t *spi, adc_t *adc, buffer_t *buffer, hskp_t *hskp){
 			break;
 		
 		case 254://report current buffer
-			writeSpiBuffer(&spi_s, &housekp, 254, buffer, BUFFER_SIZE, 100);
+			writeSpiBuffer(&spi_s, &housekp, 254, buffer->buffer, BUFFER_SIZE, 100);
 			break;
 					
 		case 255:
