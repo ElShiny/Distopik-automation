@@ -12,6 +12,8 @@
 #include <avr/io.h>
 
 
+
+
 void ADCInit(adc_t *adc){
 	
 	ADMUX |= 1<<REFS0 | ADC4D;
@@ -26,7 +28,7 @@ void ADCInit(adc_t *adc){
 	DDRB |= 1<<DDB0;//motor smer
 	
 	adc->spi_changed = 1;
-	adc->pot_pos = 4095;
+	adc->pot_pos = 0;
 }
 
 uint16_t ADCRead(void){
@@ -78,4 +80,14 @@ void MovePot(adc_t *adc, pwm_t *pwm, uint8_t pos){
 		
 	//MotorEn(1);
 
+}
+
+int movingAvg(int *ptrArrNumbers, long *ptrSum, int pos, int len, int nextNum)
+{
+	//Subtract the oldest number from the prev sum, add the new number
+	*ptrSum = *ptrSum - ptrArrNumbers[pos] + nextNum;
+	//Assign the nextNum to the position in the array
+	ptrArrNumbers[pos] = nextNum;
+	//return the average
+	return *ptrSum / len;
 }

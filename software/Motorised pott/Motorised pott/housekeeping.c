@@ -14,6 +14,10 @@
 #include <avr/interrupt.h>
 #include <stdlib.h>
 
+#define AVG_LENGTH 10
+int arrNumbers[AVG_LENGTH] = {0};
+uint8_t pos = 0;
+long sum = 0;
 
 void timersInit(hskp_t *hskp){
 	
@@ -74,8 +78,11 @@ ISR(TIMER0_COMPA_vect, ISR_NOBLOCK){
 		
 	disableTimer();
 	if(housekp.cnt == 1 && housekp.en){//reading ace values
-		adc_rot.adc_val_new = ADCRead();
-		if(abs(adc_rot.adc_val_new - adc_rot.adc_val_old) > 2){
+		adc_rot.adc_val_new = movingAvg(arrNumbers, &sum, pos, AVG_LENGTH, ADCRead());
+		pos++;
+		if (pos >= AVG_LENGTH) pos = 0;
+		
+		if(adc_rot.adc_val_new != adc_rot.adc_val_old){
 			//if(adc_rot.spi_changed == 0)
 			adc_rot.adc_changed = 1;
 			adc_rot.adc_val_old = adc_rot.adc_val_new;
@@ -83,7 +90,7 @@ ISR(TIMER0_COMPA_vect, ISR_NOBLOCK){
 	}
 	
 	else if(housekp.cnt >= 10 && housekp.en){//setting leds
-		MovePot(&adc_rot, &pwm, (adc_rot.pot_pos << 2));
+		MovePot(&adc_rot, &pwm, adc_rot.pot_pos);
 		housekp.cnt = 0;
 	}
 	enableTimer();

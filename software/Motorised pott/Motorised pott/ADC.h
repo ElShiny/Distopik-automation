@@ -33,6 +33,7 @@ uint16_t ADCRead(void);
 void MovePot(adc_t *adc, pwm_t *pwm, uint8_t pos);
 void MotorRot(uint8_t rotation);
 void MotorEn(uint8_t en);
+int movingAvg(int *ptrArrNumbers, long *ptrSum, int pos, int len, int nextNum);
 
 
 #endif /* ADC_H_ */

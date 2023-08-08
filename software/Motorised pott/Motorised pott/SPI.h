@@ -13,7 +13,7 @@
 #include <avr/io.h>
 #include "housekeeping.h"
 
-#define BUFFER_SIZE 110
+#define BUFFER_SIZE 120
 
 #define RECIEVE_KEYWORD 0xCF
 #define TRANSMIT_KEYWORD 0xDF
@@ -31,7 +31,10 @@ typedef struct {
 buffer_t buf;
 
 typedef struct {
-	uint8_t spi_busy;
+	volatile uint8_t spi_send_mode;
+	volatile uint8_t send_block;
+	volatile uint8_t is_master_dumb;
+	volatile uint8_t one_transfer;
 	}spi_t;
 	
 spi_t spi_s;
@@ -43,7 +46,7 @@ void bufferInit(buffer_t *buffer);
 int writeBuffer(buffer_t *buffer, uint8_t val);
 int readBuffer(buffer_t *buffer);
 int readBufferLength(buffer_t *buffer);
-void writeSpi(spi_t *spi, hskp_t *hskp, uint8_t instr, uint8_t data, uint8_t timeout);
+void writeSpi(spi_t *spi, hskp_t *hskp, uint8_t instr, uint16_t data, uint8_t timeout);
 void writeSpiBuffer(spi_t *spi, hskp_t *hskp, uint8_t instr, uint8_t* data, uint8_t length, uint8_t timeout);
 
 

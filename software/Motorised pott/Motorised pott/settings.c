@@ -32,38 +32,29 @@ int parseSPI(spi_t *spi, adc_t *adc, buffer_t *buffer, hskp_t *hskp){
 		case 0: //do nothing
 			break;
 		
-		case 1: //write ace value
-			writeSpi(&spi_s, &housekp, 1, (uint8_t)(adc->pot_pos>>2), 10);
+		case 1: //send potentiometer position
+			writeSpi(&spi_s, &housekp, 1, adc->pot_pos, 10);
 			break;
 		
-		case 2: //get ace value
+		case 2: //get new position
 			while(readBufferLength(buffer) == 0){if(getTick(hskp)>(start_tick+MAX_TIMEOUT))return -1;}
 			adc->pot_pos = readBuffer(buffer);
 			adc->spi_changed = 1;
 			break;
-		
-		case 3: //get ace value
-			while(readBufferLength(buffer) == 0){if(getTick(hskp)>(start_tick+MAX_TIMEOUT))return -1;}
-			//led_settings.ace_en = readBuffer();
-			break;
 			
-		case 20:// LED mode
-			while(readBufferLength(buffer) == 0){if(getTick(hskp)>(start_tick+MAX_TIMEOUT))return -1;}
-			//led_settings.mode = readBuffer();
-			break;
-			
-		case 252://report current buffer
+		case 100://reset machine
 			soft_reset();
 			break;
-		case 253://report current buffer
+			
+		case 101://report current buffer length
 			writeSpi(&spi_s, &housekp, 253, readBufferLength(buffer), 100);
 			break;
 		
-		case 254://report current buffer
+		case 102://report current buffer
 			writeSpiBuffer(&spi_s, &housekp, 254, buffer->buffer, BUFFER_SIZE, 100);
 			break;
 					
-		case 255:
+		case 127://send machine type
 			writeSpi(&spi_s, &housekp, 255, MOTORISED_POTT, 100);
 			break;
 		default: bufferInit(buffer);
