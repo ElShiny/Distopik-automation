@@ -14,10 +14,14 @@
 #include <avr/interrupt.h>
 #include <stdlib.h>
 
-#define AVG_LENGTH 10
+#define AVG_LENGTH 50
 int arrNumbers[AVG_LENGTH] = {0};
 uint8_t pos = 0;
 long sum = 0;
+
+int arrNumbers2[5] = {0};
+uint8_t pos2 = 0;
+long sum2 = 0;
 
 void timersInit(hskp_t *hskp){
 	
@@ -78,14 +82,17 @@ ISR(TIMER0_COMPA_vect, ISR_NOBLOCK){
 		
 	disableTimer();
 	if(housekp.cnt == 1 && housekp.en){//reading ace values
-		adc_rot.adc_val_new = movingAvg(arrNumbers, &sum, pos, AVG_LENGTH, ADCRead());
+		adc_rot.adc_val_new = ADCRead();
+		adc_rot.adc_out = movingAvg(arrNumbers, &sum, pos, AVG_LENGTH, adc_rot.adc_val_new);
 		pos++;
+		pos2++;
 		if (pos >= AVG_LENGTH) pos = 0;
+		if (pos2 >= 5) pos2 = 0;
 		
-		if(adc_rot.adc_val_new != adc_rot.adc_val_old){
+		if(adc_rot.adc_out != adc_rot.adc_val_old){
 			//if(adc_rot.spi_changed == 0)
 			adc_rot.adc_changed = 1;
-			adc_rot.adc_val_old = adc_rot.adc_val_new;
+			adc_rot.adc_val_old = adc_rot.adc_out;
 			}
 	}
 	

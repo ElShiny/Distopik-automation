@@ -58,7 +58,7 @@ void MotorEn(uint8_t en){
 }
 
 
-void MovePot(adc_t *adc, pwm_t *pwm, uint8_t pos){
+void MovePot(adc_t *adc, pwm_t *pwm, uint16_t pos){
 	
 	if(adc->spi_changed == 0){
 		MotorEn(0);
@@ -69,7 +69,7 @@ void MovePot(adc_t *adc, pwm_t *pwm, uint8_t pos){
 	if(pos < adc->adc_val_new){MotorRot(LEFT);}
 	if(pos > adc->adc_val_new){MotorRot(RIGHT);}
 		
-	if(abs(pos - adc->adc_val_new) < 400)OCR1A = 75;
+	if(abs(pos - adc->adc_val_new) < 200)OCR1A = 73;
 	else OCR1A = 150;
 	
 	if(pos == adc->adc_val_new){

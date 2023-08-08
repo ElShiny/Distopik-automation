@@ -20,6 +20,7 @@ typedef struct{
 	uint16_t pot_pos;
 	uint16_t adc_val_new;
 	uint16_t adc_val_old;
+	uint16_t adc_out;
 	uint8_t volatile adc_changed;
 	uint8_t volatile ui_changed;
 	uint8_t volatile spi_changed;
@@ -30,7 +31,7 @@ adc_t adc_rot;
 
 void ADCInit(adc_t *adc);
 uint16_t ADCRead(void);
-void MovePot(adc_t *adc, pwm_t *pwm, uint8_t pos);
+void MovePot(adc_t *adc, pwm_t *pwm, uint16_t pos);
 void MotorRot(uint8_t rotation);
 void MotorEn(uint8_t en);
 int movingAvg(int *ptrArrNumbers, long *ptrSum, int pos, int len, int nextNum);

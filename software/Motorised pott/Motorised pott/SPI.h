@@ -13,9 +13,12 @@
 #include <avr/io.h>
 #include "housekeeping.h"
 
-#define BUFFER_SIZE 120
+#define BUFFER_SIZE 250
 
-#define RECIEVE_KEYWORD 0xCF
+#define BLOCK_SPI 0x80
+#define UNBLOCK_SPI 0x81
+#define END_DATA 0xA1
+
 #define TRANSMIT_KEYWORD 0xDF
 
 enum spi_states_e{SPI_READ, SPI_WRITE, SPI_ERR};
@@ -46,8 +49,8 @@ void bufferInit(buffer_t *buffer);
 int writeBuffer(buffer_t *buffer, uint8_t val);
 int readBuffer(buffer_t *buffer);
 int readBufferLength(buffer_t *buffer);
-void writeSpi(spi_t *spi, hskp_t *hskp, uint8_t instr, uint16_t data, uint8_t timeout);
-void writeSpiBuffer(spi_t *spi, hskp_t *hskp, uint8_t instr, uint8_t* data, uint8_t length, uint8_t timeout);
+void writeSpi(spi_t *spi, hskp_t *hskp, uint8_t instr, uint16_t data, uint16_t timeout);
+void writeSpiBuffer(spi_t *spi, hskp_t *hskp, uint8_t instr, uint8_t* data, uint8_t length, uint16_t timeout);
 
 
 

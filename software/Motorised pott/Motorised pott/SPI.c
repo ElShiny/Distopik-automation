@@ -22,8 +22,8 @@
 	else {spi_s.is_master_dumb = 0;}
 	if(spi_s.spi_send_mode)return;
 	
-	if(SPDR == 0x80){spi_s.send_block=1; return;}//block sending
-	else if(SPDR == 0x81){spi_s.send_block=0; return;}//unblock sending
+	if(SPDR == BLOCK_SPI){spi_s.send_block=1;}//block sending
+	else if(SPDR == UNBLOCK_SPI){spi_s.send_block=0; return;}//unblock sending
 
 
 	
@@ -87,21 +87,17 @@ int readBufferLength(buffer_t *buffer){
 	return buffer->buffer_length;
 }
 
-void writeSpi(spi_t *spi, hskp_t *hskp, uint8_t instr, uint16_t data, uint8_t timeout){
+void writeSpi(spi_t *spi, hskp_t *hskp, uint8_t instr, uint16_t data, uint16_t timeout){
 	
 	uint32_t start_tick = getTick(hskp);//start counting ms
 	while(!(PINB & 1<<PINB2)|| spi->send_block){}			//wait for CS high and send blocking
 	spi->spi_send_mode = 1;					//set transmission flag
 	disableHSKP(&housekp);					//disable led updating
-	spi->one_transfer = 0;
-
-	PORTB |=1<<PINB6;
+	spi->one_transfer = 0;					//clear SPI ISR flag
 
 	while(1){
-		//SPSR;								//clear spsr register
 
 		SPDR = TRANSMIT_KEYWORD;			//set transmit keyword
-		PORTB ^=1<<PINB6;
 		
 		DDRB |= 1<<DDB7;
 		PORTB &= ~(1<<PORTB7);				//set INT low
@@ -114,19 +110,16 @@ void writeSpi(spi_t *spi, hskp_t *hskp, uint8_t instr, uint16_t data, uint8_t ti
 	}
 	
 	SPDR = instr;
-	PORTB ^=1<<PINB6;
 	
 	while(!spi->one_transfer){if(getTick(hskp)>start_tick+timeout){break;}}
 		spi->one_transfer = 0;
 
 	SPDR = (uint8_t)data;
-	PORTB ^=1<<PINB6;
 	
 	while(!spi->one_transfer){if(getTick(hskp)>start_tick+timeout){break;}}
 		spi->one_transfer = 0;
 
 	SPDR = (uint8_t)(data>>8);
-	PORTB ^=1<<PINB6;
 		
 	while(!spi->one_transfer){if(getTick(hskp)>start_tick+timeout){break;}}
 		spi->one_transfer = 0;
@@ -136,11 +129,10 @@ void writeSpi(spi_t *spi, hskp_t *hskp, uint8_t instr, uint16_t data, uint8_t ti
 	
 	//PCICR |= 1<< PCIE0;
 	enableHSKP(&housekp);
-	PORTB &=~(1<<PINB6);
 	spi->spi_send_mode = 0;	
 }
 
-void writeSpiBuffer(spi_t *spi, hskp_t *hskp, uint8_t instr, uint8_t* data, uint8_t length, uint8_t timeout){
+void writeSpiBuffer(spi_t *spi, hskp_t *hskp, uint8_t instr, uint8_t* data, uint8_t length, uint16_t timeout){
 	
 	uint32_t start_tick = getTick(hskp);
 	while(!(PINB & 1<<PINB2)){}

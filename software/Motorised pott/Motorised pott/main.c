@@ -42,10 +42,12 @@ int main(void)
 		
 	while (1){
 		
-		parseSPI(&spi_s, &adc_rot, &buf, &housekp);
+		if(buf.buffer_length){
+			recieveStateMachine(&spi_s, &adc_rot, &buf, &housekp);
+		}
 		
 		if(adc_rot.adc_changed && !pwm.first_time){
-			writeSpi(&spi_s, &housekp, 1, adc_rot.adc_val_new, 10);
+			writeSpi(&spi_s, &housekp, 1, adc_rot.adc_out, MAX_TIMEOUT);
 			adc_rot.adc_changed = 0;
 		}
 		//_delay_ms(50);
