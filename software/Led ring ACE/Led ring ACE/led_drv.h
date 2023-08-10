@@ -46,7 +46,7 @@ uint8_t RGBTo222(uint8_t *color);
 void setDEMOLEDRgb(uint8_t value);//helper functions
 void set_ring(led_drv_t *led, ace_t *ace, uint8_t val);
 int bufToRGBArray(led_drv_t *settings, hskp_t *hskp);
-int bufToRGB(uint8_t *arr, buffer_t *buf, hskp_t *hskp);
+int bufToRGB(uint8_t *arr, buffer_t *buf, hskp_t *hskp, int tick);
 
 
 

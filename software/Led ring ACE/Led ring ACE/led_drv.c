@@ -50,7 +50,6 @@ uint8_t LEDSetReg(uint8_t adr, uint8_t val){
 	return 0;
 }
 
-
 uint8_t LEDGetReg(uint8_t adr){
 
 	if(I2CStart(IS3_ADR, I2C_WRITE)) return 1;
@@ -178,18 +177,27 @@ int bufToRGBArray(led_drv_t *settings, hskp_t *hskp){
 	return 0;
 }
 
-int bufToRGB(uint8_t *arr, buffer_t *buf, hskp_t *hskp){
+int bufToRGB(uint8_t *arr, buffer_t *buf, hskp_t *hskp, int tick){
+	uint8_t a[3];
 	
-	int start_tick = getTick(hskp);
-
-	while(readBufferLength(buf) == 0){if(getTick(hskp)>(start_tick+MAX_TIMEOUT)){break;}}
-	
+	uint8_t data0,data1,data2,data3;
+		
+	while(readBufferLength(buf) < 14){if(getTick(hskp)>(tick+MAX_TIMEOUT)){current_state = WAIT_BLOCK; return -1;}}
+		
 	int length = readBuffer(buf);
-
-	while(readBufferLength(buf) < length){if(getTick(hskp)>(start_tick+MAX_TIMEOUT)){break;}}
 	
 	for(int i = 0; i < 3; i++){
-		arr[i] = readBuffer(buf);
+		data0 = readBuffer(buf);
+		data1 = readBuffer(buf);
+		data2 = readBuffer(buf);
+		data3 = readBuffer(buf);
+		a[i] = (uint8_t)uint4TOuint16(data0, data1, data2, data3);
+	}
+	
+	if(readBuffer(buf) != END_DATA){current_state = WAIT_BLOCK; return -2;}
+	
+	for(int i = 0; i < 3; i++){
+		arr[i] = a[i];
 	}
 	return 0;
 }

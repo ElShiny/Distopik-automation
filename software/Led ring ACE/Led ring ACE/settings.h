@@ -19,13 +19,15 @@
 
 #define MAX_TIMEOUT 500
 
-typedef enum {PARSE_READY, PARSING_INSTR, IS_BYTE, IS_BUFFER, READING_LENGTH, READING_START,
-	 READING_START_VAL, READING_VAL, READING_END, PARSE_END}setting_states_e;
-	 
-setting_states_e parsing_state;
+enum setting_states_e{WAIT_BLOCK, WAIT_INSTR, FINISHED_INSTR, STATE_ERROR};
 
-int parseSPI(spi_t *spi, ace_t *ace, led_drv_t *led_set, buffer_t *buffer, hskp_t *hskp);
+int recieveStateMachine(spi_t *spi, ace_t *ace, led_drv_t *led_set, buffer_t *buffer, hskp_t *hskp);
+int parseData(spi_t *spi, ace_t *ace, led_drv_t *led_set, buffer_t *buffer, hskp_t *hskp, uint8_t cmd);
+uint16_t uint4TOuint16(uint8_t data0, uint8_t data1, uint8_t data2, uint8_t data3);
+int32_t assembleU16(buffer_t *buffer, hskp_t *hskp, int tick );
 void errorHandler(void);
+
+enum setting_states_e current_state;
 
 
 

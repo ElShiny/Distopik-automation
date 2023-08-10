@@ -31,7 +31,7 @@ int parseData(spi_t *spi, adc_t *adc, buffer_t *buffer, hskp_t *hskp, uint8_t cm
 		case 1: //send potentiometer position
 			while(readBufferLength(buffer) == 0){if(getTick(hskp)>(start_tick+MAX_TIMEOUT)){current_state = WAIT_BLOCK; return -1;}}
 			if(readBuffer(buffer) != END_DATA){current_state = WAIT_BLOCK; return -2;}
-			writeSpi(&spi_s, &housekp, 1, adc->pot_pos, 10);
+			writeSpi(&spi_s, &housekp, 1, adc->pot_pos, 50);
 			current_state = FINISHED_INSTR;
 			break;
 		
@@ -65,13 +65,13 @@ int parseData(spi_t *spi, adc_t *adc, buffer_t *buffer, hskp_t *hskp, uint8_t cm
 		case 127://send machine type
 			while(readBufferLength(buffer) == 0){if(getTick(hskp)>(start_tick+MAX_TIMEOUT)){current_state = WAIT_BLOCK; return -1;}}
 			if(readBuffer(buffer) != END_DATA){current_state = WAIT_BLOCK; return -2;}
-			writeSpi(&spi_s, &housekp, 255, MOTORISED_POTT, 100);
+			writeSpi(&spi_s, &housekp, 255, MOTORISED_POTT, 1000);
 			current_state = FINISHED_INSTR;
 			break;
 		default: return 0;
 		
 	}
-	return 0;	
+	return 0;
 }
 
 int recieveStateMachine(spi_t *spi, adc_t *adc, buffer_t *buffer, hskp_t *hskp){

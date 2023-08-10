@@ -5,11 +5,17 @@
  *  Author: Matej
  */ 
 
+#ifndef F_CPU
+#define  F_CPU 8000000
+#endif
 
 #include "ADC.h"
 #include "housekeeping.h"
 #include <stdlib.h>
 #include <avr/io.h>
+#include <util/delay.h>
+
+
 
 
 
@@ -73,7 +79,11 @@ void MovePot(adc_t *adc, pwm_t *pwm, uint16_t pos){
 	else OCR1A = 150;
 	
 	if(pos == adc->adc_val_new){
-		if(pwm->first_time == 1){pwm->first_time = 0;}
+		if(pwm->first_time == 1){
+			MotorRot(LEFT);
+			_delay_ms(100);
+			pwm->first_time = 0;
+			}
 		MotorEn(0);
 		adc->spi_changed = 0;
 	}

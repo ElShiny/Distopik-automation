@@ -29,11 +29,11 @@ int main(void)
 	MCUSR = 0;//disable watchdog
 	wdt_disable();
 	
-	ACEInit(&ace_rot);
+	SPIInit();
 	timersInit(&housekp);
+	ACEInit(&ace_rot);
 	I2CInit();
 	LEDInit(&led_settings);
-	SPIInit();
 	bufferInit(&buf);
 	
 	sei();
@@ -46,7 +46,9 @@ int main(void)
 		
 	while (1){
 		
-		if(parseSPI(&spi_s, &ace_rot, &led_settings, &buf, &housekp) == -1)errorHandler();
+		if(buf.buffer_length){
+			recieveStateMachine(&spi_s, &ace_rot, &led_settings, &buf, &housekp);
+		}
 		//_delay_ms(20);
 		if(ace_rot.ace_changed){
 			ace_rot.ace_changed = 0;

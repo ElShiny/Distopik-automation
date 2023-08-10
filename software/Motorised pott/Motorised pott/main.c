@@ -27,9 +27,9 @@ int main(void)
 	MCUSR = 0;//disable watchdog
 	wdt_disable();
 
+	SPIInit();
 	ADCInit(&adc_rot);
 	timersInit(&housekp);
-	SPIInit();
 	bufferInit(&buf);
 	PWMInit(&pwm);
 	
