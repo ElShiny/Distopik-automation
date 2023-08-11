@@ -75,7 +75,7 @@ void MovePot(adc_t *adc, pwm_t *pwm, uint16_t pos){
 	if(pos < adc->adc_val_new){MotorRot(LEFT);}
 	if(pos > adc->adc_val_new){MotorRot(RIGHT);}
 		
-	if(abs(pos - adc->adc_val_new) < 200)OCR1A = 73;
+	if(abs(pos - adc->adc_val_new) < 200)OCR1A = 100;
 	else OCR1A = 150;
 	
 	if(pos == adc->adc_val_new){

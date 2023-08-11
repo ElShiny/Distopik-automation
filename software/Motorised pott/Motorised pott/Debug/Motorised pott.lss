@@ -250,7 +250,7 @@ void MovePot(adc_t *adc, pwm_t *pwm, uint16_t pos){
  114:	81 e0       	ldi	r24, 0x01	; 1
  116:	cb df       	rcall	.-106    	; 0xae <MotorRot>
 		
-	if(abs(pos - adc->adc_val_new) < 200)OCR1A = 73;
+	if(abs(pos - adc->adc_val_new) < 200)OCR1A = 100;
  118:	8a 81       	ldd	r24, Y+2	; 0x02
  11a:	9b 81       	ldd	r25, Y+3	; 0x03
  11c:	98 01       	movw	r18, r16
@@ -264,7 +264,7 @@ void MovePot(adc_t *adc, pwm_t *pwm, uint16_t pos){
  12c:	88 3c       	cpi	r24, 0xC8	; 200
  12e:	91 05       	cpc	r25, r1
  130:	3c f4       	brge	.+14     	; 0x140 <MovePot+0x64>
- 132:	89 e4       	ldi	r24, 0x49	; 73
+ 132:	84 e6       	ldi	r24, 0x64	; 100
  134:	90 e0       	ldi	r25, 0x00	; 0
  136:	90 93 89 00 	sts	0x0089, r25	; 0x800089 <__TEXT_REGION_LENGTH__+0x7fe089>
  13a:	80 93 88 00 	sts	0x0088, r24	; 0x800088 <__TEXT_REGION_LENGTH__+0x7fe088>
