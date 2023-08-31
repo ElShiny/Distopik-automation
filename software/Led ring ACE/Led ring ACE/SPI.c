@@ -16,24 +16,26 @@
 
 
  ISR(PCINT0_vect){
+
 	 if(!(PINB & 1<<PINB2))return;//if cs is low then ignore
+	 PORTB|=1<<PINB6;
 	 spi_s.one_transfer = 1;
 	 
-	 if(SPDR && spi_s.send_block == 0 && spi_s.spi_send_mode){ spi_s.is_master_dumb = 1; return;}
+	 if(SPDR && spi_s.send_block == 0 && spi_s.spi_send_mode){
+		 spi_s.is_master_dumb = 1; return;
+	 }
 	 else {spi_s.is_master_dumb = 0;}
 	 if(spi_s.spi_send_mode)return;
 	 
 	 if(SPDR == BLOCK_SPI){spi_s.send_block=1;}//block sending
 	 else if(SPDR == UNBLOCK_SPI){spi_s.send_block=0; return;}//unblock sending
 
-
-	 
 	 writeBuffer(&buf, SPDR);
 	 SPDR = 0;
 	 //spi_s.one_transfer = 0;
 	 //DDRB|=1<<DDB6;
-	 //PORTB|=1<<PINB6;
- }
+	 PORTB^=1<<PINB6;
+}
 
 
 
