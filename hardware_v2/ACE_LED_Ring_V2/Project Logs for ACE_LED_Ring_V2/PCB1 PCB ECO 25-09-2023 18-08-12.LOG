@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=ACE4 Pin=B1-16
+Removed Pin From Net: NetName=ACE3 Pin=B1-17
+Removed Pin From Net: NetName=ACE2 Pin=B1-18
+Removed Pin From Net: NetName=ACE1 Pin=B1-19
+Added Pin To Net: NetName=ACE1 Pin=B1-16
+Added Pin To Net: NetName=ACE2 Pin=B1-17
+Added Pin To Net: NetName=ACE3 Pin=B1-18
+Added Pin To Net: NetName=ACE4 Pin=B1-19

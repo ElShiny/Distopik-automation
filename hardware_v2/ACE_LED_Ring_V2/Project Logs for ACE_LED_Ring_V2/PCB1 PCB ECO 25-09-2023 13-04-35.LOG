@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=C3 Old Footprint=C2012_0805I_M New Footprint=C1608_0603I_L
+Added Room: Name=U_ACE
+Added Room: Name=U_led_ring
+Added Room: Name=U_MCU
+Added Room: Name=U_Power
