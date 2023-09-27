@@ -1,0 +1,235 @@
+Added Component: Designator=B1(QFN50P400X400X60-28N-D)
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.st.com/resource/en/datasheet/stm32c031c4.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "0.6mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "STMicroelectronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "STM32C031G6U6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "511-STM32C031G6U6"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/STMicroelectronics/STM32C031G6U6?qs=IPgv5n7u5QZqRf3nOTChhw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=B2(SON50P300X300X80-11N-D)
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.maxlinear.com/ds/xr33202.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "0.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "MaxLinear, Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "XR33202EEHBTR-F"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "701-XR33202EEHBTR-F"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/MaxLinear/XR33202EEHBTR-F?qs=GtWAI9k6EVi4nRW8bj1LFw%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=B3(SON50P200X200X80-9N)
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.ti.com/lit/gpn/drv8837"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "0.8mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "DRV8837DSGR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "595-DRV8837DSGR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/DRV8837DSGR?qs=l6ZoeTYLMwO0pKIJ8222Ww%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=C1(R1005_0402i_L)
+Added Component: Designator=C2(R1005_0402i_L)
+Added Component: Designator=C3(C1608_0603I_L)
+Added Component: Designator=C4(R1005_0402i_L)
+Added Component: Designator=C5(R1005_0402i_L)
+Added Component: Designator=C6(R1005_0402i_M)
+Added Component: Designator=C7(R1005_0402i_M)
+Added Component: Designator=C8(R1005_0402i_M)
+Added Component: Designator=C9(R1005_0402i_L)
+Added Component: Designator=C10(R1005_0402i_L)
+Added Component: Designator=J1(solderJumper)
+Added Component: Designator=K1(H1x1)
+Added Component: Designator=K2(H1x1)
+Added Component: Designator=LD1(TSOP95P280X110-6L)
+Added Component: Designator=P1(1.27mm SMD conn)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P2(1.27mm SMD conn)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P3(HDR1X3)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P4(HDR1X4)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=P5(HDR1X4)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Component: Designator=R1(R1005_0402i_L)
+Added Component: Designator=R2(R1005_0402i_L)
+Added Component: Designator=R3(R1005_0402i_L)
+Added Component: Designator=R4(R1005_0402i_L)
+Added Component: Designator=TP1(PAD)
+Added Component: Designator=TP2(PAD)
+Added Component: Designator=VR1(PRM162K415K103B1)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "PRM162-K420K-103B1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/prm162-k420k-103b1/bourns?region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.bourns.com/docs/product-datasheets/PDB18.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "28.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "PRM162-K420K-103B1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "652-PRM162K420K103B1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Bourns/PRM162-K420K-103B1?qs=U%2FacTlguYxaZbpiLvzzeCA%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=X1(PTS636SM25SMTRLFS)
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://componentsearchengine.com/Datasheets/1/PTS636 SM25 SMTR LFS.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "2.7mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "C & K COMPONENTS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "PTS636 SM25 SMTR LFS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "611-PTS636SM25SMTRLF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/CK/PTS636-SM25-SMTR-LFS?qs=vLWxofP3U2yIXR4iooxesw%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+3V3 Pin=B1-3
+Added Pin To Net: NetName=+3V3 Pin=B2-1
+Added Pin To Net: NetName=+3V3 Pin=B3-8
+Added Pin To Net: NetName=+3V3 Pin=C1-1
+Added Pin To Net: NetName=+3V3 Pin=C4-1
+Added Pin To Net: NetName=+3V3 Pin=C5-1
+Added Pin To Net: NetName=+3V3 Pin=C6-2
+Added Pin To Net: NetName=+3V3 Pin=C9-1
+Added Pin To Net: NetName=+3V3 Pin=LD1-5
+Added Pin To Net: NetName=+3V3 Pin=R1-1
+Added Pin To Net: NetName=+3V3 Pin=VR1-6
+Added Net: Name=+3V3
+Added Pin To Net: NetName=+5 Pin=B3-1
+Added Pin To Net: NetName=+5 Pin=C7-1
+Added Net: Name=+5
+Added Pin To Net: NetName=A_N Pin=B2-8
+Added Pin To Net: NetName=A_N Pin=P1-6
+Added Pin To Net: NetName=A_N Pin=P2-6
+Added Net: Name=A_N
+Added Pin To Net: NetName=B_P Pin=B2-9
+Added Pin To Net: NetName=B_P Pin=P1-7
+Added Pin To Net: NetName=B_P Pin=P2-7
+Added Net: Name=B_P
+Added Pin To Net: NetName=BTN Pin=B1-11
+Added Pin To Net: NetName=BTN Pin=X1-2
+Added Net: Name=BTN
+Added Pin To Net: NetName=GND Pin=B1-4
+Added Pin To Net: NetName=GND Pin=B2-6
+Added Pin To Net: NetName=GND Pin=B2-11
+Added Pin To Net: NetName=GND Pin=B3-4
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C3-2
+Added Pin To Net: NetName=GND Pin=C4-2
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C7-2
+Added Pin To Net: NetName=GND Pin=C8-2
+Added Pin To Net: NetName=GND Pin=C9-2
+Added Pin To Net: NetName=GND Pin=C10-2
+Added Pin To Net: NetName=GND Pin=LD1-2
+Added Pin To Net: NetName=GND Pin=P1-5
+Added Pin To Net: NetName=GND Pin=P1-8
+Added Pin To Net: NetName=GND Pin=P2-5
+Added Pin To Net: NetName=GND Pin=P2-8
+Added Pin To Net: NetName=GND Pin=P4-1
+Added Pin To Net: NetName=GND Pin=P4-4
+Added Pin To Net: NetName=GND Pin=P5-1
+Added Pin To Net: NetName=GND Pin=P5-4
+Added Pin To Net: NetName=GND Pin=R3-2
+Added Pin To Net: NetName=GND Pin=R4-2
+Added Pin To Net: NetName=GND Pin=VR1-4
+Added Pin To Net: NetName=GND Pin=X1-1
+Added Net: Name=GND
+Added Pin To Net: NetName=INT Pin=B1-6
+Added Pin To Net: NetName=INT Pin=P1-12
+Added Pin To Net: NetName=INT Pin=P2-12
+Added Net: Name=INT
+Added Pin To Net: NetName=MISO_MCU Pin=B1-24
+Added Pin To Net: NetName=MISO_MCU Pin=J1-2
+Added Pin To Net: NetName=MISO_MCU Pin=P2-2
+Added Net: Name=MISO_MCU
+Added Pin To Net: NetName=MISO Pin=J1-1
+Added Pin To Net: NetName=MISO Pin=P1-1
+Added Pin To Net: NetName=MISO Pin=P2-1
+Added Net: Name=MISO
+Added Pin To Net: NetName=MOSI_MCU Pin=B1-25
+Added Pin To Net: NetName=MOSI_MCU Pin=P1-2
+Added Net: Name=MOSI_MCU
+Added Pin To Net: NetName=NetB1_14 Pin=B1-14
+Added Pin To Net: NetName=NetB1_14 Pin=B3-7
+Added Net: Name=NetB1_14
+Added Pin To Net: NetName=NetB1_15 Pin=B1-15
+Added Pin To Net: NetName=NetB1_15 Pin=B3-5
+Added Pin To Net: NetName=NetB1_15 Pin=R4-1
+Added Net: Name=NetB1_15
+Added Pin To Net: NetName=NetB1_16 Pin=B1-16
+Added Pin To Net: NetName=NetB1_16 Pin=B3-6
+Added Pin To Net: NetName=NetB1_16 Pin=R3-1
+Added Net: Name=NetB1_16
+Added Pin To Net: NetName=NetB1_18 Pin=B1-18
+Added Pin To Net: NetName=NetB1_18 Pin=R2-1
+Added Net: Name=NetB1_18
+Added Pin To Net: NetName=NetB1_26 Pin=B1-26
+Added Pin To Net: NetName=NetB1_26 Pin=TP2-1
+Added Net: Name=NetB1_26
+Added Pin To Net: NetName=NetB1_27 Pin=B1-27
+Added Pin To Net: NetName=NetB1_27 Pin=TP1-1
+Added Net: Name=NetB1_27
+Added Pin To Net: NetName=NetB3_2 Pin=B3-2
+Added Pin To Net: NetName=NetB3_2 Pin=K1-1
+Added Net: Name=NetB3_2
+Added Pin To Net: NetName=NetB3_3 Pin=B3-3
+Added Pin To Net: NetName=NetB3_3 Pin=K2-1
+Added Net: Name=NetB3_3
+Added Pin To Net: NetName=NetC8_1 Pin=C8-1
+Added Pin To Net: NetName=NetC8_1 Pin=R2-2
+Added Pin To Net: NetName=NetC8_1 Pin=VR1-5
+Added Net: Name=NetC8_1
+Added Pin To Net: NetName=NetP3_1 Pin=P3-1
+Added Pin To Net: NetName=NetP3_1 Pin=VR1-1
+Added Net: Name=NetP3_1
+Added Pin To Net: NetName=NetP3_2 Pin=P3-2
+Added Pin To Net: NetName=NetP3_2 Pin=VR1-2
+Added Net: Name=NetP3_2
+Added Pin To Net: NetName=NetP3_3 Pin=P3-3
+Added Pin To Net: NetName=NetP3_3 Pin=VR1-3
+Added Net: Name=NetP3_3
+Added Pin To Net: NetName=R\E\S\E\T\ Pin=B1-5
+Added Pin To Net: NetName=R\E\S\E\T\ Pin=P1-11
+Added Pin To Net: NetName=R\E\S\E\T\ Pin=P2-11
+Added Pin To Net: NetName=R\E\S\E\T\ Pin=R1-2
+Added Net: Name=R\E\S\E\T\
+Added Pin To Net: NetName=RS485_DE Pin=B1-7
+Added Pin To Net: NetName=RS485_DE Pin=B2-3
+Added Net: Name=RS485_DE
+Added Pin To Net: NetName=RS485_RE Pin=B1-10
+Added Pin To Net: NetName=RS485_RE Pin=B2-4
+Added Net: Name=RS485_RE
+Added Pin To Net: NetName=RS485_RX Pin=B1-9
+Added Pin To Net: NetName=RS485_RX Pin=B2-2
+Added Net: Name=RS485_RX
+Added Pin To Net: NetName=RS485_TX Pin=B1-8
+Added Pin To Net: NetName=RS485_TX Pin=B2-5
+Added Net: Name=RS485_TX
+Added Pin To Net: NetName=S\S\ Pin=B1-22
+Added Pin To Net: NetName=S\S\ Pin=P1-4
+Added Pin To Net: NetName=S\S\ Pin=P2-4
+Added Net: Name=S\S\
+Added Pin To Net: NetName=SCK Pin=B1-23
+Added Pin To Net: NetName=SCK Pin=P1-3
+Added Pin To Net: NetName=SCK Pin=P2-3
+Added Net: Name=SCK
+Added Pin To Net: NetName=SWCLK Pin=B1-21
+Added Pin To Net: NetName=SWCLK Pin=P1-10
+Added Pin To Net: NetName=SWCLK Pin=P2-10
+Added Net: Name=SWCLK
+Added Pin To Net: NetName=SWDIO Pin=B1-20
+Added Pin To Net: NetName=SWDIO Pin=P1-9
+Added Pin To Net: NetName=SWDIO Pin=P2-9
+Added Net: Name=SWDIO
+Added Pin To Net: NetName=VCC 5V Pin=B2-10
+Added Pin To Net: NetName=VCC 5V Pin=C2-1
+Added Pin To Net: NetName=VCC 5V Pin=C3-1
+Added Pin To Net: NetName=VCC 5V Pin=C10-1
+Added Pin To Net: NetName=VCC 5V Pin=LD1-1
+Added Pin To Net: NetName=VCC 5V Pin=LD1-3
+Added Pin To Net: NetName=VCC 5V Pin=P4-2
+Added Pin To Net: NetName=VCC 5V Pin=P4-3
+Added Pin To Net: NetName=VCC 5V Pin=P5-2
+Added Pin To Net: NetName=VCC 5V Pin=P5-3
+Added Net: Name=VCC 5V
+Added Class: Name=U_MCU
+Added Class: Name=U_Motor
+Added Class: Name=U_Power
+Added Room: Name=U_MCU
+Added Room: Name=U_Motor
+Added Room: Name=U_Power
