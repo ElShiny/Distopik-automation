@@ -6,3 +6,5 @@ ProjectPath=ACE_LED_Ring_V2\ACE_LED_Ring_V2.PrjPcb
 ProjectPath=Mott_Pott\Mott_Pott.PrjPcb
 [Project3]
 ProjectPath=libraries\components_library.LibPkg
+[Project4]
+ProjectPath=PiVO Shield V2\PiVO Shield V2.PrjPcb

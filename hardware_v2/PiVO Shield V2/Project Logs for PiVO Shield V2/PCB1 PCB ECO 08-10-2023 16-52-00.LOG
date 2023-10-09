@@ -1,0 +1,42 @@
+Added Component: Designator=P?(HDR2X20)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=ACT_INT Pin=P?-33
+Added Net: Name=ACT_INT
+Added Pin To Net: NetName=ACT_MISO Pin=P?-35
+Added Net: Name=ACT_MISO
+Added Pin To Net: NetName=ACT_MOSI Pin=P?-38
+Added Net: Name=ACT_MOSI
+Added Pin To Net: NetName=ACT_R\E\S\E\T\ Pin=P?-37
+Added Net: Name=ACT_R\E\S\E\T\
+Added Pin To Net: NetName=ACT_S\S\ Pin=P?-36
+Added Net: Name=ACT_S\S\
+Added Pin To Net: NetName=ACT_SCK Pin=P?-40
+Added Net: Name=ACT_SCK
+Added Pin To Net: NetName=GND Pin=P?-6
+Added Pin To Net: NetName=GND Pin=P?-9
+Added Pin To Net: NetName=GND Pin=P?-14
+Added Pin To Net: NetName=GND Pin=P?-20
+Added Pin To Net: NetName=GND Pin=P?-25
+Added Pin To Net: NetName=GND Pin=P?-30
+Added Pin To Net: NetName=GND Pin=P?-34
+Added Pin To Net: NetName=GND Pin=P?-39
+Added Net: Name=GND
+Added Pin To Net: NetName=RPI +5 Pin=P?-2
+Added Pin To Net: NetName=RPI +5 Pin=P?-4
+Added Net: Name=RPI +5
+Added Pin To Net: NetName=UI_INT Pin=P?-18
+Added Net: Name=UI_INT
+Added Pin To Net: NetName=UI_MISO Pin=P?-21
+Added Net: Name=UI_MISO
+Added Pin To Net: NetName=UI_MOSI Pin=P?-19
+Added Net: Name=UI_MOSI
+Added Pin To Net: NetName=UI_R\E\S\E\T\ Pin=P?-22
+Added Net: Name=UI_R\E\S\E\T\
+Added Pin To Net: NetName=UI_S\S\ Pin=P?-24
+Added Net: Name=UI_S\S\
+Added Pin To Net: NetName=UI_SCK Pin=P?-23
+Added Net: Name=UI_SCK
+Added Class: Name=MCU
+Added Room: Name=MCU
