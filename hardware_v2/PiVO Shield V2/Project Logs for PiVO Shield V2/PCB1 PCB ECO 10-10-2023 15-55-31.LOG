@@ -1,0 +1,17 @@
+Change Component Comment : Designator=P? Old Comment=AKTUATOR New Comment=2x6
+Change Component Comment : Designator=P? Old Comment=UI New Comment=2x6
+Change Component Library : Designator=P? Old Library=components_library.IntLib New Library=PiVO.SchLib
+Change Component Library : Designator=P? Old Library=components_library.IntLib New Library=PiVO.SchLib
+Added Member To Class: ClassName=MCU Member=Component C? 100n
+Added Member To Class: ClassName=MCU Member=Component C? 100n
+Added Member To Class: ClassName=MCU Member=Component C? 100n
+Added Member To Class: ClassName=MCU Member=Component C? 100n
+Added Member To Class: ClassName=MCU Member=Component P? 2x6
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Room: Name=MCU

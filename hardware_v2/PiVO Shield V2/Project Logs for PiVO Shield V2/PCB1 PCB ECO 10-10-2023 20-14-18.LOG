@@ -1,0 +1,4 @@
+Added Component: Designator=R?(R1005_0402i_L)
+Added Pin To Net: NetName=STM_RST Pin=R?-1
+Added Pin To Net: NetName=+3V3 Pin=R?-2
+Added Member To Class: ClassName=MCU Member=Component R? 3k

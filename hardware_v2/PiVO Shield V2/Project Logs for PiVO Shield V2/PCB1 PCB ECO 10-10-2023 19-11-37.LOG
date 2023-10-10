@@ -1,0 +1,19 @@
+Change Component Designator: OldDesignator=P? NewDesignator=P11
+Change Component Designator: OldDesignator=R? NewDesignator=R13
+Change Component Designator: OldDesignator=R? NewDesignator=R14
+Change Component Designator: OldDesignator=R? NewDesignator=R15
+Change Component Designator: OldDesignator=R? NewDesignator=R16
+Change Component Designator: OldDesignator=R? NewDesignator=R17
+Change Component Designator: OldDesignator=R? NewDesignator=R18
+Change Component Designator: OldDesignator=R? NewDesignator=R19
+Change Component Designator: OldDesignator=R? NewDesignator=R20
+Change Component Designator: OldDesignator=R? NewDesignator=R21
+Added Member To Class: ClassName=MCU Member=Component R13 3k
+Added Member To Class: ClassName=MCU Member=Component R14 3k
+Added Member To Class: ClassName=MCU Member=Component R15 3k
+Added Member To Class: ClassName=MCU Member=Component R16 3k
+Added Member To Class: ClassName=MCU Member=Component R17 3k
+Added Member To Class: ClassName=MCU Member=Component R18 3k
+Added Member To Class: ClassName=MCU Member=Component R19 3k
+Added Member To Class: ClassName=MCU Member=Component R20 3k
+Added Member To Class: ClassName=MCU Member=Component R21 3k

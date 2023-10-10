@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=RPI_RS_SIDE Pin=R?-1
+Removed Pin From Net: NetName=GND Pin=R?-2
+Added Component: Designator=P?(HDR1X3)
+Add component (AddParameter): Name = "LatestRevisionDate"; Value = "17-Jul-2002"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LatestRevisionNote"; Value = "Re-released for DXP Platform."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Publisher"; Value = "Altium Limited"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=AKT_RS485_TX Pin=P?-1
+Added Pin To Net: NetName=RPI_TX Pin=P?-2
+Added Pin To Net: NetName=UI_RS485_TX Pin=P?-3
+Added Member To Class: ClassName=MCU Member=Component P? TX changer
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Room: Name=MCU

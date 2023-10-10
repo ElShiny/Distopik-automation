@@ -1,0 +1,79 @@
+Added Component: Designator=C?(R1005_0402i_L)
+Added Component: Designator=C?(R1005_0402i_L)
+Added Component: Designator=C?(R1005_0402i_L)
+Added Component: Designator=C?(R1005_0402i_L)
+Added Component: Designator=C?(R1005_0402i_L)
+Added Component: Designator=P?(1.27mm headet tht)
+Added Component: Designator=P?(1.27mm headet tht)
+Added Component: Designator=R?(R1005_0402i_L)
+Added Component: Designator=R?(R1005_0402i_L)
+Added Component: Designator=R?(R1005_0402i_L)
+Added Component: Designator=R?(R1005_0402i_L)
+Added Component: Designator=R?(R1005_0402i_L)
+Added Component: Designator=R?(R1005_0402i_L)
+Added Component: Designator=R?(R1005_0402i_L)
+Added Component: Designator=R?(R1005_0402i_L)
+Added Pin To Net: NetName=+3V3 Pin=C?-1
+Added Pin To Net: NetName=+3V3 Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=GND Pin=C?-1
+Added Pin To Net: NetName=+3V3 Pin=C?-2
+Added Pin To Net: NetName=+5 Pin=C?-2
+Added Pin To Net: NetName=+5 Pin=C?-2
+Added Pin To Net: NetName=GND Pin=C?-2
+Added Pin To Net: NetName=GND Pin=C?-2
+Added Pin To Net: NetName=STM_RST Pin=P1-33
+Added Pin To Net: NetName=SPI_MISO Pin=P?-1
+Added Pin To Net: NetName=SPI_MISO Pin=P?-1
+Added Pin To Net: NetName=SPI_MOSI Pin=P?-2
+Added Pin To Net: NetName=SPI_MOSI Pin=P?-2
+Added Pin To Net: NetName=SPI_SCK Pin=P?-3
+Added Pin To Net: NetName=SPI_SCK Pin=P?-3
+Added Pin To Net: NetName=AKT_S\S\ Pin=P?-4
+Added Pin To Net: NetName=UI_S\S\ Pin=P?-4
+Added Pin To Net: NetName=GND Pin=P?-5
+Added Pin To Net: NetName=GND Pin=P?-5
+Added Pin To Net: NetName=AKT_A_N Pin=P?-6
+Added Pin To Net: NetName=UI_A_N Pin=P?-6
+Added Pin To Net: NetName=AKT_B_P Pin=P?-7
+Added Pin To Net: NetName=UI_B_P Pin=P?-7
+Added Pin To Net: NetName=GND Pin=P?-8
+Added Pin To Net: NetName=GND Pin=P?-8
+Added Pin To Net: NetName=AKT_R\E\S\E\T\ Pin=P?-9
+Added Pin To Net: NetName=UI_R\E\S\E\T\ Pin=P?-9
+Added Pin To Net: NetName=AKT_INT Pin=P?-10
+Added Pin To Net: NetName=UI_INT Pin=P?-10
+Added Pin To Net: NetName=AKT_B_P Pin=R?-1
+Added Pin To Net: NetName=AKT_B_P Pin=R?-1
+Added Pin To Net: NetName=GND Pin=R?-1
+Added Pin To Net: NetName=GND Pin=R?-1
+Added Pin To Net: NetName=GND Pin=R?-1
+Added Pin To Net: NetName=GND Pin=R?-1
+Added Pin To Net: NetName=UI_B_P Pin=R?-1
+Added Pin To Net: NetName=UI_B_P Pin=R?-1
+Added Pin To Net: NetName=+5 Pin=R?-2
+Added Pin To Net: NetName=+5 Pin=R?-2
+Added Pin To Net: NetName=+5 Pin=R?-2
+Added Pin To Net: NetName=+5 Pin=R?-2
+Added Pin To Net: NetName=AKT_A_N Pin=R?-2
+Added Pin To Net: NetName=AKT_A_N Pin=R?-2
+Added Pin To Net: NetName=UI_A_N Pin=R?-2
+Added Pin To Net: NetName=UI_A_N Pin=R?-2
+Added Member To Class: ClassName=MCU Member=Component C? 100n
+Added Member To Class: ClassName=MCU Member=Component C? 100n
+Added Member To Class: ClassName=MCU Member=Component C? 100n
+Added Member To Class: ClassName=MCU Member=Component C? 100n
+Added Member To Class: ClassName=MCU Member=Component C? 100n
+Added Member To Class: ClassName=MCU Member=Component P4 Prog. hat
+Added Member To Class: ClassName=MCU Member=Component P? UI
+Added Member To Class: ClassName=MCU Member=Component P? AKTUATOR
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Room: Name=MCU

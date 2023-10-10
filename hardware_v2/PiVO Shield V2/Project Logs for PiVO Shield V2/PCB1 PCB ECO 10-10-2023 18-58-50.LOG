@@ -1,0 +1,49 @@
+Added Component: Designator=R?(R1005_0402i_L)
+Added Component: Designator=R?(R1005_0402i_L)
+Added Component: Designator=R?(R1005_0402i_L)
+Added Component: Designator=R?(R1005_0402i_L)
+Added Component: Designator=R?(R1005_0402i_L)
+Added Component: Designator=R?(R1005_0402i_L)
+Added Component: Designator=R?(R1005_0402i_L)
+Added Component: Designator=R?(R1005_0402i_L)
+Added Component: Designator=R?(R1005_0402i_L)
+Added Component: Designator=R?(R1005_0402i_L)
+Added Component: Designator=R?(R1005_0402i_L)
+Added Pin To Net: NetName=AKT_S\S\ Pin=B1-15
+Added Pin To Net: NetName=UI_S\S\ Pin=B1-16
+Added Pin To Net: NetName=AKT_INT Pin=B1-17
+Added Pin To Net: NetName=UI_INT Pin=B1-18
+Added Pin To Net: NetName=AKT_RS485_RX Pin=R?-1
+Added Pin To Net: NetName=AKT_RS485_TX Pin=R?-1
+Added Pin To Net: NetName=GND Pin=R?-1
+Added Pin To Net: NetName=GND Pin=R?-1
+Added Pin To Net: NetName=GND Pin=R?-1
+Added Pin To Net: NetName=RPI_RS_SIDE Pin=R?-1
+Added Pin To Net: NetName=RPI_SCL Pin=R?-1
+Added Pin To Net: NetName=RPI_SDA Pin=R?-1
+Added Pin To Net: NetName=STM_RST Pin=R?-1
+Added Pin To Net: NetName=UI_RS485_RX Pin=R?-1
+Added Pin To Net: NetName=UI_RS485_TX Pin=R?-1
+Added Pin To Net: NetName=+3V3 Pin=R?-2
+Added Pin To Net: NetName=+3V3 Pin=R?-2
+Added Pin To Net: NetName=+3V3 Pin=R?-2
+Added Pin To Net: NetName=+3V3 Pin=R?-2
+Added Pin To Net: NetName=+3V3 Pin=R?-2
+Added Pin To Net: NetName=+3V3 Pin=R?-2
+Added Pin To Net: NetName=+3V3 Pin=R?-2
+Added Pin To Net: NetName=AKT_RS485_DE Pin=R?-2
+Added Pin To Net: NetName=GND Pin=R?-2
+Added Pin To Net: NetName=RPI_TX Pin=R?-2
+Added Pin To Net: NetName=UI_RS485_DE Pin=R?-2
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Member To Class: ClassName=MCU Member=Component R? 3k
+Added Room: Name=MCU

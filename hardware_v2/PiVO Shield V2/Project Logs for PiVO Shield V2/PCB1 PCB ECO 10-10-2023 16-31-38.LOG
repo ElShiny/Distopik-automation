@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=AKT_SWCLK Pin=P11-1
+Removed Pin From Net: NetName=AKT_SWDIO Pin=P11-2
+Removed Pin From Net: NetName=GND Pin=P11-3
+Removed Member From Class: ClassName=MCU Member=P11
+Added Pin To Net: NetName=AKT_SWDIO Pin=P6-11
+Added Pin To Net: NetName=AKT_SWCLK Pin=P6-12
+Added Pin To Net: NetName=AKT_SWCLK Pin=P8-1
+Added Pin To Net: NetName=AKT_SWDIO Pin=P8-2
+Added Member To Class: ClassName=MCU Member=Component R9 3k
+Added Room: Name=MCU
