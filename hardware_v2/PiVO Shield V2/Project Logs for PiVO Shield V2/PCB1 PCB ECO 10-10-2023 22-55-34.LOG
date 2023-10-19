@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=UI_INT Pin=B1-18
+Removed Pin From Net: NetName=UI_R\E\S\E\T\ Pin=B1-22
+Added Pin To Net: NetName=UI_R\E\S\E\T\ Pin=B1-18
+Added Pin To Net: NetName=UI_INT Pin=B1-22
+Added Pin To Net: NetName=+3V3 Pin=P1-17

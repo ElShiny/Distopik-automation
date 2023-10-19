@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=UI_S\S\ Pin=P1-11
+Removed Pin From Net: NetName=AKT_S\S\ Pin=P1-12
+Added Pin To Net: NetName=AKT_S\S\ Pin=P1-11
+Added Pin To Net: NetName=UI_S\S\ Pin=P1-12
+Added Member To Class: ClassName=MCU Member=Component R? 3k

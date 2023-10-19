@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=UI_RS485_DE Pin=P1-29
+Removed Pin From Net: NetName=AKT_RS485_DE Pin=P1-31
+Added Pin To Net: NetName=UI_RS485_DE Pin=P1-13
+Added Pin To Net: NetName=AKT_RS485_DE Pin=P1-15
