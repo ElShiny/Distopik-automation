@@ -29,19 +29,29 @@ extern "C" {
 /* Includes ------------------------------------------------------------------*/
 #include "stm32c0xx_hal.h"
 
+#include "stm32c0xx_ll_tim.h"
+#include "stm32c0xx_ll_usart.h"
+#include "stm32c0xx_ll_rcc.h"
 #include "stm32c0xx_ll_system.h"
 #include "stm32c0xx_ll_gpio.h"
 #include "stm32c0xx_ll_exti.h"
 #include "stm32c0xx_ll_bus.h"
 #include "stm32c0xx_ll_cortex.h"
-#include "stm32c0xx_ll_rcc.h"
 #include "stm32c0xx_ll_utils.h"
 #include "stm32c0xx_ll_pwr.h"
 #include "stm32c0xx_ll_dma.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#define IS3_ADR 0x34<<1
+#define I2C_WRITE 0
+#define I2C_READ 1
 
+static const uint8_t led_adr_arr[]={0x01, 0x11, 0x21, 0x31, 0x41, 0x51,
+									0x04, 0x14, 0x24, 0x34, 0x44, 0x54,
+									0x07, 0x17, 0x27, 0x37, 0x47, 0x57,
+									0x0A, 0x1A, 0x2A, 0x3A, 0x4A, 0x5A,
+									0x0D, 0x1D, 0x2D, 0x3D, 0x4D, 0x5D};
 /* USER CODE END Includes */
 
 /* Exported types ------------------------------------------------------------*/

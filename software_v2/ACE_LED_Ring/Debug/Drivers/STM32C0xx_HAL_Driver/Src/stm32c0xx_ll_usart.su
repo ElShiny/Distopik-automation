@@ -1,0 +1,14 @@
+../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_usart.h:653:26:LL_USART_IsEnabled	16	static
+../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_usart.h:1219:22:LL_USART_SetPrescaler	16	static
+../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_usart.h:1299:22:LL_USART_SetStopBitsLength	16	static
+../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_usart.h:1724:22:LL_USART_SetHWFlowCtrl	16	static
+../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_usart.h:1875:22:LL_USART_SetBaudRate	32	static
+../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_bus.h:373:22:LL_APB1_GRP1_ForceReset	16	static
+../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_bus.h:396:22:LL_APB1_GRP1_ReleaseReset	16	static
+../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_bus.h:561:22:LL_APB2_GRP1_ForceReset	16	static
+../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_bus.h:588:22:LL_APB2_GRP1_ReleaseReset	16	static
+../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_ll_usart.c:128:13:LL_USART_DeInit	24	static
+../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_ll_usart.c:173:13:LL_USART_Init	56	static
+../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_ll_usart.c:276:6:LL_USART_StructInit	16	static
+../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_ll_usart.c:303:13:LL_USART_ClockInit	24	static
+../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_ll_usart.c:350:6:LL_USART_ClockStructInit	16	static

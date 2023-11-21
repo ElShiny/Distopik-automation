@@ -1,0 +1,10 @@
+stm32c0xx_ll_tim.h:1485:22:LL_TIM_EnableCounter	1
+stm32c0xx_ll_tim.h:1496:22:LL_TIM_DisableCounter	1
+stm32c0xx_ll_tim.h:3986:22:LL_TIM_ClearFlag_UPDATE	1
+stm32c0xx_ll_tim.h:4349:22:LL_TIM_EnableIT_UPDATE	1
+stm32c0xx_ll_tim.h:4360:22:LL_TIM_DisableIT_UPDATE	1
+stm32c0xx_ll_gpio.h:890:22:LL_GPIO_SetOutputPin	1
+porttimer.c:37:1:xMBPortTimersInit	1
+porttimer.c:48:1:vMBPortTimersEnable	1
+porttimer.c:59:1:vMBPortTimersDisable	1
+porttimer.c:73:6:prvvTIMERExpiredISR	1

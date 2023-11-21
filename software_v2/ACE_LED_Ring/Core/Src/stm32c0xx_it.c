@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2023 STMicroelectronics.
+  * Copyright (c) 2023.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -22,6 +22,9 @@
 #include "stm32c0xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "mb.h"
+#include "i2c.h"
+#include "gpio.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -46,6 +49,9 @@
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN PFP */
+extern void prvvUARTTxReadyISR( void );
+extern void prvvUARTRxISR( void );
+extern void prvvTIMERExpiredISR( void );
 
 /* USER CODE END PFP */
 
@@ -55,8 +61,7 @@
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
-extern DMA_HandleTypeDef hdma_usart2_tx;
-extern UART_HandleTypeDef huart2;
+
 /* USER CODE BEGIN EV */
 
 /* USER CODE END EV */
@@ -149,10 +154,30 @@ void DMA1_Channel1_IRQHandler(void)
   /* USER CODE BEGIN DMA1_Channel1_IRQn 0 */
 
   /* USER CODE END DMA1_Channel1_IRQn 0 */
-  HAL_DMA_IRQHandler(&hdma_usart2_tx);
+
   /* USER CODE BEGIN DMA1_Channel1_IRQn 1 */
 
   /* USER CODE END DMA1_Channel1_IRQn 1 */
+}
+
+/**
+  * @brief This function handles TIM16 global interrupt.
+  */
+void TIM16_IRQHandler(void)
+{
+  /* USER CODE BEGIN TIM16_IRQn 0 */
+	if(LL_TIM_IsActiveFlag_UPDATE(TIM16) && LL_TIM_IsEnabledIT_UPDATE(TIM16)){
+		prvvTIMERExpiredISR();
+		LL_TIM_ClearFlag_UPDATE(TIM16);
+	}
+
+  /* USER CODE END TIM16_IRQn 0 */
+  /* USER CODE BEGIN TIM16_IRQn 1 */
+
+  //prvvTIMERExpiredISR();
+
+
+  /* USER CODE END TIM16_IRQn 1 */
 }
 
 /**
@@ -162,13 +187,30 @@ void USART2_IRQHandler(void)
 {
   /* USER CODE BEGIN USART2_IRQn 0 */
 
-  /* USER CODE END USART2_IRQn 0 */
-  HAL_UART_IRQHandler(&huart2);
-  /* USER CODE BEGIN USART2_IRQn 1 */
+	if(LL_USART_IsActiveFlag_TXE_TXFNF(USART2) && LL_USART_IsEnabledIT_TXE_TXFNF(USART2))
+	  {
+	    /* RXNE flag will be cleared by reading of RDR register (done in call) */
+	    /* Call function in charge of handling Character reception */
+	    //UART_CharReception_Callback();
+		prvvUARTTxReadyISR();
+	  }
 
+	if(LL_USART_IsEnabledIT_RXNE_RXFNE(USART2) && LL_USART_IsActiveFlag_RXNE_RXFNE(USART2))
+	  {
+	    /* TXE flag will be automatically cleared when writing new data in TDR register */
+
+	    /* Call function in charge of handling empty DR => will lead to transmission of next character */
+	    //UART_TXEmpty_Callback();
+		prvvUARTRxISR();
+	  }
+
+  /* USER CODE END USART2_IRQn 0 */
+  /* USER CODE BEGIN USART2_IRQn 1 */
   /* USER CODE END USART2_IRQn 1 */
 }
 
 /* USER CODE BEGIN 1 */
+
+
 
 /* USER CODE END 1 */

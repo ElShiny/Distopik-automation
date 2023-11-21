@@ -1,0 +1,7 @@
+portserial.c:34:1:vMBPortSerialEnable	2
+portserial.c:44:1:xMBPortSerialInit	1
+portserial.c:53:1:xMBPortSerialPutByte	1
+portserial.c:65:1:xMBPortSerialPutBuffer	1
+portserial.c:78:1:xMBPortSerialGetByte	1
+portserial.c:97:6:prvvUARTTxReadyISR	1
+portserial.c:107:6:prvvUARTRxISR	1

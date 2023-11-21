@@ -1,0 +1,4 @@
+port.c:36:1:eMBRegInputCB	4
+port.c:64:1:eMBRegHoldingCB	1
+port.c:72:1:eMBRegCoilsCB	1
+port.c:79:1:eMBRegDiscreteCB	1

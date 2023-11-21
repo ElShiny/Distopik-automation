@@ -1,0 +1,14 @@
+stm32c0xx_ll_usart.h:653:26:LL_USART_IsEnabled	2
+stm32c0xx_ll_usart.h:1219:22:LL_USART_SetPrescaler	1
+stm32c0xx_ll_usart.h:1299:22:LL_USART_SetStopBitsLength	1
+stm32c0xx_ll_usart.h:1724:22:LL_USART_SetHWFlowCtrl	1
+stm32c0xx_ll_usart.h:1875:22:LL_USART_SetBaudRate	4
+stm32c0xx_ll_bus.h:373:22:LL_APB1_GRP1_ForceReset	1
+stm32c0xx_ll_bus.h:396:22:LL_APB1_GRP1_ReleaseReset	1
+stm32c0xx_ll_bus.h:561:22:LL_APB2_GRP1_ForceReset	1
+stm32c0xx_ll_bus.h:588:22:LL_APB2_GRP1_ReleaseReset	1
+stm32c0xx_ll_usart.c:128:13:LL_USART_DeInit	3
+stm32c0xx_ll_usart.c:173:13:LL_USART_Init	6
+stm32c0xx_ll_usart.c:276:6:LL_USART_StructInit	1
+stm32c0xx_ll_usart.c:303:13:LL_USART_ClockInit	2
+stm32c0xx_ll_usart.c:350:6:LL_USART_ClockStructInit	1

@@ -1,0 +1,5 @@
+core_cm0plus.h:741:22:__NVIC_EnableIRQ	2
+core_cm0plus.h:850:22:__NVIC_SetPriority	2
+stm32c0xx_ll_tim.h:1676:22:LL_TIM_DisableARRPreload	1
+stm32c0xx_ll_bus.h:478:22:LL_APB2_GRP1_EnableClock	1
+tim.c:28:6:MX_TIM16_Init	1

@@ -1,0 +1,4 @@
+../Core/modbus/port/port.c:36:1:eMBRegInputCB	12	static
+../Core/modbus/port/port.c:64:1:eMBRegHoldingCB	0	static
+../Core/modbus/port/port.c:72:1:eMBRegCoilsCB	0	static
+../Core/modbus/port/port.c:79:1:eMBRegDiscreteCB	0	static

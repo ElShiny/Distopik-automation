@@ -21,12 +21,15 @@
 #include "dma.h"
 #include "i2c.h"
 #include "spi.h"
+#include "tim.h"
 #include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "mb.h"
+#include "port.h"
+#include "mbport.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -36,15 +39,10 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-#define IS3_ADR 0x34<<1
-#define I2C_WRITE 0
-#define I2C_READ 1
+extern USHORT   usRegInputStart;
+extern USHORT   usRegInputBuf[REG_INPUT_NREGS];
 
-static const uint8_t led_adr_arr[]={0x01, 0x11, 0x21, 0x31, 0x41, 0x51,
-									0x04, 0x14, 0x24, 0x34, 0x44, 0x54,
-									0x07, 0x17, 0x27, 0x37, 0x47, 0x57,
-									0x0A, 0x1A, 0x2A, 0x3A, 0x4A, 0x5A,
-									0x0D, 0x1D, 0x2D, 0x3D, 0x4D, 0x5D};
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -101,7 +99,20 @@ int main(void)
   MX_SPI1_Init();
   MX_I2C1_Init();
   MX_USART2_UART_Init();
+  MX_TIM16_Init();
   /* USER CODE BEGIN 2 */
+	//HAL_TIM_Base_Start_IT(&htim16);
+	//HAL_TIM_Base_Start(&htim16);
+
+  //add modbus
+
+
+
+
+
+
+
+
 
   uint8_t arr[2] = {0xCF, 0xAE};
 
@@ -121,6 +132,21 @@ int main(void)
 	  uint8_t arr5[4] = {led_adr_arr[i], 0,255,100};
 	  while(HAL_I2C_Master_Transmit(&hi2c1, IS3_ADR, arr5, 4, 100) == HAL_BUSY){}
 	}
+
+	//__disable_irq();
+	//Error_Handler();
+	if(eMBInit(MB_RTU, 0x01, 0, 115200, MB_PAR_NONE) != MB_ENOERR )Error_Handler();
+	//if(eMBSetSlaveID( 0x1, FALSE, 0, 0 ) != MB_ENOERR )Error_Handler();
+	//if(eMBSetSlaveID(ucSlaveID, xIsRunning, pucAdditional, usAdditionalLen))Error_Handler();
+	__enable_irq();
+	if(eMBEnable() != MB_ENOERR)Error_Handler();
+
+	//IM16->CNT = 0;
+	//HAL_TIM_Base_Start(&htim16);
+
+
+
+
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -130,6 +156,10 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+
+	  if(eMBPoll()!=MB_ENOERR)Error_Handler();  /*Modbus poll update in each run*/
+        usRegInputBuf[0]++;
+        //HAL_Delay(1);
   }
   /* USER CODE END 3 */
 }
@@ -182,7 +212,11 @@ void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
   /* User can add his own implementation to report the HAL error return state */
-  __disable_irq();
+  //__disable_irq();
+	for(int i = 0 ; i<30; i++){
+	  uint8_t arr6[4] = {led_adr_arr[i], 0,0,255};
+	  while(HAL_I2C_Master_Transmit(&hi2c1, IS3_ADR, arr6, 4, 100) == HAL_BUSY){}
+	}
   while (1)
   {
   }

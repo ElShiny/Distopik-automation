@@ -1,0 +1,5 @@
+stm32c0xx_ll_usart.c:128:13:LL_USART_DeInit	3
+stm32c0xx_ll_usart.c:173:13:LL_USART_Init	8
+stm32c0xx_ll_usart.c:276:6:LL_USART_StructInit	1
+stm32c0xx_ll_usart.c:303:13:LL_USART_ClockInit	2
+stm32c0xx_ll_usart.c:350:6:LL_USART_ClockStructInit	1

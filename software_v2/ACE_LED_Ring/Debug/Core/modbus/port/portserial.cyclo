@@ -1,0 +1,13 @@
+stm32c0xx_ll_usart.h:3475:22:LL_USART_EnableIT_RXNE_RXFNE	1
+stm32c0xx_ll_usart.h:3502:22:LL_USART_EnableIT_TXE_TXFNF	1
+stm32c0xx_ll_usart.h:3692:22:LL_USART_DisableIT_RXNE_RXFNE	1
+stm32c0xx_ll_usart.h:3719:22:LL_USART_DisableIT_TXE_TXFNF	1
+stm32c0xx_ll_usart.h:4253:25:LL_USART_ReceiveData8	1
+stm32c0xx_ll_usart.h:4276:22:LL_USART_TransmitData8	1
+portserial.c:35:1:vMBPortSerialEnable	3
+portserial.c:48:1:xMBPortSerialInit	1
+portserial.c:56:1:xMBPortSerialPutByte	1
+portserial.c:68:1:xMBPortSerialPutBuffer	1
+portserial.c:81:1:xMBPortSerialGetByte	1
+portserial.c:100:6:prvvUARTTxReadyISR	1
+portserial.c:110:6:prvvUARTRxISR	1

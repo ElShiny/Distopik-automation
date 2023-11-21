@@ -1,0 +1,3 @@
+../Core/modbus/functions/mbfunccoils.c:68:1:eMBFuncReadCoils	40	static
+../Core/modbus/functions/mbfunccoils.c:147:1:eMBFuncWriteCoil	32	static
+../Core/modbus/functions/mbfunccoils.c:201:1:eMBFuncWriteMultipleCoils	32	static

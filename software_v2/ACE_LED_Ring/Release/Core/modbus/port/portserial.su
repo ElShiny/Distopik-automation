@@ -1,0 +1,7 @@
+../Core/modbus/port/portserial.c:34:1:vMBPortSerialEnable	0	static,ignoring_inline_asm
+../Core/modbus/port/portserial.c:44:1:xMBPortSerialInit	8	static,ignoring_inline_asm
+../Core/modbus/port/portserial.c:53:1:xMBPortSerialPutByte	0	static
+../Core/modbus/port/portserial.c:65:1:xMBPortSerialPutBuffer	0	static
+../Core/modbus/port/portserial.c:78:1:xMBPortSerialGetByte	0	static
+../Core/modbus/port/portserial.c:97:6:prvvUARTTxReadyISR	8	static
+../Core/modbus/port/portserial.c:107:6:prvvUARTRxISR	8	static
