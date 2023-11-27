@@ -1,0 +1,98 @@
+Change Component Designator: OldDesignator=J3_U_relay_ladder1 NewDesignator=J3_U_relay_ladder01
+Change Component Designator: OldDesignator=J3_U_relay_ladder2 NewDesignator=J3_U_relay_ladder02
+Change Component Designator: OldDesignator=K1_U_relay_ladder1 NewDesignator=K1_U_relay_ladder01
+Change Component Designator: OldDesignator=K1_U_relay_ladder2 NewDesignator=K1_U_relay_ladder02
+Change Component Designator: OldDesignator=K2_U_relay_ladder1 NewDesignator=K2_U_relay_ladder01
+Change Component Designator: OldDesignator=K2_U_relay_ladder2 NewDesignator=K2_U_relay_ladder02
+Change Component Designator: OldDesignator=K3_U_relay_ladder1 NewDesignator=K3_U_relay_ladder01
+Change Component Designator: OldDesignator=K3_U_relay_ladder2 NewDesignator=K3_U_relay_ladder02
+Change Component Designator: OldDesignator=K4_U_relay_ladder1 NewDesignator=K4_U_relay_ladder01
+Change Component Designator: OldDesignator=K4_U_relay_ladder2 NewDesignator=K4_U_relay_ladder02
+Change Component Designator: OldDesignator=K5_U_relay_ladder1 NewDesignator=K5_U_relay_ladder01
+Change Component Designator: OldDesignator=K5_U_relay_ladder2 NewDesignator=K5_U_relay_ladder02
+Change Component Designator: OldDesignator=K6_U_relay_ladder1 NewDesignator=K6_U_relay_ladder01
+Change Component Designator: OldDesignator=K6_U_relay_ladder2 NewDesignator=K6_U_relay_ladder02
+Change Component Designator: OldDesignator=K7_U_relay_ladder1 NewDesignator=K7_U_relay_ladder01
+Change Component Designator: OldDesignator=K7_U_relay_ladder2 NewDesignator=K7_U_relay_ladder02
+Change Component Designator: OldDesignator=K8_U_relay_ladder1 NewDesignator=K8_U_relay_ladder01
+Change Component Designator: OldDesignator=K8_U_relay_ladder2 NewDesignator=K8_U_relay_ladder02
+Change Component Designator: OldDesignator=R5_U_relay_ladder1 NewDesignator=R5_U_relay_ladder01
+Change Component Designator: OldDesignator=R5_U_relay_ladder2 NewDesignator=R5_U_relay_ladder02
+Change Component Designator: OldDesignator=R6_U_relay_ladder1 NewDesignator=R6_U_relay_ladder01
+Change Component Designator: OldDesignator=R6_U_relay_ladder2 NewDesignator=R6_U_relay_ladder02
+Change Component Designator: OldDesignator=R7_U_relay_ladder1 NewDesignator=R7_U_relay_ladder01
+Change Component Designator: OldDesignator=R7_U_relay_ladder2 NewDesignator=R7_U_relay_ladder02
+Change Component Designator: OldDesignator=R8_U_relay_ladder1 NewDesignator=R8_U_relay_ladder01
+Change Component Designator: OldDesignator=R8_U_relay_ladder2 NewDesignator=R8_U_relay_ladder02
+Change Component Designator: OldDesignator=R9_U_relay_ladder1 NewDesignator=R9_U_relay_ladder01
+Change Component Designator: OldDesignator=R9_U_relay_ladder2 NewDesignator=R9_U_relay_ladder02
+Change Component Designator: OldDesignator=R10_U_relay_ladder1 NewDesignator=R10_U_relay_ladder01
+Change Component Designator: OldDesignator=R10_U_relay_ladder2 NewDesignator=R10_U_relay_ladder02
+Change Component Designator: OldDesignator=R11_U_relay_ladder1 NewDesignator=R11_U_relay_ladder01
+Change Component Designator: OldDesignator=R11_U_relay_ladder2 NewDesignator=R11_U_relay_ladder02
+Change Component Designator: OldDesignator=R12_U_relay_ladder1 NewDesignator=R12_U_relay_ladder01
+Change Component Designator: OldDesignator=R12_U_relay_ladder2 NewDesignator=R12_U_relay_ladder02
+Change Component Designator: OldDesignator=R13_U_relay_ladder1 NewDesignator=R13_U_relay_ladder01
+Change Component Designator: OldDesignator=R13_U_relay_ladder2 NewDesignator=R13_U_relay_ladder02
+Change Component Designator: OldDesignator=R14_U_relay_ladder1 NewDesignator=R14_U_relay_ladder01
+Change Component Designator: OldDesignator=R14_U_relay_ladder2 NewDesignator=R14_U_relay_ladder02
+Change Component Designator: OldDesignator=R15_U_relay_ladder1 NewDesignator=R15_U_relay_ladder01
+Change Component Designator: OldDesignator=R15_U_relay_ladder2 NewDesignator=R15_U_relay_ladder02
+Change Component Designator: OldDesignator=R16_U_relay_ladder1 NewDesignator=R16_U_relay_ladder01
+Change Component Designator: OldDesignator=R16_U_relay_ladder2 NewDesignator=R16_U_relay_ladder02
+Change Component Designator: OldDesignator=R17_U_relay_ladder1 NewDesignator=R17_U_relay_ladder01
+Change Component Designator: OldDesignator=R17_U_relay_ladder2 NewDesignator=R17_U_relay_ladder02
+Change Component Designator: OldDesignator=R18_U_relay_ladder1 NewDesignator=R18_U_relay_ladder01
+Change Component Designator: OldDesignator=R18_U_relay_ladder2 NewDesignator=R18_U_relay_ladder02
+Change Component Designator: OldDesignator=R19_U_relay_ladder1 NewDesignator=R19_U_relay_ladder01
+Change Component Designator: OldDesignator=R19_U_relay_ladder2 NewDesignator=R19_U_relay_ladder02
+Change Component Designator: OldDesignator=R20_U_relay_ladder1 NewDesignator=R20_U_relay_ladder01
+Change Component Designator: OldDesignator=R20_U_relay_ladder2 NewDesignator=R20_U_relay_ladder02
+Change Net Name : Old Net Name=NetK1_U_relay_ladder1_3 New Net Name=NetK1_U_relay_ladder01_3
+Change Net Name : Old Net Name=NetK1_U_relay_ladder1_7 New Net Name=NetK1_U_relay_ladder01_7
+Change Net Name : Old Net Name=NetK1_U_relay_ladder1_8 New Net Name=NetK1_U_relay_ladder01_8
+Change Net Name : Old Net Name=NetK1_U_relay_ladder2_3 New Net Name=NetK1_U_relay_ladder02_3
+Change Net Name : Old Net Name=NetK1_U_relay_ladder2_7 New Net Name=NetK1_U_relay_ladder02_7
+Change Net Name : Old Net Name=NetK1_U_relay_ladder2_8 New Net Name=NetK1_U_relay_ladder02_8
+Change Net Name : Old Net Name=NetK2_U_relay_ladder1_3 New Net Name=NetK2_U_relay_ladder01_3
+Change Net Name : Old Net Name=NetK2_U_relay_ladder1_7 New Net Name=NetK2_U_relay_ladder01_7
+Change Net Name : Old Net Name=NetK2_U_relay_ladder1_8 New Net Name=NetK2_U_relay_ladder01_8
+Change Net Name : Old Net Name=NetK2_U_relay_ladder2_3 New Net Name=NetK2_U_relay_ladder02_3
+Change Net Name : Old Net Name=NetK2_U_relay_ladder2_7 New Net Name=NetK2_U_relay_ladder02_7
+Change Net Name : Old Net Name=NetK2_U_relay_ladder2_8 New Net Name=NetK2_U_relay_ladder02_8
+Change Net Name : Old Net Name=NetK3_U_relay_ladder1_3 New Net Name=NetK3_U_relay_ladder01_3
+Change Net Name : Old Net Name=NetK3_U_relay_ladder1_7 New Net Name=NetK3_U_relay_ladder01_7
+Change Net Name : Old Net Name=NetK3_U_relay_ladder1_8 New Net Name=NetK3_U_relay_ladder01_8
+Change Net Name : Old Net Name=NetK3_U_relay_ladder2_3 New Net Name=NetK3_U_relay_ladder02_3
+Change Net Name : Old Net Name=NetK3_U_relay_ladder2_7 New Net Name=NetK3_U_relay_ladder02_7
+Change Net Name : Old Net Name=NetK3_U_relay_ladder2_8 New Net Name=NetK3_U_relay_ladder02_8
+Change Net Name : Old Net Name=NetK4_U_relay_ladder1_3 New Net Name=NetK4_U_relay_ladder01_3
+Change Net Name : Old Net Name=NetK4_U_relay_ladder1_7 New Net Name=NetK4_U_relay_ladder01_7
+Change Net Name : Old Net Name=NetK4_U_relay_ladder1_8 New Net Name=NetK4_U_relay_ladder01_8
+Change Net Name : Old Net Name=NetK4_U_relay_ladder2_3 New Net Name=NetK4_U_relay_ladder02_3
+Change Net Name : Old Net Name=NetK4_U_relay_ladder2_7 New Net Name=NetK4_U_relay_ladder02_7
+Change Net Name : Old Net Name=NetK4_U_relay_ladder2_8 New Net Name=NetK4_U_relay_ladder02_8
+Change Net Name : Old Net Name=NetK5_U_relay_ladder1_3 New Net Name=NetK5_U_relay_ladder01_3
+Change Net Name : Old Net Name=NetK5_U_relay_ladder1_7 New Net Name=NetK5_U_relay_ladder01_7
+Change Net Name : Old Net Name=NetK5_U_relay_ladder1_8 New Net Name=NetK5_U_relay_ladder01_8
+Change Net Name : Old Net Name=NetK5_U_relay_ladder2_3 New Net Name=NetK5_U_relay_ladder02_3
+Change Net Name : Old Net Name=NetK5_U_relay_ladder2_7 New Net Name=NetK5_U_relay_ladder02_7
+Change Net Name : Old Net Name=NetK5_U_relay_ladder2_8 New Net Name=NetK5_U_relay_ladder02_8
+Change Net Name : Old Net Name=NetK6_U_relay_ladder1_3 New Net Name=NetK6_U_relay_ladder01_3
+Change Net Name : Old Net Name=NetK6_U_relay_ladder1_7 New Net Name=NetK6_U_relay_ladder01_7
+Change Net Name : Old Net Name=NetK6_U_relay_ladder1_8 New Net Name=NetK6_U_relay_ladder01_8
+Change Net Name : Old Net Name=NetK6_U_relay_ladder2_3 New Net Name=NetK6_U_relay_ladder02_3
+Change Net Name : Old Net Name=NetK6_U_relay_ladder2_7 New Net Name=NetK6_U_relay_ladder02_7
+Change Net Name : Old Net Name=NetK6_U_relay_ladder2_8 New Net Name=NetK6_U_relay_ladder02_8
+Change Net Name : Old Net Name=NetK7_U_relay_ladder1_3 New Net Name=NetK7_U_relay_ladder01_3
+Change Net Name : Old Net Name=NetK7_U_relay_ladder1_7 New Net Name=NetK7_U_relay_ladder01_7
+Change Net Name : Old Net Name=NetK7_U_relay_ladder1_8 New Net Name=NetK7_U_relay_ladder01_8
+Change Net Name : Old Net Name=NetK7_U_relay_ladder2_3 New Net Name=NetK7_U_relay_ladder02_3
+Change Net Name : Old Net Name=NetK7_U_relay_ladder2_7 New Net Name=NetK7_U_relay_ladder02_7
+Change Net Name : Old Net Name=NetK7_U_relay_ladder2_8 New Net Name=NetK7_U_relay_ladder02_8
+Change Net Name : Old Net Name=NetK8_U_relay_ladder1_8 New Net Name=NetK8_U_relay_ladder01_8
+Change Net Name : Old Net Name=NetK8_U_relay_ladder2_8 New Net Name=NetK8_U_relay_ladder02_8
+Change Class Name : Old Net Name=U_relay_ladder1 New Net Name=U_relay_ladder01
+Change Class Name : Old Net Name=U_relay_ladder2 New Net Name=U_relay_ladder02
+Added Room: Name=U_relay_ladder01
+Added Room: Name=U_relay_ladder02

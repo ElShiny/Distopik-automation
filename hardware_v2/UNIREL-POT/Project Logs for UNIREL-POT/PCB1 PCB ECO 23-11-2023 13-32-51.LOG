@@ -1,0 +1,22 @@
+Removed Member From Class: ClassName=U_MCU Member=C8
+Removed Member From Class: ClassName=U_MCU Member=C9
+Removed Member From Class: ClassName=U_relay_driver Member=C10
+Removed Member From Class: ClassName=U_relay_driver Member=C11
+Added Component: Designator=J3_U_relay_ladder1(solderJumper)
+Added Pin To Net: NetName=+3V3 Pin=C4-2
+Added Pin To Net: NetName=B2 Pin=J3_U_relay_ladder1-1
+Added Pin To Net: NetName=B2 Pin=J3_U_relay_ladder1-2
+Added Pin To Net: NetName=+3V3 Pin=MCP1-5
+Added Pin To Net: NetName=+3V3 Pin=R1-1
+Added Pin To Net: NetName=+3V3 Pin=R2-1
+Added Pin To Net: NetName=+3V3 Pin=R21-1
+Added Member To Class: ClassName=U_MCU Member=Component C2 100n
+Added Member To Class: ClassName=U_MCU Member=Component C3 100n
+Added Member To Class: ClassName=U_relay_driver Member=Component C4 100n
+Added Member To Class: ClassName=U_relay_driver Member=Component C5 100n
+Added Member To Class: ClassName=U_relay_ladder1 Member=Component J3_U_relay_ladder1 (J3) JMP_mini
+Added Room: Name=U_MCU
+Added Room: Name=U_Power
+Added Room: Name=U_relay_driver
+Added Room: Name=U_relay_ladder1
+Added Room: Name=U_relay_ladder2

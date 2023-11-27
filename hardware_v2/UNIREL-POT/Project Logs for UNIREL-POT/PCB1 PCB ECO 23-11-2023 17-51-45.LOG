@@ -1,0 +1,216 @@
+Change Component Designator: OldDesignator=C4 NewDesignator=C7
+Change Component Designator: OldDesignator=C5 NewDesignator=C4
+Change Component Designator: OldDesignator=C6 NewDesignator=C14
+Change Component Designator: OldDesignator=C7 NewDesignator=C15
+Change Component Designator: OldDesignator=C13 NewDesignator=C5
+Change Component Designator: OldDesignator=C14 NewDesignator=C16
+Change Component Designator: OldDesignator=C15 NewDesignator=C17
+Change Component Designator: OldDesignator=C16 NewDesignator=C13
+Change Component Designator: OldDesignator=C17 NewDesignator=C6
+Change Component Designator: OldDesignator=C? NewDesignator=C22
+Change Component Designator: OldDesignator=C? NewDesignator=C23
+Change Component Designator: OldDesignator=C? NewDesignator=C24
+Change Component Designator: OldDesignator=C? NewDesignator=C25
+Change Component Designator: OldDesignator=C? NewDesignator=C26
+Change Component Designator: OldDesignator=C? NewDesignator=C27
+Change Component Designator: OldDesignator=C? NewDesignator=C28
+Change Component Designator: OldDesignator=C? NewDesignator=C29
+Change Component Designator: OldDesignator=MCP? NewDesignator=MCP4
+Change Component Designator: OldDesignator=MCP? NewDesignator=MCP5
+Change Component Designator: OldDesignator=R? NewDesignator=R24
+Change Component Designator: OldDesignator=R? NewDesignator=R25
+Change Component Designator: OldDesignator=TP? NewDesignator=TP7
+Change Component Designator: OldDesignator=TP? NewDesignator=TP8
+Change Component Designator: OldDesignator=TP? NewDesignator=TP9
+Change Component Designator: OldDesignator=TP? NewDesignator=TP10
+Change Component Designator: OldDesignator=ULN? NewDesignator=ULN7
+Change Component Designator: OldDesignator=ULN? NewDesignator=ULN8
+Change Component Designator: OldDesignator=ULN? NewDesignator=ULN9
+Change Component Designator: OldDesignator=ULN? NewDesignator=ULN10
+Change Net Name : Old Net Name=NetC5_2 New Net Name=NetC4_2
+Change Net Name : Old Net Name=NetC13_2 New Net Name=NetC5_2
+Change Net Name : Old Net Name=NetC17_2 New Net Name=NetC6_2
+Change Net Name : Old Net Name=NetC?_2 New Net Name=NetC22_2
+Change Net Name : Old Net Name=NetMCP?_1 New Net Name=NetMCP5_1
+Change Net Name : Old Net Name=NetMCP?_2 New Net Name=NetMCP4_2
+Change Net Name : Old Net Name=NetMCP?_3 New Net Name=NetMCP5_3
+Change Net Name : Old Net Name=NetMCP?_4 New Net Name=NetMCP4_4
+Change Net Name : Old Net Name=NetMCP?_17 New Net Name=NetMCP5_17
+Change Net Name : Old Net Name=NetMCP?_18 New Net Name=NetMCP5_18
+Change Net Name : Old Net Name=NetMCP?_19 New Net Name=NetMCP4_19
+Change Net Name : Old Net Name=NetMCP?_20 New Net Name=NetMCP5_20
+Change Net Name : Old Net Name=NetMCP?_21 New Net Name=NetMCP5_21
+Change Net Name : Old Net Name=NetMCP?_22 New Net Name=NetMCP5_22
+Change Net Name : Old Net Name=NetMCP?_23 New Net Name=NetMCP5_23
+Change Net Name : Old Net Name=NetMCP?_24 New Net Name=NetMCP4_24
+Change Net Name : Old Net Name=NetMCP?_25 New Net Name=NetMCP5_25
+Change Net Name : Old Net Name=NetMCP?_26 New Net Name=NetMCP5_26
+Change Net Name : Old Net Name=NetMCP?_27 New Net Name=NetMCP4_27
+Change Net Name : Old Net Name=NetMCP?_28 New Net Name=NetMCP5_28
+Added Pin To Net: NetName=NetC23_2 Pin=C23-2
+Added Pin To Net: NetName=NetC23_2 Pin=MCP5-14
+Added Pin To Net: NetName=NetC23_2 Pin=R25-2
+Added Net: Name=NetC23_2
+Added Pin To Net: NetName=NetMCP4_1 Pin=MCP4-1
+Added Pin To Net: NetName=NetMCP4_1 Pin=ULN8-2
+Added Net: Name=NetMCP4_1
+Added Pin To Net: NetName=NetMCP4_3 Pin=MCP4-3
+Added Pin To Net: NetName=NetMCP4_3 Pin=ULN8-20
+Added Net: Name=NetMCP4_3
+Added Pin To Net: NetName=NetMCP4_17 Pin=MCP4-17
+Added Pin To Net: NetName=NetMCP4_17 Pin=ULN7-6
+Added Net: Name=NetMCP4_17
+Added Pin To Net: NetName=NetMCP4_18 Pin=MCP4-18
+Added Pin To Net: NetName=NetMCP4_18 Pin=ULN7-5
+Added Net: Name=NetMCP4_18
+Added Pin To Net: NetName=NetMCP4_20 Pin=MCP4-20
+Added Pin To Net: NetName=NetMCP4_20 Pin=ULN7-3
+Added Net: Name=NetMCP4_20
+Added Pin To Net: NetName=NetMCP4_21 Pin=MCP4-21
+Added Pin To Net: NetName=NetMCP4_21 Pin=ULN7-2
+Added Net: Name=NetMCP4_21
+Added Pin To Net: NetName=NetMCP4_22 Pin=MCP4-22
+Added Pin To Net: NetName=NetMCP4_22 Pin=ULN7-1
+Added Net: Name=NetMCP4_22
+Added Pin To Net: NetName=NetMCP4_23 Pin=MCP4-23
+Added Pin To Net: NetName=NetMCP4_23 Pin=ULN7-20
+Added Net: Name=NetMCP4_23
+Added Pin To Net: NetName=NetMCP4_25 Pin=MCP4-25
+Added Pin To Net: NetName=NetMCP4_25 Pin=ULN8-6
+Added Net: Name=NetMCP4_25
+Added Pin To Net: NetName=NetMCP4_26 Pin=MCP4-26
+Added Pin To Net: NetName=NetMCP4_26 Pin=ULN8-5
+Added Net: Name=NetMCP4_26
+Added Pin To Net: NetName=NetMCP4_28 Pin=MCP4-28
+Added Pin To Net: NetName=NetMCP4_28 Pin=ULN8-3
+Added Net: Name=NetMCP4_28
+Added Pin To Net: NetName=NetMCP5_2 Pin=MCP5-2
+Added Pin To Net: NetName=NetMCP5_2 Pin=ULN10-1
+Added Net: Name=NetMCP5_2
+Added Pin To Net: NetName=NetMCP5_4 Pin=MCP5-4
+Added Pin To Net: NetName=NetMCP5_4 Pin=ULN10-19
+Added Net: Name=NetMCP5_4
+Added Pin To Net: NetName=NetMCP5_19 Pin=MCP5-19
+Added Pin To Net: NetName=NetMCP5_19 Pin=ULN9-4
+Added Net: Name=NetMCP5_19
+Added Pin To Net: NetName=NetMCP5_24 Pin=MCP5-24
+Added Pin To Net: NetName=NetMCP5_24 Pin=ULN9-19
+Added Net: Name=NetMCP5_24
+Added Pin To Net: NetName=NetMCP5_27 Pin=MCP5-27
+Added Pin To Net: NetName=NetMCP5_27 Pin=ULN10-4
+Added Net: Name=NetMCP5_27
+Added Member To Class: ClassName=U_relay_driver Member=Component C22 100n
+Added Member To Class: ClassName=U_relay_driver Member=Component C23 100n
+Added Member To Class: ClassName=U_relay_driver Member=Component C24 100n
+Added Member To Class: ClassName=U_relay_driver Member=Component C25 100n
+Added Member To Class: ClassName=U_relay_driver Member=Component C26 100n
+Added Member To Class: ClassName=U_relay_driver Member=Component C28 100n
+Added Member To Class: ClassName=U_relay_driver Member=Component C29 100n
+Added Member To Class: ClassName=U_relay_ladder2 Member=Component J3_U_relay_ladder2 (J3) JMP_mini
+Added Member To Class: ClassName=U_relay_ladder3 Member=Component J3_U_relay_ladder3 (J3) JMP_mini
+Added Member To Class: ClassName=U_relay_ladder4 Member=Component J3_U_relay_ladder4 (J3) JMP_mini
+Added Member To Class: ClassName=U_relay_ladder5 Member=Component J3_U_relay_ladder5 (J3) JMP_mini
+Added Member To Class: ClassName=U_relay_ladder2 Member=Component K1_U_relay_ladder2 (K1) DPDT
+Added Member To Class: ClassName=U_relay_ladder3 Member=Component K1_U_relay_ladder3 (K1) DPDT
+Added Member To Class: ClassName=U_relay_ladder4 Member=Component K1_U_relay_ladder4 (K1) DPDT
+Added Member To Class: ClassName=U_relay_ladder5 Member=Component K1_U_relay_ladder5 (K1) DPDT
+Added Member To Class: ClassName=U_relay_ladder2 Member=Component K2_U_relay_ladder2 (K2) DPDT
+Added Member To Class: ClassName=U_relay_ladder3 Member=Component K2_U_relay_ladder3 (K2) DPDT
+Added Member To Class: ClassName=U_relay_ladder4 Member=Component K2_U_relay_ladder4 (K2) DPDT
+Added Member To Class: ClassName=U_relay_ladder5 Member=Component K2_U_relay_ladder5 (K2) DPDT
+Added Member To Class: ClassName=U_relay_ladder2 Member=Component K3_U_relay_ladder2 (K3) DPDT
+Added Member To Class: ClassName=U_relay_ladder3 Member=Component K3_U_relay_ladder3 (K3) DPDT
+Added Member To Class: ClassName=U_relay_ladder4 Member=Component K3_U_relay_ladder4 (K3) DPDT
+Added Member To Class: ClassName=U_relay_ladder5 Member=Component K3_U_relay_ladder5 (K3) DPDT
+Added Member To Class: ClassName=U_relay_ladder2 Member=Component K4_U_relay_ladder2 (K4) DPDT
+Added Member To Class: ClassName=U_relay_ladder3 Member=Component K4_U_relay_ladder3 (K4) DPDT
+Added Member To Class: ClassName=U_relay_ladder4 Member=Component K4_U_relay_ladder4 (K4) DPDT
+Added Member To Class: ClassName=U_relay_ladder5 Member=Component K4_U_relay_ladder5 (K4) DPDT
+Added Member To Class: ClassName=U_relay_ladder2 Member=Component K5_U_relay_ladder2 (K5) DPDT
+Added Member To Class: ClassName=U_relay_ladder3 Member=Component K5_U_relay_ladder3 (K5) DPDT
+Added Member To Class: ClassName=U_relay_ladder4 Member=Component K5_U_relay_ladder4 (K5) DPDT
+Added Member To Class: ClassName=U_relay_ladder5 Member=Component K5_U_relay_ladder5 (K5) DPDT
+Added Member To Class: ClassName=U_relay_ladder2 Member=Component K6_U_relay_ladder2 (K6) DPDT
+Added Member To Class: ClassName=U_relay_ladder3 Member=Component K6_U_relay_ladder3 (K6) DPDT
+Added Member To Class: ClassName=U_relay_ladder4 Member=Component K6_U_relay_ladder4 (K6) DPDT
+Added Member To Class: ClassName=U_relay_ladder5 Member=Component K6_U_relay_ladder5 (K6) DPDT
+Added Member To Class: ClassName=U_relay_ladder2 Member=Component K7_U_relay_ladder2 (K7) DPDT
+Added Member To Class: ClassName=U_relay_ladder3 Member=Component K7_U_relay_ladder3 (K7) DPDT
+Added Member To Class: ClassName=U_relay_ladder4 Member=Component K7_U_relay_ladder4 (K7) DPDT
+Added Member To Class: ClassName=U_relay_ladder5 Member=Component K7_U_relay_ladder5 (K7) DPDT
+Added Member To Class: ClassName=U_relay_ladder2 Member=Component K8_U_relay_ladder2 (K8) DPDT
+Added Member To Class: ClassName=U_relay_ladder3 Member=Component K8_U_relay_ladder3 (K8) DPDT
+Added Member To Class: ClassName=U_relay_ladder4 Member=Component K8_U_relay_ladder4 (K8) DPDT
+Added Member To Class: ClassName=U_relay_ladder5 Member=Component K8_U_relay_ladder5 (K8) DPDT
+Added Member To Class: ClassName=U_relay_driver Member=Component MCP5 MCP32017
+Added Member To Class: ClassName=U_relay_ladder2 Member=Component R5_U_relay_ladder2 (R5) R/2
+Added Member To Class: ClassName=U_relay_ladder3 Member=Component R5_U_relay_ladder3 (R5) R/2
+Added Member To Class: ClassName=U_relay_ladder4 Member=Component R5_U_relay_ladder4 (R5) R/2
+Added Member To Class: ClassName=U_relay_ladder5 Member=Component R5_U_relay_ladder5 (R5) R/2
+Added Member To Class: ClassName=U_relay_ladder2 Member=Component R6_U_relay_ladder2 (R6) R/4
+Added Member To Class: ClassName=U_relay_ladder3 Member=Component R6_U_relay_ladder3 (R6) R/4
+Added Member To Class: ClassName=U_relay_ladder4 Member=Component R6_U_relay_ladder4 (R6) R/4
+Added Member To Class: ClassName=U_relay_ladder5 Member=Component R6_U_relay_ladder5 (R6) R/4
+Added Member To Class: ClassName=U_relay_ladder2 Member=Component R7_U_relay_ladder2 (R7) R/8
+Added Member To Class: ClassName=U_relay_ladder3 Member=Component R7_U_relay_ladder3 (R7) R/8
+Added Member To Class: ClassName=U_relay_ladder4 Member=Component R7_U_relay_ladder4 (R7) R/8
+Added Member To Class: ClassName=U_relay_ladder5 Member=Component R7_U_relay_ladder5 (R7) R/8
+Added Member To Class: ClassName=U_relay_ladder2 Member=Component R8_U_relay_ladder2 (R8) R/16
+Added Member To Class: ClassName=U_relay_ladder3 Member=Component R8_U_relay_ladder3 (R8) R/16
+Added Member To Class: ClassName=U_relay_ladder4 Member=Component R8_U_relay_ladder4 (R8) R/16
+Added Member To Class: ClassName=U_relay_ladder5 Member=Component R8_U_relay_ladder5 (R8) R/16
+Added Member To Class: ClassName=U_relay_ladder2 Member=Component R9_U_relay_ladder2 (R9) R/32
+Added Member To Class: ClassName=U_relay_ladder3 Member=Component R9_U_relay_ladder3 (R9) R/32
+Added Member To Class: ClassName=U_relay_ladder4 Member=Component R9_U_relay_ladder4 (R9) R/32
+Added Member To Class: ClassName=U_relay_ladder5 Member=Component R9_U_relay_ladder5 (R9) R/32
+Added Member To Class: ClassName=U_relay_ladder2 Member=Component R10_U_relay_ladder2 (R10) R/64
+Added Member To Class: ClassName=U_relay_ladder3 Member=Component R10_U_relay_ladder3 (R10) R/64
+Added Member To Class: ClassName=U_relay_ladder4 Member=Component R10_U_relay_ladder4 (R10) R/64
+Added Member To Class: ClassName=U_relay_ladder5 Member=Component R10_U_relay_ladder5 (R10) R/64
+Added Member To Class: ClassName=U_relay_ladder2 Member=Component R11_U_relay_ladder2 (R11) R/128
+Added Member To Class: ClassName=U_relay_ladder3 Member=Component R11_U_relay_ladder3 (R11) R/128
+Added Member To Class: ClassName=U_relay_ladder4 Member=Component R11_U_relay_ladder4 (R11) R/128
+Added Member To Class: ClassName=U_relay_ladder5 Member=Component R11_U_relay_ladder5 (R11) R/128
+Added Member To Class: ClassName=U_relay_ladder2 Member=Component R12_U_relay_ladder2 (R12) R/256
+Added Member To Class: ClassName=U_relay_ladder3 Member=Component R12_U_relay_ladder3 (R12) R/256
+Added Member To Class: ClassName=U_relay_ladder4 Member=Component R12_U_relay_ladder4 (R12) R/256
+Added Member To Class: ClassName=U_relay_ladder5 Member=Component R12_U_relay_ladder5 (R12) R/256
+Added Member To Class: ClassName=U_relay_ladder2 Member=Component R13_U_relay_ladder2 (R13) R/2
+Added Member To Class: ClassName=U_relay_ladder3 Member=Component R13_U_relay_ladder3 (R13) R/2
+Added Member To Class: ClassName=U_relay_ladder4 Member=Component R13_U_relay_ladder4 (R13) R/2
+Added Member To Class: ClassName=U_relay_ladder5 Member=Component R13_U_relay_ladder5 (R13) R/2
+Added Member To Class: ClassName=U_relay_ladder2 Member=Component R14_U_relay_ladder2 (R14) R/4
+Added Member To Class: ClassName=U_relay_ladder3 Member=Component R14_U_relay_ladder3 (R14) R/4
+Added Member To Class: ClassName=U_relay_ladder4 Member=Component R14_U_relay_ladder4 (R14) R/4
+Added Member To Class: ClassName=U_relay_ladder5 Member=Component R14_U_relay_ladder5 (R14) R/4
+Added Member To Class: ClassName=U_relay_ladder2 Member=Component R15_U_relay_ladder2 (R15) R/8
+Added Member To Class: ClassName=U_relay_ladder3 Member=Component R15_U_relay_ladder3 (R15) R/8
+Added Member To Class: ClassName=U_relay_ladder4 Member=Component R15_U_relay_ladder4 (R15) R/8
+Added Member To Class: ClassName=U_relay_ladder5 Member=Component R15_U_relay_ladder5 (R15) R/8
+Added Member To Class: ClassName=U_relay_ladder2 Member=Component R16_U_relay_ladder2 (R16) R/16
+Added Member To Class: ClassName=U_relay_ladder3 Member=Component R16_U_relay_ladder3 (R16) R/16
+Added Member To Class: ClassName=U_relay_ladder4 Member=Component R16_U_relay_ladder4 (R16) R/16
+Added Member To Class: ClassName=U_relay_ladder5 Member=Component R16_U_relay_ladder5 (R16) R/16
+Added Member To Class: ClassName=U_relay_ladder2 Member=Component R17_U_relay_ladder2 (R17) R/32
+Added Member To Class: ClassName=U_relay_ladder3 Member=Component R17_U_relay_ladder3 (R17) R/32
+Added Member To Class: ClassName=U_relay_ladder4 Member=Component R17_U_relay_ladder4 (R17) R/32
+Added Member To Class: ClassName=U_relay_ladder5 Member=Component R17_U_relay_ladder5 (R17) R/32
+Added Member To Class: ClassName=U_relay_ladder2 Member=Component R18_U_relay_ladder2 (R18) R/64
+Added Member To Class: ClassName=U_relay_ladder3 Member=Component R18_U_relay_ladder3 (R18) R/64
+Added Member To Class: ClassName=U_relay_ladder4 Member=Component R18_U_relay_ladder4 (R18) R/64
+Added Member To Class: ClassName=U_relay_ladder5 Member=Component R18_U_relay_ladder5 (R18) R/64
+Added Member To Class: ClassName=U_relay_ladder2 Member=Component R19_U_relay_ladder2 (R19) R/128
+Added Member To Class: ClassName=U_relay_ladder3 Member=Component R19_U_relay_ladder3 (R19) R/128
+Added Member To Class: ClassName=U_relay_ladder4 Member=Component R19_U_relay_ladder4 (R19) R/128
+Added Member To Class: ClassName=U_relay_ladder5 Member=Component R19_U_relay_ladder5 (R19) R/128
+Added Member To Class: ClassName=U_relay_ladder2 Member=Component R20_U_relay_ladder2 (R20) R/256
+Added Member To Class: ClassName=U_relay_ladder3 Member=Component R20_U_relay_ladder3 (R20) R/256
+Added Member To Class: ClassName=U_relay_ladder4 Member=Component R20_U_relay_ladder4 (R20) R/256
+Added Member To Class: ClassName=U_relay_ladder5 Member=Component R20_U_relay_ladder5 (R20) R/256
+Added Member To Class: ClassName=U_relay_driver Member=Component R24 100k
+Added Member To Class: ClassName=U_relay_driver Member=Component TP7 PAD
+Added Member To Class: ClassName=U_relay_driver Member=Component TP8 PAD
+Added Member To Class: ClassName=U_relay_driver Member=Component TP9 PAD
+Added Member To Class: ClassName=U_relay_driver Member=Component ULN7 ULN2803
+Added Member To Class: ClassName=U_relay_driver Member=Component ULN9 ULN2803
+Added Member To Class: ClassName=U_relay_driver Member=Component ULN10 ULN2803

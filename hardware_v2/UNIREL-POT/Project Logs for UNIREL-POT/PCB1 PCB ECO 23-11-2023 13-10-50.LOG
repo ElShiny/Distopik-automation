@@ -1,0 +1,8 @@
+Removed Member From Class: ClassName=U_Power Member=C2
+Removed Member From Class: ClassName=U_Power Member=C5
+Change Component Designator: OldDesignator=C2 NewDesignator=C8
+Change Component Designator: OldDesignator=C3 NewDesignator=C9
+Change Component Designator: OldDesignator=C4 NewDesignator=C10
+Change Component Designator: OldDesignator=C5 NewDesignator=C11
+Added Member To Class: ClassName=U_Power Member=Component C8 100n
+Added Member To Class: ClassName=U_Power Member=Component C11 100n

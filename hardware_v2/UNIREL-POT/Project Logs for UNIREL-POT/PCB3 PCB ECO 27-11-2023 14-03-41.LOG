@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=NetK3_U_relay_ladder10_8 Pin=K1_U_relay_ladder10-8
+Removed Pin From Net: NetName=NetK3_U_relay_ladder10_8 Pin=ULN1-10
+Change Component Designator: OldDesignator=J?_U_relay_ladder1 NewDesignator=J3_U_relay_ladder1
+Change Component Designator: OldDesignator=J?_U_relay_ladder2 NewDesignator=J3_U_relay_ladder2
+Change Component Designator: OldDesignator=J?_U_relay_ladder3 NewDesignator=J3_U_relay_ladder3
+Change Component Designator: OldDesignator=J?_U_relay_ladder4 NewDesignator=J3_U_relay_ladder4
+Change Component Designator: OldDesignator=J?_U_relay_ladder5 NewDesignator=J3_U_relay_ladder5
+Change Component Designator: OldDesignator=J?_U_relay_ladder6 NewDesignator=J3_U_relay_ladder6
+Change Component Designator: OldDesignator=J?_U_relay_ladder7 NewDesignator=J3_U_relay_ladder7
+Change Component Designator: OldDesignator=J?_U_relay_ladder8 NewDesignator=J3_U_relay_ladder8
+Change Component Designator: OldDesignator=J?_U_relay_ladder9 NewDesignator=J3_U_relay_ladder9
+Change Component Designator: OldDesignator=J?_U_relay_ladder10 NewDesignator=J3_U_relay_ladder10
+Added Pin To Net: NetName=NetK1_U_relay_ladder10_8 Pin=K1_U_relay_ladder10-8
+Added Pin To Net: NetName=NetK1_U_relay_ladder10_8 Pin=ULN1-10

@@ -1,0 +1,9 @@
+Added Component: Designator=J3_U_relay_ladder1(solderJumper)
+Added Pin To Net: NetName=B2 Pin=J3_U_relay_ladder1-1
+Added Pin To Net: NetName=B2 Pin=J3_U_relay_ladder1-2
+Added Member To Class: ClassName=U_relay_ladder1 Member=Component J3_U_relay_ladder1 (J3) JMP_mini
+Added Room: Name=U_MCU
+Added Room: Name=U_Power
+Added Room: Name=U_relay_driver
+Added Room: Name=U_relay_ladder1
+Added Room: Name=U_relay_ladder2

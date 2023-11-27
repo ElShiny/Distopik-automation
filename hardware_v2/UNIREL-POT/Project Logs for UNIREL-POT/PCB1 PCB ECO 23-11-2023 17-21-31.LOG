@@ -1,0 +1,132 @@
+Removed Pin From Net: NetName=B5 Pin=J3_U_relay_ladder2-1
+Removed Pin From Net: NetName=B5 Pin=J3_U_relay_ladder2-2
+Removed Pin From Net: NetName=B4 Pin=J3_U_relay_ladder3-1
+Removed Pin From Net: NetName=B4 Pin=J3_U_relay_ladder3-2
+Removed Pin From Net: NetName=B3 Pin=J3_U_relay_ladder4-1
+Removed Pin From Net: NetName=B3 Pin=J3_U_relay_ladder4-2
+Removed Pin From Net: NetName=B2 Pin=J3_U_relay_ladder5-1
+Removed Pin From Net: NetName=B2 Pin=J3_U_relay_ladder5-2
+Removed Pin From Net: NetName=+12 Pin=K1_U_relay_ladder1-1
+Removed Pin From Net: NetName=+12 Pin=K1_U_relay_ladder2-1
+Removed Pin From Net: NetName=C5 Pin=K1_U_relay_ladder2-4
+Removed Pin From Net: NetName=A5 Pin=K1_U_relay_ladder2-6
+Removed Pin From Net: NetName=+12 Pin=K1_U_relay_ladder3-1
+Removed Pin From Net: NetName=C4 Pin=K1_U_relay_ladder3-4
+Removed Pin From Net: NetName=A4 Pin=K1_U_relay_ladder3-6
+Removed Pin From Net: NetName=+12 Pin=K1_U_relay_ladder4-1
+Removed Pin From Net: NetName=C3 Pin=K1_U_relay_ladder4-4
+Removed Pin From Net: NetName=A3 Pin=K1_U_relay_ladder4-6
+Removed Pin From Net: NetName=+12 Pin=K1_U_relay_ladder5-1
+Removed Pin From Net: NetName=C2 Pin=K1_U_relay_ladder5-4
+Removed Pin From Net: NetName=A2 Pin=K1_U_relay_ladder5-6
+Removed Pin From Net: NetName=+12 Pin=K2_U_relay_ladder1-1
+Removed Pin From Net: NetName=+12 Pin=K2_U_relay_ladder2-1
+Removed Pin From Net: NetName=+12 Pin=K2_U_relay_ladder3-1
+Removed Pin From Net: NetName=+12 Pin=K2_U_relay_ladder4-1
+Removed Pin From Net: NetName=+12 Pin=K2_U_relay_ladder5-1
+Removed Pin From Net: NetName=+12 Pin=K3_U_relay_ladder1-1
+Removed Pin From Net: NetName=+12 Pin=K3_U_relay_ladder2-1
+Removed Pin From Net: NetName=+12 Pin=K3_U_relay_ladder3-1
+Removed Pin From Net: NetName=+12 Pin=K3_U_relay_ladder4-1
+Removed Pin From Net: NetName=+12 Pin=K3_U_relay_ladder5-1
+Removed Pin From Net: NetName=+12 Pin=K4_U_relay_ladder1-1
+Removed Pin From Net: NetName=+12 Pin=K4_U_relay_ladder2-1
+Removed Pin From Net: NetName=+12 Pin=K4_U_relay_ladder3-1
+Removed Pin From Net: NetName=+12 Pin=K4_U_relay_ladder4-1
+Removed Pin From Net: NetName=+12 Pin=K4_U_relay_ladder5-1
+Removed Pin From Net: NetName=+12 Pin=K5_U_relay_ladder1-1
+Removed Pin From Net: NetName=+12 Pin=K5_U_relay_ladder2-1
+Removed Pin From Net: NetName=+12 Pin=K5_U_relay_ladder3-1
+Removed Pin From Net: NetName=+12 Pin=K5_U_relay_ladder4-1
+Removed Pin From Net: NetName=+12 Pin=K5_U_relay_ladder5-1
+Removed Pin From Net: NetName=+12 Pin=K6_U_relay_ladder1-1
+Removed Pin From Net: NetName=+12 Pin=K6_U_relay_ladder2-1
+Removed Pin From Net: NetName=+12 Pin=K6_U_relay_ladder3-1
+Removed Pin From Net: NetName=+12 Pin=K6_U_relay_ladder4-1
+Removed Pin From Net: NetName=+12 Pin=K6_U_relay_ladder5-1
+Removed Pin From Net: NetName=+12 Pin=K7_U_relay_ladder1-1
+Removed Pin From Net: NetName=+12 Pin=K7_U_relay_ladder2-1
+Removed Pin From Net: NetName=+12 Pin=K7_U_relay_ladder3-1
+Removed Pin From Net: NetName=+12 Pin=K7_U_relay_ladder4-1
+Removed Pin From Net: NetName=+12 Pin=K7_U_relay_ladder5-1
+Removed Pin From Net: NetName=+12 Pin=K8_U_relay_ladder1-1
+Removed Pin From Net: NetName=+12 Pin=K8_U_relay_ladder2-1
+Removed Pin From Net: NetName=B5 Pin=K8_U_relay_ladder2-3
+Removed Pin From Net: NetName=B5 Pin=K8_U_relay_ladder2-7
+Removed Pin From Net: NetName=+12 Pin=K8_U_relay_ladder3-1
+Removed Pin From Net: NetName=B4 Pin=K8_U_relay_ladder3-3
+Removed Pin From Net: NetName=B4 Pin=K8_U_relay_ladder3-7
+Removed Pin From Net: NetName=+12 Pin=K8_U_relay_ladder4-1
+Removed Pin From Net: NetName=B3 Pin=K8_U_relay_ladder4-3
+Removed Pin From Net: NetName=B3 Pin=K8_U_relay_ladder4-7
+Removed Pin From Net: NetName=+12 Pin=K8_U_relay_ladder5-1
+Removed Pin From Net: NetName=B2 Pin=K8_U_relay_ladder5-3
+Removed Pin From Net: NetName=B2 Pin=K8_U_relay_ladder5-7
+Removed Pin From Net: NetName=C5 Pin=R5_U_relay_ladder2-1
+Removed Pin From Net: NetName=C4 Pin=R5_U_relay_ladder3-1
+Removed Pin From Net: NetName=C3 Pin=R5_U_relay_ladder4-1
+Removed Pin From Net: NetName=C2 Pin=R5_U_relay_ladder5-1
+Removed Pin From Net: NetName=B5 Pin=R12_U_relay_ladder2-2
+Removed Pin From Net: NetName=B4 Pin=R12_U_relay_ladder3-2
+Removed Pin From Net: NetName=B3 Pin=R12_U_relay_ladder4-2
+Removed Pin From Net: NetName=B2 Pin=R12_U_relay_ladder5-2
+Removed Pin From Net: NetName=A5 Pin=R13_U_relay_ladder2-1
+Removed Pin From Net: NetName=A4 Pin=R13_U_relay_ladder3-1
+Removed Pin From Net: NetName=A3 Pin=R13_U_relay_ladder4-1
+Removed Pin From Net: NetName=A2 Pin=R13_U_relay_ladder5-1
+Removed Pin From Net: NetName=B5 Pin=R20_U_relay_ladder2-2
+Removed Pin From Net: NetName=B4 Pin=R20_U_relay_ladder3-2
+Removed Pin From Net: NetName=B3 Pin=R20_U_relay_ladder4-2
+Removed Pin From Net: NetName=B2 Pin=R20_U_relay_ladder5-2
+Removed Pin From Net: NetName=B2 Pin=TP2-1
+Removed Pin From Net: NetName=B3 Pin=TP3-1
+Removed Pin From Net: NetName=B4 Pin=TP4-1
+Removed Pin From Net: NetName=B5 Pin=TP5-1
+Change Component Designator: OldDesignator=J3_U_relay_ladder6 NewDesignator=J3
+Change Component Designator: OldDesignator=K1_U_relay_ladder6 NewDesignator=K1
+Change Component Designator: OldDesignator=K2_U_relay_ladder6 NewDesignator=K2
+Change Component Designator: OldDesignator=K3_U_relay_ladder6 NewDesignator=K3
+Change Component Designator: OldDesignator=K4_U_relay_ladder6 NewDesignator=K4
+Change Component Designator: OldDesignator=K5_U_relay_ladder6 NewDesignator=K5
+Change Component Designator: OldDesignator=K6_U_relay_ladder6 NewDesignator=K6
+Change Component Designator: OldDesignator=K7_U_relay_ladder6 NewDesignator=K7
+Change Component Designator: OldDesignator=K8_U_relay_ladder6 NewDesignator=K8
+Change Component Designator: OldDesignator=R5_U_relay_ladder6 NewDesignator=R5
+Change Component Designator: OldDesignator=R6_U_relay_ladder6 NewDesignator=R6
+Change Component Designator: OldDesignator=R7_U_relay_ladder6 NewDesignator=R7
+Change Component Designator: OldDesignator=R8_U_relay_ladder6 NewDesignator=R8
+Change Component Designator: OldDesignator=R9_U_relay_ladder6 NewDesignator=R9
+Change Component Designator: OldDesignator=R10_U_relay_ladder6 NewDesignator=R10
+Change Component Designator: OldDesignator=R11_U_relay_ladder6 NewDesignator=R11
+Change Component Designator: OldDesignator=R12_U_relay_ladder6 NewDesignator=R12
+Change Component Designator: OldDesignator=R13_U_relay_ladder6 NewDesignator=R13
+Change Component Designator: OldDesignator=R14_U_relay_ladder6 NewDesignator=R14
+Change Component Designator: OldDesignator=R15_U_relay_ladder6 NewDesignator=R15
+Change Component Designator: OldDesignator=R16_U_relay_ladder6 NewDesignator=R16
+Change Component Designator: OldDesignator=R17_U_relay_ladder6 NewDesignator=R17
+Change Component Designator: OldDesignator=R18_U_relay_ladder6 NewDesignator=R18
+Change Component Designator: OldDesignator=R19_U_relay_ladder6 NewDesignator=R19
+Change Component Designator: OldDesignator=R20_U_relay_ladder6 NewDesignator=R20
+Change Net Name : Old Net Name=NetK1_U_relay_ladder6_3 New Net Name=NetK1_3
+Change Net Name : Old Net Name=NetK1_U_relay_ladder6_7 New Net Name=NetK1_7
+Change Net Name : Old Net Name=NetK1_U_relay_ladder6_8 New Net Name=NetK1_8
+Change Net Name : Old Net Name=NetK2_U_relay_ladder6_3 New Net Name=NetK2_3
+Change Net Name : Old Net Name=NetK2_U_relay_ladder6_7 New Net Name=NetK2_7
+Change Net Name : Old Net Name=NetK2_U_relay_ladder6_8 New Net Name=NetK2_8
+Change Net Name : Old Net Name=NetK3_U_relay_ladder6_3 New Net Name=NetK3_3
+Change Net Name : Old Net Name=NetK3_U_relay_ladder6_7 New Net Name=NetK3_7
+Change Net Name : Old Net Name=NetK3_U_relay_ladder6_8 New Net Name=NetK3_8
+Change Net Name : Old Net Name=NetK4_U_relay_ladder6_3 New Net Name=NetK4_3
+Change Net Name : Old Net Name=NetK4_U_relay_ladder6_7 New Net Name=NetK4_7
+Change Net Name : Old Net Name=NetK4_U_relay_ladder6_8 New Net Name=NetK4_8
+Change Net Name : Old Net Name=NetK5_U_relay_ladder6_3 New Net Name=NetK5_3
+Change Net Name : Old Net Name=NetK5_U_relay_ladder6_7 New Net Name=NetK5_7
+Change Net Name : Old Net Name=NetK5_U_relay_ladder6_8 New Net Name=NetK5_8
+Change Net Name : Old Net Name=NetK6_U_relay_ladder6_3 New Net Name=NetK6_3
+Change Net Name : Old Net Name=NetK6_U_relay_ladder6_7 New Net Name=NetK6_7
+Change Net Name : Old Net Name=NetK6_U_relay_ladder6_8 New Net Name=NetK6_8
+Change Net Name : Old Net Name=NetK7_U_relay_ladder6_3 New Net Name=NetK7_3
+Change Net Name : Old Net Name=NetK7_U_relay_ladder6_7 New Net Name=NetK7_7
+Change Net Name : Old Net Name=NetK7_U_relay_ladder6_8 New Net Name=NetK7_8
+Change Net Name : Old Net Name=NetK8_U_relay_ladder6_8 New Net Name=NetK8_8
+Change Class Name : Old Net Name=U_relay_ladder6 New Net Name=U_relay_ladder1

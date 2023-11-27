@@ -1,0 +1,312 @@
+Added Component: Designator=J3_U_relay_ladder4(solderJumper)
+Added Component: Designator=J3_U_relay_ladder5(solderJumper)
+Added Component: Designator=K1_U_relay_ladder4(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K1_U_relay_ladder5(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K2_U_relay_ladder4(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K2_U_relay_ladder5(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K3_U_relay_ladder4(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K3_U_relay_ladder5(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K4_U_relay_ladder4(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K4_U_relay_ladder5(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K5_U_relay_ladder4(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K5_U_relay_ladder5(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K6_U_relay_ladder4(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K6_U_relay_ladder5(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K7_U_relay_ladder4(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K7_U_relay_ladder5(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K8_U_relay_ladder4(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=K8_U_relay_ladder5(AXICOM IM-G Relay)
+Add component (AddParameter): Name = "Farnell ID"; Value = "1175070"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "URL"; Value = "http://si.farnell.com/te-connectivity-axicom/im06gr/relay-gull-wing-dpco-12vdc-2a/dp/1175070"; VariantName = "[No Variations]"
+Added Component: Designator=R5_U_relay_ladder4(R2012_0805I_L)
+Added Component: Designator=R5_U_relay_ladder5(R2012_0805I_L)
+Added Component: Designator=R6_U_relay_ladder4(R2012_0805I_L)
+Added Component: Designator=R6_U_relay_ladder5(R2012_0805I_L)
+Added Component: Designator=R7_U_relay_ladder4(R2012_0805I_L)
+Added Component: Designator=R7_U_relay_ladder5(R2012_0805I_L)
+Added Component: Designator=R8_U_relay_ladder4(R2012_0805I_L)
+Added Component: Designator=R8_U_relay_ladder5(R2012_0805I_L)
+Added Component: Designator=R9_U_relay_ladder4(R2012_0805I_L)
+Added Component: Designator=R9_U_relay_ladder5(R2012_0805I_L)
+Added Component: Designator=R10_U_relay_ladder4(R2012_0805I_L)
+Added Component: Designator=R10_U_relay_ladder5(R2012_0805I_L)
+Added Component: Designator=R11_U_relay_ladder4(R2012_0805I_L)
+Added Component: Designator=R11_U_relay_ladder5(R2012_0805I_L)
+Added Component: Designator=R12_U_relay_ladder4(R2012_0805I_L)
+Added Component: Designator=R12_U_relay_ladder5(R2012_0805I_L)
+Added Component: Designator=R13_U_relay_ladder4(R2012_0805I_L)
+Added Component: Designator=R13_U_relay_ladder5(R2012_0805I_L)
+Added Component: Designator=R14_U_relay_ladder4(R2012_0805I_L)
+Added Component: Designator=R14_U_relay_ladder5(R2012_0805I_L)
+Added Component: Designator=R15_U_relay_ladder4(R2012_0805I_L)
+Added Component: Designator=R15_U_relay_ladder5(R2012_0805I_L)
+Added Component: Designator=R16_U_relay_ladder4(R2012_0805I_L)
+Added Component: Designator=R16_U_relay_ladder5(R2012_0805I_L)
+Added Component: Designator=R17_U_relay_ladder4(R2012_0805I_L)
+Added Component: Designator=R17_U_relay_ladder5(R2012_0805I_L)
+Added Component: Designator=R18_U_relay_ladder4(R2012_0805I_L)
+Added Component: Designator=R18_U_relay_ladder5(R2012_0805I_L)
+Added Component: Designator=R19_U_relay_ladder4(R2012_0805I_L)
+Added Component: Designator=R19_U_relay_ladder5(R2012_0805I_L)
+Added Component: Designator=R20_U_relay_ladder4(R2012_0805I_L)
+Added Component: Designator=R20_U_relay_ladder5(R2012_0805I_L)
+Added Pin To Net: NetName=B4 Pin=J3_U_relay_ladder4-1
+Added Pin To Net: NetName=B4 Pin=J3_U_relay_ladder4-2
+Added Pin To Net: NetName=B5 Pin=J3_U_relay_ladder5-1
+Added Pin To Net: NetName=B5 Pin=J3_U_relay_ladder5-2
+Added Pin To Net: NetName=+12 Pin=K1_U_relay_ladder4-1
+Added Pin To Net: NetName=C4 Pin=K1_U_relay_ladder4-4
+Added Pin To Net: NetName=A4 Pin=K1_U_relay_ladder4-6
+Added Pin To Net: NetName=+12 Pin=K1_U_relay_ladder5-1
+Added Pin To Net: NetName=C5 Pin=K1_U_relay_ladder5-4
+Added Pin To Net: NetName=A5 Pin=K1_U_relay_ladder5-6
+Added Pin To Net: NetName=+12 Pin=K2_U_relay_ladder4-1
+Added Pin To Net: NetName=+12 Pin=K2_U_relay_ladder5-1
+Added Pin To Net: NetName=+12 Pin=K3_U_relay_ladder4-1
+Added Pin To Net: NetName=+12 Pin=K3_U_relay_ladder5-1
+Added Pin To Net: NetName=+12 Pin=K4_U_relay_ladder4-1
+Added Pin To Net: NetName=+12 Pin=K4_U_relay_ladder5-1
+Added Pin To Net: NetName=+12 Pin=K5_U_relay_ladder4-1
+Added Pin To Net: NetName=+12 Pin=K5_U_relay_ladder5-1
+Added Pin To Net: NetName=+12 Pin=K6_U_relay_ladder4-1
+Added Pin To Net: NetName=+12 Pin=K6_U_relay_ladder5-1
+Added Pin To Net: NetName=+12 Pin=K7_U_relay_ladder4-1
+Added Pin To Net: NetName=+12 Pin=K7_U_relay_ladder5-1
+Added Pin To Net: NetName=+12 Pin=K8_U_relay_ladder4-1
+Added Pin To Net: NetName=B4 Pin=K8_U_relay_ladder4-3
+Added Pin To Net: NetName=B4 Pin=K8_U_relay_ladder4-7
+Added Pin To Net: NetName=+12 Pin=K8_U_relay_ladder5-1
+Added Pin To Net: NetName=B5 Pin=K8_U_relay_ladder5-3
+Added Pin To Net: NetName=B5 Pin=K8_U_relay_ladder5-7
+Added Pin To Net: NetName=C4 Pin=R5_U_relay_ladder4-1
+Added Pin To Net: NetName=C5 Pin=R5_U_relay_ladder5-1
+Added Pin To Net: NetName=B4 Pin=R12_U_relay_ladder4-2
+Added Pin To Net: NetName=B5 Pin=R12_U_relay_ladder5-2
+Added Pin To Net: NetName=A4 Pin=R13_U_relay_ladder4-1
+Added Pin To Net: NetName=A5 Pin=R13_U_relay_ladder5-1
+Added Pin To Net: NetName=B4 Pin=R20_U_relay_ladder4-2
+Added Pin To Net: NetName=B5 Pin=R20_U_relay_ladder5-2
+Added Pin To Net: NetName=B4 Pin=TP4-1
+Added Pin To Net: NetName=B5 Pin=TP5-1
+Added Pin To Net: NetName=NetK1_U_relay_ladder4_3 Pin=K1_U_relay_ladder4-3
+Added Pin To Net: NetName=NetK1_U_relay_ladder4_3 Pin=K2_U_relay_ladder4-4
+Added Pin To Net: NetName=NetK1_U_relay_ladder4_3 Pin=R5_U_relay_ladder4-2
+Added Pin To Net: NetName=NetK1_U_relay_ladder4_3 Pin=R6_U_relay_ladder4-1
+Added Net: Name=NetK1_U_relay_ladder4_3
+Added Pin To Net: NetName=NetK1_U_relay_ladder4_7 Pin=K1_U_relay_ladder4-7
+Added Pin To Net: NetName=NetK1_U_relay_ladder4_7 Pin=K2_U_relay_ladder4-6
+Added Pin To Net: NetName=NetK1_U_relay_ladder4_7 Pin=R13_U_relay_ladder4-2
+Added Pin To Net: NetName=NetK1_U_relay_ladder4_7 Pin=R14_U_relay_ladder4-1
+Added Net: Name=NetK1_U_relay_ladder4_7
+Added Pin To Net: NetName=NetK1_U_relay_ladder4_8 Pin=K1_U_relay_ladder4-8
+Added Pin To Net: NetName=NetK1_U_relay_ladder4_8 Pin=ULN4-10
+Added Net: Name=NetK1_U_relay_ladder4_8
+Added Pin To Net: NetName=NetK1_U_relay_ladder5_3 Pin=K1_U_relay_ladder5-3
+Added Pin To Net: NetName=NetK1_U_relay_ladder5_3 Pin=K2_U_relay_ladder5-4
+Added Pin To Net: NetName=NetK1_U_relay_ladder5_3 Pin=R5_U_relay_ladder5-2
+Added Pin To Net: NetName=NetK1_U_relay_ladder5_3 Pin=R6_U_relay_ladder5-1
+Added Net: Name=NetK1_U_relay_ladder5_3
+Added Pin To Net: NetName=NetK1_U_relay_ladder5_7 Pin=K1_U_relay_ladder5-7
+Added Pin To Net: NetName=NetK1_U_relay_ladder5_7 Pin=K2_U_relay_ladder5-6
+Added Pin To Net: NetName=NetK1_U_relay_ladder5_7 Pin=R13_U_relay_ladder5-2
+Added Pin To Net: NetName=NetK1_U_relay_ladder5_7 Pin=R14_U_relay_ladder5-1
+Added Net: Name=NetK1_U_relay_ladder5_7
+Added Pin To Net: NetName=NetK1_U_relay_ladder5_8 Pin=K1_U_relay_ladder5-8
+Added Pin To Net: NetName=NetK1_U_relay_ladder5_8 Pin=ULN5-10
+Added Net: Name=NetK1_U_relay_ladder5_8
+Added Pin To Net: NetName=NetK2_U_relay_ladder4_3 Pin=K2_U_relay_ladder4-3
+Added Pin To Net: NetName=NetK2_U_relay_ladder4_3 Pin=K3_U_relay_ladder4-4
+Added Pin To Net: NetName=NetK2_U_relay_ladder4_3 Pin=R6_U_relay_ladder4-2
+Added Pin To Net: NetName=NetK2_U_relay_ladder4_3 Pin=R7_U_relay_ladder4-1
+Added Net: Name=NetK2_U_relay_ladder4_3
+Added Pin To Net: NetName=NetK2_U_relay_ladder4_7 Pin=K2_U_relay_ladder4-7
+Added Pin To Net: NetName=NetK2_U_relay_ladder4_7 Pin=K3_U_relay_ladder4-6
+Added Pin To Net: NetName=NetK2_U_relay_ladder4_7 Pin=R14_U_relay_ladder4-2
+Added Pin To Net: NetName=NetK2_U_relay_ladder4_7 Pin=R15_U_relay_ladder4-1
+Added Net: Name=NetK2_U_relay_ladder4_7
+Added Pin To Net: NetName=NetK2_U_relay_ladder4_8 Pin=K2_U_relay_ladder4-8
+Added Pin To Net: NetName=NetK2_U_relay_ladder4_8 Pin=ULN4-11
+Added Net: Name=NetK2_U_relay_ladder4_8
+Added Pin To Net: NetName=NetK2_U_relay_ladder5_3 Pin=K2_U_relay_ladder5-3
+Added Pin To Net: NetName=NetK2_U_relay_ladder5_3 Pin=K3_U_relay_ladder5-4
+Added Pin To Net: NetName=NetK2_U_relay_ladder5_3 Pin=R6_U_relay_ladder5-2
+Added Pin To Net: NetName=NetK2_U_relay_ladder5_3 Pin=R7_U_relay_ladder5-1
+Added Net: Name=NetK2_U_relay_ladder5_3
+Added Pin To Net: NetName=NetK2_U_relay_ladder5_7 Pin=K2_U_relay_ladder5-7
+Added Pin To Net: NetName=NetK2_U_relay_ladder5_7 Pin=K3_U_relay_ladder5-6
+Added Pin To Net: NetName=NetK2_U_relay_ladder5_7 Pin=R14_U_relay_ladder5-2
+Added Pin To Net: NetName=NetK2_U_relay_ladder5_7 Pin=R15_U_relay_ladder5-1
+Added Net: Name=NetK2_U_relay_ladder5_7
+Added Pin To Net: NetName=NetK2_U_relay_ladder5_8 Pin=K2_U_relay_ladder5-8
+Added Pin To Net: NetName=NetK2_U_relay_ladder5_8 Pin=ULN5-11
+Added Net: Name=NetK2_U_relay_ladder5_8
+Added Pin To Net: NetName=NetK3_U_relay_ladder4_3 Pin=K3_U_relay_ladder4-3
+Added Pin To Net: NetName=NetK3_U_relay_ladder4_3 Pin=K4_U_relay_ladder4-4
+Added Pin To Net: NetName=NetK3_U_relay_ladder4_3 Pin=R7_U_relay_ladder4-2
+Added Pin To Net: NetName=NetK3_U_relay_ladder4_3 Pin=R8_U_relay_ladder4-1
+Added Net: Name=NetK3_U_relay_ladder4_3
+Added Pin To Net: NetName=NetK3_U_relay_ladder4_7 Pin=K3_U_relay_ladder4-7
+Added Pin To Net: NetName=NetK3_U_relay_ladder4_7 Pin=K4_U_relay_ladder4-6
+Added Pin To Net: NetName=NetK3_U_relay_ladder4_7 Pin=R15_U_relay_ladder4-2
+Added Pin To Net: NetName=NetK3_U_relay_ladder4_7 Pin=R16_U_relay_ladder4-1
+Added Net: Name=NetK3_U_relay_ladder4_7
+Added Pin To Net: NetName=NetK3_U_relay_ladder4_8 Pin=K3_U_relay_ladder4-8
+Added Pin To Net: NetName=NetK3_U_relay_ladder4_8 Pin=ULN4-12
+Added Net: Name=NetK3_U_relay_ladder4_8
+Added Pin To Net: NetName=NetK3_U_relay_ladder5_3 Pin=K3_U_relay_ladder5-3
+Added Pin To Net: NetName=NetK3_U_relay_ladder5_3 Pin=K4_U_relay_ladder5-4
+Added Pin To Net: NetName=NetK3_U_relay_ladder5_3 Pin=R7_U_relay_ladder5-2
+Added Pin To Net: NetName=NetK3_U_relay_ladder5_3 Pin=R8_U_relay_ladder5-1
+Added Net: Name=NetK3_U_relay_ladder5_3
+Added Pin To Net: NetName=NetK3_U_relay_ladder5_7 Pin=K3_U_relay_ladder5-7
+Added Pin To Net: NetName=NetK3_U_relay_ladder5_7 Pin=K4_U_relay_ladder5-6
+Added Pin To Net: NetName=NetK3_U_relay_ladder5_7 Pin=R15_U_relay_ladder5-2
+Added Pin To Net: NetName=NetK3_U_relay_ladder5_7 Pin=R16_U_relay_ladder5-1
+Added Net: Name=NetK3_U_relay_ladder5_7
+Added Pin To Net: NetName=NetK3_U_relay_ladder5_8 Pin=K3_U_relay_ladder5-8
+Added Pin To Net: NetName=NetK3_U_relay_ladder5_8 Pin=ULN5-12
+Added Net: Name=NetK3_U_relay_ladder5_8
+Added Pin To Net: NetName=NetK4_U_relay_ladder4_3 Pin=K4_U_relay_ladder4-3
+Added Pin To Net: NetName=NetK4_U_relay_ladder4_3 Pin=K5_U_relay_ladder4-4
+Added Pin To Net: NetName=NetK4_U_relay_ladder4_3 Pin=R8_U_relay_ladder4-2
+Added Pin To Net: NetName=NetK4_U_relay_ladder4_3 Pin=R9_U_relay_ladder4-1
+Added Net: Name=NetK4_U_relay_ladder4_3
+Added Pin To Net: NetName=NetK4_U_relay_ladder4_7 Pin=K4_U_relay_ladder4-7
+Added Pin To Net: NetName=NetK4_U_relay_ladder4_7 Pin=K5_U_relay_ladder4-6
+Added Pin To Net: NetName=NetK4_U_relay_ladder4_7 Pin=R16_U_relay_ladder4-2
+Added Pin To Net: NetName=NetK4_U_relay_ladder4_7 Pin=R17_U_relay_ladder4-1
+Added Net: Name=NetK4_U_relay_ladder4_7
+Added Pin To Net: NetName=NetK4_U_relay_ladder4_8 Pin=K4_U_relay_ladder4-8
+Added Pin To Net: NetName=NetK4_U_relay_ladder4_8 Pin=ULN4-13
+Added Net: Name=NetK4_U_relay_ladder4_8
+Added Pin To Net: NetName=NetK4_U_relay_ladder5_3 Pin=K4_U_relay_ladder5-3
+Added Pin To Net: NetName=NetK4_U_relay_ladder5_3 Pin=K5_U_relay_ladder5-4
+Added Pin To Net: NetName=NetK4_U_relay_ladder5_3 Pin=R8_U_relay_ladder5-2
+Added Pin To Net: NetName=NetK4_U_relay_ladder5_3 Pin=R9_U_relay_ladder5-1
+Added Net: Name=NetK4_U_relay_ladder5_3
+Added Pin To Net: NetName=NetK4_U_relay_ladder5_7 Pin=K4_U_relay_ladder5-7
+Added Pin To Net: NetName=NetK4_U_relay_ladder5_7 Pin=K5_U_relay_ladder5-6
+Added Pin To Net: NetName=NetK4_U_relay_ladder5_7 Pin=R16_U_relay_ladder5-2
+Added Pin To Net: NetName=NetK4_U_relay_ladder5_7 Pin=R17_U_relay_ladder5-1
+Added Net: Name=NetK4_U_relay_ladder5_7
+Added Pin To Net: NetName=NetK4_U_relay_ladder5_8 Pin=K4_U_relay_ladder5-8
+Added Pin To Net: NetName=NetK4_U_relay_ladder5_8 Pin=ULN5-13
+Added Net: Name=NetK4_U_relay_ladder5_8
+Added Pin To Net: NetName=NetK5_U_relay_ladder4_3 Pin=K5_U_relay_ladder4-3
+Added Pin To Net: NetName=NetK5_U_relay_ladder4_3 Pin=K6_U_relay_ladder4-4
+Added Pin To Net: NetName=NetK5_U_relay_ladder4_3 Pin=R9_U_relay_ladder4-2
+Added Pin To Net: NetName=NetK5_U_relay_ladder4_3 Pin=R10_U_relay_ladder4-1
+Added Net: Name=NetK5_U_relay_ladder4_3
+Added Pin To Net: NetName=NetK5_U_relay_ladder4_7 Pin=K5_U_relay_ladder4-7
+Added Pin To Net: NetName=NetK5_U_relay_ladder4_7 Pin=K6_U_relay_ladder4-6
+Added Pin To Net: NetName=NetK5_U_relay_ladder4_7 Pin=R17_U_relay_ladder4-2
+Added Pin To Net: NetName=NetK5_U_relay_ladder4_7 Pin=R18_U_relay_ladder4-1
+Added Net: Name=NetK5_U_relay_ladder4_7
+Added Pin To Net: NetName=NetK5_U_relay_ladder4_8 Pin=K5_U_relay_ladder4-8
+Added Pin To Net: NetName=NetK5_U_relay_ladder4_8 Pin=ULN4-14
+Added Net: Name=NetK5_U_relay_ladder4_8
+Added Pin To Net: NetName=NetK5_U_relay_ladder5_3 Pin=K5_U_relay_ladder5-3
+Added Pin To Net: NetName=NetK5_U_relay_ladder5_3 Pin=K6_U_relay_ladder5-4
+Added Pin To Net: NetName=NetK5_U_relay_ladder5_3 Pin=R9_U_relay_ladder5-2
+Added Pin To Net: NetName=NetK5_U_relay_ladder5_3 Pin=R10_U_relay_ladder5-1
+Added Net: Name=NetK5_U_relay_ladder5_3
+Added Pin To Net: NetName=NetK5_U_relay_ladder5_7 Pin=K5_U_relay_ladder5-7
+Added Pin To Net: NetName=NetK5_U_relay_ladder5_7 Pin=K6_U_relay_ladder5-6
+Added Pin To Net: NetName=NetK5_U_relay_ladder5_7 Pin=R17_U_relay_ladder5-2
+Added Pin To Net: NetName=NetK5_U_relay_ladder5_7 Pin=R18_U_relay_ladder5-1
+Added Net: Name=NetK5_U_relay_ladder5_7
+Added Pin To Net: NetName=NetK5_U_relay_ladder5_8 Pin=K5_U_relay_ladder5-8
+Added Pin To Net: NetName=NetK5_U_relay_ladder5_8 Pin=ULN5-14
+Added Net: Name=NetK5_U_relay_ladder5_8
+Added Pin To Net: NetName=NetK6_U_relay_ladder4_3 Pin=K6_U_relay_ladder4-3
+Added Pin To Net: NetName=NetK6_U_relay_ladder4_3 Pin=K7_U_relay_ladder4-4
+Added Pin To Net: NetName=NetK6_U_relay_ladder4_3 Pin=R10_U_relay_ladder4-2
+Added Pin To Net: NetName=NetK6_U_relay_ladder4_3 Pin=R11_U_relay_ladder4-1
+Added Net: Name=NetK6_U_relay_ladder4_3
+Added Pin To Net: NetName=NetK6_U_relay_ladder4_7 Pin=K6_U_relay_ladder4-7
+Added Pin To Net: NetName=NetK6_U_relay_ladder4_7 Pin=K7_U_relay_ladder4-6
+Added Pin To Net: NetName=NetK6_U_relay_ladder4_7 Pin=R18_U_relay_ladder4-2
+Added Pin To Net: NetName=NetK6_U_relay_ladder4_7 Pin=R19_U_relay_ladder4-1
+Added Net: Name=NetK6_U_relay_ladder4_7
+Added Pin To Net: NetName=NetK6_U_relay_ladder4_8 Pin=K6_U_relay_ladder4-8
+Added Pin To Net: NetName=NetK6_U_relay_ladder4_8 Pin=ULN4-15
+Added Net: Name=NetK6_U_relay_ladder4_8
+Added Pin To Net: NetName=NetK6_U_relay_ladder5_3 Pin=K6_U_relay_ladder5-3
+Added Pin To Net: NetName=NetK6_U_relay_ladder5_3 Pin=K7_U_relay_ladder5-4
+Added Pin To Net: NetName=NetK6_U_relay_ladder5_3 Pin=R10_U_relay_ladder5-2
+Added Pin To Net: NetName=NetK6_U_relay_ladder5_3 Pin=R11_U_relay_ladder5-1
+Added Net: Name=NetK6_U_relay_ladder5_3
+Added Pin To Net: NetName=NetK6_U_relay_ladder5_7 Pin=K6_U_relay_ladder5-7
+Added Pin To Net: NetName=NetK6_U_relay_ladder5_7 Pin=K7_U_relay_ladder5-6
+Added Pin To Net: NetName=NetK6_U_relay_ladder5_7 Pin=R18_U_relay_ladder5-2
+Added Pin To Net: NetName=NetK6_U_relay_ladder5_7 Pin=R19_U_relay_ladder5-1
+Added Net: Name=NetK6_U_relay_ladder5_7
+Added Pin To Net: NetName=NetK6_U_relay_ladder5_8 Pin=K6_U_relay_ladder5-8
+Added Pin To Net: NetName=NetK6_U_relay_ladder5_8 Pin=ULN5-15
+Added Net: Name=NetK6_U_relay_ladder5_8
+Added Pin To Net: NetName=NetK7_U_relay_ladder4_3 Pin=K7_U_relay_ladder4-3
+Added Pin To Net: NetName=NetK7_U_relay_ladder4_3 Pin=K8_U_relay_ladder4-4
+Added Pin To Net: NetName=NetK7_U_relay_ladder4_3 Pin=R11_U_relay_ladder4-2
+Added Pin To Net: NetName=NetK7_U_relay_ladder4_3 Pin=R12_U_relay_ladder4-1
+Added Net: Name=NetK7_U_relay_ladder4_3
+Added Pin To Net: NetName=NetK7_U_relay_ladder4_7 Pin=K7_U_relay_ladder4-7
+Added Pin To Net: NetName=NetK7_U_relay_ladder4_7 Pin=K8_U_relay_ladder4-6
+Added Pin To Net: NetName=NetK7_U_relay_ladder4_7 Pin=R19_U_relay_ladder4-2
+Added Pin To Net: NetName=NetK7_U_relay_ladder4_7 Pin=R20_U_relay_ladder4-1
+Added Net: Name=NetK7_U_relay_ladder4_7
+Added Pin To Net: NetName=NetK7_U_relay_ladder4_8 Pin=K7_U_relay_ladder4-8
+Added Pin To Net: NetName=NetK7_U_relay_ladder4_8 Pin=ULN4-16
+Added Net: Name=NetK7_U_relay_ladder4_8
+Added Pin To Net: NetName=NetK7_U_relay_ladder5_3 Pin=K7_U_relay_ladder5-3
+Added Pin To Net: NetName=NetK7_U_relay_ladder5_3 Pin=K8_U_relay_ladder5-4
+Added Pin To Net: NetName=NetK7_U_relay_ladder5_3 Pin=R11_U_relay_ladder5-2
+Added Pin To Net: NetName=NetK7_U_relay_ladder5_3 Pin=R12_U_relay_ladder5-1
+Added Net: Name=NetK7_U_relay_ladder5_3
+Added Pin To Net: NetName=NetK7_U_relay_ladder5_7 Pin=K7_U_relay_ladder5-7
+Added Pin To Net: NetName=NetK7_U_relay_ladder5_7 Pin=K8_U_relay_ladder5-6
+Added Pin To Net: NetName=NetK7_U_relay_ladder5_7 Pin=R19_U_relay_ladder5-2
+Added Pin To Net: NetName=NetK7_U_relay_ladder5_7 Pin=R20_U_relay_ladder5-1
+Added Net: Name=NetK7_U_relay_ladder5_7
+Added Pin To Net: NetName=NetK7_U_relay_ladder5_8 Pin=K7_U_relay_ladder5-8
+Added Pin To Net: NetName=NetK7_U_relay_ladder5_8 Pin=ULN5-16
+Added Net: Name=NetK7_U_relay_ladder5_8
+Added Pin To Net: NetName=NetK8_U_relay_ladder4_8 Pin=K8_U_relay_ladder4-8
+Added Pin To Net: NetName=NetK8_U_relay_ladder4_8 Pin=ULN4-17
+Added Net: Name=NetK8_U_relay_ladder4_8
+Added Pin To Net: NetName=NetK8_U_relay_ladder5_8 Pin=K8_U_relay_ladder5-8
+Added Pin To Net: NetName=NetK8_U_relay_ladder5_8 Pin=ULN5-17
+Added Net: Name=NetK8_U_relay_ladder5_8
+Added Class: Name=U_relay_ladder4
+Added Class: Name=U_relay_ladder5
+Added Room: Name=U_relay_ladder4
+Added Room: Name=U_relay_ladder5

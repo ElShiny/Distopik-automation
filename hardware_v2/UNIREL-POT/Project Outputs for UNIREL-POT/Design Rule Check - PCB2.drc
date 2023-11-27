@@ -1,0 +1,598 @@
+Protel Design System Design Rule Check
+PCB File : C:\Users\Matej\Desktop\Distopik-automation\hardware_v2\UNIREL-POT\PCB2.PcbDoc
+Date     : 23/11/2023
+Time     : 18:36:47
+
+ERROR : More than 500 violations detected, DRC was stopped
+
+Processing Rule : Clearance Constraint (Gap=0.102mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=0.102mm) (Max=1816.048mm) (Preferred=0.102mm) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (InPadClass('PowerPads'))
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=0.3mm) (Conductor Width=0.102mm) (Air Gap=0.102mm) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Minimum Annular Ring (Minimum=0.076mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=0.2mm) (Max=6.3mm) (All)
+Rule Violations :0
+
+Processing Rule : Hole To Hole Clearance (Gap=0.25mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=0mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Silk To Solder Mask (Clearance=0.102mm) (IsPad),(All)
+Rule Violations :0
+
+Processing Rule : Silk to Silk (Clearance=0mm) (All),(All)
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mm) (All)
+Rule Violations :0
+
+Processing Rule : Board Clearance Constraint (Gap=0mm) (All)
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad J3_U_relay_ladder10-1(120.375mm,244.71mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad J3_U_relay_ladder10-2(120.375mm,243.694mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad J3_U_relay_ladder6-1(69.702mm,218.294mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad J3_U_relay_ladder6-2(69.702mm,217.278mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad J3_U_relay_ladder7-1(149.331mm,161.525mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad J3_U_relay_ladder7-2(149.331mm,160.509mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad J3_U_relay_ladder8-1(4.043mm,179.305mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad J3_U_relay_ladder8-2(4.043mm,178.289mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad J3_U_relay_ladder9-1(4.043mm,251.187mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad J3_U_relay_ladder9-2(4.043mm,250.171mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder10-1(123.909mm,246.559mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder10-2(123.909mm,249.759mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder10-3(123.909mm,251.956mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder10-4(123.909mm,254.153mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder10-5(117.509mm,254.153mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder10-6(117.509mm,251.956mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder10-7(117.509mm,249.759mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder10-8(117.509mm,246.559mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder6-1(73.236mm,220.143mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder6-2(73.236mm,223.343mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder6-3(73.236mm,225.54mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder6-4(73.236mm,227.737mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder6-5(66.836mm,227.737mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder6-6(66.836mm,225.54mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder6-7(66.836mm,223.343mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder6-8(66.836mm,220.143mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder7-1(152.865mm,163.374mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder7-2(152.865mm,166.574mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder7-3(152.865mm,168.771mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder7-4(152.865mm,170.968mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder7-5(146.465mm,170.968mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder7-6(146.465mm,168.771mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder7-7(146.465mm,166.574mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder7-8(146.465mm,163.374mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder8-1(7.577mm,181.154mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder8-2(7.577mm,184.354mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder8-3(7.577mm,186.551mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder8-4(7.577mm,188.748mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder8-5(1.177mm,188.748mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder8-6(1.177mm,186.551mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder8-7(1.177mm,184.354mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder8-8(1.177mm,181.154mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder9-1(7.577mm,253.036mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder9-2(7.577mm,256.236mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder9-3(7.577mm,258.433mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder9-4(7.577mm,260.63mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder9-5(1.177mm,260.63mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder9-6(1.177mm,258.433mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder9-7(1.177mm,256.236mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K1_U_relay_ladder9-8(1.177mm,253.036mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder10-1(158.925mm,256.862mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder10-2(158.925mm,260.062mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder10-3(158.925mm,262.26mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder10-4(158.925mm,264.457mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder10-5(152.525mm,264.457mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder10-6(152.525mm,262.26mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder10-7(152.525mm,260.062mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder10-8(152.525mm,256.862mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder6-1(108.252mm,230.446mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder6-2(108.252mm,233.646mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder6-3(108.252mm,235.844mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder6-4(108.252mm,238.041mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder6-5(101.852mm,238.041mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder6-6(101.852mm,235.844mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder6-7(101.852mm,233.646mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder6-8(101.852mm,230.446mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder7-1(187.881mm,173.677mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder7-2(187.881mm,176.877mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder7-3(187.881mm,179.075mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder7-4(187.881mm,181.272mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder7-5(181.481mm,181.272mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder7-6(181.481mm,179.075mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder7-7(181.481mm,176.877mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder7-8(181.481mm,173.677mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder8-1(42.593mm,191.457mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder8-2(42.593mm,194.657mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder8-3(42.593mm,196.855mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder8-4(42.593mm,199.052mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder8-5(36.193mm,199.052mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder8-6(36.193mm,196.855mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder8-7(36.193mm,194.657mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder8-8(36.193mm,191.457mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder9-1(42.593mm,263.339mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder9-2(42.593mm,266.539mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder9-3(42.593mm,268.737mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder9-4(42.593mm,270.934mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder9-5(36.193mm,270.934mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder9-6(36.193mm,268.737mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder9-7(36.193mm,266.539mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K2_U_relay_ladder9-8(36.193mm,263.339mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder10-1(141.417mm,246.559mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder10-2(141.417mm,249.759mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder10-3(141.417mm,251.956mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder10-4(141.417mm,254.153mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder10-5(135.017mm,254.153mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder10-6(135.017mm,251.956mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder10-7(135.017mm,249.759mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder10-8(135.017mm,246.559mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder6-1(90.744mm,220.143mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder6-2(90.744mm,223.343mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder6-3(90.744mm,225.54mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder6-4(90.744mm,227.737mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder6-5(84.344mm,227.737mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder6-6(84.344mm,225.54mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder6-7(84.344mm,223.343mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder6-8(84.344mm,220.143mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder7-1(170.373mm,163.374mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder7-2(170.373mm,166.574mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder7-3(170.373mm,168.771mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder7-4(170.373mm,170.968mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder7-5(163.973mm,170.968mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder7-6(163.973mm,168.771mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder7-7(163.973mm,166.574mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder7-8(163.973mm,163.374mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder8-1(25.085mm,181.154mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder8-2(25.085mm,184.354mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder8-3(25.085mm,186.551mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder8-4(25.085mm,188.748mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder8-5(18.685mm,188.748mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder8-6(18.685mm,186.551mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder8-7(18.685mm,184.354mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder8-8(18.685mm,181.154mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder9-1(25.085mm,253.036mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder9-2(25.085mm,256.236mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder9-3(25.085mm,258.433mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder9-4(25.085mm,260.63mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder9-5(18.685mm,260.63mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder9-6(18.685mm,258.433mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder9-7(18.685mm,256.236mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K3_U_relay_ladder9-8(18.685mm,253.036mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder10-1(132.663mm,246.559mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder10-2(132.663mm,249.759mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder10-3(132.663mm,251.956mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder10-4(132.663mm,254.153mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder10-5(126.263mm,254.153mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder10-6(126.263mm,251.956mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder10-7(126.263mm,249.759mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder10-8(126.263mm,246.559mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder6-1(81.99mm,220.143mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder6-2(81.99mm,223.343mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder6-3(81.99mm,225.54mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder6-4(81.99mm,227.737mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder6-5(75.59mm,227.737mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder6-6(75.59mm,225.54mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder6-7(75.59mm,223.343mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder6-8(75.59mm,220.143mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder7-1(161.619mm,163.374mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder7-2(161.619mm,166.574mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder7-3(161.619mm,168.771mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder7-4(161.619mm,170.968mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder7-5(155.219mm,170.968mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder7-6(155.219mm,168.771mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder7-7(155.219mm,166.574mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder7-8(155.219mm,163.374mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder8-1(16.331mm,181.154mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder8-2(16.331mm,184.354mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder8-3(16.331mm,186.551mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder8-4(16.331mm,188.748mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder8-5(9.931mm,188.748mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder8-6(9.931mm,186.551mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder8-7(9.931mm,184.354mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder8-8(9.931mm,181.154mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder9-1(16.331mm,253.036mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder9-2(16.331mm,256.236mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder9-3(16.331mm,258.433mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder9-4(16.331mm,260.63mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder9-5(9.931mm,260.63mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder9-6(9.931mm,258.433mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder9-7(9.931mm,256.236mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K4_U_relay_ladder9-8(9.931mm,253.036mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder10-1(132.663mm,256.862mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder10-2(132.663mm,260.062mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder10-3(132.663mm,262.26mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder10-4(132.663mm,264.457mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder10-5(126.263mm,264.457mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder10-6(126.263mm,262.26mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder10-7(126.263mm,260.062mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder10-8(126.263mm,256.862mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder6-1(81.99mm,230.446mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder6-2(81.99mm,233.646mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder6-3(81.99mm,235.844mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder6-4(81.99mm,238.041mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder6-5(75.59mm,238.041mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder6-6(75.59mm,235.844mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder6-7(75.59mm,233.646mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder6-8(75.59mm,230.446mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder7-1(161.619mm,173.677mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder7-2(161.619mm,176.877mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder7-3(161.619mm,179.075mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder7-4(161.619mm,181.272mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder7-5(155.219mm,181.272mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder7-6(155.219mm,179.075mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder7-7(155.219mm,176.877mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder7-8(155.219mm,173.677mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder8-1(16.331mm,191.457mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder8-2(16.331mm,194.657mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder8-3(16.331mm,196.855mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder8-4(16.331mm,199.052mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder8-5(9.931mm,199.052mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder8-6(9.931mm,196.855mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder8-7(9.931mm,194.657mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder8-8(9.931mm,191.457mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder9-1(16.331mm,263.339mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder9-2(16.331mm,266.539mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder9-3(16.331mm,268.737mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder9-4(16.331mm,270.934mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder9-5(9.931mm,270.934mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder9-6(9.931mm,268.737mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder9-7(9.931mm,266.539mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K5_U_relay_ladder9-8(9.931mm,263.339mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder10-1(123.909mm,256.862mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder10-2(123.909mm,260.062mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder10-3(123.909mm,262.26mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder10-4(123.909mm,264.457mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder10-5(117.509mm,264.457mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder10-6(117.509mm,262.26mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder10-7(117.509mm,260.062mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder10-8(117.509mm,256.862mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder6-1(73.236mm,230.446mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder6-2(73.236mm,233.646mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder6-3(73.236mm,235.844mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder6-4(73.236mm,238.041mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder6-5(66.836mm,238.041mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder6-6(66.836mm,235.844mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder6-7(66.836mm,233.646mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder6-8(66.836mm,230.446mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder7-1(152.865mm,173.677mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder7-2(152.865mm,176.877mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder7-3(152.865mm,179.075mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder7-4(152.865mm,181.272mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder7-5(146.465mm,181.272mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder7-6(146.465mm,179.075mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder7-7(146.465mm,176.877mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder7-8(146.465mm,173.677mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder8-1(7.577mm,191.457mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder8-2(7.577mm,194.657mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder8-3(7.577mm,196.855mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder8-4(7.577mm,199.052mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder8-5(1.177mm,199.052mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder8-6(1.177mm,196.855mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder8-7(1.177mm,194.657mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder8-8(1.177mm,191.457mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder9-1(7.577mm,263.339mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder9-2(7.577mm,266.539mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder9-3(7.577mm,268.737mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder9-4(7.577mm,270.934mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder9-5(1.177mm,270.934mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder9-6(1.177mm,268.737mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder9-7(1.177mm,266.539mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K6_U_relay_ladder9-8(1.177mm,263.339mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder10-1(150.171mm,256.862mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder10-2(150.171mm,260.062mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder10-3(150.171mm,262.26mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder10-4(150.171mm,264.457mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder10-5(143.771mm,264.457mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder10-6(143.771mm,262.26mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder10-7(143.771mm,260.062mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder10-8(143.771mm,256.862mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder6-1(99.498mm,230.446mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder6-2(99.498mm,233.646mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder6-3(99.498mm,235.844mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder6-4(99.498mm,238.041mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder6-5(93.098mm,238.041mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder6-6(93.098mm,235.844mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder6-7(93.098mm,233.646mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder6-8(93.098mm,230.446mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder7-1(179.127mm,173.677mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder7-2(179.127mm,176.877mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder7-3(179.127mm,179.075mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder7-4(179.127mm,181.272mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder7-5(172.727mm,181.272mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder7-6(172.727mm,179.075mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder7-7(172.727mm,176.877mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder7-8(172.727mm,173.677mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder8-1(33.839mm,191.457mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder8-2(33.839mm,194.657mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder8-3(33.839mm,196.855mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder8-4(33.839mm,199.052mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder8-5(27.439mm,199.052mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder8-6(27.439mm,196.855mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder8-7(27.439mm,194.657mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder8-8(27.439mm,191.457mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder9-1(33.839mm,263.339mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder9-2(33.839mm,266.539mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder9-3(33.839mm,268.737mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder9-4(33.839mm,270.934mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder9-5(27.439mm,270.934mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder9-6(27.439mm,268.737mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder9-7(27.439mm,266.539mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K7_U_relay_ladder9-8(27.439mm,263.339mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder10-1(141.417mm,256.862mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder10-2(141.417mm,260.062mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder10-3(141.417mm,262.26mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder10-4(141.417mm,264.457mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder10-5(135.017mm,264.457mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder10-6(135.017mm,262.26mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder10-7(135.017mm,260.062mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder10-8(135.017mm,256.862mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder6-1(90.744mm,230.446mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder6-2(90.744mm,233.646mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder6-3(90.744mm,235.844mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder6-4(90.744mm,238.041mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder6-5(84.344mm,238.041mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder6-6(84.344mm,235.844mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder6-7(84.344mm,233.646mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder6-8(84.344mm,230.446mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder7-1(170.373mm,173.677mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder7-2(170.373mm,176.877mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder7-3(170.373mm,179.075mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder7-4(170.373mm,181.272mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder7-5(163.973mm,181.272mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder7-6(163.973mm,179.075mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder7-7(163.973mm,176.877mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder7-8(163.973mm,173.677mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder8-1(25.085mm,191.457mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder8-2(25.085mm,194.657mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder8-3(25.085mm,196.855mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder8-4(25.085mm,199.052mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder8-5(18.685mm,199.052mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder8-6(18.685mm,196.855mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder8-7(18.685mm,194.657mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder8-8(18.685mm,191.457mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder9-1(25.085mm,263.339mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder9-2(25.085mm,266.539mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder9-3(25.085mm,268.737mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder9-4(25.085mm,270.934mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder9-5(18.685mm,270.934mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder9-6(18.685mm,268.737mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder9-7(18.685mm,266.539mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad K8_U_relay_ladder9-8(18.685mm,263.339mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R10_U_relay_ladder10-1(161.606mm,253.231mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R10_U_relay_ladder10-2(161.606mm,254.931mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R10_U_relay_ladder5-1(185.99mm,214.75mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R10_U_relay_ladder5-2(185.99mm,216.45mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R10_U_relay_ladder6-1(110.933mm,226.815mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R10_U_relay_ladder6-2(110.933mm,228.515mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R10_U_relay_ladder7-1(190.562mm,170.046mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R10_U_relay_ladder7-2(190.562mm,171.746mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R10_U_relay_ladder8-1(45.274mm,187.826mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R10_U_relay_ladder8-2(45.274mm,189.526mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R10_U_relay_ladder9-1(45.274mm,259.708mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R10_U_relay_ladder9-2(45.274mm,261.408mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R11_U_relay_ladder10-1(159.953mm,253.231mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R11_U_relay_ladder10-2(159.953mm,254.931mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R11_U_relay_ladder5-1(184.337mm,214.75mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R11_U_relay_ladder5-2(184.337mm,216.45mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R11_U_relay_ladder6-1(109.28mm,226.815mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R11_U_relay_ladder6-2(109.28mm,228.515mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R11_U_relay_ladder7-1(188.909mm,170.046mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R11_U_relay_ladder7-2(188.909mm,171.746mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R11_U_relay_ladder8-1(43.621mm,187.826mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R11_U_relay_ladder8-2(43.621mm,189.526mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R11_U_relay_ladder9-1(43.621mm,259.708mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R11_U_relay_ladder9-2(43.621mm,261.408mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R12_U_relay_ladder10-1(118.812mm,242.928mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R12_U_relay_ladder10-2(118.812mm,244.628mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R12_U_relay_ladder5-1(143.196mm,204.447mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R12_U_relay_ladder5-2(143.196mm,206.147mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R12_U_relay_ladder6-1(68.139mm,216.512mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R12_U_relay_ladder6-2(68.139mm,218.212mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R12_U_relay_ladder7-1(147.768mm,159.743mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R12_U_relay_ladder7-2(147.768mm,161.443mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R12_U_relay_ladder8-1(2.48mm,177.523mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R12_U_relay_ladder8-2(2.48mm,179.223mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R12_U_relay_ladder9-1(2.48mm,249.405mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R12_U_relay_ladder9-2(2.48mm,251.105mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R13_U_relay_ladder10-1(117.159mm,242.928mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R13_U_relay_ladder10-2(117.159mm,244.628mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R13_U_relay_ladder6-1(66.486mm,216.512mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R13_U_relay_ladder6-2(66.486mm,218.212mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R13_U_relay_ladder7-1(146.115mm,159.743mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R13_U_relay_ladder7-2(146.115mm,161.443mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R13_U_relay_ladder8-1(0.827mm,177.523mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R13_U_relay_ladder8-2(0.827mm,179.223mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R13_U_relay_ladder9-1(0.827mm,249.405mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R13_U_relay_ladder9-2(0.827mm,251.105mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R14_U_relay_ladder10-1(164.912mm,253.231mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R14_U_relay_ladder10-2(164.912mm,254.931mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R14_U_relay_ladder6-1(114.239mm,226.815mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R14_U_relay_ladder6-2(114.239mm,228.515mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R14_U_relay_ladder7-1(193.868mm,170.046mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R14_U_relay_ladder7-2(193.868mm,171.746mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R14_U_relay_ladder8-1(48.58mm,187.826mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R14_U_relay_ladder8-2(48.58mm,189.526mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R14_U_relay_ladder9-1(48.58mm,259.708mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R14_U_relay_ladder9-2(48.58mm,261.408mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R15_U_relay_ladder10-1(153.34mm,253.231mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R15_U_relay_ladder10-2(153.34mm,254.931mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R15_U_relay_ladder6-1(102.667mm,226.815mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R15_U_relay_ladder6-2(102.667mm,228.515mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R15_U_relay_ladder7-1(182.296mm,170.046mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R15_U_relay_ladder7-2(182.296mm,171.746mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R15_U_relay_ladder8-1(37.008mm,187.826mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R15_U_relay_ladder8-2(37.008mm,189.526mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R15_U_relay_ladder9-1(37.008mm,259.708mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R15_U_relay_ladder9-2(37.008mm,261.408mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R16_U_relay_ladder10-1(151.687mm,253.231mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R16_U_relay_ladder10-2(151.687mm,254.931mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R16_U_relay_ladder6-1(101.014mm,226.815mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R16_U_relay_ladder6-2(101.014mm,228.515mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R16_U_relay_ladder7-1(180.643mm,170.046mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R16_U_relay_ladder7-2(180.643mm,171.746mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R16_U_relay_ladder8-1(35.355mm,187.826mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R16_U_relay_ladder8-2(35.355mm,189.526mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R16_U_relay_ladder9-1(35.355mm,259.708mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R16_U_relay_ladder9-2(35.355mm,261.408mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R17_U_relay_ladder10-1(150.033mm,253.231mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R17_U_relay_ladder10-2(150.033mm,254.931mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R17_U_relay_ladder6-1(99.36mm,226.815mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R17_U_relay_ladder6-2(99.36mm,228.515mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R17_U_relay_ladder7-1(178.989mm,170.046mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R17_U_relay_ladder7-2(178.989mm,171.746mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R17_U_relay_ladder8-1(33.701mm,187.826mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R17_U_relay_ladder8-2(33.701mm,189.526mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R17_U_relay_ladder9-1(33.701mm,259.708mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R17_U_relay_ladder9-2(33.701mm,261.408mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R18_U_relay_ladder10-1(158.299mm,253.231mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R18_U_relay_ladder10-2(158.299mm,254.931mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R18_U_relay_ladder6-1(107.626mm,226.815mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R18_U_relay_ladder6-2(107.626mm,228.515mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R18_U_relay_ladder7-1(187.255mm,170.046mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R18_U_relay_ladder7-2(187.255mm,171.746mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R18_U_relay_ladder8-1(41.967mm,187.826mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R18_U_relay_ladder8-2(41.967mm,189.526mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R18_U_relay_ladder9-1(41.967mm,259.708mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R18_U_relay_ladder9-2(41.967mm,261.408mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R19_U_relay_ladder10-1(156.646mm,253.231mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R19_U_relay_ladder10-2(156.646mm,254.931mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R19_U_relay_ladder6-1(105.973mm,226.815mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R19_U_relay_ladder6-2(105.973mm,228.515mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R19_U_relay_ladder7-1(185.602mm,170.046mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R19_U_relay_ladder7-2(185.602mm,171.746mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R19_U_relay_ladder8-1(40.314mm,187.826mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R19_U_relay_ladder8-2(40.314mm,189.526mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R19_U_relay_ladder9-1(40.314mm,259.708mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R19_U_relay_ladder9-2(40.314mm,261.408mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R20_U_relay_ladder10-1(154.993mm,253.231mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R20_U_relay_ladder10-2(154.993mm,254.931mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R20_U_relay_ladder6-1(104.32mm,226.815mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R20_U_relay_ladder6-2(104.32mm,228.515mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R20_U_relay_ladder7-1(183.949mm,170.046mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R20_U_relay_ladder7-2(183.949mm,171.746mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R20_U_relay_ladder8-1(38.661mm,187.826mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R20_U_relay_ladder8-2(38.661mm,189.526mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R20_U_relay_ladder9-1(38.661mm,259.708mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R20_U_relay_ladder9-2(38.661mm,261.408mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R5_U_relay_ladder10-1(146.727mm,253.231mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R5_U_relay_ladder10-2(146.727mm,254.931mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R5_U_relay_ladder6-1(96.054mm,226.815mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R5_U_relay_ladder6-2(96.054mm,228.515mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R5_U_relay_ladder7-1(175.683mm,170.046mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R5_U_relay_ladder7-2(175.683mm,171.746mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R5_U_relay_ladder8-1(30.395mm,187.826mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R5_U_relay_ladder8-2(30.395mm,189.526mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R5_U_relay_ladder9-1(30.395mm,259.708mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R5_U_relay_ladder9-2(30.395mm,261.408mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R6_U_relay_ladder10-1(148.38mm,253.231mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R6_U_relay_ladder10-2(148.38mm,254.931mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R6_U_relay_ladder6-1(97.707mm,226.815mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R6_U_relay_ladder6-2(97.707mm,228.515mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R6_U_relay_ladder7-1(177.336mm,170.046mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R6_U_relay_ladder7-2(177.336mm,171.746mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R6_U_relay_ladder8-1(32.048mm,187.826mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R6_U_relay_ladder8-2(32.048mm,189.526mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R6_U_relay_ladder9-1(32.048mm,259.708mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R6_U_relay_ladder9-2(32.048mm,261.408mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R7_U_relay_ladder10-1(143.421mm,253.231mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R7_U_relay_ladder10-2(143.421mm,254.931mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R7_U_relay_ladder6-1(92.748mm,226.815mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R7_U_relay_ladder6-2(92.748mm,228.515mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R7_U_relay_ladder7-1(172.377mm,170.046mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R7_U_relay_ladder7-2(172.377mm,171.746mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R7_U_relay_ladder8-1(27.089mm,187.826mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R7_U_relay_ladder8-2(27.089mm,189.526mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R7_U_relay_ladder9-1(27.089mm,259.708mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R7_U_relay_ladder9-2(27.089mm,261.408mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R8_U_relay_ladder10-1(145.074mm,253.231mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R8_U_relay_ladder10-2(145.074mm,254.931mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R8_U_relay_ladder5-1(169.458mm,214.75mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R8_U_relay_ladder5-2(169.458mm,216.45mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R8_U_relay_ladder6-1(94.401mm,226.815mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R8_U_relay_ladder6-2(94.401mm,228.515mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R8_U_relay_ladder7-1(174.03mm,170.046mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R8_U_relay_ladder7-2(174.03mm,171.746mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R8_U_relay_ladder8-1(28.742mm,187.826mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R8_U_relay_ladder8-2(28.742mm,189.526mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R8_U_relay_ladder9-1(28.742mm,259.708mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R8_U_relay_ladder9-2(28.742mm,261.408mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R9_U_relay_ladder10-1(163.259mm,253.231mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R9_U_relay_ladder10-2(163.259mm,254.931mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R9_U_relay_ladder5-1(187.643mm,214.75mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R9_U_relay_ladder5-2(187.643mm,216.45mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R9_U_relay_ladder6-1(112.586mm,226.815mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R9_U_relay_ladder6-2(112.586mm,228.515mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R9_U_relay_ladder7-1(192.215mm,170.046mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R9_U_relay_ladder7-2(192.215mm,171.746mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R9_U_relay_ladder8-1(46.927mm,187.826mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R9_U_relay_ladder8-2(46.927mm,189.526mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R9_U_relay_ladder9-1(46.927mm,259.708mm) on Top Layer 
+   Violation between Board Outline Clearance(Outline Edge): (Collision < 0.2mm) Between Board Edge And Pad R9_U_relay_ladder9-2(46.927mm,261.408mm) on Top Layer 
+Rule Violations :500
+
+Processing Rule : Room U_relay_ladder7 (Bounding Region = (145.288mm, 157.48mm, 196.088mm, 182.88mm) (InComponentClass('U_relay_ladder7'))
+Rule Violations :0
+
+Processing Rule : Room U_relay_ladder8 (Bounding Region = (0mm, 175.26mm, 50.8mm, 200.66mm) (InComponentClass('U_relay_ladder8'))
+Rule Violations :0
+
+Processing Rule : Room U_MCU (Bounding Region = (26.462mm, 35.713mm, 51.862mm, 86.513mm) (InComponentClass('U_MCU'))
+Rule Violations :0
+
+Processing Rule : Room U_relay_ladder01 (Bounding Region = (94.488mm, 166.751mm, 145.288mm, 192.151mm) (InComponentClass('U_relay_ladder01'))
+Rule Violations :0
+
+Processing Rule : Room U_relay_ladder9 (Bounding Region = (0mm, 247.142mm, 50.8mm, 272.542mm) (InComponentClass('U_relay_ladder9'))
+Rule Violations :0
+
+Processing Rule : Room U_relay_ladder10 (Bounding Region = (116.332mm, 240.665mm, 167.132mm, 266.065mm) (InComponentClass('U_relay_ladder10'))
+Rule Violations :0
+
+Processing Rule : Room U_relay_ladder02 (Bounding Region = (113.995mm, 115.7mm, 199.895mm, 128.9mm) (InComponentClass('U_relay_ladder02'))
+Rule Violations :0
+
+Processing Rule : Room U_relay_ladder3 (Bounding Region = (218mm, 196.3mm, 268.8mm, 221.7mm) (InComponentClass('U_relay_ladder3'))
+Rule Violations :0
+
+Processing Rule : Room U_relay_ladder4 (Bounding Region = (223.012mm, 156.337mm, 273.812mm, 181.737mm) (InComponentClass('U_relay_ladder4'))
+Rule Violations :0
+
+Processing Rule : Room U_relay_driver (Bounding Region = (63.881mm, 56.388mm, 90.551mm, 123.317mm) (InComponentClass('U_relay_driver'))
+Rule Violations :0
+
+Processing Rule : Room U_relay_ladder6 (Bounding Region = (65.659mm, 214.249mm, 116.459mm, 239.649mm) (InComponentClass('U_relay_ladder6'))
+Rule Violations :0
+
+Processing Rule : Room U_relay_ladder5 (Bounding Region = (140.716mm, 202.184mm, 191.516mm, 227.584mm) (InComponentClass('U_relay_ladder5'))
+Rule Violations :0
+
+Processing Rule : Room U_Power (Bounding Region = (17.429mm, 95.579mm, 46.228mm, 120.979mm) (InComponentClass('U_Power'))
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mm) (Max=1816.048mm) (Prefered=12.7mm) (All)
+Rule Violations :0
+
+
+Violations Detected : 500
+Waived Violations : 0
+Time Elapsed        : 00:00:01

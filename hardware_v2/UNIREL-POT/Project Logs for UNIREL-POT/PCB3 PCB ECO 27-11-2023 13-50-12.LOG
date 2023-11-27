@@ -1,0 +1,70 @@
+Removed Pin From Net: NetName=B10 Pin=J3_U_relay_ladder1-1
+Removed Pin From Net: NetName=B10 Pin=J3_U_relay_ladder1-2
+Removed Pin From Net: NetName=B9 Pin=J3_U_relay_ladder2-1
+Removed Pin From Net: NetName=B9 Pin=J3_U_relay_ladder2-2
+Removed Pin From Net: NetName=B8 Pin=J3_U_relay_ladder3-1
+Removed Pin From Net: NetName=B8 Pin=J3_U_relay_ladder3-2
+Removed Pin From Net: NetName=B7 Pin=J3_U_relay_ladder4-1
+Removed Pin From Net: NetName=B7 Pin=J3_U_relay_ladder4-2
+Removed Pin From Net: NetName=B6 Pin=J3_U_relay_ladder5-1
+Removed Pin From Net: NetName=B6 Pin=J3_U_relay_ladder5-2
+Removed Pin From Net: NetName=B5 Pin=J3_U_relay_ladder6-1
+Removed Pin From Net: NetName=B5 Pin=J3_U_relay_ladder6-2
+Removed Pin From Net: NetName=B4 Pin=J3_U_relay_ladder7-1
+Removed Pin From Net: NetName=B4 Pin=J3_U_relay_ladder7-2
+Removed Pin From Net: NetName=B3 Pin=J3_U_relay_ladder8-1
+Removed Pin From Net: NetName=B3 Pin=J3_U_relay_ladder8-2
+Removed Pin From Net: NetName=B2 Pin=J3_U_relay_ladder9-1
+Removed Pin From Net: NetName=B2 Pin=J3_U_relay_ladder9-2
+Removed Pin From Net: NetName=B1 Pin=J3_U_relay_ladder10-1
+Removed Pin From Net: NetName=B1 Pin=J3_U_relay_ladder10-2
+Removed Member From Class: ClassName=U_relay_ladder1 Member=J3_U_relay_ladder1
+Removed Member From Class: ClassName=U_relay_ladder2 Member=J3_U_relay_ladder2
+Removed Member From Class: ClassName=U_relay_ladder3 Member=J3_U_relay_ladder3
+Removed Member From Class: ClassName=U_relay_ladder4 Member=J3_U_relay_ladder4
+Removed Member From Class: ClassName=U_relay_ladder5 Member=J3_U_relay_ladder5
+Removed Member From Class: ClassName=U_relay_ladder6 Member=J3_U_relay_ladder6
+Removed Member From Class: ClassName=U_relay_ladder7 Member=J3_U_relay_ladder7
+Removed Member From Class: ClassName=U_relay_ladder8 Member=J3_U_relay_ladder8
+Removed Member From Class: ClassName=U_relay_ladder9 Member=J3_U_relay_ladder9
+Removed Member From Class: ClassName=U_relay_ladder10 Member=J3_U_relay_ladder10
+Added Component: Designator=J?_U_relay_ladder1(SOLDER_JUMPER_SQUARE)
+Added Component: Designator=J?_U_relay_ladder2(SOLDER_JUMPER_SQUARE)
+Added Component: Designator=J?_U_relay_ladder3(SOLDER_JUMPER_SQUARE)
+Added Component: Designator=J?_U_relay_ladder4(SOLDER_JUMPER_SQUARE)
+Added Component: Designator=J?_U_relay_ladder5(SOLDER_JUMPER_SQUARE)
+Added Component: Designator=J?_U_relay_ladder6(SOLDER_JUMPER_SQUARE)
+Added Component: Designator=J?_U_relay_ladder7(SOLDER_JUMPER_SQUARE)
+Added Component: Designator=J?_U_relay_ladder8(SOLDER_JUMPER_SQUARE)
+Added Component: Designator=J?_U_relay_ladder9(SOLDER_JUMPER_SQUARE)
+Added Component: Designator=J?_U_relay_ladder10(SOLDER_JUMPER_SQUARE)
+Added Pin To Net: NetName=B10 Pin=J?_U_relay_ladder1-1
+Added Pin To Net: NetName=B10 Pin=J?_U_relay_ladder1-2
+Added Pin To Net: NetName=B9 Pin=J?_U_relay_ladder2-1
+Added Pin To Net: NetName=B9 Pin=J?_U_relay_ladder2-2
+Added Pin To Net: NetName=B8 Pin=J?_U_relay_ladder3-1
+Added Pin To Net: NetName=B8 Pin=J?_U_relay_ladder3-2
+Added Pin To Net: NetName=B7 Pin=J?_U_relay_ladder4-1
+Added Pin To Net: NetName=B7 Pin=J?_U_relay_ladder4-2
+Added Pin To Net: NetName=B6 Pin=J?_U_relay_ladder5-1
+Added Pin To Net: NetName=B6 Pin=J?_U_relay_ladder5-2
+Added Pin To Net: NetName=B5 Pin=J?_U_relay_ladder6-1
+Added Pin To Net: NetName=B5 Pin=J?_U_relay_ladder6-2
+Added Pin To Net: NetName=B4 Pin=J?_U_relay_ladder7-1
+Added Pin To Net: NetName=B4 Pin=J?_U_relay_ladder7-2
+Added Pin To Net: NetName=B3 Pin=J?_U_relay_ladder8-1
+Added Pin To Net: NetName=B3 Pin=J?_U_relay_ladder8-2
+Added Pin To Net: NetName=B2 Pin=J?_U_relay_ladder9-1
+Added Pin To Net: NetName=B2 Pin=J?_U_relay_ladder9-2
+Added Pin To Net: NetName=B1 Pin=J?_U_relay_ladder10-1
+Added Pin To Net: NetName=B1 Pin=J?_U_relay_ladder10-2
+Added Member To Class: ClassName=U_relay_ladder1 Member=Component J?_U_relay_ladder1 (J?) solder_jumper
+Added Member To Class: ClassName=U_relay_ladder2 Member=Component J?_U_relay_ladder2 (J?) solder_jumper
+Added Member To Class: ClassName=U_relay_ladder3 Member=Component J?_U_relay_ladder3 (J?) solder_jumper
+Added Member To Class: ClassName=U_relay_ladder4 Member=Component J?_U_relay_ladder4 (J?) solder_jumper
+Added Member To Class: ClassName=U_relay_ladder5 Member=Component J?_U_relay_ladder5 (J?) solder_jumper
+Added Member To Class: ClassName=U_relay_ladder6 Member=Component J?_U_relay_ladder6 (J?) solder_jumper
+Added Member To Class: ClassName=U_relay_ladder7 Member=Component J?_U_relay_ladder7 (J?) solder_jumper
+Added Member To Class: ClassName=U_relay_ladder8 Member=Component J?_U_relay_ladder8 (J?) solder_jumper
+Added Member To Class: ClassName=U_relay_ladder9 Member=Component J?_U_relay_ladder9 (J?) solder_jumper
+Added Member To Class: ClassName=U_relay_ladder10 Member=Component J?_U_relay_ladder10 (J?) solder_jumper

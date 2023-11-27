@@ -8,3 +8,7 @@ ProjectPath=Mott_Pott\Mott_Pott.PrjPcb
 ProjectPath=libraries\components_library.LibPkg
 [Project4]
 ProjectPath=PiVO Shield V2\PiVO Shield V2.PrjPcb
+[Project5]
+ProjectPath=UNIREL-POT\UNIREL-POT.PrjPcb
+[Project7]
+ProjectPath=..\hardware\UNIREL-POT SMALL\UNIREL-POT SMALL.PrjPcb
