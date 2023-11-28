@@ -1,0 +1,2 @@
+Removed Pin From Net: NetName=+12 Pin=K8_U_relay_ladder3-8
+Added Pin To Net: NetName=NetK8_U_relay_ladder3_8 Pin=K8_U_relay_ladder3-8

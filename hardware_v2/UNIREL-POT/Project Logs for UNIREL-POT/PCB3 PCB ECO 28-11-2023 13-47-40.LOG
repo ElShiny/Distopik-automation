@@ -1,0 +1,48 @@
+Added Pin To Net: NetName=ULN9_0 Pin=MCP5-25
+Added Pin To Net: NetName=ULN9_0 Pin=ULN9-6
+Added Net: Name=ULN9_0
+Added Pin To Net: NetName=ULN9_1 Pin=MCP5-26
+Added Pin To Net: NetName=ULN9_1 Pin=ULN9-5
+Added Net: Name=ULN9_1
+Added Pin To Net: NetName=ULN9_2 Pin=MCP5-27
+Added Pin To Net: NetName=ULN9_2 Pin=ULN9-4
+Added Net: Name=ULN9_2
+Added Pin To Net: NetName=ULN9_3 Pin=MCP5-28
+Added Pin To Net: NetName=ULN9_3 Pin=ULN9-3
+Added Net: Name=ULN9_3
+Added Pin To Net: NetName=ULN9_4 Pin=MCP5-1
+Added Pin To Net: NetName=ULN9_4 Pin=ULN9-2
+Added Net: Name=ULN9_4
+Added Pin To Net: NetName=ULN9_5 Pin=MCP5-2
+Added Pin To Net: NetName=ULN9_5 Pin=ULN9-1
+Added Net: Name=ULN9_5
+Added Pin To Net: NetName=ULN9_6 Pin=MCP5-3
+Added Pin To Net: NetName=ULN9_6 Pin=ULN9-20
+Added Net: Name=ULN9_6
+Added Pin To Net: NetName=ULN9_7 Pin=MCP5-4
+Added Pin To Net: NetName=ULN9_7 Pin=ULN9-19
+Added Net: Name=ULN9_7
+Added Pin To Net: NetName=ULN10_0 Pin=MCP5-17
+Added Pin To Net: NetName=ULN10_0 Pin=ULN10-6
+Added Net: Name=ULN10_0
+Added Pin To Net: NetName=ULN10_1 Pin=MCP5-18
+Added Pin To Net: NetName=ULN10_1 Pin=ULN10-5
+Added Net: Name=ULN10_1
+Added Pin To Net: NetName=ULN10_2 Pin=MCP5-19
+Added Pin To Net: NetName=ULN10_2 Pin=ULN10-4
+Added Net: Name=ULN10_2
+Added Pin To Net: NetName=ULN10_3 Pin=MCP5-20
+Added Pin To Net: NetName=ULN10_3 Pin=ULN10-3
+Added Net: Name=ULN10_3
+Added Pin To Net: NetName=ULN10_4 Pin=MCP5-21
+Added Pin To Net: NetName=ULN10_4 Pin=ULN10-2
+Added Net: Name=ULN10_4
+Added Pin To Net: NetName=ULN10_5 Pin=MCP5-22
+Added Pin To Net: NetName=ULN10_5 Pin=ULN10-1
+Added Net: Name=ULN10_5
+Added Pin To Net: NetName=ULN10_6 Pin=MCP5-23
+Added Pin To Net: NetName=ULN10_6 Pin=ULN10-20
+Added Net: Name=ULN10_6
+Added Pin To Net: NetName=ULN10_7 Pin=MCP5-24
+Added Pin To Net: NetName=ULN10_7 Pin=ULN10-19
+Added Net: Name=ULN10_7
