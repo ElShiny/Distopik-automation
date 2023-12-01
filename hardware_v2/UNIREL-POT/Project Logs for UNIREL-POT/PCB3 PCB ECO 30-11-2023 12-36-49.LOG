@@ -1,0 +1,4 @@
+Added Component: Designator=J4(solder_jumper_triangle)
+Added Pin To Net: NetName=RGND Pin=J4-1
+Added Pin To Net: NetName=GND Pin=J4-2
+Added Member To Class: ClassName=U_relay_driver Member=Component J4 solder_jumper

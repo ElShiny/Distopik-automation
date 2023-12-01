@@ -1,0 +1,10 @@
+Change Component Library : Designator=MCP1 Old Library=components_library.IntLib New Library=unirel.SchLib
+Change Component Library : Designator=MCP2 Old Library=components_library.IntLib New Library=unirel.SchLib
+Change Component Library : Designator=MCP3 Old Library=components_library.IntLib New Library=unirel.SchLib
+Change Component Library : Designator=MCP4 Old Library=components_library.IntLib New Library=unirel.SchLib
+Change Component Library : Designator=MCP5 Old Library=components_library.IntLib New Library=unirel.SchLib
+Added Pin To Net: NetName=GND Pin=MCP1-29
+Added Pin To Net: NetName=GND Pin=MCP2-29
+Added Pin To Net: NetName=GND Pin=MCP3-29
+Added Pin To Net: NetName=GND Pin=MCP4-29
+Added Pin To Net: NetName=GND Pin=MCP5-29
