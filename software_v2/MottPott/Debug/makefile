@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (10.3-2021.10)
+# Toolchain: GNU Tools for STM32 (11.3.rel1)
 ################################################################################
 
 -include ../makefile.init
@@ -60,8 +60,8 @@ all: main-build
 main-build: MottPott.elf secondary-outputs
 
 # Tool invocations
-MottPott.elf MottPott.map: $(OBJS) $(USER_OBJS) C:\Users\Matej\Desktop\Distopik-automation\software_v2\STM32C031G6UX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "MottPott.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\Matej\Desktop\Distopik-automation\software_v2\STM32C031G6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MottPott.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+MottPott.elf MottPott.map: $(OBJS) $(USER_OBJS) C:\Users\Matej\Documents\GitHub\Distopik-automation\software_v2\MottPott\STM32C031G6UX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "MottPott.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\Matej\Documents\GitHub\Distopik-automation\software_v2\MottPott\STM32C031G6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MottPott.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

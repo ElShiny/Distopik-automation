@@ -1,0 +1,7 @@
+/mnt/c/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/rpi_rust/target/debug/deps/libsmallvec-b3ec60113aea24ab.rmeta: /home/els/.cargo/registry/src/index.crates.io-6f17d22bba15001f/smallvec-1.13.1/src/lib.rs
+
+/mnt/c/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/rpi_rust/target/debug/deps/libsmallvec-b3ec60113aea24ab.rlib: /home/els/.cargo/registry/src/index.crates.io-6f17d22bba15001f/smallvec-1.13.1/src/lib.rs
+
+/mnt/c/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/rpi_rust/target/debug/deps/smallvec-b3ec60113aea24ab.d: /home/els/.cargo/registry/src/index.crates.io-6f17d22bba15001f/smallvec-1.13.1/src/lib.rs
+
+/home/els/.cargo/registry/src/index.crates.io-6f17d22bba15001f/smallvec-1.13.1/src/lib.rs:
