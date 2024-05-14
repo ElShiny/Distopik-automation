@@ -159,7 +159,7 @@ int main(void)
 
 	  if(eMBPoll()!=MB_ENOERR)Error_Handler();  /*Modbus poll update in each run*/
         usRegInputBuf[0]++;
-        //HAL_Delay(1);
+        HAL_Delay(1);
   }
   /* USER CODE END 3 */
 }

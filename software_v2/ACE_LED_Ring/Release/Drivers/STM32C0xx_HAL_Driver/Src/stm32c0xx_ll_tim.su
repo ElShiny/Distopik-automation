@@ -10,4 +10,4 @@
 ../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_ll_tim.c:552:6:LL_TIM_HALLSENSOR_StructInit	0	static
 ../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_ll_tim.c:582:13:LL_TIM_HALLSENSOR_Init	32	static
 ../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_ll_tim.c:661:6:LL_TIM_BDTR_StructInit	0	static
-../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_ll_tim.c:696:13:LL_TIM_BDTR_Init	8	static
+../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_ll_tim.c:696:13:LL_TIM_BDTR_Init	0	static

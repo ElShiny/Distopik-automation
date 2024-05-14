@@ -1,7 +1,7 @@
-portserial.c:34:1:vMBPortSerialEnable	2
-portserial.c:44:1:xMBPortSerialInit	1
-portserial.c:53:1:xMBPortSerialPutByte	1
-portserial.c:65:1:xMBPortSerialPutBuffer	1
-portserial.c:78:1:xMBPortSerialGetByte	1
-portserial.c:97:6:prvvUARTTxReadyISR	1
-portserial.c:107:6:prvvUARTRxISR	1
+../Core/modbus/port/portserial.c:35:1:vMBPortSerialEnable	3
+../Core/modbus/port/portserial.c:48:1:xMBPortSerialInit	1
+../Core/modbus/port/portserial.c:56:1:xMBPortSerialPutByte	1
+../Core/modbus/port/portserial.c:68:1:xMBPortSerialPutBuffer	1
+../Core/modbus/port/portserial.c:81:1:xMBPortSerialGetByte	1
+../Core/modbus/port/portserial.c:100:6:prvvUARTTxReadyISR	1
+../Core/modbus/port/portserial.c:110:6:prvvUARTRxISR	1
