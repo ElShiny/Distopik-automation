@@ -133,9 +133,6 @@ void MX_GPIO_Init(void)
   LL_GPIO_Init(TP1_GPIO_Port, &GPIO_InitStruct);
 
   /**/
-  LL_EXTI_SetEXTISource(LL_EXTI_CONFIG_PORTA, LL_EXTI_CONFIG_LINE8);
-
-  /**/
   EXTI_InitStruct.Line_0_31 = LL_EXTI_LINE_8;
   EXTI_InitStruct.LineCommand = ENABLE;
   EXTI_InitStruct.Mode = LL_EXTI_MODE_IT;
@@ -143,10 +140,13 @@ void MX_GPIO_Init(void)
   LL_EXTI_Init(&EXTI_InitStruct);
 
   /**/
+  LL_GPIO_SetPinMode(ACE1_GPIO_Port, ACE1_Pin, LL_GPIO_MODE_INPUT);
+
+  /**/
   LL_GPIO_SetPinPull(ACE1_GPIO_Port, ACE1_Pin, LL_GPIO_PULL_NO);
 
   /**/
-  LL_GPIO_SetPinMode(ACE1_GPIO_Port, ACE1_Pin, LL_GPIO_MODE_INPUT);
+  LL_EXTI_SetEXTISource(LL_EXTI_CONFIG_PORTA, LL_EXTI_CONFIG_LINE8);
 
 }
 

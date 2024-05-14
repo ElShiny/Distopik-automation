@@ -23,11 +23,11 @@
 #include "tim.h"
 #include "usart.h"
 #include "gpio.h"
-#include "nanomodbus.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "modbus.h"
+#include <assert.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -37,6 +37,13 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+
+// Initialize Modbus defines
+//#define NMBS_MASTER_DISABLED
+
+#define MODBUS_ADDRESS 0x01
+#define MODBUS_BAUDRATE 115200
+#define MODBUS_UART &huart2
 
 /* USER CODE END PD */
 
@@ -90,14 +97,14 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_ADC1_Init();
   MX_SPI1_Init();
   MX_TIM1_Init();
+  MX_ADC1_Init();
   MX_USART2_UART_Init();
-
-
-
+  MX_TIM14_Init();
   /* USER CODE BEGIN 2 */
+
+
 
 
   /* USER CODE END 2 */
@@ -164,6 +171,7 @@ void Error_Handler(void)
   __disable_irq();
   while (1)
   {
+
   }
   /* USER CODE END Error_Handler_Debug */
 }

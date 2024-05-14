@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (10.3-2021.10)
+# Toolchain: GNU Tools for STM32 (11.3.rel1)
 ################################################################################
 
 ELF_SRCS := 
@@ -31,4 +31,5 @@ Core/modbus/port \
 Core/modbus/rtu \
 Core/modbus/tcp \
 Drivers/STM32C0xx_HAL_Driver/Src \
+addons/Src \
 

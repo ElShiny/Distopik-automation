@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (10.3-2021.10)
+# Toolchain: GNU Tools for STM32 (11.3.rel1)
 ################################################################################
 
 -include ../makefile.init
@@ -9,6 +9,7 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include addons/Src/subdir.mk
 -include Drivers/STM32C0xx_HAL_Driver/Src/subdir.mk
 -include Core/modbus/tcp/subdir.mk
 -include Core/modbus/rtu/subdir.mk
@@ -66,8 +67,8 @@ all: main-build
 main-build: ACE_LED_Ring.elf secondary-outputs
 
 # Tool invocations
-ACE_LED_Ring.elf ACE_LED_Ring.map: $(OBJS) $(USER_OBJS) C:\Users\Matej\Desktop\Distopik-automation\software_v2\ACE_LED_Ring\STM32C031G6UX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "ACE_LED_Ring.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\Matej\Desktop\Distopik-automation\software_v2\ACE_LED_Ring\STM32C031G6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ACE_LED_Ring.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+ACE_LED_Ring.elf ACE_LED_Ring.map: $(OBJS) $(USER_OBJS) C:\Users\Matej\Documents\GitHub\Distopik-automation\software_v2\ACE_LED_Ring\STM32C031G6UX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
+	arm-none-eabi-gcc -o "ACE_LED_Ring.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\Matej\Documents\GitHub\Distopik-automation\software_v2\ACE_LED_Ring\STM32C031G6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="ACE_LED_Ring.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

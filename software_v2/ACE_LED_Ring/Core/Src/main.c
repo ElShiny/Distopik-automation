@@ -30,6 +30,8 @@
 #include "mb.h"
 #include "port.h"
 #include "mbport.h"
+
+#include "led.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -41,6 +43,9 @@
 /* USER CODE BEGIN PD */
 extern USHORT   usRegInputStart;
 extern USHORT   usRegInputBuf[REG_INPUT_NREGS];
+
+extern USHORT   usRegHoldingStart;
+extern USHORT   usRegHoldingBuf[REG_HOLDING_NREGS];
 
 
 /* USER CODE END PD */
@@ -101,40 +106,10 @@ int main(void)
   MX_USART2_UART_Init();
   MX_TIM16_Init();
   /* USER CODE BEGIN 2 */
-	//HAL_TIM_Base_Start_IT(&htim16);
-	//HAL_TIM_Base_Start(&htim16);
 
+  led_init();
   //add modbus
 
-
-
-
-
-
-
-
-
-  uint8_t arr[2] = {0xCF, 0xAE};
-
-
-  while(HAL_I2C_Master_Transmit(&hi2c1, IS3_ADR, arr, 2, 100) == HAL_BUSY){}
-  uint8_t arr1[2] = {0xA0, 0x01};
-  while(HAL_I2C_Master_Transmit(&hi2c1, IS3_ADR, arr1, 2, 100) == HAL_BUSY){}
-  uint8_t arr2[2] = {0xA1, 30};
-  while(HAL_I2C_Master_Transmit(&hi2c1, IS3_ADR, arr2, 2, 100) == HAL_BUSY){}
-
-	for(int a = 0x90; a < 0x9F; a++){
-		uint8_t arr3[2] = {a, 60};
-		while(HAL_I2C_Master_Transmit(&hi2c1, IS3_ADR, arr3, 2, 100) == HAL_BUSY){}
-	}
-
-	for(int i = 0 ; i<30; i++){
-	  uint8_t arr5[4] = {led_adr_arr[i], 0,255,100};
-	  while(HAL_I2C_Master_Transmit(&hi2c1, IS3_ADR, arr5, 4, 100) == HAL_BUSY){}
-	}
-
-	//__disable_irq();
-	//Error_Handler();
 	if(eMBInit(MB_RTU, 0x01, 0, 115200, MB_PAR_NONE) != MB_ENOERR )Error_Handler();
 	//if(eMBSetSlaveID( 0x1, FALSE, 0, 0 ) != MB_ENOERR )Error_Handler();
 	//if(eMBSetSlaveID(ucSlaveID, xIsRunning, pucAdditional, usAdditionalLen))Error_Handler();
@@ -145,7 +120,7 @@ int main(void)
 	//HAL_TIM_Base_Start(&htim16);
 
 
-
+	int i = 0;
 
   /* USER CODE END 2 */
 
@@ -159,7 +134,10 @@ int main(void)
 
 	  if(eMBPoll()!=MB_ENOERR)Error_Handler();  /*Modbus poll update in each run*/
         usRegInputBuf[0]++;
-        //HAL_Delay(1);
+       HAL_Delay(50);
+       usRegHoldingBuf[1]++;
+       led_set(usRegHoldingBuf[2]%29, 0, 0, 0);
+       if(i>29)i=0;
   }
   /* USER CODE END 3 */
 }

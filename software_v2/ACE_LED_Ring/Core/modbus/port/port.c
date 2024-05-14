@@ -30,6 +30,10 @@
 USHORT   usRegInputStart = REG_INPUT_START;
 USHORT   usRegInputBuf[REG_INPUT_NREGS];
 
+USHORT   usRegHoldingStart = REG_HOLDING_START;
+USHORT   usRegHoldingBuf[REG_HOLDING_NREGS];
+
+
 /* ----------------------- Start implementation -----------------------------*/
 
 eMBErrorCode
@@ -64,7 +68,46 @@ eMBErrorCode
 eMBRegHoldingCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs,
                  eMBRegisterMode eMode )
 {
-    return MB_ENOREG;
+    eMBErrorCode    eStatus = MB_ENOERR;
+    int             iRegIndex;
+
+    if( ( usAddress >= REG_HOLDING_START )
+        && ( usAddress + usNRegs <= REG_HOLDING_START + REG_HOLDING_NREGS )
+		&& (eMode == MB_REG_READ ))
+    {
+        iRegIndex = ( int )( usAddress - usRegHoldingStart );
+        while( usNRegs > 0 )
+        {
+            *pucRegBuffer++ =
+                ( unsigned char )( usRegHoldingBuf[iRegIndex] >> 8 );
+            *pucRegBuffer++ =
+                ( unsigned char )( usRegHoldingBuf[iRegIndex] & 0xFF );
+            iRegIndex++;
+            usNRegs--;
+        }
+    }
+
+    else if( (  usAddress >= REG_HOLDING_START )
+    			&& ( usAddress + usNRegs <= REG_HOLDING_START + REG_HOLDING_NREGS )
+				&& (eMode == MB_REG_WRITE ))
+    {
+        iRegIndex = ( int )( usAddress - usRegHoldingStart );
+        while( usNRegs > 0 )
+        {
+            usRegHoldingBuf[iRegIndex] = (*pucRegBuffer++)<< 8;
+            usRegHoldingBuf[iRegIndex] |= (*pucRegBuffer++);
+
+
+            iRegIndex++;
+            usNRegs--;
+        }
+    }
+    else
+    {
+        eStatus = MB_ENOREG;
+    }
+
+    return eStatus;
 }
 
 

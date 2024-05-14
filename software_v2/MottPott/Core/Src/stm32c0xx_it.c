@@ -140,6 +140,50 @@ void SysTick_Handler(void)
 /* please refer to the startup file (startup_stm32c0xx.s).                    */
 /******************************************************************************/
 
+/**
+  * @brief This function handles TIM14 global interrupt.
+  */
+void TIM14_IRQHandler(void)
+{
+  /* USER CODE BEGIN TIM14_IRQn 0 */
+	if(LL_TIM_IsActiveFlag_UPDATE(TIM14) && LL_TIM_IsEnabledIT_UPDATE(TIM14)){
+		//timer expired
+		LL_TIM_ClearFlag_UPDATE(TIM16);
+	}
+  /* USER CODE END TIM14_IRQn 0 */
+  /* USER CODE BEGIN TIM14_IRQn 1 */
+
+  /* USER CODE END TIM14_IRQn 1 */
+}
+
+/**
+  * @brief This function handles USART2 interrupt.
+  */
+void USART2_IRQHandler(void)
+{
+  /* USER CODE BEGIN USART2_IRQn 0 */
+	if(LL_USART_IsActiveFlag_TXE_TXFNF(USART2) && LL_USART_IsEnabledIT_TXE_TXFNF(USART2))
+	  {
+	    /* RXNE flag will be cleared by reading of RDR register (done in call) */
+	    /* Call function in charge of handling Character reception */
+	    //UART_CharReception_Callback();
+		//prvvUARTTxReadyISR();
+	  }
+
+	if(LL_USART_IsEnabledIT_RXNE_RXFNE(USART2) && LL_USART_IsActiveFlag_RXNE_RXFNE(USART2))
+	  {
+	    /* TXE flag will be automatically cleared when writing new data in TDR register */
+
+	    /* Call function in charge of handling empty DR => will lead to transmission of next character */
+	    //UART_TXEmpty_Callback();
+		//prvvUARTRxISR();
+	  }
+  /* USER CODE END USART2_IRQn 0 */
+  /* USER CODE BEGIN USART2_IRQn 1 */
+
+  /* USER CODE END USART2_IRQn 1 */
+}
+
 /* USER CODE BEGIN 1 */
 
 /* USER CODE END 1 */
