@@ -1,0 +1,15 @@
+Added Component: Designator=J?(694106106102)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.mouser.com/ds/2/445/6941xx106102-469316.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Wurth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "694106106102"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "710-694106106102"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/694106106102?qs=a9WhcLg8qCzYTlt%252B9%252BRJ7g%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetD6_2 Pin=J?-1
+Added Pin To Net: NetName=NetD6_2 Pin=J?-2
+Added Pin To Net: NetName=GND Pin=J?-3
+Added Pin To Net: NetName=GND Pin=J?-4
+Added Member To Class: ClassName=PSU Member=Component J? 694106106102
+Added Member To Class: ClassName=communication Member=Component P3 UI
+Added Member To Class: ClassName=communication Member=Component R17 3k

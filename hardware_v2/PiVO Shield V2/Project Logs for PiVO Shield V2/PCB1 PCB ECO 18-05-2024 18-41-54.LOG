@@ -1,0 +1,14 @@
+Added Member To Class: ClassName=communication Member=Component B2 XR33202EEHBTR-F
+Added Member To Class: ClassName=communication Member=Component D1 LED
+Added Member To Class: ClassName=communication Member=Component P2 UI
+Added Member To Class: ClassName=communication Member=Component P3 AKT
+Added Member To Class: ClassName=communication Member=Component R3 300
+Added Member To Class: ClassName=communication Member=Component R4 120
+Added Member To Class: ClassName=communication Member=Component R5 120
+Added Member To Class: ClassName=communication Member=Component R6 3k
+Added Member To Class: ClassName=communication Member=Component R7 3k
+Added Member To Class: ClassName=communication Member=Component R8 3k
+Added Member To Class: ClassName=communication Member=Component R9 3k
+Added Member To Class: ClassName=communication Member=Component R12 3k
+Added Room: Name=communication
+Added Room: Name=PSU
