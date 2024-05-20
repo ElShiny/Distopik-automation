@@ -1,0 +1,35 @@
+Removed Pin From Net: NetName=NetD6_2 Pin=D6-2
+Removed Pin From Net: NetName=+12 Pin=D6-3
+Removed Member From Class: ClassName=PSU Member=D6
+Added Component: Designator=Q?(SOT95P237X112-3N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "SI2369DS-T1-BE3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/si2369ds-t1-be3/vishay?region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.mouser.com/datasheet/2/427/si2369d-1764360.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.12mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SI2369DS-T1-BE3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "78-SI2369DS-T1-BE3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Siliconix/SI2369DS-T1-BE3?qs=CiayqK2gdcIOn%252BvoBWrtBg%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+12 Pin=Q?-2
+Added Pin To Net: NetName=NetD6_2 Pin=Q?-3
+Change Net Name : Old Net Name=NetD6_2 New Net Name=NetIC1_1
+Added Pin To Net: NetName=NetIC1_3 Pin=IC1-3
+Added Pin To Net: NetName=NetIC1_3 Pin=Q?-1
+Added Pin To Net: NetName=NetIC1_3 Pin=R24-1
+Added Net: Name=NetIC1_3
+Added Member To Class: ClassName=communication Member=Component B2 XR33202EEHBTR-F
+Added Member To Class: ClassName=communication Member=Component D1 LED
+Added Member To Class: ClassName=communication Member=Component D2 LED
+Added Member To Class: ClassName=communication Member=Component P2 UI
+Added Member To Class: ClassName=communication Member=Component P3 AKT
+Added Member To Class: ClassName=PSU Member=Component Q? SI2369DS-T1-BE3
+Added Member To Class: ClassName=communication Member=Component R3 300
+Added Member To Class: ClassName=communication Member=Component R4 120
+Added Member To Class: ClassName=communication Member=Component R5 120
+Added Member To Class: ClassName=communication Member=Component R6 3k
+Added Member To Class: ClassName=communication Member=Component R7 3k
+Added Member To Class: ClassName=communication Member=Component R8 3k
+Added Member To Class: ClassName=communication Member=Component R9 3k
+Added Member To Class: ClassName=communication Member=Component R10 3k
+Added Member To Class: ClassName=communication Member=Component R11 3k
+Added Member To Class: ClassName=communication Member=Component R12 3k

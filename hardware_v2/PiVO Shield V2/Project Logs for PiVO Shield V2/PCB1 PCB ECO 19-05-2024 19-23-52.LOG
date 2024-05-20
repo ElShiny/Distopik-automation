@@ -1,0 +1,25 @@
+Removed Pin From Net: NetName=UI_RS485_DE Pin=P1-5
+Removed Pin From Net: NetName=AKT_RS485_DE Pin=P1-26
+Change Component Designator: OldDesignator=Q? NewDesignator=Q1
+Added Component: Designator=IC2(SOT95P275X110-6N)
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "74LVC2G14GV,125"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/74lvc2g14gv125/nexperia?region=nac"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://assets.nexperia.com/documents/data-sheet/74LVC2G14.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "1.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Nexperia"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "74LVC2G14GV,125"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "771-LVC2G14GV125"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Nexperia/74LVC2G14GV125?qs=me8TqzrmIYWSRNkZJZJAxg%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=IC2-2
+Added Pin To Net: NetName=UI_RS485_DE Pin=IC2-4
+Added Pin To Net: NetName=+3V3 Pin=IC2-5
+Added Pin To Net: NetName=AKT_RS485_DE Pin=IC2-6
+Change Net Name : Old Net Name=AKT_RS485_DE New Net Name=AKT_RS485_DE_INV
+Change Net Name : Old Net Name=UI_RS485_DE New Net Name=UI_RS485_DE_INV
+Added Pin To Net: NetName=AKT_RS485_DE Pin=IC2-1
+Added Pin To Net: NetName=AKT_RS485_DE Pin=P1-26
+Added Net: Name=AKT_RS485_DE
+Added Pin To Net: NetName=UI_RS485_DE Pin=IC2-3
+Added Pin To Net: NetName=UI_RS485_DE Pin=P1-5
+Added Net: Name=UI_RS485_DE
+Added Member To Class: ClassName=communication Member=Component IC2 74LVC2G14GV,125

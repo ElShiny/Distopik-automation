@@ -1,2 +1,3 @@
 Record=TopLevelDocument|FileName=overview.SchDoc|SheetNumber=1
 Record=SheetSymbol|SourceDocument=overview.SchDoc|Designator=U_communication|SchDesignator=U_communication|FileName=communication.SchDoc|SheetNumber=2|SymbolType=Normal|RawFileName=communication.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
+Record=SheetSymbol|SourceDocument=overview.SchDoc|Designator=U_PSU|SchDesignator=U_PSU|FileName=PSU.SchDoc|SheetNumber=2|SymbolType=Normal|RawFileName=PSU.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 
