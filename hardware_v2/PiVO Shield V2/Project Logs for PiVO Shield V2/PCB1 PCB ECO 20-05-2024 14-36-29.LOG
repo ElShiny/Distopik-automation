@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=AKT_INT Pin=P1-29
+Removed Pin From Net: NetName=AKT_R\E\S\E\T\ Pin=P1-31
+Removed Pin From Net: NetName=AKT_S\S\ Pin=P1-36
+Added Pin To Net: NetName=AKT_S\S\ Pin=P1-11
+Added Pin To Net: NetName=AKT_INT Pin=P1-13
+Added Pin To Net: NetName=AKT_R\E\S\E\T\ Pin=P1-15
+Added Room: Name=communication
+Added Room: Name=PSU
