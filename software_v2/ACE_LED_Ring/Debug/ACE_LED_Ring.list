@@ -1748,9 +1748,9 @@ int main(void)
 
 	//__disable_irq();
 	//Error_Handler();
-	if(eMBInit(MB_RTU, 0x01, 0, 115200, MB_PAR_NONE) != MB_ENOERR )Error_Handler();
+	if(eMBInit(MB_RTU, 0x01, 0, 921600, MB_PAR_NONE) != MB_ENOERR )Error_Handler();
  8000b0e:	23e1      	movs	r3, #225	; 0xe1
- 8000b10:	025b      	lsls	r3, r3, #9
+ 8000b10:	031b      	lsls	r3, r3, #12
  8000b12:	2200      	movs	r2, #0
  8000b14:	9200      	str	r2, [sp, #0]
  8000b16:	2200      	movs	r2, #0
@@ -4285,10 +4285,17 @@ void MX_USART2_UART_Init(void)
  8001928:	187b      	adds	r3, r7, r1
  800192a:	2200      	movs	r2, #0
  800192c:	601a      	str	r2, [r3, #0]
+<<<<<<< Updated upstream
   USART_InitStruct.BaudRate = 115200;
  800192e:	187b      	adds	r3, r7, r1
  8001930:	22e1      	movs	r2, #225	; 0xe1
  8001932:	0252      	lsls	r2, r2, #9
+=======
+  USART_InitStruct.BaudRate = 921600;
+ 800192e:	187b      	adds	r3, r7, r1
+ 8001930:	22e1      	movs	r2, #225	; 0xe1
+ 8001932:	0312      	lsls	r2, r2, #12
+>>>>>>> Stashed changes
  8001934:	605a      	str	r2, [r3, #4]
   USART_InitStruct.DataWidth = LL_USART_DATAWIDTH_8B;
  8001936:	187b      	adds	r3, r7, r1

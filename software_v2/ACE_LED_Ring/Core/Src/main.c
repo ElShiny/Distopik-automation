@@ -135,7 +135,7 @@ int main(void)
 
 	//__disable_irq();
 	//Error_Handler();
-	if(eMBInit(MB_RTU, 0x01, 0, 115200, MB_PAR_NONE) != MB_ENOERR )Error_Handler();
+	if(eMBInit(MB_RTU, 0x01, 0, 921600, MB_PAR_NONE) != MB_ENOERR )Error_Handler();
 	//if(eMBSetSlaveID( 0x1, FALSE, 0, 0 ) != MB_ENOERR )Error_Handler();
 	//if(eMBSetSlaveID(ucSlaveID, xIsRunning, pucAdditional, usAdditionalLen))Error_Handler();
 	__enable_irq();
