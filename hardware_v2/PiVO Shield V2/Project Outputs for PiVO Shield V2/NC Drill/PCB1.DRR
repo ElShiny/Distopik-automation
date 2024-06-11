@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------------------------------------------------------------------
-NCDrill File Report For: PCB1.PcbDoc   20/05/2024  17:09:28
+NCDrill File Report For: PCB1.PcbDoc   11/06/2024  13:54:29
 ----------------------------------------------------------------------------------------------------------------------------------
 
 Layer Pair : Top Layer to Bottom Layer
@@ -7,7 +7,7 @@ ASCII RoundHoles File : PCB1.TXT
 
 Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
 ----------------------------------------------------------------------------------------------------------------------------------
-T1      8mil (0.2mm)                                              Round             59        PTH        0.00inch (0.00mm)
+T1      8mil (0.2mm)                                              Round             68        PTH        0.00inch (0.00mm)
 T2      12mil (0.3mm)                                             Round             52        PTH        0.00inch (0.00mm)
 T3      20mil (0.5mm)                                             Round             21        PTH        0.00inch (0.00mm)
 T4      35mil (0.9mm)                                             Round             52        PTH        0.00inch (0.00mm)
@@ -15,6 +15,6 @@ T5      67mil (1.7mm)                                             Round         
 T6      75mil (1.9mm)                                             Round             2         PTH        0.00inch (0.00mm)
 T7      118mil (3mm)                                              Round             4         PTH        0.00inch (0.00mm)
 ----------------------------------------------------------------------------------------------------------------------------------
-Totals                                                                              192
+Totals                                                                              201
 
 Total Processing Time (hh:mm:ss) : 00:00:00

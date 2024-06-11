@@ -1,0 +1,11 @@
+Added Component: Designator=D1(LED1608_0603I_M)
+Added Component: Designator=R83(R1005_0402i_L)
+Added Pin To Net: NetName=GND Pin=D1-1
+Added Pin To Net: NetName=NetB1_12 Pin=B1-12
+Added Pin To Net: NetName=NetB1_12 Pin=R83-1
+Added Net: Name=NetB1_12
+Added Pin To Net: NetName=NetD1_2 Pin=D1-2
+Added Pin To Net: NetName=NetD1_2 Pin=R83-2
+Added Net: Name=NetD1_2
+Added Member To Class: ClassName=U_MCU Member=Component D1 LED
+Added Member To Class: ClassName=U_MCU Member=Component R83 120
