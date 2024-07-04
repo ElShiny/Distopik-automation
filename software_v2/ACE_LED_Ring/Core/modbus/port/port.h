@@ -36,8 +36,12 @@
 
 #define REG_INPUT_START   1000
 #define REG_INPUT_NREGS   4
-#define REG_HOLDING_START 0
-#define REG_HOLDING_NREGS 8
+
+#define REG_HOLDING_START 100
+#define REG_HOLDING_NREGS 200
+
+#define REG_COIL_START 1
+#define REG_COIL_NREGS 3
 
 typedef uint8_t BOOL;
 

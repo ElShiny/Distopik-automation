@@ -45,7 +45,10 @@ extern USHORT   usRegInputStart;
 extern USHORT   usRegInputBuf[REG_INPUT_NREGS];
 
 extern USHORT   usRegHoldingStart;
-extern USHORT   usRegHoldingBuf[REG_HOLDING_NREGS];
+extern USHORT   usRegHoldingBuf[200];
+
+extern USHORT   usRegCoilStart;
+extern USHORT   usRegCoilBuf[REG_COIL_NREGS];
 
 
 /* USER CODE END PD */
@@ -110,7 +113,7 @@ int main(void)
   led_init();
   //add modbus
 
-	if(eMBInit(MB_RTU, 0x01, 0, 115200, MB_PAR_NONE) != MB_ENOERR )Error_Handler();
+	if(eMBInit(MB_RTU, 0x50, 0, 921600, MB_PAR_NONE) != MB_ENOERR )Error_Handler();
 	//if(eMBSetSlaveID( 0x1, FALSE, 0, 0 ) != MB_ENOERR )Error_Handler();
 	//if(eMBSetSlaveID(ucSlaveID, xIsRunning, pucAdditional, usAdditionalLen))Error_Handler();
 	__enable_irq();
@@ -119,7 +122,7 @@ int main(void)
 	//IM16->CNT = 0;
 	//HAL_TIM_Base_Start(&htim16);
 
-
+	//if(eMBInit(MB_RTU, 0x10, 0, 921600, MB_PAR_NONE) != MB_ENOERR )Error_Handler();
 	int i = 0;
 
   /* USER CODE END 2 */
@@ -133,11 +136,11 @@ int main(void)
     /* USER CODE BEGIN 3 */
 
 	  if(eMBPoll()!=MB_ENOERR)Error_Handler();  /*Modbus poll update in each run*/
-        usRegInputBuf[0]++;
-       HAL_Delay(50);
-       usRegHoldingBuf[1]++;
-       led_set(usRegHoldingBuf[2]%29, 0, 0, 0);
-       if(i>29)i=0;
+       usRegInputBuf[0]++;
+       HAL_Delay(1);
+       //usRegHoldingBuf[1]++;
+       //led_set(usRegHoldingBuf[2]%29, 0, 0, 0);
+       //if(i>29)i=0;
   }
   /* USER CODE END 3 */
 }

@@ -33,6 +33,8 @@ USHORT   usRegInputBuf[REG_INPUT_NREGS];
 USHORT   usRegHoldingStart = REG_HOLDING_START;
 USHORT   usRegHoldingBuf[REG_HOLDING_NREGS];
 
+USHORT   usRegCoilStart = REG_COIL_START;
+USHORT   usRegCoilgBuf[REG_COIL_NREGS];
 
 /* ----------------------- Start implementation -----------------------------*/
 
@@ -115,7 +117,29 @@ eMBErrorCode
 eMBRegCoilsCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNCoils,
                eMBRegisterMode eMode )
 {
-    return MB_ENOREG;
+    eMBErrorCode    eStatus = MB_ENOERR;
+    int             iRegIndex;
+
+    if( ( usAddress >= REG_COIL_START )
+        && ( usAddress + usNCoils <= REG_COIL_START + REG_COIL_NREGS )
+		&& (eMode == MB_REG_READ ))
+    {
+        iRegIndex = ( int )( usAddress - usRegHoldingStart );
+        while( usNCoils > 0 )
+        {
+            *pucRegBuffer++ =
+                ( unsigned char )( usRegHoldingBuf[iRegIndex] >> 8 );
+            *pucRegBuffer++ =
+                ( unsigned char )( usRegHoldingBuf[iRegIndex] & 0xFF );
+            iRegIndex++;
+            usNCoils--;
+        }
+    }
+    else
+    {
+        eStatus = MB_ENOREG;
+    }
+    return eStatus;
 }
 
 eMBErrorCode
