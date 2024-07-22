@@ -27,6 +27,7 @@
 #include "mbport.h"
 #include "tim.h"
 #include "gpio.h"
+#include "usart.h"
 
 /* ----------------------- static functions ---------------------------------*/
 //#define USE_HAL_TIM_REGISTER_CALLBACKS 1
@@ -48,10 +49,13 @@ inline void
 vMBPortTimersEnable(  )
 {
     /* Enable the timer with the timeout passed to xMBPortTimersInit( ) */
+	//LL_USART_Disable(USART2);
 	TIM16->CNT = 0;
 	LL_TIM_ClearFlag_UPDATE(TIM16);
 	LL_TIM_EnableIT_UPDATE(TIM16);
 	LL_TIM_EnableCounter(TIM16);
+	//LL_USART_Enable(USART2);
+
 
 }
 
@@ -59,6 +63,8 @@ inline void
 vMBPortTimersDisable(  )
 {
     /* Disable any pending timers. */
+
+	//LL_USART_Disable(USART2);
 	LL_TIM_DisableCounter(TIM16);
 	LL_TIM_DisableIT_UPDATE(TIM16);
 	LL_TIM_ClearFlag_UPDATE(TIM16);

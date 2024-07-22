@@ -32,6 +32,10 @@
 #include "mbport.h"
 
 #include "led.h"
+#include "ACE.h"
+#include "housekeep.h"
+#include "settings.h"
+
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -45,11 +49,16 @@ extern USHORT   usRegInputStart;
 extern USHORT   usRegInputBuf[REG_INPUT_NREGS];
 
 extern USHORT   usRegHoldingStart;
-extern USHORT   usRegHoldingBuf[200];
+extern USHORT   usRegHoldingBuf[REG_HOLDING_NREGS];
 
 extern USHORT   usRegCoilStart;
 extern USHORT   usRegCoilBuf[REG_COIL_NREGS];
 
+ace_t ace;
+volatile led_driver_t led_settings;
+volatile settings_t settings;
+
+extern void prvvTIMERExpiredISR( void );
 
 /* USER CODE END PD */
 
@@ -108,27 +117,27 @@ int main(void)
   MX_I2C1_Init();
   MX_USART2_UART_Init();
   MX_TIM16_Init();
+  MX_TIM14_Init();
   /* USER CODE BEGIN 2 */
 
   led_init();
+  ACEInit(&ace);
+
+  MB_startup();
+  start_housekeeping();
   //add modbus
 
-	if(eMBInit(MB_RTU, 0x50, 0, 921600, MB_PAR_NONE) != MB_ENOERR )Error_Handler();
-	//if(eMBSetSlaveID( 0x1, FALSE, 0, 0 ) != MB_ENOERR )Error_Handler();
-	//if(eMBSetSlaveID(ucSlaveID, xIsRunning, pucAdditional, usAdditionalLen))Error_Handler();
-	__enable_irq();
-	if(eMBEnable() != MB_ENOERR)Error_Handler();
+//  uint8_t led_array[9] = {100,0,0, 0,100,0, 0,0,100};
+ // HAL_Delay(2000);
+//  led_set_custom_size_overlay(&led_settings, led_array, 0, 1);
 
-	//IM16->CNT = 0;
-	//HAL_TIM_Base_Start(&htim16);
 
-	//if(eMBInit(MB_RTU, 0x10, 0, 921600, MB_PAR_NONE) != MB_ENOERR )Error_Handler();
-	int i = 0;
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  //int i = 0;
   while (1)
   {
     /* USER CODE END WHILE */
@@ -136,11 +145,11 @@ int main(void)
     /* USER CODE BEGIN 3 */
 
 	  if(eMBPoll()!=MB_ENOERR)Error_Handler();  /*Modbus poll update in each run*/
-       usRegInputBuf[0]++;
-       HAL_Delay(1);
-       //usRegHoldingBuf[1]++;
-       //led_set(usRegHoldingBuf[2]%29, 0, 0, 0);
-       //if(i>29)i=0;
+	  if(usRegCoilBuf[0] != 0)Error_Handler();
+
+	  //setDEMOLEDRgb(i%90);
+	  //HAL_Delay(10);
+
   }
   /* USER CODE END 3 */
 }
@@ -194,12 +203,19 @@ void Error_Handler(void)
   /* USER CODE BEGIN Error_Handler_Debug */
   /* User can add his own implementation to report the HAL error return state */
   //__disable_irq();
-	for(int i = 0 ; i<30; i++){
-	  uint8_t arr6[4] = {led_adr_arr[i], 0,0,255};
-	  while(HAL_I2C_Master_Transmit(&hi2c1, IS3_ADR, arr6, 4, 100) == HAL_BUSY){}
-	}
+
   while (1)
   {
+		for(int i = 0 ; i<30; i++){
+		  uint8_t arr6[4] = {led_adr_arr[i], 0,0,255};
+		  while(HAL_I2C_Master_Transmit(&hi2c1, IS3_ADR, arr6, 4, 100) == HAL_BUSY){}
+		}
+		HAL_Delay(500);
+		for(int i = 0 ; i<30; i++){
+		  uint8_t arr6[4] = {led_adr_arr[i], 255,255,255};
+		  while(HAL_I2C_Master_Transmit(&hi2c1, IS3_ADR, arr6, 4, 100) == HAL_BUSY){}
+		}
+		HAL_Delay(500);
   }
   /* USER CODE END Error_Handler_Debug */
 }

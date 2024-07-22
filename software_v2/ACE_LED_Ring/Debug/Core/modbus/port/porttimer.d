@@ -36,6 +36,8 @@ Core/modbus/port/porttimer.o: ../Core/modbus/port/porttimer.c \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_pwr_ex.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_spi.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_spi_ex.h \
+ ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_tim.h \
+ ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_tim_ex.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_tim.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_usart.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_rcc.h \
@@ -88,6 +90,8 @@ C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/Cor
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_pwr_ex.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_spi.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_spi_ex.h:
+../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_tim.h:
+../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_tim_ex.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_tim.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_usart.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_rcc.h:

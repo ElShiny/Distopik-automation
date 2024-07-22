@@ -34,8 +34,10 @@ USHORT   usRegHoldingStart = REG_HOLDING_START;
 USHORT   usRegHoldingBuf[REG_HOLDING_NREGS];
 
 USHORT   usRegCoilStart = REG_COIL_START;
-USHORT   usRegCoilgBuf[REG_COIL_NREGS];
+USHORT   usRegCoilBuf[REG_COIL_NREGS];
 
+USHORT   usRegDiscreteStart = REG_DISCRETE_START;
+USHORT   usRegDiscreteBuf[REG_DISCRETE_NREGS];
 /* ----------------------- Start implementation -----------------------------*/
 
 eMBErrorCode
@@ -43,6 +45,8 @@ eMBRegInputCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs )
 {
     eMBErrorCode    eStatus = MB_ENOERR;
     int             iRegIndex;
+
+    usAddress--;
 
     if( ( usAddress >= REG_INPUT_START )
         && ( usAddress + usNRegs <= REG_INPUT_START + REG_INPUT_NREGS ) )
@@ -58,6 +62,8 @@ eMBRegInputCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs )
             usNRegs--;
         }
     }
+
+
     else
     {
         eStatus = MB_ENOREG;
@@ -72,6 +78,8 @@ eMBRegHoldingCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNRegs,
 {
     eMBErrorCode    eStatus = MB_ENOERR;
     int             iRegIndex;
+
+    usAddress--;
 
     if( ( usAddress >= REG_HOLDING_START )
         && ( usAddress + usNRegs <= REG_HOLDING_START + REG_HOLDING_NREGS )
@@ -120,17 +128,35 @@ eMBRegCoilsCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNCoils,
     eMBErrorCode    eStatus = MB_ENOERR;
     int             iRegIndex;
 
+    usAddress--;
+
     if( ( usAddress >= REG_COIL_START )
         && ( usAddress + usNCoils <= REG_COIL_START + REG_COIL_NREGS )
 		&& (eMode == MB_REG_READ ))
     {
-        iRegIndex = ( int )( usAddress - usRegHoldingStart );
+        iRegIndex = ( int )( usAddress - usRegCoilStart );
         while( usNCoils > 0 )
         {
             *pucRegBuffer++ =
-                ( unsigned char )( usRegHoldingBuf[iRegIndex] >> 8 );
+                ( unsigned char )( usRegCoilBuf[iRegIndex] >> 8 );
             *pucRegBuffer++ =
-                ( unsigned char )( usRegHoldingBuf[iRegIndex] & 0xFF );
+                ( unsigned char )( usRegCoilBuf[iRegIndex] & 0xFF );
+            iRegIndex++;
+            usNCoils--;
+        }
+    }
+
+    else if( (  usAddress >= REG_COIL_START )
+    			&& ( usAddress + usNCoils <= REG_COIL_START + REG_COIL_NREGS )
+				&& (eMode == MB_REG_WRITE ))
+    {
+        iRegIndex = ( int )( usAddress - usRegCoilStart );
+        while( usNCoils > 0 )
+        {
+        	usRegCoilBuf[iRegIndex] = (*pucRegBuffer++) << 8;
+        	usRegCoilBuf[iRegIndex] |= (*pucRegBuffer++);
+
+
             iRegIndex++;
             usNCoils--;
         }
@@ -145,5 +171,29 @@ eMBRegCoilsCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNCoils,
 eMBErrorCode
 eMBRegDiscreteCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNDiscrete )
 {
-    return MB_ENOREG;
+    eMBErrorCode    eStatus = MB_ENOERR;
+    int             iRegIndex;
+
+    usAddress--;
+
+    if( ( usAddress >= REG_DISCRETE_START )
+        && ( usAddress + usNDiscrete <= REG_DISCRETE_START + REG_DISCRETE_NREGS ) )
+    {
+        iRegIndex = ( int )( usAddress - usRegDiscreteStart );
+        while( usNDiscrete > 0 )
+        {
+            *pucRegBuffer++ =
+                ( unsigned char )( usRegDiscreteBuf[iRegIndex] >> 8 );
+            *pucRegBuffer++ =
+                ( unsigned char )( usRegDiscreteBuf[iRegIndex] & 0xFF );
+            iRegIndex++;
+            usNDiscrete--;
+        }
+    }
+    else
+    {
+        eStatus = MB_ENOREG;
+    }
+
+    return eStatus;
 }

@@ -5,12 +5,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../addons/Src/ACE.c \
 ../addons/Src/led.c 
 
 OBJS += \
+./addons/Src/ACE.o \
 ./addons/Src/led.o 
 
 C_DEPS += \
+./addons/Src/ACE.d \
 ./addons/Src/led.d 
 
 
@@ -21,7 +24,7 @@ addons/Src/%.o addons/Src/%.su addons/Src/%.cyclo: ../addons/Src/%.c addons/Src/
 clean: clean-addons-2f-Src
 
 clean-addons-2f-Src:
-	-$(RM) ./addons/Src/led.cyclo ./addons/Src/led.d ./addons/Src/led.o ./addons/Src/led.su
+	-$(RM) ./addons/Src/ACE.cyclo ./addons/Src/ACE.d ./addons/Src/ACE.o ./addons/Src/ACE.su ./addons/Src/led.cyclo ./addons/Src/led.d ./addons/Src/led.o ./addons/Src/led.su
 
 .PHONY: clean-addons-2f-Src
 

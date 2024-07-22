@@ -1,3 +1,4 @@
+
 /*
  * led.h
  *
@@ -10,9 +11,27 @@
 
 #include <stdint.h>
 
+typedef struct{
+	uint8_t rgb_array[90];
+	uint8_t front_color[3];
+	uint8_t back_color[3];
+
+	uint8_t mode;
+	uint8_t start_led;
+	uint8_t stop_led;
+	uint8_t rot_percent;
+	uint8_t led_en;
+	}led_driver_t;
+
+extern volatile led_driver_t led_settings;
 
 void led_init(void);
-void led_set(uint8_t led, uint8_t r, uint8_t g, uint8_t b);
+void led_set(uint8_t led, uint8_t *rgb);
+void led_set_custom_size_overlay(volatile led_driver_t *settings, uint8_t *rgb_arr, uint8_t start_led, uint8_t  );
+void RGBFrom222(uint8_t *arr, uint8_t color);//color manipulation
+void setDEMOLEDRgb(uint8_t value);//helper functions
+void led_demo_buffering(uint8_t value);
+
 
 
 static const uint8_t led_adr_arr[]={0x01, 0x11, 0x21, 0x31, 0x41, 0x51,

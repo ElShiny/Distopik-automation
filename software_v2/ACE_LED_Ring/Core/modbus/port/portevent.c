@@ -56,3 +56,9 @@ xMBPortEventGet( eMBEventType * eEvent )
     }
     return xEventHappened;
 }
+
+eMBEventType
+xMBPortEventPeek( void )
+{
+    return eQueuedEvent;
+}

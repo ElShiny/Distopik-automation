@@ -29,6 +29,8 @@ Core/Src/stm32c0xx_it.o: ../Core/Src/stm32c0xx_it.c ../Core/Inc/main.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_pwr_ex.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_spi.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_spi_ex.h \
+ ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_tim.h \
+ ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_tim_ex.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_tim.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_usart.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_rcc.h \
@@ -47,7 +49,9 @@ Core/Src/stm32c0xx_it.o: ../Core/Src/stm32c0xx_it.c ../Core/Inc/main.h \
  ../Drivers/CMSIS/Include/cmsis_gcc.h \
  C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/Core/modbus/include/mbport.h \
  C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/Core/modbus/include/mbproto.h \
- ../Core/Inc/i2c.h ../Core/Inc/main.h ../Core/Inc/gpio.h
+ ../Core/Inc/i2c.h ../Core/Inc/main.h ../Core/Inc/gpio.h \
+ C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/addons/Inc/housekeep.h \
+ C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/addons/Inc/led.h
 ../Core/Inc/main.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_system.h:
@@ -79,6 +83,8 @@ Core/Src/stm32c0xx_it.o: ../Core/Src/stm32c0xx_it.c ../Core/Inc/main.h \
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_pwr_ex.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_spi.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_spi_ex.h:
+../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_tim.h:
+../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_tim_ex.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_tim.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_usart.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_rcc.h:
@@ -100,3 +106,5 @@ C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/Cor
 ../Core/Inc/i2c.h:
 ../Core/Inc/main.h:
 ../Core/Inc/gpio.h:
+C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/addons/Inc/housekeep.h:
+C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/addons/Inc/led.h:

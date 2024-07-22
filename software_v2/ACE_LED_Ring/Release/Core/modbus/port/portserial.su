@@ -1,7 +1,7 @@
-../Core/modbus/port/portserial.c:35:1:vMBPortSerialEnable	8	static,ignoring_inline_asm
-../Core/modbus/port/portserial.c:48:1:xMBPortSerialInit	0	static
-../Core/modbus/port/portserial.c:56:1:xMBPortSerialPutByte	0	static
-../Core/modbus/port/portserial.c:68:1:xMBPortSerialPutBuffer	0	static
-../Core/modbus/port/portserial.c:81:1:xMBPortSerialGetByte	0	static
-../Core/modbus/port/portserial.c:100:6:prvvUARTTxReadyISR	8	static
-../Core/modbus/port/portserial.c:110:6:prvvUARTRxISR	8	static
+../Core/modbus/port/portserial.c:36:1:vMBPortSerialEnable	8	static,ignoring_inline_asm
+../Core/modbus/port/portserial.c:50:1:xMBPortSerialInit	0	static
+../Core/modbus/port/portserial.c:59:1:xMBPortSerialPutByte	0	static
+../Core/modbus/port/portserial.c:71:1:xMBPortSerialPutBuffer	0	static
+../Core/modbus/port/portserial.c:84:1:xMBPortSerialGetByte	0	static
+../Core/modbus/port/portserial.c:103:6:prvvUARTTxReadyISR	8	static
+../Core/modbus/port/portserial.c:113:6:prvvUARTRxISR	8	static

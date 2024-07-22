@@ -65,6 +65,8 @@ BOOL            xMBPortEventPost( eMBEventType eEvent );
 
 BOOL            xMBPortEventGet(  /*@out@ */ eMBEventType * eEvent );
 
+eMBEventType	xMBPortEventPeek( void );
+
 /* ----------------------- Serial port functions ----------------------------*/
 
 BOOL            xMBPortSerialInit( UCHAR ucPort, ULONG ulBaudRate,

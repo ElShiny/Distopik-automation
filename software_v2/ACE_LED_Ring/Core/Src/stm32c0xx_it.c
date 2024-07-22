@@ -25,6 +25,8 @@
 #include "mb.h"
 #include "i2c.h"
 #include "gpio.h"
+#include "housekeep.h"
+#include "led.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -61,7 +63,8 @@ extern void prvvTIMERExpiredISR( void );
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
-
+extern DMA_HandleTypeDef hdma_i2c1_tx;
+extern TIM_HandleTypeDef htim14;
 /* USER CODE BEGIN EV */
 
 /* USER CODE END EV */
@@ -154,10 +157,26 @@ void DMA1_Channel1_IRQHandler(void)
   /* USER CODE BEGIN DMA1_Channel1_IRQn 0 */
 
   /* USER CODE END DMA1_Channel1_IRQn 0 */
-
+  HAL_DMA_IRQHandler(&hdma_i2c1_tx);
   /* USER CODE BEGIN DMA1_Channel1_IRQn 1 */
 
   /* USER CODE END DMA1_Channel1_IRQn 1 */
+}
+
+/**
+  * @brief This function handles TIM14 global interrupt.
+  */
+void TIM14_IRQHandler(void)
+{
+  /* USER CODE BEGIN TIM14_IRQn 0 */
+
+  /* USER CODE END TIM14_IRQn 0 */
+  HAL_TIM_IRQHandler(&htim14);
+  /* USER CODE BEGIN TIM14_IRQn 1 */
+  housekeeping_tasks();
+  //setDEMOLEDRgb(i%90);
+	//i++;
+  /* USER CODE END TIM14_IRQn 1 */
 }
 
 /**
@@ -169,6 +188,7 @@ void TIM16_IRQHandler(void)
 	if(LL_TIM_IsActiveFlag_UPDATE(TIM16) && LL_TIM_IsEnabledIT_UPDATE(TIM16)){
 		prvvTIMERExpiredISR();
 		LL_TIM_ClearFlag_UPDATE(TIM16);
+
 	}
 
   /* USER CODE END TIM16_IRQn 0 */
@@ -186,6 +206,11 @@ void TIM16_IRQHandler(void)
 void USART2_IRQHandler(void)
 {
   /* USER CODE BEGIN USART2_IRQn 0 */
+	if( LL_USART_IsActiveFlag_ORE(USART2)){
+		  uint8_t arr[4] = {led_adr_arr[0], 0,0,0};
+		  while(HAL_I2C_Master_Transmit(&hi2c1, IS3_ADR, arr, 4, 100) == HAL_BUSY){}
+		return;
+	}
 
 	if(LL_USART_IsActiveFlag_TXE_TXFNF(USART2) && LL_USART_IsEnabledIT_TXE_TXFNF(USART2))
 	  {
@@ -203,6 +228,8 @@ void USART2_IRQHandler(void)
 	    //UART_TXEmpty_Callback();
 		prvvUARTRxISR();
 	  }
+
+
 
   /* USER CODE END USART2_IRQn 0 */
   /* USER CODE BEGIN USART2_IRQn 1 */

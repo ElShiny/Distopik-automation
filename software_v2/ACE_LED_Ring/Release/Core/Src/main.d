@@ -29,6 +29,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_pwr_ex.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_spi.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_spi_ex.h \
+ ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_tim.h \
+ ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_tim_ex.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_tim.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_usart.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_rcc.h \
@@ -49,7 +51,10 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/Core/modbus/include/mbport.h \
  C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/Core/modbus/include/mbproto.h \
  C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/Core/modbus/include/mbport.h \
- C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/addons/Inc/led.h
+ C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/addons/Inc/led.h \
+ C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/addons/Inc/ACE.h \
+ C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/addons/Inc/housekeep.h \
+ C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/addons/Inc/settings.h
 ../Core/Inc/main.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_system.h:
@@ -81,6 +86,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_pwr_ex.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_spi.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_spi_ex.h:
+../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_tim.h:
+../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal_tim_ex.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_tim.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_usart.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_rcc.h:
@@ -107,3 +114,6 @@ C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/Cor
 C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/Core/modbus/include/mbproto.h:
 C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/Core/modbus/include/mbport.h:
 C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/addons/Inc/led.h:
+C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/addons/Inc/ACE.h:
+C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/addons/Inc/housekeep.h:
+C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/addons/Inc/settings.h:

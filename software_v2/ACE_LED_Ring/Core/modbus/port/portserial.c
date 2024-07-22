@@ -26,6 +26,7 @@
 #include "mbport.h"
 #include "stm32c0xx_ll_usart.h"
 #include "gpio.h"
+#include "usart.h"
 
 
 /* ----------------------- static functions ---------------------------------*/
@@ -37,6 +38,7 @@ vMBPortSerialEnable( BOOL xRxEnable, BOOL xTxEnable )
     /* If xRXEnable enable serial receive interrupts. If xTxENable enable
      * transmitter empty interrupts.
      */
+
 	if(xRxEnable == TRUE) LL_USART_EnableIT_RXNE_RXFNE(USART2);
 	else LL_USART_DisableIT_RXNE_RXFNE(USART2);
 
@@ -48,6 +50,7 @@ BOOL
 xMBPortSerialInit( UCHAR ucPORT, ULONG ulBaudRate, UCHAR ucDataBits, eMBParity eParity )
 {
 	//enable uart interrupt
+	//MX_USART2_UART_Init();
 	//LL_USART_EnableIT_TXE_TXFNF(USART2);
     return TRUE;
 }
