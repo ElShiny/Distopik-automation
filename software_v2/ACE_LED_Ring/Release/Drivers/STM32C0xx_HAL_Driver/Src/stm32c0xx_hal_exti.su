@@ -1,4 +1,4 @@
-../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_exti.c:136:19:HAL_EXTI_SetConfigLine	24	static
+../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_exti.c:136:19:HAL_EXTI_SetConfigLine	28	static
 ../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_exti.c:258:19:HAL_EXTI_GetConfigLine	20	static
 ../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_exti.c:352:19:HAL_EXTI_ClearConfigLine	24	static
 ../Drivers/STM32C0xx_HAL_Driver/Src/stm32c0xx_hal_exti.c:418:19:HAL_EXTI_RegisterCallback	0	static

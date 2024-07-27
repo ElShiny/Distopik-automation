@@ -1,0 +1,8 @@
+../addons/Src/ACE.c:12:6:ACEInit	0	static
+../addons/Src/ACE.c:22:9:readACEQuick	48	static,ignoring_inline_asm
+../addons/Src/ACE.c:43:6:ace_abs_to_rel	0	static
+../addons/Src/ACE.c:63:6:ACE_return_values	8	static
+../addons/Src/ACE.c:106:6:ACE_mode_0	16	static
+../addons/Src/ACE.c:116:6:ACE_mode_1	16	static
+../addons/Src/ACE.c:126:6:ACE_mode_2	24	static
+../addons/Src/ACE.c:75:6:ACE_settings_parser	16	static

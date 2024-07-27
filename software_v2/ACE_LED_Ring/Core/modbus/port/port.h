@@ -35,16 +35,16 @@
 #define EXIT_CRITICAL_SECTION(void)		__enable_irq()
 
 #define REG_INPUT_START   500
-#define REG_INPUT_NREGS   100
+#define REG_INPUT_NREGS   150
 
 #define REG_HOLDING_START 999
-#define REG_HOLDING_NREGS 100 + 1
+#define REG_HOLDING_NREGS 200 + 1
 
 #define REG_COIL_START 100
-#define REG_COIL_NREGS 100
+#define REG_COIL_NREGS 10
 
 #define REG_DISCRETE_START 1
-#define REG_DISCRETE_NREGS 100
+#define REG_DISCRETE_NREGS 20
 
 typedef uint8_t BOOL;
 

@@ -63,7 +63,6 @@ extern void prvvTIMERExpiredISR( void );
 /* USER CODE END 0 */
 
 /* External variables --------------------------------------------------------*/
-extern DMA_HandleTypeDef hdma_i2c1_tx;
 extern TIM_HandleTypeDef htim14;
 /* USER CODE BEGIN EV */
 
@@ -150,20 +149,6 @@ void SysTick_Handler(void)
 /******************************************************************************/
 
 /**
-  * @brief This function handles DMA1 channel 1 interrupt.
-  */
-void DMA1_Channel1_IRQHandler(void)
-{
-  /* USER CODE BEGIN DMA1_Channel1_IRQn 0 */
-
-  /* USER CODE END DMA1_Channel1_IRQn 0 */
-  HAL_DMA_IRQHandler(&hdma_i2c1_tx);
-  /* USER CODE BEGIN DMA1_Channel1_IRQn 1 */
-
-  /* USER CODE END DMA1_Channel1_IRQn 1 */
-}
-
-/**
   * @brief This function handles TIM14 global interrupt.
   */
 void TIM14_IRQHandler(void)
@@ -173,7 +158,7 @@ void TIM14_IRQHandler(void)
   /* USER CODE END TIM14_IRQn 0 */
   HAL_TIM_IRQHandler(&htim14);
   /* USER CODE BEGIN TIM14_IRQn 1 */
-  housekeeping_tasks();
+  housekeeping_tasks_callback();
   //setDEMOLEDRgb(i%90);
 	//i++;
   /* USER CODE END TIM14_IRQn 1 */

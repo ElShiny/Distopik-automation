@@ -1,0 +1,7 @@
+../addons/Src/settings.c:43:6:settings_init	1
+../addons/Src/settings.c:91:6:btn_adress_change	1
+../addons/Src/settings.c:82:6:btn_press_time	5
+../addons/Src/settings.c:34:6:system_settings	6
+../addons/Src/settings.c:107:6:MB_startup	15
+../addons/Src/settings.c:176:6:ACE_settings	1
+../addons/Src/settings.c:188:6:led_settings	2

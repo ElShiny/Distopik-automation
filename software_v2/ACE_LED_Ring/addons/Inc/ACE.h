@@ -10,24 +10,48 @@
 
 
 #include <stdint.h>
+#include "port.h"
 //#define ACE_PIN_INV
+
+#define ACE_STEP_ANGLE 2.8125
 
 
 typedef struct{
-	int volatile ace_val;
-	uint8_t volatile ace_max;
-	uint8_t ace_val_new;
-	uint8_t ace_val_old;
-	uint8_t volatile ace_changed;
-	uint8_t volatile ace_led_changed;
-}ace_t;
 
-//ace_t ace_rot;
+	int relative_val;
+	uint8_t absolute_val;
+
+	uint8_t val_new;
+	uint8_t val_old;
+	int delta;
 
 
-void ACEInit(ace_t *ace);
+	uint8_t disable;
+	uint8_t mode;
+	uint16_t start_angle;
+	uint16_t stop_angle;
+	uint8_t scale;
+	uint8_t setting_changed;
+
+	uint16_t incoming_angle;
+	uint8_t incoming_val_change;
+	float angle;
+	uint8_t val_changed;
+
+}ace_driver_t;
+
+extern volatile ace_driver_t hace1;
+
+
+void ACEInit(volatile ace_driver_t *ace);
 uint8_t readACEQuick(void);
-void absoluteToRelative(ace_t *ace);
+void ace_abs_to_rel(volatile ace_driver_t *ace);
+void ACE_settings_parser(volatile ace_driver_t *ace);
+void ACE_return_values(volatile ace_driver_t *ace, USHORT *abs_val, USHORT *rel_val);
+void ACE_mode_0(volatile ace_driver_t *ace);
+void ACE_mode_1(volatile ace_driver_t *ace);
+void ACE_mode_2(volatile ace_driver_t *ace);
+
 
  static const uint8_t encoderMap[256] = {
 	0xFF,0x38,0x28,0x37,0x18,0xFF,0x27,0x34,0x08,0x39,0xFF,0xFF,0x17,0xFF,0x24,0x0D,

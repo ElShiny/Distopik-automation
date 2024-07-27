@@ -135,14 +135,22 @@ eMBRegCoilsCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNCoils,
 		&& (eMode == MB_REG_READ ))
     {
         iRegIndex = ( int )( usAddress - usRegCoilStart );
+
+        uint16_t i = 0;
         while( usNCoils > 0 )
         {
-            *pucRegBuffer++ =
-                ( unsigned char )( usRegCoilBuf[iRegIndex] >> 8 );
-            *pucRegBuffer++ =
-                ( unsigned char )( usRegCoilBuf[iRegIndex] & 0xFF );
+        	if(i == 0) *pucRegBuffer = 0;
+        	if(i%8 == 0 && i != 0){
+        		*pucRegBuffer++;
+        		*pucRegBuffer = 0;
+        	}
+
+            *pucRegBuffer |=
+                ( unsigned char )( (usRegCoilBuf[iRegIndex] & 0x1) << (i % 8));
             iRegIndex++;
             usNCoils--;
+            i++;
+
         }
     }
 
@@ -151,14 +159,17 @@ eMBRegCoilsCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNCoils,
 				&& (eMode == MB_REG_WRITE ))
     {
         iRegIndex = ( int )( usAddress - usRegCoilStart );
-        while( usNCoils > 0 )
-        {
-        	usRegCoilBuf[iRegIndex] = (*pucRegBuffer++) << 8;
-        	usRegCoilBuf[iRegIndex] |= (*pucRegBuffer++);
+        uint16_t i = 0;
 
+        while( usNCoils > 0 ){
+        	if(i%8 == 0 && i != 0){
+            	*pucRegBuffer++;
+            }
 
+            usRegCoilBuf[iRegIndex] = ((*pucRegBuffer) & (1 << (i % 8))) >> (i % 8);
             iRegIndex++;
             usNCoils--;
+            i++;
         }
     }
     else
@@ -180,14 +191,22 @@ eMBRegDiscreteCB( UCHAR * pucRegBuffer, USHORT usAddress, USHORT usNDiscrete )
         && ( usAddress + usNDiscrete <= REG_DISCRETE_START + REG_DISCRETE_NREGS ) )
     {
         iRegIndex = ( int )( usAddress - usRegDiscreteStart );
+        int i = 0;
+
         while( usNDiscrete > 0 )
         {
-            *pucRegBuffer++ =
-                ( unsigned char )( usRegDiscreteBuf[iRegIndex] >> 8 );
-            *pucRegBuffer++ =
-                ( unsigned char )( usRegDiscreteBuf[iRegIndex] & 0xFF );
+        	if(i == 0) *pucRegBuffer = 0;
+        	if(i%8 == 0 && i != 0){
+        		*pucRegBuffer++;
+        		*pucRegBuffer = 0;
+        	}
+
+            *pucRegBuffer |=
+                ( unsigned char )( (usRegDiscreteBuf[iRegIndex] & 0x1) << (i % 8));
             iRegIndex++;
             usNDiscrete--;
+            i++;
+
         }
     }
     else

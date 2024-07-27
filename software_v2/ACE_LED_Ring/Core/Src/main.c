@@ -18,7 +18,6 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "dma.h"
 #include "i2c.h"
 #include "spi.h"
 #include "tim.h"
@@ -54,8 +53,11 @@ extern USHORT   usRegHoldingBuf[REG_HOLDING_NREGS];
 extern USHORT   usRegCoilStart;
 extern USHORT   usRegCoilBuf[REG_COIL_NREGS];
 
-ace_t ace;
-volatile led_driver_t led_settings;
+extern USHORT   usRegDiscreteStart;
+extern USHORT   usRegDiscreteBuf[REG_DISCRETE_NREGS];
+
+volatile ace_driver_t hace1;
+volatile led_driver_t hled1;
 volatile settings_t settings;
 
 extern void prvvTIMERExpiredISR( void );
@@ -112,7 +114,6 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_DMA_Init();
   MX_SPI1_Init();
   MX_I2C1_Init();
   MX_USART2_UART_Init();
@@ -120,24 +121,19 @@ int main(void)
   MX_TIM14_Init();
   /* USER CODE BEGIN 2 */
 
+  settings_init();
+
   led_init();
-  ACEInit(&ace);
+  ACEInit(&hace1);
 
   MB_startup();
   start_housekeeping();
-  //add modbus
-
-//  uint8_t led_array[9] = {100,0,0, 0,100,0, 0,0,100};
- // HAL_Delay(2000);
-//  led_set_custom_size_overlay(&led_settings, led_array, 0, 1);
-
-
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  //int i = 0;
+
   while (1)
   {
     /* USER CODE END WHILE */
@@ -145,10 +141,8 @@ int main(void)
     /* USER CODE BEGIN 3 */
 
 	  if(eMBPoll()!=MB_ENOERR)Error_Handler();  /*Modbus poll update in each run*/
-	  if(usRegCoilBuf[0] != 0)Error_Handler();
-
-	  //setDEMOLEDRgb(i%90);
-	  //HAL_Delay(10);
+	  //if(usRegCoilBuf[0] == 1)Error_Handler();
+	  //led_demo_value(readACEQuick());
 
   }
   /* USER CODE END 3 */

@@ -43,8 +43,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_pwr.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_dma.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_dmamux.h \
- ../Core/Inc/dma.h ../Core/Inc/main.h ../Core/Inc/i2c.h ../Core/Inc/spi.h \
- ../Core/Inc/tim.h ../Core/Inc/usart.h ../Core/Inc/gpio.h \
+ ../Core/Inc/i2c.h ../Core/Inc/main.h ../Core/Inc/spi.h ../Core/Inc/tim.h \
+ ../Core/Inc/usart.h ../Core/Inc/gpio.h \
  C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/Core/modbus/include/mb.h \
  C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/Core/modbus/port/port.h \
  ../Drivers/CMSIS/Include/cmsis_gcc.h \
@@ -54,7 +54,9 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/addons/Inc/led.h \
  C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/addons/Inc/ACE.h \
  C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/addons/Inc/housekeep.h \
- C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/addons/Inc/settings.h
+ C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/addons/Inc/settings.h \
+ C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/addons/Inc/led.h \
+ C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/addons/Inc/ACE.h
 ../Core/Inc/main.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_system.h:
@@ -100,9 +102,8 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_pwr.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_dma.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_dmamux.h:
-../Core/Inc/dma.h:
-../Core/Inc/main.h:
 ../Core/Inc/i2c.h:
+../Core/Inc/main.h:
 ../Core/Inc/spi.h:
 ../Core/Inc/tim.h:
 ../Core/Inc/usart.h:
@@ -117,3 +118,5 @@ C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/add
 C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/addons/Inc/ACE.h:
 C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/addons/Inc/housekeep.h:
 C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/addons/Inc/settings.h:
+C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/addons/Inc/led.h:
+C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/ACE_LED_Ring/addons/Inc/ACE.h:

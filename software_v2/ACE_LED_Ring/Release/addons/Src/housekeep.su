@@ -1,0 +1,5 @@
+../addons/Src/housekeep.c:21:6:start_housekeeping	8	static
+../addons/Src/housekeep.c:25:6:stop_housekeeping	8	static
+../addons/Src/housekeep.c:31:6:housekeeping_tasks_callback	24	static
+../addons/Src/housekeep.c:71:9:check_for_settings_changes	0	static
+../addons/Src/housekeep.c:76:6:reset_settings_changed	0	static

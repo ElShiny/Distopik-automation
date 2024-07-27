@@ -10,27 +10,43 @@
 #define ADDONS_INC_LED_H_
 
 #include <stdint.h>
+#include "port.h"
+
+
+#define LED_STEP_ANGLE 12
 
 typedef struct{
 	uint8_t rgb_array[90];
 	uint8_t front_color[3];
 	uint8_t back_color[3];
 
+	uint8_t disable;
 	uint8_t mode;
-	uint8_t start_led;
-	uint8_t stop_led;
-	uint8_t rot_percent;
-	uint8_t led_en;
+	uint16_t start_angle;
+	uint16_t stop_angle;
+	uint16_t rot_angle;
+	uint8_t steps;
+
+
+	uint8_t settings_changed;
 	}led_driver_t;
 
-extern volatile led_driver_t led_settings;
+extern volatile led_driver_t hled1;
 
 void led_init(void);
 void led_set(uint8_t led, uint8_t *rgb);
 void led_set_custom_size_overlay(volatile led_driver_t *settings, uint8_t *rgb_arr, uint8_t start_led, uint8_t  );
 void RGBFrom222(uint8_t *arr, uint8_t color);//color manipulation
-void setDEMOLEDRgb(uint8_t value);//helper functions
+void led_demo_value(uint8_t value);//helper functions
 void led_demo_buffering(uint8_t value);
+void led_set_all_zero(volatile led_driver_t *settings);
+void led_return_values(volatile led_driver_t *led, USHORT *input_buffer);
+
+void led_settings_parser(volatile led_driver_t *led);
+void led_mode_0(volatile led_driver_t *led);
+void led_mode_1(volatile led_driver_t *led);
+void led_mode_2(volatile led_driver_t *led);
+void led_mode_3(volatile led_driver_t *led);
 
 
 

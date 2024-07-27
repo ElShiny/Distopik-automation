@@ -7,33 +7,17 @@
 
 #include "ACE.h"
 #include "main.h"
+#include "settings.h"
 
-void ACEInit(ace_t *ace){
+void ACEInit(volatile ace_driver_t *ace){
+
 	LL_GPIO_SetOutputPin(ACE_EN_GPIO_Port, ACE_EN_Pin);
 
-
-	ace->ace_val_old = readACEQuick();
-	ace->ace_max = 127;
-	ace->ace_led_changed = 1;
+	//ace->ace_val_old = readACEQuick();
+	//ace->ace_max = 127;
+	//ace->ace_led_changed = 1;
 
 }
-
-/*uint8_t readACEValRaw(void){
-	uint8_t raw_val = 0;
-	PORTD &= ~(1<<ACE_EN);
-
-	raw_val = isBitSet(ACE_P8_PORT , ACE_P8)<<7|isBitSet(ACE_P7_PORT , ACE_P7)<<6|isBitSet(ACE_P6_PORT , ACE_P6)<<5|
-	isBitSet(ACE_P5_PORT , ACE_P5)<<4|isBitSet(ACE_P4_PORT , ACE_P4)<<3|isBitSet(ACE_P3_PORT , ACE_P3)<<2|
-	isBitSet(ACE_P2_PORT , ACE_P2)<<1|isBitSet(ACE_P1_PORT, ACE_P1);
-
-	PORTD |= 1<<ACE_EN;
-
-	return raw_val;
-}*/
-
-//uint8_t ACETransform(uint8_t val){
-//	return encoderMap[val];
-//}
 
 uint8_t readACEQuick(void){
 	LL_GPIO_ResetOutputPin(ACE_EN_GPIO_Port, ACE_EN_Pin);
@@ -56,23 +40,99 @@ uint8_t readACEQuick(void){
 	return val;
 }
 
-void absoluteToRelative(ace_t *ace){
+void ace_abs_to_rel(volatile ace_driver_t *ace){
 
-	int delta = 0;
 
-	if(ace->ace_val_old > 117 && ace->ace_val_new < 10) delta = ace->ace_val_new- ace->ace_val_old + 128;		//corrections for zero crossing
-	else if(ace->ace_val_old < 15 && ace->ace_val_new > 110) delta = ace->ace_val_new - ace->ace_val_old - 128;
-	else delta = ace->ace_val_new - ace->ace_val_old;
+	if(ace->val_old > 117 && ace->val_new < 10) ace->delta = ace->val_new- ace->val_old + 128;		//corrections for zero crossing
+	else if(ace->val_old < 15 && ace->val_new > 110) ace->delta = ace->val_new - ace->val_old - 128;
+	else ace->delta = ace->val_new - ace->val_old;
 
-	ace->ace_val = ace->ace_val + delta;
+	ace->relative_val = ace->relative_val + ace->delta;
 
-	ace->ace_val_old = ace->ace_val_new;
+	ace->val_old = ace->val_new;
 
-	if (ace->ace_val > ace->ace_max)ace->ace_val = ace->ace_max;
-	if (ace->ace_val < 0)ace->ace_val = 0;
+	//if (ace->ace_val > ace->ace_max)ace->ace_val = ace->ace_max;
+	//if (ace->ace_val < 0)ace->ace_val = 0;
 
-	if(delta){
-		ace->ace_changed = 1;
-		ace->ace_led_changed = 1;
+	if(ace->delta){
+		ace->val_changed = 1;
+		//ace->ace_led_changed = 1;
 	}
 }
+
+void ACE_return_values(volatile ace_driver_t *ace, USHORT *input_buffer, USHORT *holding_buffer){
+	input_buffer[ACE_ABSOLUTE_VALUE] = ace->absolute_val;
+	input_buffer[ACE_RELATIVE_VALUE] = ace->relative_val;
+	input_buffer[ACE_DELTA] = ace->delta;
+	input_buffer[ACE_CALCULATED_ANGLE] = ace->angle;
+
+
+	//holding_buffer[ACE_INCOMING_VALUE_CHANGE] = ace->incoming_val_change;
+
+
+}
+
+void ACE_settings_parser(volatile ace_driver_t *ace){
+
+	if(ace->disable) return;
+
+	ace->absolute_val = readACEQuick();
+
+	if(ace->absolute_val == ace->val_new) return;
+	ace->val_new = ace->absolute_val;
+
+	ace_abs_to_rel(ace);
+
+
+	switch (ace->mode) {
+		case 0:
+			ACE_mode_0(ace);
+			break;
+		case 1:
+			ACE_mode_1(ace);
+			break;
+		case 2:
+			ACE_mode_2(ace);
+			break;
+
+		default:
+
+			break;
+	}
+
+	return;
+}
+
+void ACE_mode_0(volatile ace_driver_t *ace){
+
+	ace->angle = (float)ACE_STEP_ANGLE * (float)ace->absolute_val;
+
+	if(ace->angle <= ace->start_angle) ace->angle = ace->start_angle;
+	if(ace->angle >= ace->stop_angle) ace->angle = ace->stop_angle;
+
+	return;
+}
+
+void ACE_mode_1(volatile ace_driver_t *ace){
+
+	ace->angle = (float)ACE_STEP_ANGLE * (float)ace->relative_val;
+
+	if(ace->angle <= ace->start_angle) ace->angle = ace->start_angle;
+	if(ace->angle >= ace->stop_angle) ace->angle = ace->stop_angle;
+
+	return;
+}
+
+void ACE_mode_2(volatile ace_driver_t *ace){
+	float scaling_factor = ace->scale/(float)100;
+
+	ace->angle += (float)ACE_STEP_ANGLE * (float)ace->delta * (float)scaling_factor;
+
+	if(ace->angle <= ace->start_angle) ace->angle = ace->start_angle;
+	if(ace->angle >= ace->stop_angle) ace->angle = ace->stop_angle;
+
+	return;
+}
+
+
+
