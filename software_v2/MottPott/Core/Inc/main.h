@@ -32,15 +32,14 @@ extern "C" {
 #include "stm32c0xx_ll_tim.h"
 #include "stm32c0xx_ll_usart.h"
 #include "stm32c0xx_ll_rcc.h"
+#include "stm32c0xx_ll_system.h"
+#include "stm32c0xx_ll_gpio.h"
+#include "stm32c0xx_ll_exti.h"
 #include "stm32c0xx_ll_bus.h"
 #include "stm32c0xx_ll_cortex.h"
-#include "stm32c0xx_ll_system.h"
 #include "stm32c0xx_ll_utils.h"
 #include "stm32c0xx_ll_pwr.h"
-#include "stm32c0xx_ll_gpio.h"
 #include "stm32c0xx_ll_dma.h"
-
-#include "stm32c0xx_ll_exti.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -70,21 +69,21 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
-#define INT_Pin GPIO_PIN_0
+#define INT_Pin LL_GPIO_PIN_0
 #define INT_GPIO_Port GPIOA
-#define USR_BTN_Pin GPIO_PIN_5
+#define USR_BTN_Pin LL_GPIO_PIN_5
 #define USR_BTN_GPIO_Port GPIOA
-#define WIPER_Pin GPIO_PIN_7
+#define WIPER_Pin LL_GPIO_PIN_7
 #define WIPER_GPIO_Port GPIOA
-#define MOT_SLEEP_Pin GPIO_PIN_1
+#define MOT_SLEEP_Pin LL_GPIO_PIN_1
 #define MOT_SLEEP_GPIO_Port GPIOB
-#define MOT1_Pin GPIO_PIN_8
+#define MOT1_Pin LL_GPIO_PIN_8
 #define MOT1_GPIO_Port GPIOA
-#define MOT2_Pin GPIO_PIN_11
+#define MOT2_Pin LL_GPIO_PIN_11
 #define MOT2_GPIO_Port GPIOA
-#define TP2_Pin GPIO_PIN_6
+#define TP2_Pin LL_GPIO_PIN_6
 #define TP2_GPIO_Port GPIOB
-#define TP1_Pin GPIO_PIN_7
+#define TP1_Pin LL_GPIO_PIN_7
 #define TP1_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */

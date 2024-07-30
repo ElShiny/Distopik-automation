@@ -1,7 +1,7 @@
 ../addons/Src/led.c:26:6:led_init	48	static
 ../addons/Src/led.c:54:6:led_set	32	static
 ../addons/Src/led.c:61:6:led_set_custom_size_overlay	136	static
-../addons/Src/led.c:81:6:led_demo_value	128	static
+../addons/Src/led.c:81:6:led_demo_value	120	static
 ../addons/Src/led.c:99:6:led_demo_buffering	40	static
 ../addons/Src/led.c:111:6:RGBFrom222	0	static
 ../addons/Src/led.c:119:6:led_set_all_zero	128	static

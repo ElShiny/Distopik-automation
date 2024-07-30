@@ -107,10 +107,10 @@ void HAL_ADC_MspInit(ADC_HandleTypeDef* adcHandle)
     /**ADC1 GPIO Configuration
     PA7     ------> ADC1_IN7
     */
-    GPIO_InitStruct.Pin = WIPER_Pin;
+    GPIO_InitStruct.Pin = GPIO_PIN_7;
     GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
-    HAL_GPIO_Init(WIPER_GPIO_Port, &GPIO_InitStruct);
+    HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /* USER CODE BEGIN ADC1_MspInit 1 */
 
@@ -132,7 +132,7 @@ void HAL_ADC_MspDeInit(ADC_HandleTypeDef* adcHandle)
     /**ADC1 GPIO Configuration
     PA7     ------> ADC1_IN7
     */
-    HAL_GPIO_DeInit(WIPER_GPIO_Port, WIPER_Pin);
+    HAL_GPIO_DeInit(GPIOA, GPIO_PIN_7);
 
   /* USER CODE BEGIN ADC1_MspDeInit 1 */
 

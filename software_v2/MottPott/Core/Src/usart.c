@@ -71,14 +71,14 @@ void MX_USART2_UART_Init(void)
   LL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /* USART2 interrupt Init */
-  NVIC_SetPriority(USART2_IRQn, 0);
+  NVIC_SetPriority(USART2_IRQn, 1);
   NVIC_EnableIRQ(USART2_IRQn);
 
   /* USER CODE BEGIN USART2_Init 1 */
 
   /* USER CODE END USART2_Init 1 */
   USART_InitStruct.PrescalerValue = LL_USART_PRESCALER_DIV1;
-  USART_InitStruct.BaudRate = 115200;
+  USART_InitStruct.BaudRate = 921600;
   USART_InitStruct.DataWidth = LL_USART_DATAWIDTH_8B;
   USART_InitStruct.StopBits = LL_USART_STOPBITS_2;
   USART_InitStruct.Parity = LL_USART_PARITY_NONE;

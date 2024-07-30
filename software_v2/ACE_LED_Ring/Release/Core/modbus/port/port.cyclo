@@ -1,4 +1,4 @@
 ../Core/modbus/port/port.c:44:1:eMBRegInputCB	5
 ../Core/modbus/port/port.c:76:1:eMBRegHoldingCB	9
-../Core/modbus/port/port.c:125:1:eMBRegCoilsCB	12
-../Core/modbus/port/port.c:183:1:eMBRegDiscreteCB	7
+../Core/modbus/port/port.c:125:1:eMBRegCoilsCB	11
+../Core/modbus/port/port.c:183:1:eMBRegDiscreteCB	6

@@ -11,3 +11,6 @@ Cargo.lock
 /software_v2/rpi_rust/target
 /software_v2/ACE_LED_Ring/Debug
 /software_v2/ACE_LED_Ring/Release
+/software_v2/ACE_LED_Ring/Release
+/software_v2/PiVO_template/Debug
+/software_v2/MottPott/Debug

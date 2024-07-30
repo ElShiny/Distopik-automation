@@ -26,7 +26,6 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "modbus.h"
 #include <assert.h>
 /* USER CODE END Includes */
 
@@ -102,6 +101,7 @@ int main(void)
   MX_ADC1_Init();
   MX_USART2_UART_Init();
   MX_TIM14_Init();
+  MX_TIM16_Init();
   /* USER CODE BEGIN 2 */
 
 

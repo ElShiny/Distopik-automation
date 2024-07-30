@@ -68,7 +68,7 @@ vMBPortTimersDisable(  )
 	LL_TIM_DisableCounter(TIM16);
 	LL_TIM_DisableIT_UPDATE(TIM16);
 	LL_TIM_ClearFlag_UPDATE(TIM16);
-    LL_GPIO_SetOutputPin(TP2_GPIO_Port, TP2_Pin);
+    //LL_GPIO_SetOutputPin(TP2_GPIO_Port, TP2_Pin);
 
 }
 
