@@ -1,0 +1,7 @@
+../addons/modbus/port/portserial.c:34:1:vMBPortSerialEnable	3
+../addons/modbus/port/portserial.c:48:1:xMBPortSerialInit	1
+../addons/modbus/port/portserial.c:57:1:xMBPortSerialPutByte	1
+../addons/modbus/port/portserial.c:69:1:xMBPortSerialPutBuffer	1
+../addons/modbus/port/portserial.c:82:1:xMBPortSerialGetByte	1
+../addons/modbus/port/portserial.c:101:6:prvvUARTTxReadyISR	1
+../addons/modbus/port/portserial.c:111:6:prvvUARTRxISR	1

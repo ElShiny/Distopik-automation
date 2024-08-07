@@ -1,0 +1,8 @@
+../addons/modbus/rtu/mbrtu.c:78:1:eMBRTUInit	8	static,ignoring_inline_asm
+../addons/modbus/rtu/mbrtu.c:123:1:eMBRTUStart	8	static,ignoring_inline_asm
+../addons/modbus/rtu/mbrtu.c:139:1:eMBRTUStop	8	static,ignoring_inline_asm
+../addons/modbus/rtu/mbrtu.c:148:1:eMBRTUReceive	16	static,ignoring_inline_asm
+../addons/modbus/rtu/mbrtu.c:184:1:eMBRTUSend	8	static,ignoring_inline_asm
+../addons/modbus/rtu/mbrtu.c:223:1:xMBRTUReceiveFSM	16	static
+../addons/modbus/rtu/mbrtu.c:283:1:xMBRTUTransmitFSM	8	static
+../addons/modbus/rtu/mbrtu.c:321:1:xMBRTUTimerT35Expired	8	static

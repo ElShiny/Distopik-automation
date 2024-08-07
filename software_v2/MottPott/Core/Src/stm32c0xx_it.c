@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2023 STMicroelectronics.
+  * Copyright (c) 2024 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -22,6 +22,9 @@
 #include "stm32c0xx_it.h"
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "mb.h"
+#include "gpio.h"
+#include "housekeep.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -46,7 +49,9 @@
 
 /* Private function prototypes -----------------------------------------------*/
 /* USER CODE BEGIN PFP */
-
+extern void prvvUARTTxReadyISR( void );
+extern void prvvUARTRxISR( void );
+extern void prvvTIMERExpiredISR( void );
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -72,7 +77,7 @@ void NMI_Handler(void)
 
   /* USER CODE END NonMaskableInt_IRQn 0 */
   /* USER CODE BEGIN NonMaskableInt_IRQn 1 */
-  while (1)
+   while (1)
   {
   }
   /* USER CODE END NonMaskableInt_IRQn 1 */
@@ -146,14 +151,11 @@ void SysTick_Handler(void)
 void TIM14_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM14_IRQn 0 */
-	if(LL_TIM_IsActiveFlag_UPDATE(TIM14) && LL_TIM_IsEnabledIT_UPDATE(TIM14)){
-		//timer expired
-		LL_TIM_ClearFlag_UPDATE(TIM16);
-	}
+
   /* USER CODE END TIM14_IRQn 0 */
   HAL_TIM_IRQHandler(&htim14);
   /* USER CODE BEGIN TIM14_IRQn 1 */
-
+  housekeeping_tasks_callback();
   /* USER CODE END TIM14_IRQn 1 */
 }
 
@@ -163,7 +165,11 @@ void TIM14_IRQHandler(void)
 void TIM16_IRQHandler(void)
 {
   /* USER CODE BEGIN TIM16_IRQn 0 */
+	if(LL_TIM_IsActiveFlag_UPDATE(TIM16) && LL_TIM_IsEnabledIT_UPDATE(TIM16)){
+		prvvTIMERExpiredISR();
+		LL_TIM_ClearFlag_UPDATE(TIM16);
 
+	}
   /* USER CODE END TIM16_IRQn 0 */
   /* USER CODE BEGIN TIM16_IRQn 1 */
 
@@ -176,12 +182,17 @@ void TIM16_IRQHandler(void)
 void USART2_IRQHandler(void)
 {
   /* USER CODE BEGIN USART2_IRQn 0 */
+	if( LL_USART_IsActiveFlag_ORE(USART2)){
+		LL_USART_ClearFlag_ORE(USART2);
+		return;
+	}
+
 	if(LL_USART_IsActiveFlag_TXE_TXFNF(USART2) && LL_USART_IsEnabledIT_TXE_TXFNF(USART2))
 	  {
 	    /* RXNE flag will be cleared by reading of RDR register (done in call) */
 	    /* Call function in charge of handling Character reception */
 	    //UART_CharReception_Callback();
-		//prvvUARTTxReadyISR();
+		prvvUARTTxReadyISR();
 	  }
 
 	if(LL_USART_IsEnabledIT_RXNE_RXFNE(USART2) && LL_USART_IsActiveFlag_RXNE_RXFNE(USART2))
@@ -190,7 +201,7 @@ void USART2_IRQHandler(void)
 
 	    /* Call function in charge of handling empty DR => will lead to transmission of next character */
 	    //UART_TXEmpty_Callback();
-		//prvvUARTRxISR();
+		prvvUARTRxISR();
 	  }
   /* USER CODE END USART2_IRQn 0 */
   /* USER CODE BEGIN USART2_IRQn 1 */

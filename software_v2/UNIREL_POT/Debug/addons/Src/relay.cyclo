@@ -1,0 +1,7 @@
+../addons/Src/relay.c:18:9:relay_check_expanders	3
+../addons/Src/relay.c:33:6:relay_mcp_init	3
+../addons/Src/relay.c:46:9:swap_bits	2
+../addons/Src/relay.c:56:6:relay_return_values	2
+../addons/Src/relay.c:77:6:relay_write_line	11
+../addons/Src/relay.c:61:6:relay_settings_parser	5
+../addons/Src/relay.c:135:9:compare_arrays	4

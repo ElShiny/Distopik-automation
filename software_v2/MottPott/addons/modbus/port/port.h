@@ -25,6 +25,7 @@
 #include <assert.h>
 #include <inttypes.h>
 #include "cmsis_gcc.h"
+#include "usart.h"
 
 #define	INLINE                      inline
 #define PR_BEGIN_EXTERN_C           extern "C" {
@@ -45,6 +46,8 @@
 
 #define REG_DISCRETE_START 1
 #define REG_DISCRETE_NREGS 20
+
+#define MB_USART USART2
 
 typedef uint8_t BOOL;
 

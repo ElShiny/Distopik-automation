@@ -1,0 +1,8 @@
+../addons/Src/settings.c:75:6:btn_adress_change	1
+../addons/Src/settings.c:66:6:btn_press_time	5
+../addons/Src/settings.c:34:6:system_settings	2
+../addons/Src/settings.c:91:6:MB_startup	11
+../addons/Src/settings.c:163:6:write_u16_to_u8	3
+../addons/Src/settings.c:149:6:relay_settings	2
+../addons/Src/settings.c:43:6:settings_init	1
+../addons/Src/settings.c:168:6:write_u8_to_u16	3

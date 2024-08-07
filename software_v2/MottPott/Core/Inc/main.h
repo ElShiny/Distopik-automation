@@ -7,7 +7,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2023 STMicroelectronics.
+  * Copyright (c) 2024 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -73,18 +73,8 @@ void Error_Handler(void);
 #define INT_GPIO_Port GPIOA
 #define USR_BTN_Pin LL_GPIO_PIN_5
 #define USR_BTN_GPIO_Port GPIOA
-#define WIPER_Pin LL_GPIO_PIN_7
-#define WIPER_GPIO_Port GPIOA
 #define MOT_SLEEP_Pin LL_GPIO_PIN_1
 #define MOT_SLEEP_GPIO_Port GPIOB
-#define MOT1_Pin LL_GPIO_PIN_8
-#define MOT1_GPIO_Port GPIOA
-#define MOT2_Pin LL_GPIO_PIN_11
-#define MOT2_GPIO_Port GPIOA
-#define TP2_Pin LL_GPIO_PIN_6
-#define TP2_GPIO_Port GPIOB
-#define TP1_Pin LL_GPIO_PIN_7
-#define TP1_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

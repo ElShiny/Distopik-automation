@@ -1,0 +1,8 @@
+../addons/modbus/rtu/mbrtu.c:78:1:eMBRTUInit	3
+../addons/modbus/rtu/mbrtu.c:123:1:eMBRTUStart	1
+../addons/modbus/rtu/mbrtu.c:139:1:eMBRTUStop	1
+../addons/modbus/rtu/mbrtu.c:148:1:eMBRTUReceive	3
+../addons/modbus/rtu/mbrtu.c:184:1:eMBRTUSend	2
+../addons/modbus/rtu/mbrtu.c:223:1:xMBRTUReceiveFSM	6
+../addons/modbus/rtu/mbrtu.c:283:1:xMBRTUTransmitFSM	4
+../addons/modbus/rtu/mbrtu.c:321:1:xMBRTUTimerT35Expired	6

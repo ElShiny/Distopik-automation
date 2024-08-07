@@ -1,0 +1,3 @@
+../addons/modbus/functions/mbutils.c:44:1:xMBUtilSetBits	1
+../addons/modbus/functions/mbutils.c:83:1:xMBUtilGetBits	1
+../addons/modbus/functions/mbutils.c:114:1:prveMBError2Exception	3

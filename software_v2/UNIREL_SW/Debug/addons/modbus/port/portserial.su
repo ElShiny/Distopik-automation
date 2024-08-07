@@ -1,0 +1,7 @@
+../addons/modbus/port/portserial.c:34:1:vMBPortSerialEnable	8	static,ignoring_inline_asm
+../addons/modbus/port/portserial.c:48:1:xMBPortSerialInit	0	static
+../addons/modbus/port/portserial.c:57:1:xMBPortSerialPutByte	0	static
+../addons/modbus/port/portserial.c:69:1:xMBPortSerialPutBuffer	0	static
+../addons/modbus/port/portserial.c:82:1:xMBPortSerialGetByte	0	static
+../addons/modbus/port/portserial.c:101:6:prvvUARTTxReadyISR	8	static
+../addons/modbus/port/portserial.c:111:6:prvvUARTRxISR	8	static

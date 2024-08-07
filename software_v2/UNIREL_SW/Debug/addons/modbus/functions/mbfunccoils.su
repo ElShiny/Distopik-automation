@@ -1,0 +1,3 @@
+../addons/modbus/functions/mbfunccoils.c:66:1:eMBFuncReadCoils	16	static
+../addons/modbus/functions/mbfunccoils.c:145:1:eMBFuncWriteCoil	16	static
+../addons/modbus/functions/mbfunccoils.c:199:1:eMBFuncWriteMultipleCoils	16	static

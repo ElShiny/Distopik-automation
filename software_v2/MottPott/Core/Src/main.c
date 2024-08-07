@@ -6,7 +6,7 @@
   ******************************************************************************
   * @attention
   *
-  * Copyright (c) 2023 STMicroelectronics.
+  * Copyright (c) 2024 STMicroelectronics.
   * All rights reserved.
   *
   * This software is licensed under terms that can be found in the LICENSE file
@@ -26,7 +26,13 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include <assert.h>
+#include "mb.h"
+#include "port.h"
+#include "mbport.h"
+
+#include "housekeep.h"
+#include "settings.h"
+#include "motor.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -36,13 +42,6 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
-
-// Initialize Modbus defines
-//#define NMBS_MASTER_DISABLED
-
-#define MODBUS_ADDRESS 0x01
-#define MODBUS_BAUDRATE 115200
-#define MODBUS_UART &huart2
 
 /* USER CODE END PD */
 
@@ -54,7 +53,10 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+extern USHORT   usRegInputBuf[REG_INPUT_NREGS];
+extern USHORT   usRegHoldingBuf[REG_HOLDING_NREGS];
+extern USHORT   usRegCoilBuf[REG_COIL_NREGS];
+extern USHORT   usRegDiscreteBuf[REG_DISCRETE_NREGS];
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -74,6 +76,7 @@ void SystemClock_Config(void);
   */
 int main(void)
 {
+
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
@@ -97,13 +100,34 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_SPI1_Init();
-  MX_TIM1_Init();
-  MX_ADC1_Init();
-  MX_USART2_UART_Init();
   MX_TIM14_Init();
   MX_TIM16_Init();
+  MX_USART2_UART_Init();
+  MX_ADC1_Init();
+  MX_TIM1_Init();
   /* USER CODE BEGIN 2 */
 
+  if(HAL_ADCEx_Calibration_Start(&hadc1) != HAL_OK){
+	  Error_Handler();
+  }
+
+
+  settings_init();
+  MB_startup();
+
+  motor_init(&hmot1);
+  start_housekeeping();
+
+
+
+  motor_enable();
+//  motor_speed(100);
+//  motor_left();
+//
+//  HAL_Delay(2000);
+//  motor_brake();
+//  HAL_Delay(1000);
+//  motor_stop();
 
 
 
@@ -116,6 +140,8 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+	  if(eMBPoll()!=MB_ENOERR)Error_Handler();  /*Modbus poll update in each run*/
+
   }
   /* USER CODE END 3 */
 }
@@ -171,7 +197,6 @@ void Error_Handler(void)
   __disable_irq();
   while (1)
   {
-
   }
   /* USER CODE END Error_Handler_Debug */
 }

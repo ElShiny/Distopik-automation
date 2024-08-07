@@ -1,6 +1,6 @@
 ################################################################################
 # Automatically-generated file. Do not edit!
-# Toolchain: GNU Tools for STM32 (11.3.rel1)
+# Toolchain: GNU Tools for STM32 (12.3.rel1)
 ################################################################################
 
 -include ../makefile.init
@@ -9,6 +9,13 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include addons/modbus/tcp/subdir.mk
+-include addons/modbus/rtu/subdir.mk
+-include addons/modbus/port/subdir.mk
+-include addons/modbus/functions/subdir.mk
+-include addons/modbus/ascii/subdir.mk
+-include addons/modbus/subdir.mk
+-include addons/Src/subdir.mk
 -include Drivers/STM32C0xx_HAL_Driver/Src/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
@@ -61,7 +68,7 @@ main-build: MottPott.elf secondary-outputs
 
 # Tool invocations
 MottPott.elf MottPott.map: $(OBJS) $(USER_OBJS) C:\Users\Matej\Documents\GitHub\Distopik-automation\software_v2\MottPott\STM32C031G6UX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "MottPott.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\Matej\Documents\GitHub\Distopik-automation\software_v2\MottPott\STM32C031G6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MottPott.map" -Wl,--gc-sections -static -flto --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+	arm-none-eabi-gcc -o "MottPott.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m0plus -T"C:\Users\Matej\Documents\GitHub\Distopik-automation\software_v2\MottPott\STM32C031G6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="MottPott.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

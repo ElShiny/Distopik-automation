@@ -1,0 +1,6 @@
+../addons/modbus/mb.c:127:1:eMBInit	5
+../addons/modbus/mb.c:223:1:eMBRegisterCB	8
+../addons/modbus/mb.c:270:1:eMBClose	3
+../addons/modbus/mb.c:289:1:eMBEnable	2
+../addons/modbus/mb.c:307:1:eMBDisable	2
+../addons/modbus/mb.c:329:1:eMBPoll	14

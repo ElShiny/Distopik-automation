@@ -1,0 +1,4 @@
+../addons/modbus/port/porttimer.c:36:1:xMBPortTimersInit	1
+../addons/modbus/port/porttimer.c:47:1:vMBPortTimersEnable	1
+../addons/modbus/port/porttimer.c:61:1:vMBPortTimersDisable	1
+../addons/modbus/port/porttimer.c:76:6:prvvTIMERExpiredISR	1
