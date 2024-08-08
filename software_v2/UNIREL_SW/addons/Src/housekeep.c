@@ -38,11 +38,14 @@ void housekeeping_tasks_callback(void){
 	if(check_for_settings_changes()){
 
 		//ADD CUSTOM SETTINGS
+		relay_settings(&hrel1);
 
 		//RESET SETTINGS CHANGED BIT
 		reset_settings_changed();
 	}
 	//ADD SETTIGS PARSERS
+	relay_settings_parser(&hrel1);
+	relay_return_values(&hrel1, usRegInputBuf);
 
 
 	return;

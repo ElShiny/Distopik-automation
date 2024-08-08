@@ -10,6 +10,8 @@
 #include "gpio.h"
 #include "settings.h"
 #include "housekeep.h"
+#include "relay.h"
+
 
 #include "mb.h"
 #include "port.h"
@@ -41,17 +43,22 @@ void system_settings(void){
 void settings_init(void){
 
 	//set up identificators
-	usRegDiscreteBuf[MODULE_TYPE] = 0; //0 for UI, 1 for AKT
+	usRegDiscreteBuf[MODULE_TYPE] = 1; //0 for UI, 1 for AKT
 
-	usRegDiscreteBuf[MODULE_ID_1] = 0; //ACE led ring is 0x1
+	usRegDiscreteBuf[MODULE_ID_1] = 0; //UNIREL_POT is 0x1
 	usRegDiscreteBuf[MODULE_ID_2] = 1;
 	usRegDiscreteBuf[MODULE_ID_3] = 0;
 	usRegDiscreteBuf[MODULE_ID_4] = 0;
 	usRegDiscreteBuf[MODULE_ID_5] = 0;
 
-	usRegInputBuf[LOL] = 15;
+	usRegHoldingBuf[RELAY_MCPS_ENABLED] = 0x1f;
+	usRegHoldingBuf[RELAY_LINES_ENABLED] = 0x3ff;
+	for(int i = 0; i<(MAX_MCPS*2); i++)usRegHoldingBuf[RELAY_MASK + i] = 0xff;
+	for(int i = 0; i<(MAX_MCPS*2); i++)usRegHoldingBuf[RELAY_VALUES + i] = 0;
 
-	usRegHoldingBuf[SETTINGS_CHANGED] = 1;
+	relay_settings(&hrel1);
+
+	//usRegHoldingBuf[SETTINGS_CHANGED] = 1;
 
 	return;
 }
@@ -139,6 +146,27 @@ void MB_startup(void){
 	}
 }
 
-//void template_settings(volatile ace_driver_t *settings){
-//
-//}
+void relay_settings(volatile relay_drv_t *settings){
+	settings->lines_enabled = usRegHoldingBuf[RELAY_LINES_ENABLED];
+	settings->mcps_enabled = usRegHoldingBuf[RELAY_MCPS_ENABLED];
+	settings->values_changed = 1;
+
+	write_u16_to_u8(settings->line_relay_mask, &usRegHoldingBuf[RELAY_MASK], (MAX_MCPS*2));
+	if(compare_arrays(settings->line_value, &usRegHoldingBuf[RELAY_VALUES], (MAX_MCPS*2)) == 0){
+		settings->values_changed = 1;
+		write_u16_to_u8(settings->line_value, &usRegHoldingBuf[RELAY_VALUES], (MAX_MCPS*2));
+	}
+
+
+}
+
+void write_u16_to_u8(volatile uint8_t *destination, volatile uint16_t *source, uint8_t length){
+	for(int i = 0; i<length; i++){
+		destination[i] = source[i];
+	}
+}
+void write_u8_to_u16(volatile uint16_t *destination, volatile uint8_t *source, uint8_t length){
+	for(int i = 0; i<length; i++){
+		destination[i] = source[i];
+	}
+}

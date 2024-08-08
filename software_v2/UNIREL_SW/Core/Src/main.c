@@ -108,12 +108,14 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   settings_init();
-
   MB_startup();
+
+  relay_check_expanders(&hrel1);
+  relay_mcp_init(&hrel1);
+
   start_housekeeping();
 
-  usRegInputBuf[MCP_RETURN] = relay_check_expanders();
-  relay_mcp_init(relay_check_expanders());
+
   /* USER CODE END 2 */
 
   /* Infinite loop */

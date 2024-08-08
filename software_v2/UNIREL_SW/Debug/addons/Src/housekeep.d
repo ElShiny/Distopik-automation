@@ -52,6 +52,7 @@ addons/Src/housekeep.o: ../addons/Src/housekeep.c ../Core/Inc/main.h \
  C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/modbus/port/port.h \
  C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/modbus/include/mbport.h \
  C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/Inc/settings.h \
+ C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/Inc/relay.h \
  ../Core/Inc/tim.h \
  C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/Inc/housekeep.h
 ../Core/Inc/main.h:
@@ -109,5 +110,6 @@ C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons
 C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/modbus/port/port.h:
 C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/modbus/include/mbport.h:
 C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/Inc/settings.h:
+C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/Inc/relay.h:
 ../Core/Inc/tim.h:
 C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/Inc/housekeep.h:

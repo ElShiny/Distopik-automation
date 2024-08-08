@@ -54,6 +54,7 @@ Core/Src/main.o: ../Core/Src/main.c ../Core/Inc/main.h \
  C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/modbus/include/mbport.h \
  C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/Inc/housekeep.h \
  C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/Inc/settings.h \
+ C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/Inc/relay.h \
  C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/Inc/relay.h
 ../Core/Inc/main.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal.h:
@@ -115,4 +116,5 @@ C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons
 C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/modbus/include/mbport.h:
 C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/Inc/housekeep.h:
 C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/Inc/settings.h:
+C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/Inc/relay.h:
 C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/Inc/relay.h:

@@ -9,6 +9,7 @@
 #define INC_RELAY_H_
 
 #include "stdint.h"
+#include "port.h"
 
 
 #define MCP_ADR(X) ((0x04<<4) | (X<<1))// 0-5
@@ -22,11 +23,30 @@
 #define MCP_OLATA 0x14
 #define MCP_OLATB 0x15
 
+#define MAX_MCPS 2
+
+typedef struct{
+
+	uint8_t mcps_connected;
+	uint8_t mcps_enabled;
+	uint16_t lines_enabled;
+	uint8_t line_relay_mask[MAX_MCPS*2];
+	uint8_t line_value[MAX_MCPS*2];
+	uint8_t values_changed;
 
 
 
+}relay_drv_t;
 
-uint8_t relay_check_expanders(void);
-void relay_mcp_init(uint8_t mcp_found);
+extern volatile relay_drv_t hrel1;
+
+
+uint8_t relay_check_expanders(volatile relay_drv_t *relay);
+void relay_mcp_init(volatile relay_drv_t *relay);
+uint8_t swap_bits(uint8_t val);
+void relay_return_values(volatile relay_drv_t *relay, USHORT *input_buffer);
+void relay_settings_parser(volatile relay_drv_t *relay);
+uint8_t compare_arrays(uint8_t *a, USHORT *b, uint8_t len);
+void relay_write_line(uint8_t line, uint8_t value);
 
 #endif /* INC_RELAY_H_ */

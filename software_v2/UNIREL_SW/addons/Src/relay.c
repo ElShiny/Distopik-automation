@@ -13,45 +13,108 @@
 #include "settings.h"
 
 extern USHORT   usRegInputBuf[REG_INPUT_NREGS];
+volatile relay_drv_t hrel1;
 
-uint8_t relay_check_expanders(void){
+uint8_t relay_check_expanders(volatile relay_drv_t *relay){
 	uint8_t arr[] = {0};
 	uint8_t return_val = 0;
 
-	for(int i = 0; i<6; i++){
+	for(int i = 0; i<MAX_MCPS; i++){
 		int ret = HAL_I2C_Master_Transmit(&hi2c1, MCP_ADR(i), arr, 1, 100);
 		if(ret == 0x0){
 			return_val |= 1 << i;
 		}
 	}
 
+	relay->mcps_connected = return_val;
 	return return_val;
 }
 
-void relay_mcp_init(uint8_t mcp_found){
-
+void relay_mcp_init(volatile relay_drv_t *relay){
 	uint8_t iodir_arr[] = {MCP_IODIRA, 0x0, 0x0};
-	uint8_t port_arr[] = {MCP_GPIOA, 0x0, 0x0};
+	uint8_t port_arr[] = {MCP_GPIOA, 0x00, 0x00};
 
-	uint8_t arr1[] = {MCP_GPIOA, 0xff, 0xff};
-
-	for(int i = 0; i<2; i++){
-		if(mcp_found & (1<<i)){
+	for(int i = 0; i<MAX_MCPS; i++){
+		if(relay->mcps_connected & (1<<i)){
 			HAL_I2C_Master_Transmit(&hi2c1, MCP_ADR(i), iodir_arr, 3, 100);
 			HAL_I2C_Master_Transmit(&hi2c1, MCP_ADR(i), port_arr, 3, 100);
-			HAL_I2C_Master_Transmit(&hi2c1, MCP_ADR(i), arr1, 3, 100);
+			HAL_Delay(100);
+		}
+	}
+}
+
+uint8_t swap_bits(uint8_t val){
+	uint8_t rotVal = 0;
+
+    for (int i = 0; i < 8; i++){
+        rotVal |= ((val & (1<<i)) >> i) << (7-i);
+    }
+    return rotVal;
+}
+
+
+void relay_return_values(volatile relay_drv_t *relay, USHORT *input_buffer){
+	for(int i = 0; i<(MAX_MCPS*2); i++) input_buffer[RELAY_RETURN_VALUES + i] = relay->line_value[i];
+	input_buffer[MCPS_CONNECTED] = relay->mcps_connected;
+}
+
+void relay_settings_parser(volatile relay_drv_t *relay){
+
+	if(relay->values_changed == 0) return;
+
+	uint8_t tmp_mcps = relay->mcps_connected & relay->mcps_enabled;
+
+	for(int i = 0; i < (MAX_MCPS*2); i++){
+		if((relay->lines_enabled & (1<<i)) && (tmp_mcps & (1<<(i/2))) ){
+			relay_write_line(i, (relay->line_value[i] & relay->line_relay_mask[i]));
 		}
 	}
 
-	for(int i = 0; i<2; i++){
-		if(mcp_found & (1<<i)){
-			HAL_I2C_Master_Transmit(&hi2c1, MCP_ADR(i), arr1, 3, 100);
-		}
-		HAL_Delay(500);
-	}
-
-	//uint8_t arr1[] = {MCP_GPIOA, 0xff, 0xff};
-
+	relay->values_changed = 0;
 
 }
+
+void relay_write_line(uint8_t line, uint8_t value){
+	uint8_t mcp_addr = 0;
+	uint8_t reg_addr = 0;
+	uint8_t temp_val = 0;
+
+	switch (line) {
+		case 0:
+			mcp_addr = 0x0; reg_addr = MCP_GPIOA;
+			temp_val = value;
+			break;
+		case 1:
+			mcp_addr = 0x1; reg_addr = MCP_GPIOA;
+			temp_val = value;
+			break;
+		case 2:
+			mcp_addr = 0x1; reg_addr = MCP_GPIOB;
+			temp_val = value;
+			break;
+		case 3:
+			mcp_addr = 0x0; reg_addr = MCP_GPIOB;
+			temp_val = value<<2;
+			break;
+		default:
+			return;
+			break;
+	}
+	uint8_t out_arr[2] = {reg_addr, temp_val};
+
+	HAL_I2C_Master_Transmit(&hi2c1, MCP_ADR(mcp_addr), out_arr, 2, 3);
+
+}
+
+
+
+uint8_t compare_arrays(uint8_t *a, USHORT *b, uint8_t len) {
+
+  for(int i = 0; i < len; i++) {
+    if (a[i] != b[i]) return 0;
+  }
+  return 1;
+}
+
+
 

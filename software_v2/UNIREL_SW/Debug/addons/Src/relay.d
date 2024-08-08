@@ -1,7 +1,8 @@
 addons/Src/relay.o: ../addons/Src/relay.c \
  C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/Inc/relay.h \
- ../Core/Inc/i2c.h ../Core/Inc/main.h \
- ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal.h \
+ C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/modbus/port/port.h \
+ ../Drivers/CMSIS/Include/cmsis_gcc.h ../Core/Inc/usart.h \
+ ../Core/Inc/main.h ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_system.h \
  ../Drivers/CMSIS/Device/ST/STM32C0xx/Include/stm32c0xx.h \
  ../Drivers/CMSIS/Device/ST/STM32C0xx/Include/stm32c031xx.h \
@@ -45,16 +46,18 @@ addons/Src/relay.o: ../addons/Src/relay.c \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_pwr.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_dma.h \
  ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_dmamux.h \
+ ../Core/Inc/i2c.h \
  C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/modbus/include/mb.h \
  C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/modbus/port/port.h \
- ../Drivers/CMSIS/Include/cmsis_gcc.h ../Core/Inc/usart.h \
  C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/modbus/include/mbport.h \
  C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/modbus/include/mbproto.h \
- C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/modbus/port/port.h \
  C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/modbus/include/mbport.h \
- C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/Inc/settings.h
+ C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/Inc/settings.h \
+ C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/Inc/relay.h
 C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/Inc/relay.h:
-../Core/Inc/i2c.h:
+C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/modbus/port/port.h:
+../Drivers/CMSIS/Include/cmsis_gcc.h:
+../Core/Inc/usart.h:
 ../Core/Inc/main.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_hal.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_system.h:
@@ -100,12 +103,11 @@ C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_pwr.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_dma.h:
 ../Drivers/STM32C0xx_HAL_Driver/Inc/stm32c0xx_ll_dmamux.h:
+../Core/Inc/i2c.h:
 C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/modbus/include/mb.h:
 C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/modbus/port/port.h:
-../Drivers/CMSIS/Include/cmsis_gcc.h:
-../Core/Inc/usart.h:
 C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/modbus/include/mbport.h:
 C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/modbus/include/mbproto.h:
-C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/modbus/port/port.h:
 C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/modbus/include/mbport.h:
 C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/Inc/settings.h:
+C:/Users/Matej/Documents/GitHub/Distopik-automation/software_v2/UNIREL_SW/addons/Inc/relay.h:

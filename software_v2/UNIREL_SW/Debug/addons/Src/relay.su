@@ -1,2 +1,7 @@
-../addons/Src/relay.c:17:9:relay_check_expanders	40	static
-../addons/Src/relay.c:31:6:relay_mcp_init	56	static
+../addons/Src/relay.c:18:9:relay_check_expanders	40	static
+../addons/Src/relay.c:33:6:relay_mcp_init	32	static
+../addons/Src/relay.c:46:9:swap_bits	16	static
+../addons/Src/relay.c:56:6:relay_return_values	0	static
+../addons/Src/relay.c:77:6:relay_write_line	24	static
+../addons/Src/relay.c:61:6:relay_settings_parser	24	static
+../addons/Src/relay.c:111:9:compare_arrays	12	static
