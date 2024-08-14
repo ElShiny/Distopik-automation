@@ -1,10 +1,16 @@
 use crate::types::{SlaveType, Status};
-use std::thread;
+use std::{thread};
 use std::time::Duration;
 use std::str;
 use rppal::gpio::{Gpio, OutputPin, InputPin};
 use serialport::SerialPortBuilder;
 use tokio_modbus::prelude::*;
+
+
+
+pub mod unirel_pot;
+pub mod unirel_sw;
+
 
 
 #[derive(Debug)]
@@ -22,18 +28,10 @@ pub struct AktLine {
     pub baud_rate: u32,
     pub akt_builder: SerialPortBuilder,
     pub gpio_rst: OutputPin,
-    //pub gpio_int: InputPin,
+    pub gpio_int: InputPin,
     pub number_of_slaves: u8,
     pub slave_addresses: Vec<u8>,
-    pub aktuators: Vec<Aktuator>,
-}
-
-#[derive(Debug)]
-pub struct  Aktuator {
-    pub slave_type: SlaveType,
-    pub akt_address: u8,
-    pub akt_status: Status,
-    pub akt_type: AktuatorType,
+    pub aktuators: Vec<Box<dyn std::any::Any>>,
 }
 
 impl AktLine {
@@ -41,7 +39,7 @@ impl AktLine {
 
         let mut  rst_pin = Gpio::new()?.get(gpio_rst)?.into_output();
         rst_pin.set_reset_on_drop(false);
-        //let int_pin = Gpio::new()?.get(gpio_int)?.into_input();
+        let int_pin = Gpio::new()?.get(gpio_int)?.into_input();
 
         let akt_builder = tokio_serial::new(tty_path, baud_rate).flow_control(tokio_serial::FlowControl::None);
 
@@ -50,7 +48,7 @@ impl AktLine {
             baud_rate,
             akt_builder,
             gpio_rst: rst_pin,
-            //gpio_int: int_pin,
+            gpio_int: int_pin,
             number_of_slaves: 0,
             slave_addresses: Vec::new(),
             aktuators: Vec::new(),
@@ -64,7 +62,7 @@ impl AktLine {
         thread::sleep(Duration::from_millis(1000));
     }
 
-    pub fn get_modules(&mut self) {
+    pub fn get_connected_modules_id(&mut self) {
         for i in 0..20 {
             
             let mut ctx = sync::rtu::connect_slave_with_timeout(
@@ -73,12 +71,38 @@ impl AktLine {
                 Some(Duration::new(0, 100000)),
             ).unwrap();
     
-            let rsp = ctx.read_discrete_inputs(1, 8);
+            let rsp = ctx.read_discrete_inputs(1, 1);
     
             if rsp.is_ok() {
+
                 self.slave_addresses.push(i);
                 self.number_of_slaves += 1;
 
+                println!("Found module at address: {:#?}", i);
+            }
+            if rsp.is_err(){
+                //println!("Error: {:?}", rsp.err());
+            }
+        }
+        if self.number_of_slaves == 0 {
+            println!("No modules found in address range 0-20");
+        }
+    }
+
+    pub fn get_modules_type(&mut self){
+
+        for i in 0..self.number_of_slaves {
+            
+            let mut ctx = sync::rtu::connect_slave_with_timeout(
+                &self.akt_builder,
+                Slave(self.slave_addresses[i as usize]),
+                Some(Duration::new(0, 100000)),
+            ).unwrap();
+    
+            let rsp = ctx.read_discrete_inputs(1, 8);
+    
+            if rsp.is_ok() {
+                //convert rsp bool array to uint
                 let mut res: u8 = 0;
                 for j in  0..8 {
                     res |= (rsp.as_ref().unwrap()[j] as u8) << j;
@@ -88,22 +112,27 @@ impl AktLine {
                 let board_type = (res & 0x02) >> 1;
                 let board_version = (res & 0xfc) >> 2;
                 println!("Connected board: {:#x}, {:#x}, {:#x}", status, board_type, board_version);
+
+                if(board_version == 1){
+                    let akt_struct = unirel_pot::UnirelPot::new(self.slave_addresses[i as usize], Status::from_u8(status));
+                    self.aktuators.push(Box::new(akt_struct));
+                }
+                else if (board_version == 2){
+                    let akt_struct = unirel_sw::UnirelSW::new(self.slave_addresses[i as usize], Status::from_u8(status));
+                    self.aktuators.push(Box::new(akt_struct));
+                    
+                }
+                
+                //self.aktuators.push(Box::new(akt_struct));
             }
             if rsp.is_err(){
                 println!("Error: {:?}", rsp.err());
             }
         }
     }
+
+
 }
 
-impl AktuatorType {
-    fn from_u8(value: u8) -> AktuatorType {
-        match value {
-            1 => AktuatorType::UnirelPot,
-            2 => AktuatorType::UnirelSw,
-            3 => AktuatorType::UnirelPotMini,
-            4 => AktuatorType::UnirelSwMini,
-            _ => AktuatorType::Undefined,
-        }
-    }
-}
+
+

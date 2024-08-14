@@ -1,25 +1,49 @@
 use akt::AktLine;
+use ui::UILine;
 use std::time::Duration;
 use tokio_serial::SerialPortBuilder;
 use tokio_modbus::prelude::*;
-
+use crate::akt::unirel_pot::UnirelPotTrait;
+use crate::ui::ace_led_ring::AceLedRingTrait;
 
 pub mod akt;
+pub mod ui;
 pub mod types;
 
-//static tty_path_ui: &'static str = "/dev/ttyAMA2";
+
+static tty_path_ui: &'static str = "/dev/ttyAMA2";
 static tty_path_akt: &str = "/dev/ttyAMA1";
 static baud_rate: u32 = 921600;
 
 const GPIO_RST_UI: u8 = 14;
 const GPIO_RST_AKT: u8 = 22;
+const GPIO_INT_AKT: u8 = 27;
+const GPIO_INT_UI: u8 = 15;
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
 
-    let mut akt_line = AktLine::new(tty_path_akt, baud_rate, GPIO_RST_AKT, 0)?;
+    let mut akt_line = AktLine::new(tty_path_akt, baud_rate, GPIO_RST_AKT, GPIO_INT_AKT)?;
     akt_line.reset_modules();
-    akt_line.get_modules();
-    println!("{:#?}", akt_line);
+    akt_line.get_connected_modules_id();
+    akt_line.get_modules_type();
+
+    let mut ui_line = UILine::new(tty_path_ui, baud_rate, GPIO_RST_UI, GPIO_INT_UI)?;
+    ui_line.reset_modules();
+    ui_line.get_connected_modules_id();
+    ui_line.get_modules_type();
+
+    if let Some(module) = akt_line.aktuators[2].downcast_mut::<akt::unirel_pot::UnirelPot>(){
+        module.read_module_settings(&akt_line.akt_builder);
+        println!("{:#?}", module.read_settings());
+    }
+
+    //println!("{:#?}", ui_line.user_interfaces);
+    if let Some(module) = ui_line.user_interfaces[0].downcast_mut::<ui::ace_led_ring::AceLedRing>(){
+        module.read_module_settings(&akt_line.akt_builder);
+        println!("{:#?}", module.read_settings());
+    }
+
+
 
     Ok(())
 }
